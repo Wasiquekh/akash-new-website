@@ -376,7 +376,7 @@ export default function Home() {
                 <p className="text-black text-sm mb-0">- Proto Type Modeling</p>
                 <p className="text-black text-sm mb-0">- 3D 2D Drafting</p>
                 <Link
-                  href="/"
+                  href="/research&development"
                   className="bg-secondary text-white text-base font-medium py-2 px-6 rounded border border-secondary block text-center mt-4"
                 >
                   Read more
@@ -403,7 +403,7 @@ export default function Home() {
                   - Supply Chain Management
                 </p>
                 <Link
-                  href="/"
+                  href="/international-business-deveopment"
                   className="bg-secondary text-white text-base font-medium py-2 px-6 rounded border border-secondary block text-center mt-4"
                 >
                   Read more
@@ -429,7 +429,7 @@ export default function Home() {
                   - Zed Certification -3rd Party Inspection
                 </p> */}
                 <Link
-                  href="/"
+                  href="/international-business-deveopment"
                   className="bg-secondary text-white text-base font-medium py-2 px-6 rounded border border-secondary block text-center mt-4"
                 >
                   Read more
@@ -452,7 +452,7 @@ export default function Home() {
                 <p className="text-black text-sm mb-0">- Distribution Ship</p>
                 <p className="text-black text-sm mb-0">- Market Planning</p>
                 <Link
-                  href="/"
+                  href="/sales&marketing"
                   className="bg-secondary text-white text-base font-medium py-2 px-6 rounded border border-secondary block text-center mt-4"
                 >
                   Read more
@@ -475,7 +475,7 @@ export default function Home() {
                 <p className="text-black text-sm mb-0">- Trainings</p>
                 <p className="text-black text-sm mb-0">- Collage Campus</p>
                 <Link
-                  href="/"
+                  href="/human-resource"
                   className="bg-secondary text-white text-base font-medium py-2 px-6 rounded border border-secondary block text-center mt-4"
                 >
                   Read more
@@ -502,7 +502,7 @@ export default function Home() {
                 </p>
                 <p className="text-black text-sm mb-0">- Commercial Advisory</p>
                 <Link
-                  href="/"
+                  href="/legal-consulting"
                   className="bg-secondary text-white text-base font-medium py-2 px-6 rounded border border-secondary block text-center mt-4"
                 >
                   Read more
