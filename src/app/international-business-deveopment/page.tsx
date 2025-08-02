@@ -1,0 +1,238 @@
+import React from "react";
+import Header from "../components/Header";
+import Footer from "../components/Footer";
+import { FaCheck } from "react-icons/fa6";
+import Image from "next/image";
+import ContactFrom from "../components/ContactFrom";
+
+const page = () => {
+  return (
+    <>
+      <Header />
+      {/*  TOP SECTION Banner */}
+      <div className="bg-[url('/images/legal-consulting.jpg')] bg-cover bg-center h-[540px] w-full flex justify-center items-center">
+        <div className="container ">
+          <div className="flex flex-col text-center w-full mb-20">
+            <h1 className="sm:text-6xl text-2xl font-bold text-white mb-4 ">
+              Internation Business Development
+            </h1>
+            <p className="lg:w-2/3 mx-auto leading-relaxed text-sm font-normal text-white inter-text">
+              International Business Development & Logistics Services
+            </p>
+          </div>
+          <div className="flex gap-2 justify-center">
+            <button className="flex items-center justify-center bg-secondary w-44 h-12 focus:outline-none hover:bg-gray-200  rounded-[7px] text-white font-medium text-lg mt-4 md:mt-0 border border-secondary">
+              Book Now
+            </button>
+            <button className="flex items-center justify-center bg-transparent w-44 h-12 focus:outline-none hover:bg-gray-200  rounded-[7px] text-white font-medium text-lg mt-4 md:mt-0 border border-white">
+              Book Now
+            </button>
+          </div>
+        </div>
+      </div>
+      <section className=" relative">
+        <div className="container mx-auto flex flex-wrap">
+          <div className="flex flex-col text-center w-full mb-20">
+            <h1 className="sm:text-6xl text-2xl font-bold  mb-4 text-primary">
+              International Business
+            </h1>
+            <p className="lg:w-[90%] mx-auto leading-relaxed inter-text text-sm font-normal mb-4">
+              We are one of the end to end service provider company. After
+              successfully working in Design, New product Development, Lean
+              Manufacturing, HR and Marketing sector we start “International
+              Business Development And Logistics” Services for our valuable
+              customer. 
+            </p>
+          </div>
+        </div>
+        <Image
+          src="/images/leftShape.svg" // path relative to /public
+          alt="My beautiful image"
+          width={300}
+          height={300}
+          priority // optional: preloads image
+          className=" absolute left-0 top-0 "
+        />
+        <Image
+          src="/images/rightShape.svg" // path relative to /public
+          alt="My beautiful image"
+          width={300}
+          height={300}
+          priority // optional: preloads image
+          className=" absolute right-0 top-0 "
+        />
+      </section>
+      <section>
+        <div className=" container grid grid-cols-1 md:grid-cols-3 gap-4">
+          <div className="">
+            <h2 className="text-black text-2xl font-semibold mb-7">
+              Package include
+            </h2>
+            <div>
+              <div className="flex items-center mb-3 gap-3">
+                <div className=" flex items-center justify-center rounded-full bg-primary text-white mb-0 p-1">
+                  <FaCheck />
+                </div>
+                <h2 className="text-black text-2xl font-medium mb-0">
+                  Corporate Legal Advisory
+                </h2>
+              </div>
+              <div className="flex items-center mb-3 gap-3">
+                <div className=" flex items-center justify-center rounded-full bg-primary text-white mb-0 p-1">
+                  <FaCheck />
+                </div>
+                <h2 className="text-black text-2xl font-medium mb-0">
+                  Commercial advisory
+                </h2>
+              </div>
+              <div className="flex items-center mb-3 gap-3">
+                <div className=" flex items-center justify-center rounded-full bg-primary text-white mb-0 p-1">
+                  <FaCheck />
+                </div>
+                <h2 className="text-black text-2xl font-medium mb-0">
+                  Contracts & Agreements
+                </h2>
+              </div>
+              <div className="flex items-center mb-3 gap-3">
+                <div className=" flex items-center justify-center rounded-full bg-primary text-white mb-0 p-1">
+                  <FaCheck />
+                </div>
+                <h2 className="text-black text-2xl font-medium mb-0">
+                  Banking & Finance law
+                </h2>
+              </div>
+              <div className="flex items-center mb-3 gap-3">
+                <div className=" flex items-center justify-center rounded-full bg-primary text-white mb-0 p-1">
+                  <FaCheck />
+                </div>
+                <h2 className="text-black text-2xl font-medium mb-0">
+                  Family advisory
+                </h2>
+              </div>
+              <div className="flex items-center mb-3 gap-3">
+                <div className=" flex items-center justify-center rounded-full bg-primary text-white mb-0 p-1">
+                  <FaCheck />
+                </div>
+                <h2 className="text-black text-2xl font-medium mb-0">
+                  Asset Management
+                </h2>
+              </div>
+              <div className="flex items-center mb-3 gap-3">
+                <div className=" flex items-center justify-center rounded-full bg-primary text-white mb-0 p-1">
+                  <FaCheck />
+                </div>
+                <h2 className="text-black text-2xl font-medium mb-0">
+                  Background investigation
+                </h2>
+              </div>
+            </div>
+          </div>
+          <div>
+            <Image
+              src="/images/drafting.png" // path relative to /public
+              alt="My beautiful image"
+              width={500}
+              height={500}
+              priority // optional: preloads image
+              className=" rounded"
+            />
+          </div>
+          <div>
+            <Image
+              src="/images/detailing.png" // path relative to /public
+              alt="My beautiful image"
+              width={500}
+              height={500}
+              priority // optional: preloads image
+              className="rounded"
+            />
+          </div>
+        </div>
+      </section>
+      <section>
+        <div className="container grid grid-cols-1 md:grid-cols-4 gap-4">
+          <div className="rounded border border-gray-200">
+            {/* head */}
+            <div className="bg-primary text-white text-center py-4 rounded-t-lg">
+              <h2 className="text-2xl font-medium leading-tight">
+                Technology
+                <br />
+                Development
+              </h2>
+            </div>
+            {/* Menu Items  */}
+            <div className="flex flex-col divide-y divide-gray-300 text-gray-600 text-center font-medium">
+              <div className="py-4  ">New Technology / Setup</div>
+              <div className="py-4  ">Machine & Tools</div>
+              <div className="py-4  ">International Relations</div>
+              <div className="py-4  ">Business Development</div>
+            </div>
+            {/* Bottom Bar */}
+            <div className="bg-secondary h-10 rounded-b-lg"></div>
+          </div>
+          <div className="rounded border border-gray-200">
+            {/* head */}
+            <div className="bg-secondary text-white text-center py-4 rounded-t-lg">
+              <h2 className="text-2xl font-medium leading-tight">
+                Technology
+                <br />
+                Development
+              </h2>
+            </div>
+            {/* Menu Items  */}
+            <div className="flex flex-col divide-y divide-gray-300 text-gray-600 text-center font-medium">
+              <div className="py-4  ">New Technology / Setup</div>
+              <div className="py-4  ">Machine & Tools</div>
+              <div className="py-4  ">International Relations</div>
+              <div className="py-4  ">Business Development</div>
+            </div>
+            {/* Bottom Bar */}
+            <div className="bg-primary h-10 rounded-b-lg"></div>
+          </div>
+          <div className="rounded border border-gray-200">
+            {/* head */}
+            <div className="bg-primary text-white text-center py-4 rounded-t-lg">
+              <h2 className="text-2xl font-medium leading-tight">
+                Technology
+                <br />
+                Development
+              </h2>
+            </div>
+            {/* Menu Items  */}
+            <div className="flex flex-col divide-y divide-gray-300 text-gray-600 text-center font-medium">
+              <div className="py-4  ">New Technology / Setup</div>
+              <div className="py-4  ">Machine & Tools</div>
+              <div className="py-4  ">International Relations</div>
+              <div className="py-4  ">Business Development</div>
+            </div>
+            {/* Bottom Bar */}
+            <div className="bg-secondary  h-10 rounded-b-lg"></div>
+          </div>
+          <div className="rounded border border-gray-200">
+            {/* head */}
+            <div className="bg-secondary text-white text-center py-4 rounded-t-lg">
+              <h2 className="text-2xl font-medium leading-tight">
+                Technology
+                <br />
+                Development
+              </h2>
+            </div>
+            {/* Menu Items  */}
+            <div className="flex flex-col divide-y divide-gray-300 text-gray-600 text-center font-medium">
+              <div className="py-4  ">New Technology / Setup</div>
+              <div className="py-4  ">Machine & Tools</div>
+              <div className="py-4  ">International Relations</div>
+              <div className="py-4  ">Business Development</div>
+            </div>
+            {/* Bottom Bar */}
+            <div className="bg-primary h-10 rounded-b-lg"></div>
+          </div>
+        </div>
+      </section>
+      <ContactFrom />
+      <Footer />
+    </>
+  );
+};
+
+export default page;

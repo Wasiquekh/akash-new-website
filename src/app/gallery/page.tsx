@@ -1,0 +1,321 @@
+import React from "react";
+import Header from "../components/Header";
+import Footer from "../components/Footer";
+//import { FaCheck } from "react-icons/fa6";
+import Image from "next/image";
+import ContactFrom from "../components/ContactFrom";
+
+const page = () => {
+  return (
+    <>
+      <Header />
+      {/*  TOP SECTION Banner */}
+      <div className="bg-[url('/images/services.jpg')] bg-cover bg-center h-[540px] w-full flex justify-center items-center">
+        <div className="container ">
+          <div className="flex flex-col text-center w-full mb-20">
+            <h1 className="sm:text-6xl text-2xl font-bold text-white mb-4 ">
+              Gallery
+            </h1>
+            <p className="lg:w-2/3 mx-auto leading-relaxed text-sm font-normal text-white inter-text">
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry&apos;s standard dummy
+              text ever since the 1500s, when an unknown printer took a galley
+              of type and scrambled it to make a type specimen book. 
+            </p>
+          </div>
+          <div className="flex gap-2 justify-center">
+            <button className="flex items-center justify-center bg-secondary w-44 h-12 focus:outline-none hover:bg-gray-200  rounded-[7px] text-white font-medium text-lg mt-4 md:mt-0 border border-secondary">
+              Book Now
+            </button>
+            <button className="flex items-center justify-center bg-transparent w-44 h-12 focus:outline-none hover:bg-gray-200  rounded-[7px] text-white font-medium text-lg mt-4 md:mt-0 border border-white">
+              Book Now
+            </button>
+          </div>
+        </div>
+      </div>
+      <section className=" relative">
+        <div className="container mx-auto flex flex-wrap">
+          <div className="flex flex-col text-center w-full mb-20">
+            <h1 className="sm:text-6xl text-2xl font-bold  mb-4 text-primary">
+              AWARDS
+            </h1>
+            <p className="lg:w-[90%] mx-auto leading-relaxed inter-text text-sm font-normal mb-4">
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry&apos;s standard dummy
+              text ever since the 1500s, when an unknown printer took a galley
+              of type and scrambled it to make a type specimen book. 
+            </p>
+          </div>
+        </div>
+        <Image
+          src="/images/leftShape.svg" // path relative to /public
+          alt="My beautiful image"
+          width={300}
+          height={300}
+          priority // optional: preloads image
+          className=" absolute left-0 top-0 "
+        />
+        <Image
+          src="/images/rightShape.svg" // path relative to /public
+          alt="My beautiful image"
+          width={300}
+          height={300}
+          priority // optional: preloads image
+          className=" absolute right-0 top-0 "
+        />
+      </section>
+      <section>
+        <div className="container grid grid-cols-2 md:grid-cols-3 gap-4">
+          <div className="">
+            <Image
+              src="/gallery/g1.png" // path relative to /public
+              alt="My beautiful image"
+              width={600}
+              height={600}
+              priority // optional: preloads image
+              className=" mb-3 rounded"
+            />
+            <p className=" text-xl font-light">Cost Innovation Training</p>
+          </div>
+          <div className="">
+            <Image
+              src="/gallery/g2.png" // path relative to /public
+              alt="My beautiful image"
+              width={600}
+              height={600}
+              priority // optional: preloads image
+              className=" mb-3 rounded"
+            />
+            <p className=" text-xl font-light">Lean Manufacturing Trainning</p>
+          </div>
+          <div className="">
+            <Image
+              src="/gallery/g3.png" // path relative to /public
+              alt="My beautiful image"
+              width={600}
+              height={600}
+              priority // optional: preloads image
+              className=" mb-3 rounded"
+            />
+            <p className=" text-xl font-light">
+              Six Sigma Training At Dy Patil Collage.
+            </p>
+          </div>
+          <div className="">
+            <Image
+              src="/gallery/g4.png" // path relative to /public
+              alt="My beautiful image"
+              width={600}
+              height={600}
+              priority // optional: preloads image
+              className=" mb-3 rounded"
+            />
+            <p className=" text-xl font-light">Lean Manufacturing Training</p>
+          </div>
+          <div className="">
+            <Image
+              src="/gallery/g5.png" // path relative to /public
+              alt="My beautiful image"
+              width={600}
+              height={600}
+              priority // optional: preloads image
+              className=" mb-3 rounded"
+            />
+            <p className=" text-xl font-light">Lean Manufacturing Training</p>
+          </div>
+          <div className="">
+            <Image
+              src="/gallery/g6.png" // path relative to /public
+              alt="My beautiful image"
+              width={600}
+              height={600}
+              priority // optional: preloads image
+              className=" mb-3 rounded"
+            />
+            <p className=" text-xl font-light">Lean Manufacturing Training</p>
+          </div>
+          <div className="">
+            <Image
+              src="/gallery/g7.png" // path relative to /public
+              alt="My beautiful image"
+              width={600}
+              height={600}
+              priority // optional: preloads image
+              className=" mb-3 rounded"
+            />
+            <p className=" text-xl font-light">Cost Innovation Training</p>
+          </div>
+          <div className="">
+            <Image
+              src="/gallery/g8.png" // path relative to /public
+              alt="My beautiful image"
+              width={600}
+              height={600}
+              priority // optional: preloads image
+              className=" mb-3 rounded"
+            />
+            <p className=" text-xl font-light">Lean Manufacturing Trainning</p>
+          </div>
+          <div className="">
+            <Image
+              src="/gallery/g9.png" // path relative to /public
+              alt="My beautiful image"
+              width={600}
+              height={600}
+              priority // optional: preloads image
+              className=" mb-3 rounded"
+            />
+            <p className=" text-xl font-light">
+              Six Sigma Training At Dy Patil Collage.
+            </p>
+          </div>
+          <div className="">
+            <Image
+              src="/gallery/g10.png" // path relative to /public
+              alt="My beautiful image"
+              width={600}
+              height={600}
+              priority // optional: preloads image
+              className=" mb-3 rounded"
+            />
+            <p className=" text-xl font-light">Cost Innovation Training</p>
+          </div>
+          <div className="">
+            <Image
+              src="/gallery/g11.png" // path relative to /public
+              alt="My beautiful image"
+              width={600}
+              height={600}
+              priority // optional: preloads image
+              className=" mb-3 rounded"
+            />
+            <p className=" text-xl font-light">Lean Manufacturing Trainning</p>
+          </div>
+          <div className="">
+            <Image
+              src="/gallery/g12.png" // path relative to /public
+              alt="My beautiful image"
+              width={600}
+              height={600}
+              priority // optional: preloads image
+              className=" mb-3 rounded"
+            />
+            <p className=" text-xl font-light">
+              Six Sigma Training At Dy Patil Collage.
+            </p>
+          </div>
+          <div className="">
+            <Image
+              src="/gallery/g13.png" // path relative to /public
+              alt="My beautiful image"
+              width={600}
+              height={600}
+              priority // optional: preloads image
+              className=" mb-3 rounded"
+            />
+            <p className=" text-xl font-light">Cost Innovation Training</p>
+          </div>
+          <div className="">
+            <Image
+              src="/gallery/g14.png" // path relative to /public
+              alt="My beautiful image"
+              width={600}
+              height={600}
+              priority // optional: preloads image
+              className=" mb-3 rounded"
+            />
+            <p className=" text-xl font-light">Lean Manufacturing Trainning</p>
+          </div>
+          <div className="">
+            <Image
+              src="/gallery/g15.png" // path relative to /public
+              alt="My beautiful image"
+              width={600}
+              height={600}
+              priority // optional: preloads image
+              className=" mb-3 rounded"
+            />
+            <p className=" text-xl font-light">
+              Six Sigma Training At Dy Patil Collage.
+            </p>
+          </div>
+          <div className="">
+            <Image
+              src="/gallery/g16.png" // path relative to /public
+              alt="My beautiful image"
+              width={600}
+              height={600}
+              priority // optional: preloads image
+              className=" mb-3 rounded"
+            />
+            <p className=" text-xl font-light">Cost Innovation Training</p>
+          </div>
+          <div className="">
+            <Image
+              src="/gallery/g17.png" // path relative to /public
+              alt="My beautiful image"
+              width={600}
+              height={600}
+              priority // optional: preloads image
+              className=" mb-3 rounded"
+            />
+            <p className=" text-xl font-light">Lean Manufacturing Trainning</p>
+          </div>
+          <div className="">
+            <Image
+              src="/gallery/g18.png" // path relative to /public
+              alt="My beautiful image"
+              width={600}
+              height={600}
+              priority // optional: preloads image
+              className=" mb-3 rounded"
+            />
+            <p className=" text-xl font-light">
+              Six Sigma Training At Dy Patil Collage.
+            </p>
+          </div>
+          <div className="">
+            <Image
+              src="/gallery/g19.png" // path relative to /public
+              alt="My beautiful image"
+              width={600}
+              height={600}
+              priority // optional: preloads image
+              className=" mb-3 rounded"
+            />
+            <p className=" text-xl font-light">Cost Innovation Training</p>
+          </div>
+          <div className="">
+            <Image
+              src="/gallery/g20.png" // path relative to /public
+              alt="My beautiful image"
+              width={600}
+              height={600}
+              priority // optional: preloads image
+              className=" mb-3 rounded"
+            />
+            <p className=" text-xl font-light">Lean Manufacturing Trainning</p>
+          </div>
+          <div className="">
+            <Image
+              src="/gallery/g21.png" // path relative to /public
+              alt="My beautiful image"
+              width={600}
+              height={600}
+              priority // optional: preloads image
+              className=" mb-3 rounded"
+            />
+            <p className=" text-xl font-light">
+              Six Sigma Training At Dy Patil Collage.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <ContactFrom />
+      <Footer />
+    </>
+  );
+};
+
+export default page;

@@ -1,0 +1,29 @@
+@import "tailwindcss";
+
+:root {
+
+}
+
+@theme {
+  --color-primary: #502D52; /* A light primary color */
+  --color-secondary: #A53691; /* A dark primary color */
+  --color-tertiary: #F0DEEC; /* An accent color */
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+
+  }
+}
+
+body {
+  font-family: var(--font-lexend), sans-serif;
+}
+.inter-text {
+  font-family: var(--font-inter), sans-serif;
+}
+.container{
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 75px 20px;
+}
