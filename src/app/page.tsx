@@ -47,7 +47,7 @@ export default function Home() {
       </div>
       {/* CLINETNS LOGOS */}
       <div className=" w-full">
-        <div className=" container grid grid-cols-2 md:grid-cols-[repeat(auto-fit,_minmax(100px,_1fr))] gap-4">
+        <div className=" container grid grid-cols-3 md:grid-cols-[repeat(auto-fit,_minmax(100px,_1fr))] gap-4">
           <img src="/images/c1.jpg" alt="Logo 1" />
           <img src="/images/c2.jpg" alt="Logo 1" />
           <img src="/images/c3.jpg" alt="Logo 1" />
@@ -71,7 +71,7 @@ export default function Home() {
             />
           </div>
           <div className="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
-            <h1 className="text-6xl sm:text-6xl  mb-4 font-bold text-primary">
+            <h1 className="text-2xl sm:text-6xl   mb-4 font-bold text-primary">
               About Us
             </h1>
             <p className="mb-8 leading-relaxed text-black inter-text text-justify">
@@ -122,7 +122,7 @@ export default function Home() {
             </p>
           </div>
           <div className="flex justify-between">
-            <div className="flex flex-wrap w-[65%]">
+            <div className="flex flex-wrap w-[80%]  md:w-[65%]">
               <div className="flex relative pt-10 pb-7 sm:items-center md:w-full mx-auto">
                 <div className="h-full w-11 absolute inset-0 flex items-center justify-center">
                   <div className="h-full w-1 bg-gray-200 pointer-events-none"></div>
@@ -238,7 +238,7 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            <div className="w-[35%] flex flex-col justify-between">
+            <div className="hidden  w-[35%] md:flex flex-col justify-between">
               <Image
                 src="/images/journey1.jpg" // path relative to /public
                 alt="My beautiful image"
@@ -517,7 +517,7 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <button className="flex items-center justify-center bg-secondary w-60 h-12 focus:outline-none hover:bg-gray-200  rounded-[7px] text-white font-medium text-lg mt-4 md:mt-10 m-auto hover:bg-primary">
+          <button className="flex items-center justify-center bg-secondary w-60 h-12 focus:outline-none   rounded-[7px] text-white font-medium text-lg mt-4 md:mt-10 m-auto hover:bg-primary">
             Book Now
           </button>
         </div>
@@ -537,8 +537,8 @@ export default function Home() {
               into results.
             </p>
           </div>
-          <div className="flex flex-wrap -m-4">
-            <div className="p-4 lg:w-1/4 md:w-1/2">
+          <div className=" grid grid-cols-1 md:grid-cols-4 gap-6 md:gap-0">
+            <div className="p-0">
               <div className="h-full flex flex-col items-center text-center">
                 {/* <img
                   alt="team"
@@ -567,7 +567,7 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            <div className="p-4 lg:w-1/4 md:w-1/2">
+            <div className="p-0">
               <div className="h-full flex flex-col items-center text-center">
                 {/* <img
                   alt="team"
@@ -596,7 +596,7 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            <div className="p-4 lg:w-1/4 md:w-1/2">
+            <div className="p-0">
               <div className="h-full flex flex-col items-center text-center">
                 {/* <img
                   alt="team"
@@ -625,7 +625,7 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            <div className="p-4 lg:w-1/4 md:w-1/2">
+            <div className="p-0">
               <div className="h-full flex flex-col items-center text-center">
                 {/* <img
                   alt="team"
@@ -662,7 +662,7 @@ export default function Home() {
           width={300}
           height={300}
           priority // optional: preloads image
-          className=" absolute left-0 top-70 "
+          className=" absolute left-0 top-70 hidden "
         />
         <Image
           src="/images/rightShape.svg" // path relative to /public
@@ -670,7 +670,7 @@ export default function Home() {
           width={300}
           height={300}
           priority // optional: preloads image
-          className=" absolute right-0 top-70 "
+          className=" absolute right-0 top-70 hidden"
         />
       </section>
       {/* AWARDS */}

@@ -47,7 +47,7 @@ const page = () => {
             />
           </div>
           <div className="flex flex-col flex-wrap lg:py-6 -mb-10 lg:w-1/2 lg:pl-12 lg:text-left text-center">
-            <div className="flex flex-col mb-0 lg:items-start items-center p-6">
+            <div className="flex flex-col mb-6 lg:items-start items-center p-0 md:p-6 ">
               <div className="flex-grow">
                 <div className="flex items-center mb-5 gap-3">
                   <div className=" flex items-center justify-center rounded-full bg-primary text-white mb-0 p-2">
@@ -58,64 +58,61 @@ const page = () => {
                   </h2>
                 </div>
 
-                <p className=" text-sm font-normal text-black inter-text w-[80%]">
+                <p className=" text-sm font-normal text-black inter-text w-full text-left md:w-[80%]">
                   Any Concept you have or is supposed to be developed, Come to
                   us, We Will Turn Your Imaginations into Virtual Reality by
                   means of sophisticated Soft wares
                 </p>
               </div>
             </div>
-            <div className="flex flex-col mb-0 lg:items-start items-center bg-tertiary p-6 rounded">
+            <div className="flex flex-col mb-6 lg:items-start items-center bg-tertiary p-1 md:p-6 rounded">
               <div className="flex-grow">
                 <div className="flex items-center mb-5 gap-3">
                   <div className=" flex items-center justify-center rounded-full bg-primary text-white mb-0 p-2">
                     <FaCheck />
                   </div>
-                  <h2 className="text-black text-2xl font-semibold mb-0">
-                    Real Time Renderings
+                  <h2 className="text-black text-2xl text-left font-semibold mb-0">
+                    3D Computer Modeling
                   </h2>
                 </div>
 
-                <p className=" text-sm font-normal text-black inter-text w-[80%]">
-                  Any Concept you have or is supposed to be developed, Come to
-                  us, We Will Turn Your Imaginations into Virtual Reality by
-                  means of sophisticated Soft wares
+                <p className="text-sm font-normal text-black inter-text w-full text-left md:w-[80%]">
+                  üComplex surfaces and intricate details using Pro/Engineer®
+                  Wildfire Versions.
                 </p>
               </div>
             </div>
-            <div className="flex flex-col mb-0 lg:items-start items-center p-6">
+            <div className="flex flex-col mb-6 lg:items-start items-center p-0 md:p-6">
               <div className="flex-grow">
                 <div className="flex items-center mb-5 gap-3">
                   <div className=" flex items-center justify-center rounded-full bg-primary text-white mb-0 p-2">
                     <FaCheck />
                   </div>
                   <h2 className="text-black text-2xl font-semibold mb-0">
-                    Real Time Renderings
+                    2D Drawings
                   </h2>
                 </div>
 
-                <p className=" text-sm font-normal text-black inter-text w-[80%]">
-                  Any Concept you have or is supposed to be developed, Come to
-                  us, We Will Turn Your Imaginations into Virtual Reality by
-                  means of sophisticated Soft wares
+                <p className=" text-sm font-normal text-black inter-text w-full text-left md:w-[80%]">
+                  üUsing the standards of preference, including geometric
+                  tolerance instructions.
                 </p>
               </div>
             </div>
-            <div className="flex flex-col mb-0 lg:items-start items-center p-6">
+            <div className="flex flex-col mb-6 lg:items-start items-center p-0  md:p-6">
               <div className="flex-grow">
                 <div className="flex items-center mb-5 gap-3">
                   <div className=" flex items-center justify-center rounded-full bg-primary text-white mb-0 p-2">
                     <FaCheck />
                   </div>
                   <h2 className="text-black text-2xl font-semibold mb-0">
-                    Real Time Renderings
+                    File Conversion
                   </h2>
                 </div>
 
-                <p className=" text-sm font-normal text-black inter-text w-[80%]">
-                  Any Concept you have or is supposed to be developed, Come to
-                  us, We Will Turn Your Imaginations into Virtual Reality by
-                  means of sophisticated Soft wares
+                <p className=" text-sm font-normal text-black inter-text w-full text-left md:w-[80%]">
+                  Convert 2D (including any art work) or 3D data into a useful
+                  format.
                 </p>
               </div>
             </div>

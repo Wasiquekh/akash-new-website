@@ -17,7 +17,7 @@ const Header = () => {
             className="text-black text-3xl absolute top-16 right-6"
             onClick={() => setIsOpen(!isOpen)}
           />
-          <nav className="flex flex-col items-center justify-center h-full space-y-6 text-xl font-medium">
+          <nav className="flex flex-col items-center justify-center h-full space-y-6 text-xl font-light">
             <a
               href="#home"
               className="hover:text-blue-600"

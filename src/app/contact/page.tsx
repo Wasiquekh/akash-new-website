@@ -43,8 +43,8 @@ const page = () => {
         />
       </section>
       <section>
-        <div className="container flex justify-between">
-          <div className=" w-[46%]">
+        <div className="container grid grid-cols-1 md:grid-cols-2 gap-20 ">
+          <div className="w-full ">
             <p className=" text-5xl text-primary mb-5 font-semibold">
               Connect with Our Team of Experts
             </p>
@@ -56,7 +56,7 @@ const page = () => {
                 Osmanpura, Aurangabad Mh (I) -431005
               </p>
             </div>
-            <div className="mb-5">
+            <div className="mb-5 z-10">
               <p className=" text-2xl text-black font-medium">Email Us</p>
               <p className=" text-sm font-normal inter-text w-[80%]">
                 akash.shahane@asbconsulting.in
@@ -81,14 +81,14 @@ const page = () => {
                 width={300}
                 height={300}
                 priority // optional: preloads image
-                className=" absolute right-0 bottom-0 "
+                className=" absolute right-0 bottom-0   "
               />
-              <p className=" text-2xl font-medium text-black w-1/3">
+              <p className=" text-2xl font-medium text-black w-1/3 z-10">
                 Want to join our Talented Team?
               </p>
             </div>
           </div>
-          <div className=" w-[46%] bg-tertiary py-6 px-12 rounded ">
+          <div className="w-full bg-tertiary py-6 px-4 md:px-12 rounded ">
             <div className="lg:w-full   flex flex-col md:ml-auto w-full md:py-0 mt-8 md:mt-0 h-auto text-sm font-normal ">
               <div className="relative mb-4">
                 <label htmlFor="name" className="leading-7  ">

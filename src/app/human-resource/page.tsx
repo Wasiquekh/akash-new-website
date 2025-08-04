@@ -57,7 +57,7 @@ const page = () => {
               Advisory.
             </p>
           </div>
-          <div className=" grid grid-cols-2 md:grid-cols-4 gap-5">
+          <div className=" grid grid-cols-1 md:grid-cols-4 gap-5">
             <div className="bg-tertiary p-2 rounded-full flex gap-4 items-center">
               <GiStairsGoal className=" bg-primary p-3 text-white text-6xl rounded-full border-2 border-white" />
               <p className=" text-2xl font-medium text-black">Career</p>
@@ -111,14 +111,14 @@ const page = () => {
       </section>
       <section>
         <div className=" container">
-          <div className="flex flex-col text-center w-full mb-20">
+          <div className="flex flex-col text-center w-full mb-4">
             <h1 className="sm:text-6xl text-2xl font-bold  mb-4 text-primary">
               Package include
             </h1>
           </div>
 
-          <div className=" flex justify-between">
-            <div className="w-[29%]">
+          <div className=" flex flex-col md:flex-row justify-between gap-4">
+            <div className=" w-full md:w-[29%]">
               <div className="flex items-center mb-3 gap-3">
                 <div className=" flex items-center justify-center rounded-full bg-primary text-white mb-0 p-1">
                   <FaCheck />
@@ -182,7 +182,7 @@ const page = () => {
                 <h2 className="text-black text-2xl font-medium mb-0">Policy</h2>
               </div>
             </div>
-            <div className="  w-[69%]">
+            <div className="w-full md:w-[69%]">
               <div className=" grid grid-cols-2 md:grid-cols-4 gap-4">
                 <div className="bg-tertiary p-5 rounded flex flex-col items-center ">
                   <GiTeacher className=" bg-primary p-3 text-white text-6xl rounded-full border-2 border-white mb-2" />

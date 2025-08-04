@@ -64,7 +64,9 @@ const page = () => {
                 priority // optional: preloads image
                 className=" mb-3 rounded"
               />
-              <p className=" text-xl font-light">Cost Innovation Training</p>
+              <p className=" text-base md:text-xl font-light">
+                Cost Innovation Training
+              </p>
             </div>
             <div className="">
               <Image
@@ -75,7 +77,7 @@ const page = () => {
                 priority // optional: preloads image
                 className=" mb-3 rounded"
               />
-              <p className=" text-xl font-light">
+              <p className=" text-base md:text-xl font-light">
                 Lean Manufacturing Trainning
               </p>
             </div>
@@ -88,7 +90,7 @@ const page = () => {
                 priority // optional: preloads image
                 className=" mb-3 rounded"
               />
-              <p className=" text-xl font-light">
+              <p className=" text-base md:text-xl font-light">
                 Six Sigma Training At Dy Patil Collage.
               </p>
             </div>
@@ -101,7 +103,9 @@ const page = () => {
                 priority // optional: preloads image
                 className=" mb-3 rounded"
               />
-              <p className=" text-xl font-light">Lean Manufacturing Training</p>
+              <p className=" text-base md:text-xl font-light">
+                Lean Manufacturing Training
+              </p>
             </div>
             <div className="">
               <Image
@@ -112,7 +116,9 @@ const page = () => {
                 priority // optional: preloads image
                 className=" mb-3 rounded"
               />
-              <p className=" text-xl font-light">Lean Manufacturing Training</p>
+              <p className=" text-base md:text-xl font-light">
+                Lean Manufacturing Training
+              </p>
             </div>
             <div className="">
               <Image
@@ -123,7 +129,9 @@ const page = () => {
                 priority // optional: preloads image
                 className=" mb-3 rounded"
               />
-              <p className=" text-xl font-light">Lean Manufacturing Training</p>
+              <p className=" text-base md:text-xl font-light">
+                Lean Manufacturing Training
+              </p>
             </div>
             <div className="">
               <Image
@@ -134,7 +142,9 @@ const page = () => {
                 priority // optional: preloads image
                 className=" mb-3 rounded"
               />
-              <p className=" text-xl font-light">Cost Innovation Training</p>
+              <p className=" text-base md:text-xl font-light">
+                Cost Innovation Training
+              </p>
             </div>
             <div className="">
               <Image
@@ -145,7 +155,7 @@ const page = () => {
                 priority // optional: preloads image
                 className=" mb-3 rounded"
               />
-              <p className=" text-xl font-light">
+              <p className=" text-base md:text-xl font-light">
                 Lean Manufacturing Trainning
               </p>
             </div>
@@ -158,7 +168,7 @@ const page = () => {
                 priority // optional: preloads image
                 className=" mb-3 rounded"
               />
-              <p className=" text-xl font-light">
+              <p className=" text-base md:text-xl font-light">
                 Six Sigma Training At Dy Patil Collage.
               </p>
             </div>
@@ -171,7 +181,9 @@ const page = () => {
                 priority // optional: preloads image
                 className=" mb-3 rounded"
               />
-              <p className=" text-xl font-light">Cost Innovation Training</p>
+              <p className=" text-base md:text-xl font-light">
+                Cost Innovation Training
+              </p>
             </div>
             <div className="">
               <Image
@@ -182,7 +194,7 @@ const page = () => {
                 priority // optional: preloads image
                 className=" mb-3 rounded"
               />
-              <p className=" text-xl font-light">
+              <p className=" text-base md:text-xl font-light">
                 Lean Manufacturing Trainning
               </p>
             </div>
@@ -195,7 +207,7 @@ const page = () => {
                 priority // optional: preloads image
                 className=" mb-3 rounded"
               />
-              <p className=" text-xl font-light">
+              <p className=" text-base md:text-xl font-light">
                 Six Sigma Training At Dy Patil Collage.
               </p>
             </div>
@@ -208,7 +220,9 @@ const page = () => {
                 priority // optional: preloads image
                 className=" mb-3 rounded"
               />
-              <p className=" text-xl font-light">Cost Innovation Training</p>
+              <p className=" text-base md:text-xl font-light">
+                Cost Innovation Training
+              </p>
             </div>
             <div className="">
               <Image
@@ -219,7 +233,7 @@ const page = () => {
                 priority // optional: preloads image
                 className=" mb-3 rounded"
               />
-              <p className=" text-xl font-light">
+              <p className=" text-base md:text-xl font-light">
                 Lean Manufacturing Trainning
               </p>
             </div>
@@ -232,7 +246,7 @@ const page = () => {
                 priority // optional: preloads image
                 className=" mb-3 rounded"
               />
-              <p className=" text-xl font-light">
+              <p className=" text-base md:text-xl font-light">
                 Six Sigma Training At Dy Patil Collage.
               </p>
             </div>
@@ -245,7 +259,9 @@ const page = () => {
                 priority // optional: preloads image
                 className=" mb-3 rounded"
               />
-              <p className=" text-xl font-light">Cost Innovation Training</p>
+              <p className=" text-base md:text-xl font-light">
+                Cost Innovation Training
+              </p>
             </div>
             <div className="">
               <Image
@@ -256,7 +272,7 @@ const page = () => {
                 priority // optional: preloads image
                 className=" mb-3 rounded"
               />
-              <p className=" text-xl font-light">
+              <p className=" text-base md:text-xl font-light">
                 Lean Manufacturing Trainning
               </p>
             </div>
@@ -269,7 +285,7 @@ const page = () => {
                 priority // optional: preloads image
                 className=" mb-3 rounded"
               />
-              <p className=" text-xl font-light">
+              <p className=" text-base md:text-xl font-light">
                 Six Sigma Training At Dy Patil Collage.
               </p>
             </div>
@@ -282,7 +298,9 @@ const page = () => {
                 priority // optional: preloads image
                 className=" mb-3 rounded"
               />
-              <p className=" text-xl font-light">Cost Innovation Training</p>
+              <p className=" text-base md:text-xl font-light">
+                Cost Innovation Training
+              </p>
             </div>
             <div className="">
               <Image
@@ -293,7 +311,7 @@ const page = () => {
                 priority // optional: preloads image
                 className=" mb-3 rounded"
               />
-              <p className=" text-xl font-light">
+              <p className=" text-base md:text-xl font-light">
                 Lean Manufacturing Trainning
               </p>
             </div>
@@ -306,7 +324,7 @@ const page = () => {
                 priority // optional: preloads image
                 className=" mb-3 rounded"
               />
-              <p className=" text-xl font-light">
+              <p className=" text-base md:text-xl font-light">
                 Six Sigma Training At Dy Patil Collage.
               </p>
             </div>

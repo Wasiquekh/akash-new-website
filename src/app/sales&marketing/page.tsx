@@ -45,14 +45,14 @@ const page = () => {
               global markets. 
             </p>
           </div>
-          <div className=" flex justify-between gap-4">
-            <div className="w-1/2">
+          <div className=" flex flex-col md:flex-row  gap-4">
+            <div className="w-full md:w-1/2">
               <div className=" flex flex-col gap-4">
                 <div className=" flex items-center mb-3 gap-3 bg-tertiary p-4 rounded-2xl">
                   <div className=" flex items-center justify-center rounded-full bg-primary text-white mb-0 p-1">
                     <FaCheck />
                   </div>
-                  <h2 className="text-black text-2xl font-medium mb-0">
+                  <h2 className="text-black text-lg md:text-2xl font-medium mb-0">
                     B2B Business to Business Marketing
                   </h2>
                 </div>
@@ -60,7 +60,7 @@ const page = () => {
                   <div className=" flex items-center justify-center rounded-full bg-primary text-white mb-0 p-1">
                     <FaCheck />
                   </div>
-                  <h2 className="text-black text-2xl font-medium mb-0">
+                  <h2 className="text-black text-lg md:text-2xl font-medium mb-0">
                     B2C Business to Customer Marketing
                   </h2>
                 </div>
@@ -68,7 +68,7 @@ const page = () => {
                   <div className=" flex items-center justify-center rounded-full bg-primary text-white mb-0 p-1">
                     <FaCheck />
                   </div>
-                  <h2 className="text-black text-2xl font-medium mb-0">
+                  <h2 className="text-black text-lg md:text-2xl font-medium mb-0">
                     CONSULTING to grow business
                   </h2>
                 </div>
@@ -76,7 +76,7 @@ const page = () => {
                   <div className=" flex items-center justify-center rounded-full bg-primary text-white mb-0 p-1">
                     <FaCheck />
                   </div>
-                  <h2 className="text-black text-2xl font-medium mb-0">
+                  <h2 className="text-black text-lg md:text-2xl font-medium mb-0">
                     TRAININGS for latest tools and techniques
                   </h2>
                 </div>
@@ -90,7 +90,7 @@ const page = () => {
                 className=" mt-20"
               />
             </div>
-            <div className="w-1/2">
+            <div className="w-full hidden md:block md:w-1/2">
               <div className="relative w-full max-w-5xl mx-auto pt-0 pb-0">
                 {/* Vertical center line */}
                 <div className="absolute left-1/2 transform -translate-x-1/2 h-full w-1 bg-gradient-to-b from-[#502D52] to-[#A53691]"></div>
@@ -216,6 +216,118 @@ const page = () => {
                 </div>
               </div>
             </div>
+            <section className=" block md:hidden ">
+              <div className=" mx-auto flex flex-wrap mt-12">
+                <div className="flex flex-wrap w-full">
+                  <div className="full md:pr-10 md:py-6">
+                    <div className="flex relative pb-12 items-center">
+                      <div className="h-full w-10 absolute inset-0 flex items-center justify-center">
+                        <div className="h-full w-1 bg-gradient-to-b from-[#502D52] to-[#A53691] pointer-events-none"></div>
+                      </div>
+                      <div className="flex-shrink-0 w-10 h-10 rounded-full bg-gradient-to-b from-[#502D52] to-[#A53691] inline-flex items-center justify-center text-white relative z-10">
+                        <RiAdvertisementLine className="text-white text-xl" />
+                      </div>
+                      <div className="flex-grow pl-4">
+                        <h2 className="font-medium title-font text-lg text-black mb-1 tracking-wider inline-flex bg-tertiary py-1 px-6 rounded">
+                          Advertising
+                        </h2>
+                      </div>
+                    </div>
+                    <div className="flex relative pb-12 items-center">
+                      <div className="h-full w-10 absolute inset-0 flex items-center justify-center">
+                        <div className="h-full w-1 bg-gradient-to-b from-[#502D52] to-[#A53691] pointer-events-none"></div>
+                      </div>
+                      <div className="flex-shrink-0 w-10 h-10 rounded-full bg-gradient-to-b from-[#502D52] to-[#A53691] inline-flex items-center justify-center text-white relative z-10">
+                        <BiSolidReport className="text-white text-xl" />
+                      </div>
+                      <div className="flex-grow pl-4">
+                        <h2 className="font-medium title-font text-lg text-black mb-1 tracking-wider inline-flex bg-tertiary py-1 px-6 rounded">
+                          Project Report
+                        </h2>
+                      </div>
+                    </div>
+                    <div className="flex relative pb-12 items-center">
+                      <div className="h-full w-10 absolute inset-0 flex items-center justify-center">
+                        <div className="h-full w-1 bg-gradient-to-b from-[#502D52] to-[#A53691] pointer-events-none"></div>
+                      </div>
+                      <div className="flex-shrink-0 w-10 h-10 rounded-full bg-gradient-to-b from-[#502D52] to-[#A53691] inline-flex items-center justify-center text-white relative z-10">
+                        <FaArrowUpFromGroundWater className="text-white text-xl" />
+                      </div>
+                      <div className="flex-grow pl-4">
+                        <h2 className="font-medium title-font text-lg text-black mb-1 tracking-wider inline-flex bg-tertiary py-1 px-6 rounded">
+                          Market Planning
+                        </h2>
+                      </div>
+                    </div>
+                    <div className="flex relative pb-12 items-center">
+                      <div className="h-full w-10 absolute inset-0 flex items-center justify-center">
+                        <div className="h-full w-1 bg-gradient-to-b from-[#502D52] to-[#A53691] pointer-events-none"></div>
+                      </div>
+                      <div className="flex-shrink-0 w-10 h-10 rounded-full bg-gradient-to-b from-[#502D52] to-[#A53691] inline-flex items-center justify-center text-white relative z-10">
+                        <MdPriceChange className="text-white text-xl" />
+                      </div>
+                      <div className="flex-grow pl-4">
+                        <h2 className="font-medium title-font text-lg text-black mb-1 tracking-wider inline-flex bg-tertiary py-1 px-6 rounded">
+                          Product Pricing
+                        </h2>
+                      </div>
+                    </div>
+                    <div className="flex relative pb-12 items-center">
+                      <div className="h-full w-10 absolute inset-0 flex items-center justify-center">
+                        <div className="h-full w-1 bg-gradient-to-b from-[#502D52] to-[#A53691] pointer-events-none"></div>
+                      </div>
+                      <div className="flex-shrink-0 w-10 h-10 rounded-full bg-gradient-to-b from-[#502D52] to-[#A53691] inline-flex items-center justify-center text-white relative z-10">
+                        <BsBullseye className="text-white text-xl" />
+                      </div>
+                      <div className="flex-grow pl-4">
+                        <h2 className="font-medium title-font text-lg text-black mb-1 tracking-wider inline-flex bg-tertiary py-1 px-6 rounded">
+                          Set Targets And Goals
+                        </h2>
+                      </div>
+                    </div>
+                    <div className="flex relative pb-12 items-center">
+                      <div className="h-full w-10 absolute inset-0 flex items-center justify-center">
+                        <div className="h-full w-1 bg-gradient-to-b from-[#502D52] to-[#A53691] pointer-events-none"></div>
+                      </div>
+                      <div className="flex-shrink-0 w-10 h-10 rounded-full bg-gradient-to-b from-[#502D52] to-[#A53691] inline-flex items-center justify-center text-white relative z-10">
+                        <FaBoxes className="text-white text-xl" />
+                      </div>
+                      <div className="flex-grow pl-4">
+                        <h2 className="font-medium title-font text-lg text-black mb-1 tracking-wider inline-flex bg-tertiary py-1 px-6 rounded">
+                          Distribution & Planning
+                        </h2>
+                      </div>
+                    </div>
+                    <div className="flex relative pb-12 items-center">
+                      <div className="h-full w-10 absolute inset-0 flex items-center justify-center">
+                        <div className="h-full w-1 bg-gradient-to-b from-[#502D52] to-[#A53691] pointer-events-none"></div>
+                      </div>
+                      <div className="flex-shrink-0 w-10 h-10 rounded-full bg-gradient-to-b from-[#502D52] to-[#A53691] inline-flex items-center justify-center text-white relative z-10">
+                        <TbBuildingSkyscraper className="text-white text-xl" />
+                      </div>
+                      <div className="flex-grow pl-4">
+                        <h2 className="font-medium title-font text-lg text-black mb-1 tracking-wider inline-flex bg-tertiary py-1 px-6 rounded">
+                          Building Brands
+                        </h2>
+                      </div>
+                    </div>
+                    <div className="flex relative pb-0 items-center">
+                      <div className="h-full w-10 absolute inset-0 flex items-center justify-center">
+                        <div className="h-full w-1 bg-gradient-to-b from-[#502D52] to-[#A53691] pointer-events-none"></div>
+                      </div>
+                      <div className="flex-shrink-0 w-10 h-10 rounded-full bg-gradient-to-b from-[#502D52] to-[#A53691] inline-flex items-center justify-center text-white relative z-10">
+                        <HiOutlineSparkles className="text-white text-xl" />
+                      </div>
+                      <div className="flex-grow pl-4">
+                        <h2 className="font-medium title-font text-lg text-black mb-1 tracking-wider inline-flex bg-tertiary py-1 px-6 rounded">
+                          Creating Value
+                        </h2>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
           </div>
 
           <Image
@@ -243,7 +355,7 @@ const page = () => {
               Our Strengths
             </h1>
           </div>
-          <div className="flex flex-wrap justify-between">
+          <div className="flex flex-wrap gap-4 justify-between">
             <Image
               src="/images/s1.svg"
               alt="Image 2"
