@@ -36,10 +36,10 @@ export default function Home() {
             </p>
           </div>
           <div className="flex gap-2 justify-center">
-            <button className="flex items-center justify-center bg-secondary w-44 h-12 focus:outline-none hover:bg-gray-200  rounded-[7px] text-white font-medium text-lg mt-4 md:mt-0 border border-secondary">
+            <button className="flex items-center justify-center bg-secondary w-44 h-12 focus:outline-none hover:bg-primary  rounded-[7px] text-white font-medium text-lg mt-4 md:mt-0 border border-secondary hover:border-primary">
               Book Now
             </button>
-            <button className="flex items-center justify-center bg-transparent w-44 h-12 focus:outline-none hover:bg-gray-200  rounded-[7px] text-white font-medium text-lg mt-4 md:mt-0 border border-white">
+            <button className="flex items-center justify-center bg-transparent w-44 h-12 focus:outline-none hover:bg-secondary hover:border-secondary  rounded-[7px] text-white font-medium text-lg mt-4 md:mt-0 border border-white">
               Book Now
             </button>
           </div>
@@ -383,12 +383,13 @@ export default function Home() {
                 <p className="text-black text-sm mb-0">- 3D 2D Drafting</p>
                 <Link
                   href="/research&development"
-                  className="bg-secondary text-white text-base font-medium py-2 px-6 rounded border border-secondary block text-center mt-4"
+                  className="bg-secondary hover:bg-primary text-white text-base font-medium py-2 px-6 rounded border border-secondary block text-center mt-4"
                 >
                   Read more
                 </Link>
               </div>
             </div>
+
             <div className="w-full bg-white rounded-lg overflow-hidden shadow-md ">
               <Image
                 src="/images/Operations.png"
@@ -410,7 +411,7 @@ export default function Home() {
                 </p>
                 <Link
                   href="/international-business-deveopment"
-                  className="bg-secondary text-white text-base font-medium py-2 px-6 rounded border border-secondary block text-center mt-4"
+                  className="bg-secondary hover:bg-primary text-white text-base font-medium py-2 px-6 rounded border border-secondary block text-center mt-4"
                 >
                   Read more
                 </Link>
@@ -436,7 +437,7 @@ export default function Home() {
                 </p> */}
                 <Link
                   href="/international-business-deveopment"
-                  className="bg-secondary text-white text-base font-medium py-2 px-6 rounded border border-secondary block text-center mt-4"
+                  className="bg-secondary hover:bg-primary text-white text-base font-medium py-2 px-6 rounded border border-secondary block text-center mt-4"
                 >
                   Read more
                 </Link>
@@ -459,7 +460,7 @@ export default function Home() {
                 <p className="text-black text-sm mb-0">- Market Planning</p>
                 <Link
                   href="/sales&marketing"
-                  className="bg-secondary text-white text-base font-medium py-2 px-6 rounded border border-secondary block text-center mt-4"
+                  className="bg-secondary hover:bg-primary text-white text-base font-medium py-2 px-6 rounded border border-secondary block text-center mt-4"
                 >
                   Read more
                 </Link>
@@ -482,7 +483,7 @@ export default function Home() {
                 <p className="text-black text-sm mb-0">- Collage Campus</p>
                 <Link
                   href="/human-resource"
-                  className="bg-secondary text-white text-base font-medium py-2 px-6 rounded border border-secondary block text-center mt-4"
+                  className="bg-secondary hover:bg-primary text-white text-base font-medium py-2 px-6 rounded border border-secondary block text-center mt-4"
                 >
                   Read more
                 </Link>
@@ -509,14 +510,14 @@ export default function Home() {
                 <p className="text-black text-sm mb-0">- Commercial Advisory</p>
                 <Link
                   href="/legal-consulting"
-                  className="bg-secondary text-white text-base font-medium py-2 px-6 rounded border border-secondary block text-center mt-4"
+                  className="bg-secondary hover:bg-primary text-white text-base font-medium py-2 px-6 rounded border border-secondary block text-center mt-4"
                 >
                   Read more
                 </Link>
               </div>
             </div>
           </div>
-          <button className="flex items-center justify-center bg-secondary w-60 h-12 focus:outline-none hover:bg-gray-200  rounded-[7px] text-white font-medium text-lg mt-4 md:mt-10 m-auto">
+          <button className="flex items-center justify-center bg-secondary w-60 h-12 focus:outline-none hover:bg-gray-200  rounded-[7px] text-white font-medium text-lg mt-4 md:mt-10 m-auto hover:bg-primary">
             Book Now
           </button>
         </div>

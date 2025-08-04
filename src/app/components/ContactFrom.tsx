@@ -7,7 +7,7 @@ const ContactFrom = () => {
         <div className="container flex sm:flex-nowrap flex-wrap">
           <div className="lg:w-2/3 md:w-1/2 bg-gray-300 rounded overflow-hidden sm:mr-10 p-10 flex items-end justify-start relative h-[477px]">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3766.609919157878!2d75.31379901464789!3d19.250236351853095!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bdba3c0a7300b69%3A0x5cb107df5145b923!2sAurangabad%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1690883483842!5m2!1sen!2sin"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3752.2501578787014!2d75.32740617522569!3d19.871656081503705!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bdb987aabbbf009%3A0x160700960ac3da52!2sIsha%20Krupa%20Apartment!5e0!3m2!1sen!2sin!4v1754303991899!5m2!1sen!2sin"
               className="absolute inset-0 w-full h-full"
               style={{ border: 0 }}
               allowFullScreen
@@ -21,8 +21,8 @@ const ContactFrom = () => {
                   ADDRESS
                 </h2>
                 <p className="mt-1">
-                  Photo booth tattooed prism, portland taiyaki hoodie neutra
-                  typewriter
+                  21/3, Isha-krupa Apartment , Behind Sant Eknath Rangamandir
+                  Osmanpura, Aurangabad Mh (I) -431005
                 </p>
               </div>
               <div className="lg:w-1/2 px-6 mt-4 lg:mt-0">
@@ -30,12 +30,12 @@ const ContactFrom = () => {
                   EMAIL
                 </h2>
                 <a className="text-indigo-500 leading-relaxed">
-                  example@email.com
+                  akash.shahane@asbconsulting.in
                 </a>
                 <h2 className="title-font font-semibold text-gray-900 tracking-widest text-xs mt-4">
                   PHONE
                 </h2>
-                <p className="leading-relaxed">123-456-7890</p>
+                <p className="leading-relaxed">+91-9529322665</p>
               </div>
             </div>
           </div>
