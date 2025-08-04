@@ -11,37 +11,20 @@ const page = () => {
     <>
       <Header />
       {/*  TOP SECTION Banner */}
-      <div className="bg-[url('/images/services.jpg')] bg-cover bg-center h-[540px] w-full flex justify-center items-center">
-        <div className="container ">
-          <div className="flex flex-col text-center w-full mb-20">
-            <h1 className="sm:text-6xl text-2xl font-bold text-white mb-4 ">
-              Contact
-            </h1>
-            <p className="lg:w-2/3 mx-auto leading-relaxed text-sm font-normal text-white inter-text">
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry&apos;s standard dummy
-              text ever since the 1500s, when an unknown printer took a galley
-              of type and scrambled it to make a type specimen book. 
-            </p>
-          </div>
-          <div className="flex gap-2 justify-center">
-            <button className="flex items-center justify-center bg-secondary w-44 h-12 focus:outline-none hover:bg-gray-200  rounded-[7px] text-white font-medium text-lg mt-4 md:mt-0 border border-secondary">
-              Book Now
-            </button>
-            <button className="flex items-center justify-center bg-transparent w-44 h-12 focus:outline-none hover:bg-gray-200  rounded-[7px] text-white font-medium text-lg mt-4 md:mt-0 border border-white">
-              Book Now
-            </button>
-          </div>
+      <div className="bg-[url('/images/legal-consulting.jpg')] bg-cover bg-center">
+        <div className=" max-w-7xl m-auto px-5  py-40">
+          <h1 className="sm:text-6xl text-2xl font-bold text-white mb-4 text-center ">
+            Contact
+          </h1>
+          <p className=" mx-auto leading-relaxed text-sm font-normal text-white inter-text text-center">
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry&apos;s standard dummy
+            text ever since the 1500s, when an unknown printer took a galley of
+            type and scrambled it to make a type specimen book. 
+          </p>
         </div>
       </div>
       <section className=" relative">
-        <div className="container mx-auto flex flex-wrap">
-          <div className="flex flex-col text-center w-full mb-20">
-            <h1 className="sm:text-6xl text-2xl font-bold  mb-4 text-primary">
-              Connect with Our Team of Experts
-            </h1>
-          </div>
-        </div>
         <Image
           src="/images/leftShape.svg" // path relative to /public
           alt="My beautiful image"
@@ -63,8 +46,9 @@ const page = () => {
         <div className="container flex justify-between">
           <div className=" w-[46%]">
             <p className=" text-5xl text-primary mb-5 font-semibold">
-              Want to join our Talented Team?
+              Connect with Our Team of Experts
             </p>
+
             <div className="mb-5">
               <p className=" text-2xl text-black font-medium">Address</p>
               <p className=" text-sm font-normal inter-text w-[80%]">
@@ -90,7 +74,7 @@ const page = () => {
               <FaXTwitter />
               <FaLinkedin />
             </div>
-            <div className="bg-tertiary w-full h-[150px] mt-0 relative">
+            <div className="bg-tertiary w-full  mt-0 relative p-7">
               <Image
                 src="/images/join-team.png" // path relative to /public
                 alt="My beautiful image"
@@ -99,6 +83,9 @@ const page = () => {
                 priority // optional: preloads image
                 className=" absolute right-0 bottom-0 "
               />
+              <p className=" text-2xl font-medium text-black w-1/3">
+                Want to join our Talented Team?
+              </p>
             </div>
           </div>
           <div className=" w-[46%] bg-tertiary py-6 px-12 rounded ">
