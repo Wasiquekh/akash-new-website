@@ -11,6 +11,7 @@ const Header = () => {
 
   return (
     <>
+      {/* MOBILE MENU */}
       {isOpen && (
         <div className="fixed top-0 left-0 h-screen w-full bg-white z-50">
           <RxCross1
@@ -98,13 +99,13 @@ const Header = () => {
             <Link href="/" className="mr-0 hover:text-gray-900">
               Home
             </Link>
-            <Link href="/" className="mr-0 hover:text-gray-900">
+            <Link href="/#about" className="mr-0 hover:text-gray-900">
               About Us
             </Link>
             <Link href="/our-services" className="mr-0 hover:text-gray-900">
               Services
             </Link>
-            <Link href="/" className="mr-0 hover:text-gray-900">
+            <Link href="/#customer" className="mr-0 hover:text-gray-900">
               Customers
             </Link>
             <Link href="/gallery" className="mr-0 hover:text-gray-900">

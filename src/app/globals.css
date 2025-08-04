@@ -15,7 +15,9 @@
 
   }
 }
-
+html {
+  scroll-behavior: smooth;
+}
 body {
   font-family: var(--font-lexend), sans-serif;
 }

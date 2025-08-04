@@ -59,7 +59,7 @@ export default function Home() {
         </div>
       </div>
       {/* ABOUT SECTION */}
-      <section className=" relative">
+      <section className=" relative" id="about">
         <div className="container  flex  md:flex-row flex-col items-center relative">
           <div className="lg:max-w-3/6 lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">
             <Image
@@ -725,7 +725,7 @@ export default function Home() {
         </div>
       </section>
       {/* TESTIMONIAL */}
-      <section className="">
+      <section className="" id="customer">
         <div className="container">
           <div className="flex flex-col text-center w-full mb-20">
             <h1 className="sm:text-6xl text-2xl font-bold  mb-4 text-primary uppercase">
