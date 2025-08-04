@@ -1,12 +1,69 @@
-import React from "react";
+"use client";
+
+import React, { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { FaFacebook, FaInstagram, FaYoutube } from "react-icons/fa6";
-import { RxHamburgerMenu } from "react-icons/rx";
+import { RxCross1, RxHamburgerMenu } from "react-icons/rx";
 
 const Header = () => {
+  const [isOpen, setIsOpen] = useState<boolean>(false);
+
   return (
     <>
+      {isOpen && (
+        <div className="fixed top-0 left-0 h-screen w-full bg-white z-50">
+          <RxCross1
+            className="text-black text-3xl absolute top-16 right-6"
+            onClick={() => setIsOpen(!isOpen)}
+          />
+          <nav className="flex flex-col items-center justify-center h-full space-y-6 text-xl font-medium">
+            <a
+              href="#home"
+              className="hover:text-blue-600"
+              onClick={() => setIsOpen(false)}
+            >
+              Home
+            </a>
+            <a
+              href="#about"
+              className="hover:text-blue-600"
+              onClick={() => setIsOpen(false)}
+            >
+              About Us
+            </a>
+            <a
+              href="#services"
+              className="hover:text-blue-600"
+              onClick={() => setIsOpen(false)}
+            >
+              Services
+            </a>
+            <a
+              href="#customers"
+              className="hover:text-blue-600"
+              onClick={() => setIsOpen(false)}
+            >
+              Customers
+            </a>
+            <a
+              href="#gallery"
+              className="hover:text-blue-600"
+              onClick={() => setIsOpen(false)}
+            >
+              Our Gallery
+            </a>
+            <a
+              href="#contact"
+              className="hover:text-blue-600"
+              onClick={() => setIsOpen(false)}
+            >
+              Contact Us
+            </a>
+          </nav>
+        </div>
+      )}
+
       <div className=" w-full bg-primary ">
         <div className=" mx-auto max-w-screen-xl px-[20px] flex  md:flex-row  items-center gap-2 md:gap-0 justify-between text-xs py-3 text-white">
           <div>+91-9529322665</div>
@@ -76,7 +133,10 @@ const Header = () => {
               height={55}
             />
           </Link>
-          <RxHamburgerMenu className=" text-black text-3xl" />
+          <RxHamburgerMenu
+            onClick={() => setIsOpen(!isOpen)}
+            className=" text-black text-3xl"
+          />
         </div>
       </header>
     </>
