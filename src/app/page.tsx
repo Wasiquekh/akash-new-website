@@ -108,156 +108,162 @@ export default function Home() {
       </section>
       {/* JOURNER OF SUCCESS */}
       <section className="">
-        <div className="flex flex-col text-center w-full">
-          <h1 className="sm:text-6xl text-2xl font-bold  mb-4 text-primary">
-            JOURNY OF SUCESS
-          </h1>
-          <p className="lg:w-[60%] mx-auto leading-relaxed inter-text text-sm font-normal">
-            We provide strategic business solutions tailored to your growth.
-            From startup guidance to operational optimization, our expert
-            consulting helps you navigate challenges, increase efficiency, and
-            achieve sustainable success. Partner with us to turn your vision
-            into results.
-          </p>
-        </div>
-        <div className="container flex justify-between">
-          <div className="flex flex-wrap w-[65%]">
-            <div className="flex relative pt-10 pb-7 sm:items-center md:w-full mx-auto">
-              <div className="h-full w-11 absolute inset-0 flex items-center justify-center">
-                <div className="h-full w-1 bg-gray-200 pointer-events-none"></div>
-              </div>
-              <div className="flex-shrink-0 w-11 h-11 rounded-full mt-10 sm:mt-0 inline-flex items-center justify-center bg-primary text-white relative z-10  font-normal text-base">
-                01
-              </div>
-              <div className="flex-grow md:pl-8 pl-6 flex sm:items-center items-start flex-col sm:flex-row">
-                <div className="flex-shrink-0 w-26 h-26 bg-tertiary text-primary rounded-full inline-flex items-center justify-center">
-                  <p className="inter-text text-3xl font-semibold">2019</p>
-                </div>
-                <div className="flex-grow sm:pl-6 mt-6 sm:mt-0 text-2xl ">
-                  <h2 className=" mb-1 font-normal">Establishment of</h2>
-                  <p className=" font-semibold">AS Business Consulting</p>
-                </div>
-              </div>
-            </div>
-            <div className="flex relative pt-10 pb-7 sm:items-center md:w-full mx-auto">
-              <div className="h-full w-11 absolute inset-0 flex items-center justify-center">
-                <div className="h-full w-1 bg-gray-200 pointer-events-none"></div>
-              </div>
-              <div className="flex-shrink-0 w-11 h-11 rounded-full mt-10 sm:mt-0 inline-flex items-center justify-center bg-primary text-white relative z-10  font-normal text-base">
-                02
-              </div>
-              <div className="flex-grow md:pl-8 pl-6 flex sm:items-center items-start flex-col sm:flex-row">
-                <div className="flex-shrink-0 w-26 h-26 bg-tertiary text-primary rounded-full inline-flex items-center justify-center">
-                  <p className="inter-text text-3xl font-semibold">2021</p>
-                </div>
-                <div className="flex-grow sm:pl-6 mt-6 sm:mt-0 text-2xl ">
-                  <h2 className=" mb-1 font-normal">
-                    Complete Design project of 
-                  </h2>
-                  <p className=" font-semibold">Air Conditioner</p>
-                </div>
-              </div>
-            </div>
-            <div className="flex relative pt-10 pb-7 sm:items-center md:w-full mx-auto">
-              <div className="h-full w-11 absolute inset-0 flex items-center justify-center">
-                <div className="h-full w-1 bg-gray-200 pointer-events-none"></div>
-              </div>
-              <div className="flex-shrink-0 w-11 h-11 rounded-full mt-10 sm:mt-0 inline-flex items-center justify-center bg-primary text-white relative z-10  font-normal text-base">
-                03
-              </div>
-              <div className="flex-grow md:pl-8 pl-6 flex sm:items-center items-start flex-col sm:flex-row">
-                <div className="flex-shrink-0 w-26 h-26 bg-tertiary text-primary rounded-full inline-flex items-center justify-center">
-                  <p className="inter-text text-3xl font-semibold">2022</p>
-                </div>
-                <div className="flex-grow sm:pl-6 mt-6 sm:mt-0 text-2xl ">
-                  <h2 className=" mb-1 font-normal">Developed business with</h2>
-                  <p className=" font-semibold">international client</p>
-                </div>
-              </div>
-            </div>
-            <div className="flex relative pt-10 pb-7 sm:items-center md:w-full mx-auto">
-              <div className="h-full w-11 absolute inset-0 flex items-center justify-center">
-                <div className="h-full w-1 bg-gray-200 pointer-events-none"></div>
-              </div>
-              <div className="flex-shrink-0 w-11 h-11 rounded-full mt-10 sm:mt-0 inline-flex items-center justify-center bg-primary text-white relative z-10  font-normal text-base">
-                04
-              </div>
-              <div className="flex-grow md:pl-8 pl-6 flex sm:items-center items-start flex-col sm:flex-row">
-                <div className="flex-shrink-0 w-26 h-26 bg-tertiary text-primary rounded-full inline-flex items-center justify-center">
-                  <p className="inter-text text-3xl font-semibold">2023</p>
-                </div>
-                <div className="flex-grow sm:pl-6 mt-6 sm:mt-0 text-2xl ">
-                  <h2 className=" mb-1 font-normal">
-                    Handling Air Conditioner{" "}
-                  </h2>
-                  <p className=" font-semibold">
-                    Psychrometric Lab as 3rd Party
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div className="flex relative pt-10 pb-7 sm:items-center md:w-full mx-auto">
-              <div className="h-full w-11 absolute inset-0 flex items-center justify-center">
-                <div className="h-full w-1 bg-gray-200 pointer-events-none"></div>
-              </div>
-              <div className="flex-shrink-0 w-11 h-11 rounded-full mt-10 sm:mt-0 inline-flex items-center justify-center bg-primary text-white relative z-10  font-normal text-base">
-                05
-              </div>
-              <div className="flex-grow md:pl-8 pl-6 flex sm:items-center items-start flex-col sm:flex-row">
-                <div className="flex-shrink-0 w-26 h-26 bg-tertiary text-primary rounded-full inline-flex items-center justify-center">
-                  <p className="inter-text text-3xl font-semibold">2024</p>
-                </div>
-                <div className="flex-grow sm:pl-6 mt-6 sm:mt-0 text-2xl ">
-                  <h2 className=" mb-1 font-normal">Start BIS & NABL </h2>
-                  <p className=" font-semibold">Consultation Work</p>
-                </div>
-              </div>
-            </div>
-            <div className="flex relative pt-10 pb-7 sm:items-center md:w-full mx-auto">
-              <div className="h-full w-11 absolute inset-0 flex items-center justify-center">
-                <div className="h-full w-1 bg-gray-200 pointer-events-none"></div>
-              </div>
-              <div className="flex-shrink-0 w-11 h-11 rounded-full mt-10 sm:mt-0 inline-flex items-center justify-center bg-primary text-white relative z-10  font-normal text-base">
-                06
-              </div>
-              <div className="flex-grow md:pl-8 pl-6 flex sm:items-center items-start flex-col sm:flex-row">
-                <div className="flex-shrink-0 w-26 h-26 bg-tertiary text-primary rounded-full inline-flex items-center justify-center">
-                  <p className="inter-text text-3xl font-semibold">2025</p>
-                </div>
-                <div className="flex-grow sm:pl-6 mt-6 sm:mt-0 text-2xl ">
-                  <h2 className=" mb-1 font-normal">Firm Approved for MSME </h2>
-                  <p className=" font-semibold">
-                    Lean Manufacturing & ZED Scheme
-                  </p>
-                </div>
-              </div>
-            </div>
+        <div className="container">
+          <div className="flex flex-col text-center w-full mb-20">
+            <h1 className="sm:text-6xl text-2xl font-bold  mb-4 text-primary">
+              JOURNEY OF SUCCESS
+            </h1>
+            <p className="lg:w-[60%] mx-auto leading-relaxed inter-text text-sm font-normal">
+              We provide strategic business solutions tailored to your growth.
+              From startup guidance to operational optimization, our expert
+              consulting helps you navigate challenges, increase efficiency, and
+              achieve sustainable success. Partner with us to turn your vision
+              into results.
+            </p>
           </div>
-          <div className="w-[35%] flex flex-col justify-between">
-            <Image
-              src="/images/journey1.jpg" // path relative to /public
-              alt="My beautiful image"
-              width={600}
-              height={400}
-              priority // optional: preloads image
-              className="mb-4"
-            />
-            <Image
-              src="/images/journey2.jpg" // path relative to /public
-              alt="My beautiful image"
-              width={600}
-              height={400}
-              priority // optional: preloads image
-              className="mb-4"
-            />
-            <Image
-              src="/images/journey3.jpg" // path relative to /public
-              alt="My beautiful image"
-              width={600}
-              height={400}
-              priority // optional: preloads image
-              className=""
-            />
+          <div className="flex justify-between">
+            <div className="flex flex-wrap w-[65%]">
+              <div className="flex relative pt-10 pb-7 sm:items-center md:w-full mx-auto">
+                <div className="h-full w-11 absolute inset-0 flex items-center justify-center">
+                  <div className="h-full w-1 bg-gray-200 pointer-events-none"></div>
+                </div>
+                <div className="flex-shrink-0 w-11 h-11 rounded-full mt-10 sm:mt-0 inline-flex items-center justify-center bg-primary text-white relative z-10  font-normal text-base">
+                  01
+                </div>
+                <div className="flex-grow md:pl-8 pl-6 flex sm:items-center items-start flex-col sm:flex-row">
+                  <div className="flex-shrink-0 w-26 h-26 bg-tertiary text-primary rounded-full inline-flex items-center justify-center">
+                    <p className="inter-text text-3xl font-semibold">2019</p>
+                  </div>
+                  <div className="flex-grow sm:pl-6 mt-6 sm:mt-0 text-2xl ">
+                    <h2 className=" mb-1 font-normal">Establishment of</h2>
+                    <p className=" font-semibold">AS Business Consulting</p>
+                  </div>
+                </div>
+              </div>
+              <div className="flex relative pt-10 pb-7 sm:items-center md:w-full mx-auto">
+                <div className="h-full w-11 absolute inset-0 flex items-center justify-center">
+                  <div className="h-full w-1 bg-gray-200 pointer-events-none"></div>
+                </div>
+                <div className="flex-shrink-0 w-11 h-11 rounded-full mt-10 sm:mt-0 inline-flex items-center justify-center bg-primary text-white relative z-10  font-normal text-base">
+                  02
+                </div>
+                <div className="flex-grow md:pl-8 pl-6 flex sm:items-center items-start flex-col sm:flex-row">
+                  <div className="flex-shrink-0 w-26 h-26 bg-tertiary text-primary rounded-full inline-flex items-center justify-center">
+                    <p className="inter-text text-3xl font-semibold">2021</p>
+                  </div>
+                  <div className="flex-grow sm:pl-6 mt-6 sm:mt-0 text-2xl ">
+                    <h2 className=" mb-1 font-normal">
+                      Complete Design project of 
+                    </h2>
+                    <p className=" font-semibold">Air Conditioner</p>
+                  </div>
+                </div>
+              </div>
+              <div className="flex relative pt-10 pb-7 sm:items-center md:w-full mx-auto">
+                <div className="h-full w-11 absolute inset-0 flex items-center justify-center">
+                  <div className="h-full w-1 bg-gray-200 pointer-events-none"></div>
+                </div>
+                <div className="flex-shrink-0 w-11 h-11 rounded-full mt-10 sm:mt-0 inline-flex items-center justify-center bg-primary text-white relative z-10  font-normal text-base">
+                  03
+                </div>
+                <div className="flex-grow md:pl-8 pl-6 flex sm:items-center items-start flex-col sm:flex-row">
+                  <div className="flex-shrink-0 w-26 h-26 bg-tertiary text-primary rounded-full inline-flex items-center justify-center">
+                    <p className="inter-text text-3xl font-semibold">2022</p>
+                  </div>
+                  <div className="flex-grow sm:pl-6 mt-6 sm:mt-0 text-2xl ">
+                    <h2 className=" mb-1 font-normal">
+                      Developed business with
+                    </h2>
+                    <p className=" font-semibold">international client</p>
+                  </div>
+                </div>
+              </div>
+              <div className="flex relative pt-10 pb-7 sm:items-center md:w-full mx-auto">
+                <div className="h-full w-11 absolute inset-0 flex items-center justify-center">
+                  <div className="h-full w-1 bg-gray-200 pointer-events-none"></div>
+                </div>
+                <div className="flex-shrink-0 w-11 h-11 rounded-full mt-10 sm:mt-0 inline-flex items-center justify-center bg-primary text-white relative z-10  font-normal text-base">
+                  04
+                </div>
+                <div className="flex-grow md:pl-8 pl-6 flex sm:items-center items-start flex-col sm:flex-row">
+                  <div className="flex-shrink-0 w-26 h-26 bg-tertiary text-primary rounded-full inline-flex items-center justify-center">
+                    <p className="inter-text text-3xl font-semibold">2023</p>
+                  </div>
+                  <div className="flex-grow sm:pl-6 mt-6 sm:mt-0 text-2xl ">
+                    <h2 className=" mb-1 font-normal">
+                      Handling Air Conditioner{" "}
+                    </h2>
+                    <p className=" font-semibold">
+                      Psychrometric Lab as 3rd Party
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div className="flex relative pt-10 pb-7 sm:items-center md:w-full mx-auto">
+                <div className="h-full w-11 absolute inset-0 flex items-center justify-center">
+                  <div className="h-full w-1 bg-gray-200 pointer-events-none"></div>
+                </div>
+                <div className="flex-shrink-0 w-11 h-11 rounded-full mt-10 sm:mt-0 inline-flex items-center justify-center bg-primary text-white relative z-10  font-normal text-base">
+                  05
+                </div>
+                <div className="flex-grow md:pl-8 pl-6 flex sm:items-center items-start flex-col sm:flex-row">
+                  <div className="flex-shrink-0 w-26 h-26 bg-tertiary text-primary rounded-full inline-flex items-center justify-center">
+                    <p className="inter-text text-3xl font-semibold">2024</p>
+                  </div>
+                  <div className="flex-grow sm:pl-6 mt-6 sm:mt-0 text-2xl ">
+                    <h2 className=" mb-1 font-normal">Start BIS & NABL </h2>
+                    <p className=" font-semibold">Consultation Work</p>
+                  </div>
+                </div>
+              </div>
+              <div className="flex relative pt-10 pb-7 sm:items-center md:w-full mx-auto">
+                <div className="h-full w-11 absolute inset-0 flex items-center justify-center">
+                  <div className="h-full w-1 bg-gray-200 pointer-events-none"></div>
+                </div>
+                <div className="flex-shrink-0 w-11 h-11 rounded-full mt-10 sm:mt-0 inline-flex items-center justify-center bg-primary text-white relative z-10  font-normal text-base">
+                  06
+                </div>
+                <div className="flex-grow md:pl-8 pl-6 flex sm:items-center items-start flex-col sm:flex-row">
+                  <div className="flex-shrink-0 w-26 h-26 bg-tertiary text-primary rounded-full inline-flex items-center justify-center">
+                    <p className="inter-text text-3xl font-semibold">2025</p>
+                  </div>
+                  <div className="flex-grow sm:pl-6 mt-6 sm:mt-0 text-2xl ">
+                    <h2 className=" mb-1 font-normal">
+                      Firm Approved for MSME{" "}
+                    </h2>
+                    <p className=" font-semibold">
+                      Lean Manufacturing & ZED Scheme
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="w-[35%] flex flex-col justify-between">
+              <Image
+                src="/images/journey1.jpg" // path relative to /public
+                alt="My beautiful image"
+                width={600}
+                height={400}
+                priority // optional: preloads image
+                className="mb-4"
+              />
+              <Image
+                src="/images/journey2.jpg" // path relative to /public
+                alt="My beautiful image"
+                width={600}
+                height={400}
+                priority // optional: preloads image
+                className="mb-4"
+              />
+              <Image
+                src="/images/journey3.jpg" // path relative to /public
+                alt="My beautiful image"
+                width={600}
+                height={400}
+                priority // optional: preloads image
+                className=""
+              />
+            </div>
           </div>
         </div>
       </section>
@@ -347,7 +353,7 @@ export default function Home() {
         <div className="container">
           <div className="flex flex-col text-center w-full mb-20">
             <h1 className="sm:text-6xl text-2xl font-bold  mb-4 text-primary">
-              JOURNY OF SUCESS
+              OUR SERVICES
             </h1>
             <p className="lg:w-[60%] mx-auto leading-relaxed inter-text text-sm font-normal">
               We provide strategic business solutions tailored to your growth.
@@ -721,8 +727,8 @@ export default function Home() {
       <section className="">
         <div className="container">
           <div className="flex flex-col text-center w-full mb-20">
-            <h1 className="sm:text-6xl text-2xl font-bold  mb-4 text-primary">
-              Customer&apos; Testimonials
+            <h1 className="sm:text-6xl text-2xl font-bold  mb-4 text-primary uppercase">
+              Customer&apos;s Testimonials
             </h1>
             <p className="lg:w-[60%] mx-auto leading-relaxed inter-text text-sm font-normal">
               We provide strategic business solutions tailored to your growth.
@@ -732,9 +738,9 @@ export default function Home() {
               into results.
             </p>
           </div>
-          <div className="flex flex-col gap-6 md:flex-row w-full justify-between items-center mb-16">
+          <div className=" grid grid-cols-1 md:grid-cols-3 gap-4 mb-0">
             {/* Card 1 */}
-            <div className="w-full md:w-96 h-64 relative max-w-full overflow-hidden transition-transform duration-300 ease-in-out hover:scale-110">
+            <div className="w-full md:w-full h-64 relative max-w-full overflow-hidden transition-transform duration-300 ease-in-out hover:scale-[1.02]">
               <div className="w-full h-full absolute bg-white rounded-md border border-[#D4D4D4]" />
               <div className="absolute left-[19px] right-[19px] top-[121px] text-neutral-500 text-xs font-medium">
                 Excellent services for AC maintenance, repair, and installation.
@@ -771,8 +777,8 @@ export default function Home() {
                 />
               </div>
             </div>
-            {/* Card 1 */}
-            <div className="w-full md:w-96 h-64 relative max-w-full overflow-hidden transition-transform duration-300 ease-in-out hover:scale-110">
+            {/* Card 2 */}
+            <div className="w-full md:w-full h-64 relative max-w-full overflow-hidden transition-transform duration-300 ease-in-out hover:scale-[1.02]">
               <div className="w-full h-full absolute bg-white rounded-md border border-[#D4D4D4]" />
               <div className="absolute left-[19px] right-[19px] top-[121px] text-neutral-500 text-xs font-medium">
                 Excellent services for AC maintenance, repair, and installation.
@@ -809,8 +815,8 @@ export default function Home() {
                 />
               </div>
             </div>
-            {/* Card 1 */}
-            <div className="w-full md:w-96 h-64 relative max-w-full overflow-hidden transition-transform duration-300 ease-in-out hover:scale-110">
+            {/* Card 3 */}
+            <div className="w-full md:w-full h-64 relative max-w-full overflow-hidden transition-transform duration-300 ease-in-out hover:scale-[1.02]">
               <div className="w-full h-full absolute bg-white rounded-md border border-[#D4D4D4]" />
               <div className="absolute left-[19px] right-[19px] top-[121px] text-neutral-500 text-xs font-medium">
                 Excellent services for AC maintenance, repair, and installation.

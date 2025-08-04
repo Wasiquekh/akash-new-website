@@ -10,28 +10,18 @@ const page = () => {
     <>
       <Header />
       {/*  TOP SECTION Banner */}
-      <div className="bg-[url('/images/research-banner.jpg')] bg-cover bg-center h-[540px] w-full flex justify-center items-center">
-        <div className="container ">
-          <div className="flex flex-col text-center w-full mb-20">
-            <h1 className="sm:text-6xl text-2xl font-bold text-white mb-4 ">
-              Research & Development
-            </h1>
-            <p className="lg:w-2/3 mx-auto leading-relaxed text-sm font-normal text-white inter-text">
-              We provide strategic business solutions tailored to your growth.
-              From startup guidance to operational optimization, our expert
-              consulting helps you navigate challenges, increase efficiency, and
-              achieve sustainable success. Partner with us to turn your vision
-              into results.
-            </p>
-          </div>
-          <div className="flex gap-2 justify-center">
-            <button className="flex items-center justify-center bg-secondary w-44 h-12 focus:outline-none hover:bg-gray-200  rounded-[7px] text-white font-medium text-lg mt-4 md:mt-0 border border-secondary">
-              Book Now
-            </button>
-            <button className="flex items-center justify-center bg-transparent w-44 h-12 focus:outline-none hover:bg-gray-200  rounded-[7px] text-white font-medium text-lg mt-4 md:mt-0 border border-white">
-              Book Now
-            </button>
-          </div>
+      <div className="bg-[url('/images/research-banner.jpg')] bg-cover bg-center">
+        <div className=" max-w-7xl m-auto px-5  py-40">
+          <h1 className="sm:text-6xl text-2xl font-bold text-white mb-4 text-center ">
+            Research & Development
+          </h1>
+          <p className=" mx-auto leading-relaxed text-sm font-normal text-white inter-text text-center w-full md:w-[80%]">
+            We provide strategic business solutions tailored to your growth.
+            From startup guidance to operational optimization, our expert
+            consulting helps you navigate challenges, increase efficiency, and
+            achieve sustainable success. Partner with us to turn your vision
+            into results.
+          </p>
         </div>
       </div>
       <section className=" relative">
