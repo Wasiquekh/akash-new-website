@@ -23,37 +23,27 @@ const page = () => {
     <>
       <Header />
       {/*  TOP SECTION Banner */}
-      <div className="bg-[url('/images/human-resource.jpg')] bg-cover bg-center h-[540px] w-full flex justify-center items-center">
-        <div className="container ">
-          <div className="flex flex-col text-center w-full mb-20">
-            <h1 className="sm:text-6xl text-2xl font-bold text-white mb-4 ">
-              Human Resources
-            </h1>
-            <p className="lg:w-2/3 mx-auto leading-relaxed text-sm font-normal text-white inter-text">
-              We provide strategic business solutions tailored to your growth.
-              From startup guidance to operational optimization, our expert
-              consulting helps you navigate challenges, increase efficiency, and
-              achieve sustainable success. Partner with us to turn your vision
-              into results.
-            </p>
-          </div>
-          <div className="flex gap-2 justify-center">
-            <button className="flex items-center justify-center bg-secondary w-44 h-12 focus:outline-none hover:bg-gray-200  rounded-[7px] text-white font-medium text-lg mt-4 md:mt-0 border border-secondary">
-              Book Now
-            </button>
-            <button className="flex items-center justify-center bg-transparent w-44 h-12 focus:outline-none hover:bg-gray-200  rounded-[7px] text-white font-medium text-lg mt-4 md:mt-0 border border-white">
-              Book Now
-            </button>
-          </div>
+      <div className="bg-[url('/images/human-resource.jpg')] bg-cover bg-center">
+        <div className=" max-w-7xl m-auto px-5  py-40">
+          <h1 className="sm:text-6xl text-2xl font-bold text-white mb-4 text-center ">
+            Human Resources
+          </h1>
+          <p className=" mx-auto leading-relaxed text-sm font-normal text-white inter-text text-center">
+            We provide strategic business solutions tailored to your growth.
+            From startup guidance to operational optimization, our expert
+            consulting helps you navigate challenges, increase efficiency, and
+            achieve sustainable success. Partner with us to turn your vision
+            into results.
+          </p>
         </div>
       </div>
       <section className=" relative">
-        <div className="container mx-auto flex flex-wrap">
+        <div className="container">
           <div className="flex flex-col text-center w-full mb-20">
             <h1 className="sm:text-6xl text-2xl font-bold  mb-4 text-primary">
               Introduction
             </h1>
-            <p className="lg:w-[80%] mx-auto leading-relaxed inter-text text-sm font-normal mb-6">
+            <p className="lg:w-[80%] mx-auto leading-relaxed inter-text text-sm font-normal mb-4">
               AS BUSINESS CONSULTING is a Solution Provider. we work with you,
               helping you to identify your potential and become more innovative,
               competitive & efficient to help you grow exponentially in the
@@ -66,39 +56,39 @@ const page = () => {
               export, Management Consulting, Sales and Marketing, & Legal
               Advisory.
             </p>
-            <div className=" grid grid-cols-2 md:grid-cols-4 gap-5">
-              <div className="bg-tertiary p-2 rounded-full flex gap-4 items-center">
-                <GiStairsGoal className=" bg-primary p-3 text-white text-6xl rounded-full border-2 border-white" />
-                <p className=" text-2xl font-medium text-black">Career</p>
-              </div>
-              <div className="bg-tertiary p-2 rounded-full flex gap-4 items-center">
-                <HiUserGroup className=" bg-primary p-3 text-white text-6xl rounded-full border-2 border-white" />
-                <p className=" text-2xl font-medium text-black">Candidate</p>
-              </div>
-              <div className="bg-tertiary p-2 rounded-full flex gap-4 items-center">
-                <TbSettingsCheck className=" bg-primary p-3 text-white text-6xl rounded-full border-2 border-white" />
-                <p className=" text-2xl font-medium text-black">Skill</p>
-              </div>
-              <div className="bg-tertiary p-2 rounded-full flex gap-4 items-center">
-                <FaSearch className=" bg-primary p-3 text-white text-6xl rounded-full border-2 border-white" />
-                <p className=" text-2xl font-medium text-black">Search</p>
-              </div>
-              <div className="bg-tertiary p-2 rounded-full flex gap-4 items-center">
-                <MdGroupAdd className=" bg-primary p-3 text-white text-6xl rounded-full border-2 border-white" />
-                <p className=" text-2xl font-medium text-black">Candidate</p>
-              </div>
-              <div className="bg-tertiary p-2 rounded-full flex gap-4 items-center">
-                <IoNewspaperSharp className=" bg-primary p-3 text-white text-6xl rounded-full border-2 border-white" />
-                <p className=" text-2xl font-medium text-black">Interview</p>
-              </div>
-              <div className="bg-tertiary p-2 rounded-full flex gap-4 items-center">
-                <FaUserTie className=" bg-primary p-3 text-white text-6xl rounded-full border-2 border-white" />
-                <p className=" text-2xl font-medium text-black">Employee</p>
-              </div>
-              <div className="bg-tertiary p-2 rounded-full flex gap-4 items-center">
-                <MdMarkEmailRead className=" bg-primary p-3 text-white text-6xl rounded-full border-2 border-white" />
-                <p className=" text-2xl font-medium text-black">Application</p>
-              </div>
+          </div>
+          <div className=" grid grid-cols-2 md:grid-cols-4 gap-5">
+            <div className="bg-tertiary p-2 rounded-full flex gap-4 items-center">
+              <GiStairsGoal className=" bg-primary p-3 text-white text-6xl rounded-full border-2 border-white" />
+              <p className=" text-2xl font-medium text-black">Career</p>
+            </div>
+            <div className="bg-tertiary p-2 rounded-full flex gap-4 items-center">
+              <HiUserGroup className=" bg-primary p-3 text-white text-6xl rounded-full border-2 border-white" />
+              <p className=" text-2xl font-medium text-black">Candidate</p>
+            </div>
+            <div className="bg-tertiary p-2 rounded-full flex gap-4 items-center">
+              <TbSettingsCheck className=" bg-primary p-3 text-white text-6xl rounded-full border-2 border-white" />
+              <p className=" text-2xl font-medium text-black">Skill</p>
+            </div>
+            <div className="bg-tertiary p-2 rounded-full flex gap-4 items-center">
+              <FaSearch className=" bg-primary p-3 text-white text-6xl rounded-full border-2 border-white" />
+              <p className=" text-2xl font-medium text-black">Search</p>
+            </div>
+            <div className="bg-tertiary p-2 rounded-full flex gap-4 items-center">
+              <MdGroupAdd className=" bg-primary p-3 text-white text-6xl rounded-full border-2 border-white" />
+              <p className=" text-2xl font-medium text-black">Candidate</p>
+            </div>
+            <div className="bg-tertiary p-2 rounded-full flex gap-4 items-center">
+              <IoNewspaperSharp className=" bg-primary p-3 text-white text-6xl rounded-full border-2 border-white" />
+              <p className=" text-2xl font-medium text-black">Interview</p>
+            </div>
+            <div className="bg-tertiary p-2 rounded-full flex gap-4 items-center">
+              <FaUserTie className=" bg-primary p-3 text-white text-6xl rounded-full border-2 border-white" />
+              <p className=" text-2xl font-medium text-black">Employee</p>
+            </div>
+            <div className="bg-tertiary p-2 rounded-full flex gap-4 items-center">
+              <MdMarkEmailRead className=" bg-primary p-3 text-white text-6xl rounded-full border-2 border-white" />
+              <p className=" text-2xl font-medium text-black">Application</p>
             </div>
           </div>
         </div>
