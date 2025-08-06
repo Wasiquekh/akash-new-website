@@ -275,10 +275,10 @@ export default function Home() {
             <h1 className="   rounded m-auto text-3xl md:text-6xl font-medium text-white mb-2 ">
               OUR ACHIEVEMENTS
             </h1>
-            <p className="lg:w-2/3 mx-auto text-base  md:text-base md:font-normal text-white">
+            {/* <p className="lg:w-2/3 mx-auto text-base  md:text-base md:font-normal text-white">
               Aziz Enterprises is deeply committed to offering secure &
               affordable solutions to different industries
-            </p>
+            </p> */}
           </div>
         </div>
       </section>

@@ -5,6 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { FaFacebook, FaInstagram, FaYoutube } from "react-icons/fa6";
 import { RxChevronDown, RxCross1, RxHamburgerMenu } from "react-icons/rx";
+import { IoIosCall } from "react-icons/io";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
@@ -112,7 +113,12 @@ const Header = () => {
 
       <div className=" w-full bg-primary ">
         <div className=" mx-auto max-w-screen-xl px-[20px] flex  md:flex-row  items-center gap-2 md:gap-0 justify-between text-xs py-3 text-white">
-          <div>+91-9529322665</div>
+          <Link href="tel:+91-9529322665">
+            <div className=" flex gap-1 items-center">
+              <IoIosCall className=" text-base" />
+              +91-9529322665
+            </div>
+          </Link>
           <div className="flex gap-4 text-sm">
             <Link href="/">
               <FaFacebook />
@@ -155,13 +161,7 @@ const Header = () => {
                 <RxChevronDown />
               </div>
               {/* Submenu */}
-              <div className="absolute top-full left-0 hidden group-hover:block bg-white mt-1 rounded w-42 pb-4 z-50">
-                <Link
-                  href="/our-services"
-                  className="block px-3 py-3 hover:bg-tertiary"
-                >
-                  Services
-                </Link>
+              <div className="absolute top-full left-0 hidden group-hover:block bg-white mt-1 rounded w-42 pb-4 z-50 text-[15px]">
                 <Link
                   href="/research&development"
                   className="block px-3 py-3 hover:bg-tertiary"
