@@ -85,13 +85,13 @@ const Header = () => {
               Legal Advisory
             </Link>
             {/* end submenu */}
-            <Link
+            {/* <Link
               href="#customers"
               className="hover:text-blue-600"
               onClick={() => setIsOpen(false)}
             >
               Customers
-            </Link>
+            </Link> */}
             <Link
               href="/gallery"
               className="hover:text-blue-600"
@@ -201,9 +201,9 @@ const Header = () => {
               </div>
             </div>
 
-            <Link href="/#customer" className="mr-0 hover:text-gray-900">
+            {/* <Link href="/#customer" className="mr-0 hover:text-gray-900">
               Customers
-            </Link>
+            </Link> */}
             <Link href="/gallery" className="mr-0 hover:text-gray-900">
               Our Gallery
             </Link>
