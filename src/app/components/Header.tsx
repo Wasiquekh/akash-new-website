@@ -87,7 +87,7 @@ const Header = () => {
             </Link>
             {/* end submenu */}
             <Link
-              href="#customers"
+              href="/customers"
               className="hover:text-blue-600"
               onClick={() => setIsOpen(false)}
             >
@@ -201,7 +201,7 @@ const Header = () => {
               </div>
             </div>
 
-            <Link href="/#customer" className="mr-0 hover:text-gray-900">
+            <Link href="/customers" className="mr-0 hover:text-gray-900">
               Customers
             </Link>
             <Link href="/gallery" className="mr-0 hover:text-gray-900">
