@@ -14,9 +14,9 @@ const Header = () => {
     <>
       {/* MOBILE MENU */}
       {isOpen && (
-        <div className="fixed top-0 left-0 h-screen w-full bg-white z-50">
+        <div className="fixed top-0 left-0 h-screen w-full bg-gradient-to-b from-[#A53691] to-[#502D52] text-white z-50">
           <RxCross1
-            className="text-black text-3xl absolute top-16 right-6"
+            className=" text-3xl absolute top-7 text-white right-6"
             onClick={() => setIsOpen(!isOpen)}
           />
           <nav className="flex flex-col items-center justify-center h-full space-y-6 text-xl font-light">
