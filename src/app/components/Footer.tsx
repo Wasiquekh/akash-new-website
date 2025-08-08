@@ -32,7 +32,7 @@ const Footer = () => {
           <div className="flex-grow flex flex-wrap md:pl-20 md:mt-0 mt-10 md:text-left text-center text-xs leading-6">
             <div className="lg:w-1/4 md:w-1/2 w-full px-4 ">
               <p className=" font-medium border-b-2 border-tertiary inline-block text-tertiary mb-3">
-                COMPANY
+                MENU
               </p>
               <nav className="list-none">
                 <li>
@@ -42,26 +42,26 @@ const Footer = () => {
                 </li>
                 <li>
                   <Link
-                    href="/about-us"
+                    href="/customers"
                     className="text-white hover:text-tertiary "
                   >
-                    ABOUT US
+                    CUSTOMERS
                   </Link>
                 </li>
                 <li>
                   <Link
-                    href="/services"
+                    href="/gallery"
                     className="text-white hover:text-tertiary "
                   >
-                    SERVICES
+                    GALLERY
                   </Link>
                 </li>
                 <li>
                   <Link
-                    href="/services"
+                    href="/contact"
                     className="text-white hover:text-tertiary "
                   >
-                    SERVICES
+                    CONTACT US
                   </Link>
                 </li>
               </nav>
@@ -73,32 +73,35 @@ const Footer = () => {
               </p>
               <nav className="list-none">
                 <li>
-                  <Link href="/" className="text-white hover:text-tertiary ">
-                    HOME
+                  <Link
+                    href="/research&development"
+                    className="text-white hover:text-tertiary "
+                  >
+                    R&D
                   </Link>
                 </li>
                 <li>
                   <Link
-                    href="/about-us"
+                    href="/operation"
                     className="text-white hover:text-tertiary "
                   >
-                    ABOUT US
+                    OPERATION
                   </Link>
                 </li>
                 <li>
                   <Link
-                    href="/services"
+                    href="/international-business-deveopment"
                     className="text-white hover:text-tertiary "
                   >
-                    SERVICES
+                    CERTIFICATION
                   </Link>
                 </li>
                 <li>
                   <Link
-                    href="/services"
+                    href="/human-resource"
                     className="text-white hover:text-tertiary "
                   >
-                    SERVICES
+                    HR
                   </Link>
                 </li>
               </nav>
