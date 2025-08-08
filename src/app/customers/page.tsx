@@ -12,7 +12,7 @@ const page = () => {
       <div className="bg-[url('/images/services.jpg')] bg-cover bg-center">
         <div className=" max-w-7xl m-auto px-5  py-40">
           <h1 className="sm:text-6xl text-2xl font-bold text-white mb-4 text-center uppercase ">
-            Operations Consulting
+            our customers
           </h1>
           <p className=" mx-auto leading-relaxed text-sm font-normal text-white inter-text text-center">
             International Business Development & Logistics Services
@@ -42,7 +42,7 @@ const page = () => {
           <div className=" flex flex-wrap">
             <div className="flex flex-col text-center w-full mb-20">
               <h1 className="sm:text-6xl text-2xl font-bold  mb-4 text-primary">
-                Operations Consulting
+                Our Customers
               </h1>
               <p className="lg:w-[90%] mx-auto leading-relaxed inter-text text-sm font-normal mb-4">
                 Businesses are always looking to better optimize their
