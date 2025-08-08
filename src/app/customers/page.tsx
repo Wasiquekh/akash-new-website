@@ -88,7 +88,7 @@ const page = () => {
             <div className="w-full shadow-[0px_8px_24px_rgba(149,157,165,0.2)] hover:shadow-[0px_12px_28px_rgba(149,157,165,0.3)] transition-shadow duration-300 flex items-center justify-center p-6">
               <div className="w-[100px] h-[100px] flex items-center justify-center">
                 <Image
-                  src="/images/customers/3.gif"
+                  src="/images/customers/3.png"
                   alt="Customer logo 3"
                   width={100}
                   height={100}
@@ -116,7 +116,7 @@ const page = () => {
             <div className="w-full shadow-[0px_8px_24px_rgba(149,157,165,0.2)] hover:shadow-[0px_12px_28px_rgba(149,157,165,0.3)] transition-shadow duration-300 flex items-center justify-center p-6">
               <div className="w-[100px] h-[100px] flex items-center justify-center">
                 <Image
-                  src="/images/customers/5.jpg"
+                  src="/images/customers/5.png"
                   alt="Customer logo 5"
                   width={100}
                   height={100}
@@ -158,7 +158,7 @@ const page = () => {
             <div className="w-full shadow-[0px_8px_24px_rgba(149,157,165,0.2)] hover:shadow-[0px_12px_28px_rgba(149,157,165,0.3)] transition-shadow duration-300 flex items-center justify-center p-6">
               <div className="w-[100px] h-[100px] flex items-center justify-center">
                 <Image
-                  src="/images/customers/9.jpg"
+                  src="/images/customers/9.png"
                   alt="Customer logo 8"
                   width={100}
                   height={100}
@@ -214,7 +214,7 @@ const page = () => {
             <div className="w-full shadow-[0px_8px_24px_rgba(149,157,165,0.2)] hover:shadow-[0px_12px_28px_rgba(149,157,165,0.3)] transition-shadow duration-300 flex items-center justify-center p-6">
               <div className="w-[100px] h-[100px] flex items-center justify-center">
                 <Image
-                  src="/images/customers/13.jpg"
+                  src="/images/customers/13.png"
                   alt="Customer logo 12"
                   width={100}
                   height={100}
@@ -228,7 +228,7 @@ const page = () => {
             <div className="w-full shadow-[0px_8px_24px_rgba(149,157,165,0.2)] hover:shadow-[0px_12px_28px_rgba(149,157,165,0.3)] transition-shadow duration-300 flex items-center justify-center p-6">
               <div className="w-[100px] h-[100px] flex items-center justify-center">
                 <Image
-                  src="/images/customers/14.jpg"
+                  src="/images/customers/14.png"
                   alt="Customer logo 13"
                   width={100}
                   height={100}
@@ -270,7 +270,7 @@ const page = () => {
             <div className="w-full shadow-[0px_8px_24px_rgba(149,157,165,0.2)] hover:shadow-[0px_12px_28px_rgba(149,157,165,0.3)] transition-shadow duration-300 flex items-center justify-center p-6">
               <div className="w-[100px] h-[100px] flex items-center justify-center">
                 <Image
-                  src="/images/customers/17.jpg"
+                  src="/images/customers/17.png"
                   alt="Customer logo 16"
                   width={100}
                   height={100}
@@ -382,7 +382,7 @@ const page = () => {
             <div className="w-full shadow-[0px_8px_24px_rgba(149,157,165,0.2)] hover:shadow-[0px_12px_28px_rgba(149,157,165,0.3)] transition-shadow duration-300 flex items-center justify-center p-6">
               <div className="w-[100px] h-[100px] flex items-center justify-center">
                 <Image
-                  src="/images/customers/25.jpg"
+                  src="/images/customers/25.png"
                   alt="Customer logo 24"
                   width={100}
                   height={100}
@@ -396,7 +396,7 @@ const page = () => {
             <div className="w-full shadow-[0px_8px_24px_rgba(149,157,165,0.2)] hover:shadow-[0px_12px_28px_rgba(149,157,165,0.3)] transition-shadow duration-300 flex items-center justify-center p-6">
               <div className="w-[100px] h-[100px] flex items-center justify-center">
                 <Image
-                  src="/images/customers/26.jpg"
+                  src="/images/customers/26.png"
                   alt="Customer logo 25"
                   width={100}
                   height={100}
@@ -421,18 +421,6 @@ const page = () => {
             </div>
 
             {/* 27 */}
-            <div className="w-full shadow-[0px_8px_24px_rgba(149,157,165,0.2)] hover:shadow-[0px_12px_28px_rgba(149,157,165,0.3)] transition-shadow duration-300 flex items-center justify-center p-6">
-              <div className="w-[100px] h-[100px] flex items-center justify-center">
-                <Image
-                  src="/images/customers/28.png"
-                  alt="Customer logo 27"
-                  width={100}
-                  height={100}
-                  priority
-                  className="object-contain"
-                />
-              </div>
-            </div>
           </div>
         </div>
       </section>
