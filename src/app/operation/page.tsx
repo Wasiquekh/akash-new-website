@@ -56,7 +56,7 @@ const page = () => {
             </div>
           </div>
           <div className=" grid grid-cols-1 md:grid-cols-2 gap-4">
-            <div className="flex items-center bg-[#FEF2FB] gap-4 py-4 px-6 rounded">
+            <div className="flex flex-col md:flex-row items-center bg-[#FEF2FB] gap-4 py-4 px-6 rounded">
               <div>
                 <Image
                   src="/images/Innovation.svg" // path relative to /public
@@ -69,7 +69,7 @@ const page = () => {
               </div>
 
               <div>
-                <p className=" text-2xl font-medium text-black  mb-1 ">
+                <p className=" text-2xl font-medium text-black  mb-1  text-center md:text-left ">
                   Innovation
                 </p>
                 <p className=" text-sm font-normal text-black inter-text ">
@@ -83,7 +83,7 @@ const page = () => {
                 </p>
               </div>
             </div>
-            <div className="flex items-center bg-[#FEF2FB] gap-4 py-4 px-6 rounded">
+            <div className="flex flex-col md:flex-row items-center bg-[#FEF2FB] gap-4 py-4 px-6 rounded">
               <div>
                 <Image
                   src="/images/Productivity Improvement.svg" // path relative to /public
@@ -96,7 +96,7 @@ const page = () => {
               </div>
 
               <div>
-                <p className=" text-2xl font-medium text-black  mb-1">
+                <p className=" text-2xl font-medium text-black  mb-1 text-center md:text-left">
                   Productivity Improvement
                 </p>
                 <p className=" text-sm font-normal text-black inter-text">
@@ -110,7 +110,7 @@ const page = () => {
                 </p>
               </div>
             </div>
-            <div className="flex items-center bg-[#FEF2FB] gap-4 py-4 px-6 rounded">
+            <div className="flex flex-col md:flex-row items-center bg-[#FEF2FB] gap-4 py-4 px-6 rounded">
               <div>
                 <Image
                   src="/images/Systematic Operation.svg" // path relative to /public
@@ -123,7 +123,7 @@ const page = () => {
               </div>
 
               <div>
-                <p className=" text-2xl font-medium text-black  mb-1">
+                <p className=" text-2xl font-medium text-black  mb-1 text-center md:text-left">
                   Systematic Operation
                 </p>
                 <p className=" text-sm font-normal text-black inter-text">
@@ -137,7 +137,7 @@ const page = () => {
                 </p>
               </div>
             </div>
-            <div className="flex items-center bg-[#FEF2FB] gap-4 py-4 px-6 rounded">
+            <div className="flex flex-col md:flex-row items-center bg-[#FEF2FB] gap-4 py-4 px-6 rounded">
               <div>
                 <Image
                   src="/images/MIS & Audit.svg" // path relative to /public
@@ -150,7 +150,7 @@ const page = () => {
               </div>
 
               <div>
-                <p className=" text-2xl font-medium text-black  mb-1">
+                <p className=" text-2xl font-medium text-black  mb-1 text-center md:text-left">
                   MIS & Audit
                 </p>
                 <p className=" text-sm font-normal text-black inter-text">
@@ -164,7 +164,7 @@ const page = () => {
                 </p>
               </div>
             </div>
-            <div className="flex items-center bg-[#FEF2FB] gap-4 py-4 px-6 rounded">
+            <div className="flex flex-col md:flex-row items-center bg-[#FEF2FB] gap-4 py-4 px-6 rounded">
               <div>
                 <Image
                   src="/images/QMS.svg" // path relative to /public
@@ -177,7 +177,9 @@ const page = () => {
               </div>
 
               <div>
-                <p className=" text-2xl font-medium text-black  mb-1">QMS</p>
+                <p className=" text-2xl font-medium text-black  mb-1 text-center md:text-left">
+                  QMS
+                </p>
                 <p className=" text-sm font-normal text-black inter-text">
                   - FTR Improvement
                 </p>
@@ -189,7 +191,7 @@ const page = () => {
                 </p>
               </div>
             </div>
-            <div className="flex items-center bg-[#FEF2FB] gap-4 py-4 px-6 rounded">
+            <div className="flex flex-col md:flex-row items-center bg-[#FEF2FB] gap-4 py-4 px-6 rounded">
               <div>
                 <Image
                   src="/images/Financial Growth.svg" // path relative to /public
@@ -202,7 +204,7 @@ const page = () => {
               </div>
 
               <div>
-                <p className=" text-2xl font-medium text-black  mb-1">
+                <p className=" text-2xl font-medium text-black  mb-1 text-center md:text-left">
                   Financial Growth
                 </p>
 

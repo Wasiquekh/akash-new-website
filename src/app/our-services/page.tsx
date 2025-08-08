@@ -54,7 +54,7 @@ const page = () => {
             </div>
           </div>
           <div className=" grid grid-cols-1 md:grid-cols-2 gap-4">
-            <div className="flex items-center bg-[#FEF2FB] gap-4 py-4 px-6 rounded">
+            <div className="flex flex-col md:flex-row items-center bg-[#FEF2FB] gap-4 py-4 px-6 rounded">
               <div>
                 <Image
                   src="/images/Lean Manufacturing.png" // path relative to /public
@@ -67,15 +67,15 @@ const page = () => {
               </div>
 
               <div>
-                <p className=" text-2xl font-medium text-black  mb-1">
+                <p className=" text-2xl font-medium text-black  mb-1 text-center md:text-left">
                   Lean Manufacturing
                 </p>
-                <p className=" text-sm font-normal text-black inter-text">
+                <p className=" text-sm font-normal text-black inter-text text-center md:text-left">
                   Basic Level, Intermediate Level, Advance Level
                 </p>
               </div>
             </div>
-            <div className="flex items-center bg-[#FEF2FB] gap-4 py-4 px-6 rounded">
+            <div className="flex flex-col md:flex-row items-center bg-[#FEF2FB] gap-4 py-4 px-6 rounded">
               <div>
                 <Image
                   src="/images/Zed Certification.png" // path relative to /public
@@ -88,15 +88,15 @@ const page = () => {
               </div>
 
               <div>
-                <p className=" text-2xl font-medium text-black  mb-1">
+                <p className=" text-2xl font-medium text-black  mb-1 text-center md:text-left">
                   ZED CERTIFICATION
                 </p>
-                <p className=" text-sm font-normal text-black inter-text">
+                <p className=" text-sm font-normal text-black inter-text text-center md:text-left">
                   Bronze certification, Silver certification, Gold Certification
                 </p>
               </div>
             </div>
-            <div className="flex items-center bg-[#FEF2FB] gap-4 py-4 px-6 rounded">
+            <div className="flex flex-col md:flex-row items-center bg-[#FEF2FB] gap-4 py-4 px-6 rounded">
               <div>
                 <Image
                   src="/images/Cost Innovation Module.png" // path relative to /public
@@ -109,15 +109,15 @@ const page = () => {
               </div>
 
               <div>
-                <p className=" text-2xl font-medium text-black  mb-1">
+                <p className=" text-2xl font-medium text-black  mb-1 text-center md:text-left">
                   Cost Innovation Module
                 </p>
-                <p className=" text-sm font-normal text-black inter-text">
+                <p className=" text-sm font-normal text-black inter-text text-center md:text-left">
                   You can edit this text for your presentation
                 </p>
               </div>
             </div>
-            <div className="flex items-center bg-[#FEF2FB] gap-4 py-4 px-6 rounded">
+            <div className="flex flex-col md:flex-row items-center bg-[#FEF2FB] gap-4 py-4 px-6 rounded">
               <div>
                 <Image
                   src="/images/Rapid Supply China Improvement.png" // path relative to /public
@@ -130,15 +130,15 @@ const page = () => {
               </div>
 
               <div>
-                <p className=" text-2xl font-medium text-black  mb-1">
+                <p className=" text-2xl font-medium text-black  mb-1 text-center md:text-left">
                   Rapid Supply China Improvement
                 </p>
-                <p className=" text-sm font-normal text-black inter-text">
+                <p className=" text-sm font-normal text-black inter-text text-center md:text-left">
                   You can edit this text for your presentation
                 </p>
               </div>
             </div>
-            <div className="flex items-center bg-[#FEF2FB] gap-4 py-4 px-6 rounded">
+            <div className="flex flex-col md:flex-row items-center bg-[#FEF2FB] gap-4 py-4 px-6 rounded">
               <div>
                 <Image
                   src="/images/Third Party Audit.png" // path relative to /public
@@ -151,15 +151,15 @@ const page = () => {
               </div>
 
               <div>
-                <p className=" text-2xl font-medium text-black  mb-1">
+                <p className=" text-2xl font-medium text-black  mb-1 text-center md:text-left">
                   Third Party Audit
                 </p>
-                <p className=" text-sm font-normal text-black inter-text">
+                <p className=" text-sm font-normal text-black inter-text text-center md:text-left">
                   You can edit this text for your presentation
                 </p>
               </div>
             </div>
-            <div className="flex items-center bg-[#FEF2FB] gap-4 py-4 px-6 rounded">
+            <div className="flex flex-col md:flex-row items-center bg-[#FEF2FB] gap-4 py-4 px-6 rounded">
               <div>
                 <Image
                   src="/images/100 Day Renovation Program.png" // path relative to /public
@@ -172,10 +172,10 @@ const page = () => {
               </div>
 
               <div>
-                <p className=" text-2xl font-medium text-black  mb-1">
+                <p className=" text-2xl font-medium text-black  mb-1 text-center md:text-left">
                   100 Day Renovation Program
                 </p>
-                <p className=" text-sm font-normal text-black inter-text">
+                <p className=" text-sm font-normal text-black inter-text text-center md:text-left">
                   You can edit this text for your presentation
                 </p>
               </div>
