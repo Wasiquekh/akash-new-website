@@ -28,14 +28,19 @@ const page = () => {
         <div className="container mx-auto flex flex-wrap">
           <div className="flex flex-col text-center w-full mb-20">
             <h1 className="sm:text-6xl text-2xl font-bold  mb-4 text-primary">
-              OUR TEAM
+              Introduction
             </h1>
-            <p className="lg:w-[60%] mx-auto leading-relaxed inter-text text-sm font-normal">
-              We provide strategic business solutions tailored to your growth.
-              From startup guidance to operational optimization, our expert
-              consulting helps you navigate challenges, increase efficiency, and
-              achieve sustainable success. Partner with us to turn your vision
-              into results.
+            <p className="lg:w-[80%] mx-auto leading-relaxed inter-text text-sm font-normal">
+              ASBC is a Design company highly specialized in providing quality
+              services to companies willing to outsource their Design - Drafting
+              side of the product development. Our main goal is to offer you the
+              best CAD services for all your engineering needs in implementing
+              and developing CAD/CAM activities. As a busy CAD professional, you
+              are obviously pressed for time, and seeking better ways to
+              streamline the creation, use and maintenance of your CAD data.
+              ASBC can help you turn your ideas and Designs into functional
+              components that can be produced and marketed in a SHORT PERIOD OF
+              TIME, and offers services.
             </p>
           </div>
 

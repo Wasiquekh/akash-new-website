@@ -10,13 +10,13 @@ import { TbSettingsCheck } from "react-icons/tb";
 import { FaChalkboardTeacher, FaSearch } from "react-icons/fa";
 import {
   MdDeveloperBoard,
-  MdGroupAdd,
   MdMarkEmailRead,
   MdMedicalInformation,
 } from "react-icons/md";
 import { IoNewspaperSharp } from "react-icons/io5";
 import { GrUserExpert } from "react-icons/gr";
 import { SiSololearn } from "react-icons/si";
+import { PiReadCvLogoLight } from "react-icons/pi";
 
 const page = () => {
   return (
@@ -44,18 +44,32 @@ const page = () => {
               Introduction
             </h1>
             <p className="lg:w-[80%] mx-auto leading-relaxed inter-text text-sm font-normal mb-4">
-              AS BUSINESS CONSULTING is a Solution Provider. we work with you,
-              helping you to identify your potential and become more innovative,
-              competitive & efficient to help you grow exponentially in the
-              global markets.  We provide various services to our clients to
-              conceptualize & visualize technology driven business
-              transformation initiatives.  We are a professional who provides
-              services in a particular area such as Research and Development,
-              Product Design, Operation Technologies, Lean Manufacturing, Zed
-              Consulting, ISO, BIS, NABL, QMS, IMS, Human Resource, Import,
-              export, Management Consulting, Sales and Marketing, & Legal
-              Advisory.
+              Specialist advice and services provided by a third-party to help
+              businesses maximize the efficiency of their HR operations and
+              implement appropriate new policies and procedures in the best way
+              possible. They are often valued by companies for their ability to
+              bring an outsider&apos;s objective view.
             </p>
+            <p className="lg:w-[80%] mx-auto leading-relaxed inter-text text-sm font-normal mb-4">
+              HR consultancies are often brought in to address a particular
+              problem or deficit and are tasked with assessment, auditing,
+              proposal and implementation of a policy designed to address the
+              deficit and drive organizational change.
+            </p>
+            <p className="lg:w-[80%] mx-auto leading-relaxed inter-text text-sm font-normal mb-4">
+              The industry is dominated by major multinational companies
+              although there are also small and medium-sized businesses in
+              operation.
+            </p>
+            <p className="lg:w-[80%] mx-auto leading-relaxed inter-text text-sm font-normal mb-4">
+              Having the best talent is a competitive advantage in today’s
+              demanding and complex world. Because the success of business
+              relies upon talent, acquiring the most qualified people is
+              increasingly competitive. To win, organizations need expertise in
+              implementing innovative and differentiated sourcing and attraction
+              strategies.
+            </p>
+            <br />
           </div>
           <div className=" grid grid-cols-1 md:grid-cols-4 gap-5">
             <div className="bg-tertiary p-2 rounded-full flex gap-4 items-center">
@@ -75,8 +89,8 @@ const page = () => {
               <p className=" text-2xl font-medium text-black">Search</p>
             </div>
             <div className="bg-tertiary p-2 rounded-full flex gap-4 items-center">
-              <MdGroupAdd className=" bg-primary p-3 text-white text-6xl rounded-full border-2 border-white" />
-              <p className=" text-2xl font-medium text-black">Candidate</p>
+              <PiReadCvLogoLight className=" bg-primary p-3 text-white text-6xl rounded-full border-2 border-white" />
+              <p className=" text-2xl font-medium text-black">CV</p>
             </div>
             <div className="bg-tertiary p-2 rounded-full flex gap-4 items-center">
               <IoNewspaperSharp className=" bg-primary p-3 text-white text-6xl rounded-full border-2 border-white" />
@@ -172,7 +186,7 @@ const page = () => {
                   <FaCheck />
                 </div>
                 <h2 className="text-black text-2xl font-medium mb-0">
-                  Collage Campus
+                  College Campus
                 </h2>
               </div>
               <div className="flex items-center mb-3 gap-3">

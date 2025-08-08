@@ -71,7 +71,7 @@ const page = () => {
                   Lean Manufacturing
                 </p>
                 <p className=" text-sm font-normal text-black inter-text">
-                  Basic Level, Intermediate Level, Advance Level.
+                  Basic Level, Intermediate Level, Advance Level
                 </p>
               </div>
             </div>
@@ -89,10 +89,10 @@ const page = () => {
 
               <div>
                 <p className=" text-2xl font-medium text-black  mb-1">
-                  Lean Manufacturing
+                  ZED CERTIFICATION
                 </p>
                 <p className=" text-sm font-normal text-black inter-text">
-                  Basic Level, Intermediate Level, Advance Level.
+                  Bronze certification, Silver certification, Gold Certification
                 </p>
               </div>
             </div>
@@ -110,10 +110,10 @@ const page = () => {
 
               <div>
                 <p className=" text-2xl font-medium text-black  mb-1">
-                  Lean Manufacturing
+                  Cost Innovation Module
                 </p>
                 <p className=" text-sm font-normal text-black inter-text">
-                  Basic Level, Intermediate Level, Advance Level.
+                  You can edit this text for your presentation
                 </p>
               </div>
             </div>
@@ -131,10 +131,10 @@ const page = () => {
 
               <div>
                 <p className=" text-2xl font-medium text-black  mb-1">
-                  Lean Manufacturing
+                  Rapid Supply China Improvement
                 </p>
                 <p className=" text-sm font-normal text-black inter-text">
-                  Basic Level, Intermediate Level, Advance Level.
+                  You can edit this text for your presentation
                 </p>
               </div>
             </div>
@@ -152,10 +152,10 @@ const page = () => {
 
               <div>
                 <p className=" text-2xl font-medium text-black  mb-1">
-                  Lean Manufacturing
+                  Third Party Audit
                 </p>
                 <p className=" text-sm font-normal text-black inter-text">
-                  Basic Level, Intermediate Level, Advance Level.
+                  You can edit this text for your presentation
                 </p>
               </div>
             </div>
@@ -173,10 +173,10 @@ const page = () => {
 
               <div>
                 <p className=" text-2xl font-medium text-black  mb-1">
-                  Lean Manufacturing
+                  100 Day Renovation Program
                 </p>
                 <p className=" text-sm font-normal text-black inter-text">
-                  Basic Level, Intermediate Level, Advance Level.
+                  You can edit this text for your presentation
                 </p>
               </div>
             </div>

@@ -34,7 +34,7 @@ const page = () => {
               The main object of AS Consultants is to provide comprehensive and
               affordable services to our customers and clients.
             </p>
-            <p className="lg:w-[60%] mx-auto leading-relaxed inter-text text-sm font-normal mb-4">
+            <p className="lg:w-[90%] mx-auto leading-relaxed inter-text text-sm font-normal mb-4">
               We help you understand legal and commercial issues to guide
               you into success. Our dedicated teams cater towards all your
               advisory needs covering statutory compliance, financial advisory,

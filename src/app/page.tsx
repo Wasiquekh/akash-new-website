@@ -276,9 +276,9 @@ export default function Home() {
               OUR ACHIEVEMENTS
             </h1>
             {/* <p className="lg:w-2/3 mx-auto text-base  md:text-base md:font-normal text-white">
-              Aziz Enterprises is deeply committed to offering secure &
-              affordable solutions to different industries
-            </p> */}
+                Aziz Enterprises is deeply committed to offering secure &
+                affordable solutions to different industries
+              </p> */}
           </div>
         </div>
       </section>
@@ -290,7 +290,7 @@ export default function Home() {
               alt="Example image"
               width={55}
               height={55}
-              className=" mb-2"
+              className=" mb-2 w-14"
             />
             <h2 className=" font-poppins text-5xl font-bold  mb-2">
               {/* {counterInView && <CountUp end={53} duration={5} />}+ */}
@@ -300,7 +300,7 @@ export default function Home() {
             <p className=" text-lg font-medium mb-2">Clients</p>
             <p className=" text-sm  font-light text-center">
               The Nation and International clients are trusted on our services
-              and happy to seen our result in desire timeline.
+              and happy to seen our result in desire timeline
             </p>
           </div>
         </div>
@@ -311,7 +311,7 @@ export default function Home() {
               alt="Example image"
               width={55}
               height={55}
-              className=" mb-2"
+              className=" mb-2 w-14"
             />
             <h2 className=" font-poppins text-5xl font-bold  mb-2">
               {/* {counterInView && <CountUp end={120} duration={5} />} */}
@@ -320,8 +320,8 @@ export default function Home() {
 
             <p className=" text-lg font-medium mb-2">Projects</p>
             <p className=" text-sm  font-light text-center">
-              The Nation and International clients are trusted on our services
-              and happy to seen our result in desire timeline.
+              To a small and large developments projects we competed more then
+              120 project in past years
             </p>
           </div>
         </div>
@@ -332,7 +332,7 @@ export default function Home() {
               alt="Example image"
               width={55}
               height={55}
-              className=" mb-2"
+              className=" mb-2 w-14"
             />
             <h2 className=" font-poppins text-5xl font-bold  mb-2">
               {/* {counterInView && <CountUp end={250} duration={5} />}+ */}
@@ -341,8 +341,8 @@ export default function Home() {
 
             <p className=" text-lg font-medium mb-2">Cost Innovation</p>
             <p className=" text-sm  font-light text-center">
-              The Nation and International clients are trusted on our services
-              and happy to seen our result in desire timeline.
+              We given more then 100 CR rupees saving to our customer though our
+              innovation program
             </p>
           </div>
         </div>
@@ -480,7 +480,7 @@ export default function Home() {
                 </h2>
                 <p className="text-black text-sm mb-0">- Placement Services</p>
                 <p className="text-black text-sm mb-0">- Trainings</p>
-                <p className="text-black text-sm mb-0">- Collage Campus</p>
+                <p className="text-black text-sm mb-0">- College Campus</p>
                 <Link
                   href="/human-resource"
                   className="bg-secondary hover:bg-primary text-white text-base font-medium py-2 px-6 rounded border border-secondary block text-center mt-4"
@@ -641,10 +641,10 @@ export default function Home() {
                 />
                 <div className="w-full">
                   <h2 className="text-2xl font-normal text-black mb-5">
-                    Akash Shahane
+                    Adv. Madhuri S
                   </h2>
                   <h3 className="text-black font-normal text-sm mb-5">
-                    MBA BE (Mech.) Founder
+                    Advocate
                   </h3>
                   <span className="flex justify-center gap-2.5 text-black">
                     <FaXTwitter />

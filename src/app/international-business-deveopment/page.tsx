@@ -166,17 +166,17 @@ const page = () => {
             {/* head */}
             <div className="bg-secondary text-white text-center py-4 rounded-t-lg">
               <h2 className="text-2xl font-medium leading-tight">
-                Technology
+                Import
                 <br />
-                Development
+                Export
               </h2>
             </div>
             {/* Menu Items  */}
             <div className="flex flex-col divide-y divide-gray-300 text-gray-600 text-center font-medium">
-              <div className="py-4  ">New Technology / Setup</div>
-              <div className="py-4  ">Machine & Tools</div>
-              <div className="py-4  ">International Relations</div>
-              <div className="py-4  ">Business Development</div>
+              <div className="py-4  ">Certification</div>
+              <div className="py-4  ">Licensing</div>
+              <div className="py-4  ">Product Sales</div>
+              <div className="py-4  ">Franchise</div>
             </div>
             {/* Bottom Bar */}
             <div className="bg-primary h-10 rounded-b-lg"></div>
@@ -185,17 +185,17 @@ const page = () => {
             {/* head */}
             <div className="bg-primary text-white text-center py-4 rounded-t-lg">
               <h2 className="text-2xl font-medium leading-tight">
-                Technology
+                Logistics
                 <br />
-                Development
+                Transport
               </h2>
             </div>
             {/* Menu Items  */}
             <div className="flex flex-col divide-y divide-gray-300 text-gray-600 text-center font-medium">
-              <div className="py-4  ">New Technology / Setup</div>
-              <div className="py-4  ">Machine & Tools</div>
-              <div className="py-4  ">International Relations</div>
-              <div className="py-4  ">Business Development</div>
+              <div className="py-4  ">Freight Forwarding</div>
+              <div className="py-4  ">Customer Clearance</div>
+              <div className="py-4  ">Transportation</div>
+              <div className="py-4  ">Packing</div>
             </div>
             {/* Bottom Bar */}
             <div className="bg-secondary  h-10 rounded-b-lg"></div>
@@ -204,17 +204,17 @@ const page = () => {
             {/* head */}
             <div className="bg-secondary text-white text-center py-4 rounded-t-lg">
               <h2 className="text-2xl font-medium leading-tight">
-                Technology
+                Consultation
                 <br />
-                Development
+                Training
               </h2>
             </div>
             {/* Menu Items  */}
             <div className="flex flex-col divide-y divide-gray-300 text-gray-600 text-center font-medium">
-              <div className="py-4  ">New Technology / Setup</div>
-              <div className="py-4  ">Machine & Tools</div>
-              <div className="py-4  ">International Relations</div>
-              <div className="py-4  ">Business Development</div>
+              <div className="py-4  ">Cost Saving</div>
+              <div className="py-4  ">Govt. Benefit & Scheme</div>
+              <div className="py-4  ">Audit</div>
+              <div className="py-4  ">Training</div>
             </div>
             {/* Bottom Bar */}
             <div className="bg-primary h-10 rounded-b-lg"></div>

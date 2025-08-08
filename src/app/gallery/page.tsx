@@ -54,7 +54,7 @@ const page = () => {
               of type and scrambled it to make a type specimen book. 
             </p>
           </div>
-          <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-4 uppercase">
             <div className="">
               <Image
                 src="/gallery/g1.png" // path relative to /public
@@ -142,9 +142,7 @@ const page = () => {
                 priority // optional: preloads image
                 className=" mb-3 rounded"
               />
-              <p className=" text-base md:text-xl font-light">
-                Cost Innovation Training
-              </p>
+              <p className=" text-base md:text-xl font-light">QCI INDIA TEAM</p>
             </div>
             <div className="">
               <Image
@@ -156,7 +154,7 @@ const page = () => {
                 className=" mb-3 rounded"
               />
               <p className=" text-base md:text-xl font-light">
-                Lean Manufacturing Trainning
+                MANTHAN PROGRAMME AT CHENNAI
               </p>
             </div>
             <div className="">
@@ -182,7 +180,7 @@ const page = () => {
                 className=" mb-3 rounded"
               />
               <p className=" text-base md:text-xl font-light">
-                Cost Innovation Training
+                LEAN AWARNESS PROGRAMME AT IFB GOA
               </p>
             </div>
             <div className="">
@@ -195,7 +193,7 @@ const page = () => {
                 className=" mb-3 rounded"
               />
               <p className=" text-base md:text-xl font-light">
-                Lean Manufacturing Trainning
+                LEAN AWARNESS PROGRAMME AT IFB GOA
               </p>
             </div>
             <div className="">
@@ -208,7 +206,7 @@ const page = () => {
                 className=" mb-3 rounded"
               />
               <p className=" text-base md:text-xl font-light">
-                Six Sigma Training At Dy Patil Collage.
+                PROJECT DISCUSSION WITH VOLTAS CAC TEAM
               </p>
             </div>
             <div className="">
@@ -221,7 +219,7 @@ const page = () => {
                 className=" mb-3 rounded"
               />
               <p className=" text-base md:text-xl font-light">
-                Cost Innovation Training
+                HONOR AT LAGU UDYOG BHARTI JALNA
               </p>
             </div>
             <div className="">
@@ -234,7 +232,7 @@ const page = () => {
                 className=" mb-3 rounded"
               />
               <p className=" text-base md:text-xl font-light">
-                Lean Manufacturing Trainning
+                BRAIN STROMMING ACTIVITY AT MARVEL
               </p>
             </div>
             <div className="">
@@ -247,7 +245,7 @@ const page = () => {
                 className=" mb-3 rounded"
               />
               <p className=" text-base md:text-xl font-light">
-                Six Sigma Training At Dy Patil Collage.
+                OPENNING CEREMONY AT LUNAR PLASTICS
               </p>
             </div>
             <div className="">
@@ -260,7 +258,7 @@ const page = () => {
                 className=" mb-3 rounded"
               />
               <p className=" text-base md:text-xl font-light">
-                Cost Innovation Training
+                HONAR AT LAGU UDYOG BHARTI JALNA
               </p>
             </div>
             <div className="">
@@ -273,7 +271,7 @@ const page = () => {
                 className=" mb-3 rounded"
               />
               <p className=" text-base md:text-xl font-light">
-                Lean Manufacturing Trainning
+                HONAR AT LAGU UDYOG BHARTI JALNA
               </p>
             </div>
             <div className="">
@@ -286,7 +284,7 @@ const page = () => {
                 className=" mb-3 rounded"
               />
               <p className=" text-base md:text-xl font-light">
-                Six Sigma Training At Dy Patil Collage.
+                WELCOME TO MR. R.R. PATEL
               </p>
             </div>
             <div className="">
@@ -299,7 +297,8 @@ const page = () => {
                 className=" mb-3 rounded"
               />
               <p className=" text-base md:text-xl font-light">
-                Cost Innovation Training
+                VISITING PROJECT GALLERY (MECH.) AT D.Y. PARTIL COLLAGE OF ENGG.
+                KOLHAPUR
               </p>
             </div>
             <div className="">
@@ -312,7 +311,7 @@ const page = () => {
                 className=" mb-3 rounded"
               />
               <p className=" text-base md:text-xl font-light">
-                Lean Manufacturing Trainning
+                LEAN CROSS LEARNNING ACTIVITY IN CSN AREA.
               </p>
             </div>
             <div className="">
@@ -325,7 +324,7 @@ const page = () => {
                 className=" mb-3 rounded"
               />
               <p className=" text-base md:text-xl font-light">
-                Six Sigma Training At Dy Patil Collage.
+                MEETING WITH NEDARLAND GUEST MR. SIMON FOR FCU DEVELOPMENT.
               </p>
             </div>
           </div>
