@@ -28,7 +28,7 @@ const Header = () => {
               Home
             </Link>
             <Link
-              href="/"
+              href="/#about"
               className="hover:text-blue-600"
               onClick={() => setIsOpen(false)}
             >
