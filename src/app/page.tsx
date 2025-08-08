@@ -729,7 +729,7 @@ export default function Home() {
         <div className="container">
           <div className="flex flex-col text-center w-full mb-20">
             <h1 className="sm:text-6xl text-2xl font-bold  mb-4 text-primary uppercase">
-              Customer&apos;s Testimonials
+              Customer&apos;s Testimonials
             </h1>
             <p className="lg:w-[60%] mx-auto leading-relaxed inter-text text-sm font-normal">
               We provide strategic business solutions tailored to your growth.
