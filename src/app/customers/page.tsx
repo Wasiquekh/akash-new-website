@@ -19,24 +19,24 @@ const page = () => {
           </p>
         </div>
       </div>
-      <section className="">
+      {/* <section className="">
         <Image
-          src="/images/leftShape.svg" // path relative to /public
+          src="/images/leftShape.svg" 
           alt="My beautiful image"
           width={300}
           height={300}
-          priority // optional: preloads image
+          priority 
           className=" absolute left-0 top-0 "
         />
         <Image
-          src="/images/rightShape.svg" // path relative to /public
+          src="/images/rightShape.svg" 
           alt="My beautiful image"
           width={300}
           height={300}
           priority // optional: preloads image
           className=" absolute right-0 top-0 "
         />
-      </section>
+      </section> */}
       <section>
         <div className="container">
           <div className=" flex flex-wrap">
