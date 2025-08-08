@@ -10,7 +10,7 @@ const page = () => {
       <Header />
       {/*  TOP SECTION Banner */}
       <div className="bg-[url('/images/services.jpg')] bg-cover bg-center">
-        <div className=" max-w-7xl m-auto px-5  py-40">
+        <div className=" max-w-7xl m-auto px-5  py-15 md:py-40">
           <h1 className="sm:text-6xl text-2xl font-bold text-white mb-4 text-center uppercase ">
             our customers
           </h1>
