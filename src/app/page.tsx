@@ -21,9 +21,9 @@ export default function Home() {
     <>
       <Header />
       {/* HOME TOP SECTION */}
-      <div className="bg-[url('/images/landingTop.jpg')] bg-cover bg-center h-[700px] w-full flex justify-center items-center">
+      <div className="bg-[url('/images/landingTop.jpg')] bg-cover bg-center h-auto md:h-[700px] w-full flex justify-center items-center">
         <div className="container ">
-          <div className="flex flex-col text-center w-full mb-20">
+          <div className="flex flex-col text-center w-full mb-10 md:mb-20">
             <h1 className="sm:text-6xl text-2xl font-bold text-white mb-4 ">
               AS BUSINESS CONSULTING
             </h1>
