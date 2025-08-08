@@ -5,8 +5,6 @@ import { FaInstagram } from "react-icons/fa";
 import { FaYoutube } from "react-icons/fa";
 import Link from "next/link";
 
-import Script from "next/script";
-
 const Footer = () => {
   return (
     <div>

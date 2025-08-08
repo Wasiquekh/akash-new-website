@@ -1,6 +1,6 @@
 "use client";
 
-import { Formik, Form, Field, ErrorMessage } from "formik";
+import { Formik, Form, Field, ErrorMessage, FormikHelpers } from "formik";
 import * as Yup from "yup";
 import React from "react";
 import Header from "../components/Header";
@@ -33,12 +33,16 @@ const page = () => {
     message: "",
   };
 
-  const onSubmit = (values: FormValues, { resetForm }: any) => {
+  const onSubmit = (
+    values: FormValues,
+    { resetForm }: FormikHelpers<FormValues>
+  ) => {
     toast.success("Message sent successfully!", {
       position: "top-right",
       autoClose: 3000,
     });
-    console.log(values);
+
+    // Optionally reset form after submission
     resetForm();
   };
   return (

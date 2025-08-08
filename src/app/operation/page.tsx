@@ -51,7 +51,7 @@ const page = () => {
                 scenarios, however, such as economic downturns, changes in
                 management, or technological rollouts, operations consultants
                 will be brought in to advise on significant changes to a
-                business' operational processes.
+                business operational processes.
               </p>
             </div>
           </div>
