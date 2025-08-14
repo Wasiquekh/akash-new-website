@@ -67,7 +67,7 @@ const Header = () => {
       )}
 
       <div className=" w-full bg-primary ">
-        <div className=" mx-auto max-w-screen-xl px-[20px] flex  md:flex-row  items-center gap-2 md:gap-0 justify-between text-xs py-0 text-white">
+        <div className=" mx-auto max-w-screen-xl px-[20px] flex  md:flex-row  items-center gap-2 md:gap-0 justify-between text-xs py-2 md:p-0 text-white">
           <Link href="tel:+91-9529322665">
             <div className=" flex gap-1 items-center">
               <IoIosCall className=" text-base" />
@@ -80,7 +80,7 @@ const Header = () => {
               width={500}
               height={500}
               alt="client header"
-              className=""
+              className=" hidden md:block"
             />
           </div>
           <div className="flex gap-4 text-sm">
