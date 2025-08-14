@@ -34,10 +34,26 @@ const Footer = () => {
               <p className=" font-medium border-b-2 border-tertiary inline-block text-tertiary mb-3">
                 MENU
               </p>
-              <nav className="list-none">
+              <nav className="list-none uppercase">
                 <li>
                   <Link href="/" className="text-white hover:text-tertiary ">
                     HOME
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href="/contact"
+                    className="text-white hover:text-tertiary "
+                  >
+                    About us
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href="/our-services"
+                    className="text-white hover:text-tertiary "
+                  >
+                    services
                   </Link>
                 </li>
                 <li>
@@ -71,13 +87,13 @@ const Footer = () => {
               <p className=" font-medium border-b-2 border-tertiary inline-block text-tertiary mb-3">
                 SERVICES
               </p>
-              <nav className="list-none">
+              <nav className="list-none uppercase">
                 <li>
                   <Link
                     href="/research&development"
                     className="text-white hover:text-tertiary "
                   >
-                    R&D
+                    Research & Development
                   </Link>
                 </li>
                 <li>
@@ -85,15 +101,23 @@ const Footer = () => {
                     href="/operation"
                     className="text-white hover:text-tertiary "
                   >
-                    OPERATION
+                    OPERATIONS
                   </Link>
                 </li>
                 <li>
                   <Link
-                    href="/international-business-deveopment"
+                    href="/international-business-development"
                     className="text-white hover:text-tertiary "
                   >
-                    CERTIFICATION
+                    International business
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href="/sales&marketing"
+                    className="text-white hover:text-tertiary "
+                  >
+                    Sales & marketing
                   </Link>
                 </li>
                 <li>
@@ -101,7 +125,23 @@ const Footer = () => {
                     href="/human-resource"
                     className="text-white hover:text-tertiary "
                   >
-                    HR
+                    HR Consultancy
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href="/legal-consulting"
+                    className="text-white hover:text-tertiary "
+                  >
+                    Legal advisory
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href="/certification"
+                    className="text-white hover:text-tertiary "
+                  >
+                    Certification
                   </Link>
                 </li>
               </nav>
