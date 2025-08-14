@@ -3,6 +3,7 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 import Image from "next/image";
 import ContactFrom from "../components/ContactFrom";
+import Link from "next/link";
 
 const page = () => {
   return (
@@ -37,147 +38,197 @@ const page = () => {
           className=" absolute right-0 top-0 "
         />
       </section>
-      <section>
+      {/* SERVICES */}
+      <section className="bg-[linear-gradient(180deg,_#FFF_0%,_#F0DEEC_100%)]">
         <div className="container">
-          <div className=" flex flex-wrap">
-            <div className="flex flex-col text-center w-full mb-20">
-              <h1 className="sm:text-6xl text-2xl font-bold  mb-4 text-primary">
-                Short Term Courses
-              </h1>
-              <p className="lg:w-[90%] mx-auto leading-relaxed inter-text text-sm font-normal mb-4">
-                We are one of the end to end service provider company. After
-                successfully working in Design, New product Development, Lean
-                Manufacturing, HR and Marketing sector we start “International
-                Business Development And Logistics” Services for our valuable
-                customer. 
-              </p>
-            </div>
+          <div className="flex flex-col text-center w-full mb-20">
+            <h1 className="sm:text-6xl text-2xl font-bold  mb-4 text-primary">
+              OUR SERVICES
+            </h1>
+            <p className="lg:w-[60%] mx-auto leading-relaxed inter-text text-sm font-normal">
+              We provide strategic business solutions tailored to your growth.
+              From startup guidance to operational optimization, our expert
+              consulting helps you navigate challenges, increase efficiency, and
+              achieve sustainable success. Partner with us to turn your vision
+              into results.
+            </p>
           </div>
-          <div className=" grid grid-cols-1 md:grid-cols-2 gap-4">
-            <div className="flex flex-col md:flex-row items-center bg-[#FEF2FB] gap-4 py-4 px-6 rounded">
-              <div>
-                <Image
-                  src="/images/Lean Manufacturing.png" // path relative to /public
-                  alt="My beautiful image"
-                  width={130}
-                  height={130}
-                  priority // optional: preloads image
-                  className=""
-                />
-              </div>
-
-              <div>
-                <p className=" text-2xl font-medium text-black  mb-1 text-center md:text-left">
-                  Lean Manufacturing
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+            <div className="w-full bg-white rounded-lg overflow-hidden shadow-md ">
+              <Image
+                src="/images/r&d.png"
+                width={600}
+                height={400}
+                alt="services"
+                className="w-full h-[250px] object-cover"
+              />
+              <div className="p-6">
+                <h2 className="text-2xl  text-black mb-2 pb-2 border-b-2 inline-block border-secondary">
+                  Research and Development
+                </h2>
+                <p className="text-black text-sm mb-0">
+                  - Product Designing & Development
                 </p>
-                <p className=" text-sm font-normal text-black inter-text text-center md:text-left">
-                  Basic Level, Intermediate Level, Advance Level
-                </p>
-              </div>
-            </div>
-            <div className="flex flex-col md:flex-row items-center bg-[#FEF2FB] gap-4 py-4 px-6 rounded">
-              <div>
-                <Image
-                  src="/images/Zed Certification.png" // path relative to /public
-                  alt="My beautiful image"
-                  width={130}
-                  height={130}
-                  priority // optional: preloads image
-                  className=""
-                />
-              </div>
-
-              <div>
-                <p className=" text-2xl font-medium text-black  mb-1 text-center md:text-left">
-                  ZED CERTIFICATION
-                </p>
-                <p className=" text-sm font-normal text-black inter-text text-center md:text-left">
-                  Bronze certification, Silver certification, Gold Certification
-                </p>
+                <p className="text-black text-sm mb-0">- Proto Type Modeling</p>
+                <p className="text-black text-sm mb-0">- 3D 2D Drafting</p>
+                <Link
+                  href="/research&development"
+                  className="bg-secondary hover:bg-primary text-white text-base font-medium py-2 px-6 rounded border border-secondary block text-center mt-4"
+                >
+                  Read more
+                </Link>
               </div>
             </div>
-            <div className="flex flex-col md:flex-row items-center bg-[#FEF2FB] gap-4 py-4 px-6 rounded">
-              <div>
-                <Image
-                  src="/images/Cost Innovation Module.png" // path relative to /public
-                  alt="My beautiful image"
-                  width={130}
-                  height={130}
-                  priority // optional: preloads image
-                  className=""
-                />
-              </div>
 
-              <div>
-                <p className=" text-2xl font-medium text-black  mb-1 text-center md:text-left">
-                  Cost Innovation Module
+            <div className="w-full bg-white rounded-lg overflow-hidden shadow-md ">
+              <Image
+                src="/images/Operations.png"
+                width={600}
+                height={400}
+                alt="services"
+                className="w-full h-[250px] object-cover"
+              />
+              <div className="p-6">
+                <h2 className="text-2xl  text-black mb-2 pb-2 border-b-2 inline-block border-secondary">
+                  Operations
+                </h2>
+                <p className="text-black text-sm mb-0">
+                  - Cost Savings Modules
                 </p>
-                <p className=" text-sm font-normal text-black inter-text text-center md:text-left">
-                  You can edit this text for your presentation
+                <p className="text-black text-sm mb-0">- Process improvement</p>
+                <p className="text-black text-sm mb-0">
+                  - Supply Chain Management
                 </p>
+                <Link
+                  href="/operation"
+                  className="bg-secondary hover:bg-primary text-white text-base font-medium py-2 px-6 rounded border border-secondary block text-center mt-4"
+                >
+                  Read more
+                </Link>
               </div>
             </div>
-            <div className="flex flex-col md:flex-row items-center bg-[#FEF2FB] gap-4 py-4 px-6 rounded">
-              <div>
-                <Image
-                  src="/images/Rapid Supply China Improvement.png" // path relative to /public
-                  alt="My beautiful image"
-                  width={130}
-                  height={130}
-                  priority // optional: preloads image
-                  className=""
-                />
-              </div>
-
-              <div>
-                <p className=" text-2xl font-medium text-black  mb-1 text-center md:text-left">
-                  Rapid Supply China Improvement
-                </p>
-                <p className=" text-sm font-normal text-black inter-text text-center md:text-left">
-                  You can edit this text for your presentation
-                </p>
-              </div>
-            </div>
-            <div className="flex flex-col md:flex-row items-center bg-[#FEF2FB] gap-4 py-4 px-6 rounded">
-              <div>
-                <Image
-                  src="/images/Third Party Audit.png" // path relative to /public
-                  alt="My beautiful image"
-                  width={130}
-                  height={130}
-                  priority // optional: preloads image
-                  className=""
-                />
-              </div>
-
-              <div>
-                <p className=" text-2xl font-medium text-black  mb-1 text-center md:text-left">
-                  Third Party Audit
-                </p>
-                <p className=" text-sm font-normal text-black inter-text text-center md:text-left">
-                  You can edit this text for your presentation
-                </p>
+            <div className="w-full bg-white rounded-lg overflow-hidden shadow-md ">
+              <Image
+                src="/images/Certification.png"
+                width={600}
+                height={400}
+                alt="services"
+                className="w-full h-[250px] object-cover"
+              />
+              <div className="p-6">
+                <h2 className="text-2xl  text-black mb-2 pb-2 border-b-2 inline-block border-secondary">
+                  International Business
+                </h2>
+                <p className="text-black text-sm mb-0">- BIS & OTR</p>
+                <p className="text-black text-sm mb-0">- NABL -ISO</p>
+                <p className="text-black text-sm mb-0">- Lean Mfg</p>
+                {/* <p className="text-black text-sm mb-0">
+                  - Zed Certification -3rd Party Inspection
+                </p> */}
+                <Link
+                  href="/international-business-development"
+                  className="bg-secondary hover:bg-primary text-white text-base font-medium py-2 px-6 rounded border border-secondary block text-center mt-4"
+                >
+                  Read more
+                </Link>
               </div>
             </div>
-            <div className="flex flex-col md:flex-row items-center bg-[#FEF2FB] gap-4 py-4 px-6 rounded">
-              <div>
-                <Image
-                  src="/images/100 Day Renovation Program.png" // path relative to /public
-                  alt="My beautiful image"
-                  width={130}
-                  height={130}
-                  priority // optional: preloads image
-                  className=""
-                />
+            <div className="w-full bg-white rounded-lg overflow-hidden shadow-md ">
+              <Image
+                src="/images/Sales & Mrkt.png"
+                width={600}
+                height={400}
+                alt="services"
+                className="w-full h-[250px] object-cover"
+              />
+              <div className="p-6">
+                <h2 className="text-2xl  text-black mb-2 pb-2 border-b-2 inline-block border-secondary">
+                  Sales & Marketing
+                </h2>
+                <p className="text-black text-sm mb-0">- Advertising</p>
+                <p className="text-black text-sm mb-0">- Distribution Ship</p>
+                <p className="text-black text-sm mb-0">- Market Planning</p>
+                <Link
+                  href="/sales&marketing"
+                  className="bg-secondary hover:bg-primary text-white text-base font-medium py-2 px-6 rounded border border-secondary block text-center mt-4"
+                >
+                  Read more
+                </Link>
               </div>
-
-              <div>
-                <p className=" text-2xl font-medium text-black  mb-1 text-center md:text-left">
-                  100 Day Renovation Program
+            </div>
+            <div className="w-full bg-white rounded-lg overflow-hidden shadow-md ">
+              <Image
+                src="/images/HR Consultancy.png"
+                width={600}
+                height={400}
+                alt="services"
+                className="w-full h-[250px] object-cover"
+              />
+              <div className="p-6">
+                <h2 className="text-2xl  text-black mb-2 pb-2 border-b-2 inline-block border-secondary">
+                  HR Consultancy
+                </h2>
+                <p className="text-black text-sm mb-0">- Placement Services</p>
+                <p className="text-black text-sm mb-0">- Trainings</p>
+                <p className="text-black text-sm mb-0">- College Campus</p>
+                <Link
+                  href="/human-resource"
+                  className="bg-secondary hover:bg-primary text-white text-base font-medium py-2 px-6 rounded border border-secondary block text-center mt-4"
+                >
+                  Read more
+                </Link>
+              </div>
+            </div>
+            <div className="w-full bg-white rounded-lg overflow-hidden shadow-md ">
+              <Image
+                src="/images/Legal Advisory.png"
+                width={600}
+                height={400}
+                alt="services"
+                className="w-full h-[250px] object-cover"
+              />
+              <div className="p-6">
+                <h2 className="text-2xl  text-black mb-2 pb-2 border-b-2 inline-block border-secondary">
+                  Legal Advisory
+                </h2>
+                <p className="text-black text-sm mb-0">
+                  - Corporate Legal Advisory
                 </p>
-                <p className=" text-sm font-normal text-black inter-text text-center md:text-left">
-                  You can edit this text for your presentation
+                <p className="text-black text-sm mb-0">
+                  - Background Investigation
                 </p>
+                <p className="text-black text-sm mb-0">- Commercial Advisory</p>
+                <Link
+                  href="/legal-consulting"
+                  className="bg-secondary hover:bg-primary text-white text-base font-medium py-2 px-6 rounded border border-secondary block text-center mt-4"
+                >
+                  Read more
+                </Link>
+              </div>
+            </div>
+            <div className="w-full bg-white rounded-lg overflow-hidden shadow-md ">
+              <Image
+                src="/images/course.jpg"
+                width={600}
+                height={400}
+                alt="services"
+                className="w-full h-[250px] object-cover"
+              />
+              <div className="p-6">
+                <h2 className="text-2xl  text-black mb-2 pb-2 border-b-2 inline-block border-secondary">
+                  Certification
+                </h2>
+                <p className="text-black text-sm mb-0">- Lean Manufacturing</p>
+                <p className="text-black text-sm mb-0">- ZED Certification</p>
+                <p className="text-black text-sm mb-0">
+                  - Cost Innovation Module
+                </p>
+                <Link
+                  href="/certification"
+                  className="bg-secondary hover:bg-primary text-white text-base font-medium py-2 px-6 rounded border border-secondary block text-center mt-4"
+                >
+                  Read more
+                </Link>
               </div>
             </div>
           </div>

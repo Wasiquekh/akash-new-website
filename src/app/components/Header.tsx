@@ -154,19 +154,30 @@ const Header = () => {
               About Us
             </Link>
             <div className="relative group">
-              <div className="flex items-center gap-0.5">
-                <Link href="/our-services" className="mr-0 hover:text-gray-900">
+              <Link href="/our-services" className="mr-0 hover:text-gray-900">
+                <div className="flex items-center gap-0.5">
                   Services
-                </Link>
-                <RxChevronDown />
-              </div>
+                  <RxChevronDown />
+                </div>
+              </Link>
+
               {/* Submenu */}
-              <div className="absolute top-full left-0 hidden group-hover:block bg-white mt-1 rounded w-42 pb-4 z-50 text-[15px]">
+              <div
+                className={`
+                  absolute left-0 top-full
+                  invisible opacity-0 translate-y-1
+                  group-hover:visible group-hover:opacity-100 group-hover:translate-y-0
+                  transition-all duration-150
+                  bg-white mt-1 rounded w-56 pb-2 z-50 text-[15px]
+                  pointer-events-none group-hover:pointer-events-auto
+                  before:content-[''] before:absolute before:-top-2 before:left-0 before:w-full before:h-2
+                  pt-2`}
+              >
                 <Link
                   href="/research&development"
-                  className="block px-3 py-3 hover:bg-tertiary"
+                  className="block px-3 py-3  hover:bg-tertiary"
                 >
-                  R&D
+                  Research and Development
                 </Link>
                 <Link
                   href="/operation"
@@ -175,16 +186,16 @@ const Header = () => {
                   Operations
                 </Link>
                 <Link
-                  href="/international-business-deveopment"
+                  href="/international-business-development"
                   className="block px-3 py-3 hover:bg-tertiary"
                 >
-                  Certification
+                  International Business
                 </Link>
                 <Link
                   href="/sales&marketing"
                   className="block px-3 py-3 hover:bg-tertiary"
                 >
-                  Sales & Mrkt
+                  Sales &amp; Marketing
                 </Link>
                 <Link
                   href="/human-resource"
@@ -197,6 +208,12 @@ const Header = () => {
                   className="block px-3 py-3 hover:bg-tertiary"
                 >
                   Legal Advisory
+                </Link>
+                <Link
+                  href="/certification"
+                  className="block px-3 py-3 hover:bg-tertiary"
+                >
+                  Certification
                 </Link>
               </div>
             </div>
@@ -211,9 +228,11 @@ const Header = () => {
               Contact Us
             </Link>
           </nav>
-          <button className="flex items-center justify-center bg-secondary w-44 h-12 focus:outline-none hover:bg-primary  rounded-[7px] text-white font-medium text-lg mt-4 md:mt-0">
-            Book Now
-          </button>
+          <Link href="/contact">
+            <button className="flex items-center justify-center bg-secondary w-44 h-12 focus:outline-none hover:bg-primary  rounded-[7px] text-white font-medium text-lg mt-4 md:mt-0 cursor-pointer">
+              Book Now
+            </button>
+          </Link>
         </div>
       </header>
       {/* HEADER FOR MOBILE */}

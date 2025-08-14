@@ -21,12 +21,16 @@ export default function Home() {
     <>
       <Header />
       {/* HOME TOP SECTION */}
-      <div className="bg-[url('/images/landingTop.jpg')] bg-cover bg-center h-auto md:h-[700px] w-full flex justify-center items-center">
+      <div className="bg-[url('/images/landingTop.jpg')] bg-cover bg-center h-auto md:h-[600px] w-full flex justify-center items-center">
         <div className="container ">
-          <div className="flex flex-col text-center w-full mb-10 md:mb-20">
+          <div className="flex flex-col text-center w-full mb-0 md:mb-0">
             <h1 className="sm:text-6xl text-2xl font-bold text-white mb-4 ">
               AS BUSINESS CONSULTING
             </h1>
+            <h2 className="sm:text-3xl text-lg font-semibold text-white mb-6">
+              SPIRIT OF EXPERTIES
+            </h2>
+
             <p className="lg:w-2/3 mx-auto leading-relaxed text-sm font-normal text-white inter-text">
               We provide strategic business solutions tailored to your growth.
               From startup guidance to operational optimization, our expert
@@ -34,14 +38,6 @@ export default function Home() {
               achieve sustainable success. Partner with us to turn your vision
               into results.
             </p>
-          </div>
-          <div className="flex gap-2 justify-center">
-            <button className="flex items-center justify-center bg-secondary w-44 h-12 focus:outline-none hover:bg-primary  rounded-[7px] text-white font-medium text-lg mt-4 md:mt-0 border border-secondary hover:border-primary">
-              Book Now
-            </button>
-            <button className="flex items-center justify-center bg-transparent w-44 h-12 focus:outline-none hover:bg-secondary hover:border-secondary  rounded-[7px] text-white font-medium text-lg mt-4 md:mt-0 border border-white">
-              Book Now
-            </button>
           </div>
         </div>
       </div>
@@ -374,7 +370,7 @@ export default function Home() {
               />
               <div className="p-6">
                 <h2 className="text-2xl  text-black mb-2 pb-2 border-b-2 inline-block border-secondary">
-                  R&D
+                  Research and Development
                 </h2>
                 <p className="text-black text-sm mb-0">
                   - Product Designing & Development
@@ -410,7 +406,7 @@ export default function Home() {
                   - Supply Chain Management
                 </p>
                 <Link
-                  href="/international-business-deveopment"
+                  href="/operation"
                   className="bg-secondary hover:bg-primary text-white text-base font-medium py-2 px-6 rounded border border-secondary block text-center mt-4"
                 >
                   Read more
@@ -427,7 +423,7 @@ export default function Home() {
               />
               <div className="p-6">
                 <h2 className="text-2xl  text-black mb-2 pb-2 border-b-2 inline-block border-secondary">
-                  Certification
+                  International Business
                 </h2>
                 <p className="text-black text-sm mb-0">- BIS & OTR</p>
                 <p className="text-black text-sm mb-0">- NABL -ISO</p>
@@ -436,7 +432,7 @@ export default function Home() {
                   - Zed Certification -3rd Party Inspection
                 </p> */}
                 <Link
-                  href="/international-business-deveopment"
+                  href="/international-business-development"
                   className="bg-secondary hover:bg-primary text-white text-base font-medium py-2 px-6 rounded border border-secondary block text-center mt-4"
                 >
                   Read more
@@ -453,7 +449,7 @@ export default function Home() {
               />
               <div className="p-6">
                 <h2 className="text-2xl  text-black mb-2 pb-2 border-b-2 inline-block border-secondary">
-                  Sales & Mrkt
+                  Sales & Marketing
                 </h2>
                 <p className="text-black text-sm mb-0">- Advertising</p>
                 <p className="text-black text-sm mb-0">- Distribution Ship</p>
@@ -516,10 +512,32 @@ export default function Home() {
                 </Link>
               </div>
             </div>
+            <div className="w-full bg-white rounded-lg overflow-hidden shadow-md ">
+              <Image
+                src="/images/course.jpg"
+                width={600}
+                height={400}
+                alt="services"
+                className="w-full h-[250px] object-cover"
+              />
+              <div className="p-6">
+                <h2 className="text-2xl  text-black mb-2 pb-2 border-b-2 inline-block border-secondary">
+                  Certification
+                </h2>
+                <p className="text-black text-sm mb-0">- Lean Manufacturing</p>
+                <p className="text-black text-sm mb-0">- ZED Certification</p>
+                <p className="text-black text-sm mb-0">
+                  - Cost Innovation Module
+                </p>
+                <Link
+                  href="/certification"
+                  className="bg-secondary hover:bg-primary text-white text-base font-medium py-2 px-6 rounded border border-secondary block text-center mt-4"
+                >
+                  Read more
+                </Link>
+              </div>
+            </div>
           </div>
-          <button className="flex items-center justify-center bg-secondary w-60 h-12 focus:outline-none   rounded-[7px] text-white font-medium text-lg mt-4 md:mt-10 m-auto hover:bg-primary">
-            Book Now
-          </button>
         </div>
       </section>
       {/* TEAM */}
@@ -537,7 +555,7 @@ export default function Home() {
               into results.
             </p>
           </div>
-          <div className=" grid grid-cols-1 md:grid-cols-4 gap-6 md:gap-0">
+          <div className=" grid grid-cols-1 md:grid-cols-4 gap-6 md:gap-8">
             <div className="p-0">
               <div className="h-full flex flex-col items-center text-center">
                 {/* <img
@@ -645,6 +663,122 @@ export default function Home() {
                   </h2>
                   <h3 className="text-black font-normal text-sm mb-5">
                     Advocate
+                  </h3>
+                  <span className="flex justify-center gap-2.5 text-black">
+                    <FaXTwitter />
+                    <MdOutlineFacebook />
+                    <FaInstagram />
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div className="p-0">
+              <div className="h-full flex flex-col items-center text-center">
+                {/* <img
+                  alt="team"
+                  className="flex-shrink-0 rounded-lg w-[280px] h-[319px] object-cover object-center mb-4"
+                  src="/images/Akash Shahane.png"
+                /> */}
+                <Image
+                  src="/images/Ravindra Waykole.png"
+                  width={200}
+                  height={200}
+                  alt="services"
+                  className="w-[50%] object-cover mb-5"
+                />
+                <div className="w-full">
+                  <h2 className="text-2xl font-normal text-black mb-5">
+                    Ravindra Waykole
+                  </h2>
+                  <h3 className="text-black font-normal text-sm mb-5">
+                    Research and Development
+                  </h3>
+                  <span className="flex justify-center gap-2.5 text-black">
+                    <FaXTwitter />
+                    <MdOutlineFacebook />
+                    <FaInstagram />
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div className="p-0">
+              <div className="h-full flex flex-col items-center text-center">
+                {/* <img
+                  alt="team"
+                  className="flex-shrink-0 rounded-lg w-[280px] h-[319px] object-cover object-center mb-4"
+                  src="/images/Akash Shahane.png"
+                /> */}
+                <Image
+                  src="/images/Rohit Pohekar.png"
+                  width={200}
+                  height={200}
+                  alt="services"
+                  className="w-[50%] object-cover mb-5"
+                />
+                <div className="w-full">
+                  <h2 className="text-2xl font-normal text-black mb-5">
+                    Rohit Pohekar
+                  </h2>
+                  <h3 className="text-black font-normal text-sm mb-5">
+                    Master of Science Wisconsin University
+                  </h3>
+                  <span className="flex justify-center gap-2.5 text-black">
+                    <FaXTwitter />
+                    <MdOutlineFacebook />
+                    <FaInstagram />
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div className="p-0">
+              <div className="h-full flex flex-col items-center text-center">
+                {/* <img
+                  alt="team"
+                  className="flex-shrink-0 rounded-lg w-[280px] h-[319px] object-cover object-center mb-4"
+                  src="/images/Akash Shahane.png"
+                /> */}
+                <Image
+                  src="/images/Nilesh Kulkarni.png"
+                  width={200}
+                  height={200}
+                  alt="services"
+                  className="w-[50%] object-cover mb-5"
+                />
+                <div className="w-full">
+                  <h2 className="text-2xl font-normal text-black mb-5">
+                    Nilesh Kulkarni
+                  </h2>
+                  <h3 className="text-black font-normal text-sm mb-5">
+                    Industrial Graphics Designer
+                  </h3>
+                  <span className="flex justify-center gap-2.5 text-black">
+                    <FaXTwitter />
+                    <MdOutlineFacebook />
+                    <FaInstagram />
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div className="p-0">
+              <div className="h-full flex flex-col items-center text-center">
+                {/* <img
+                  alt="team"
+                  className="flex-shrink-0 rounded-lg w-[280px] h-[319px] object-cover object-center mb-4"
+                  src="/images/Akash Shahane.png"
+                /> */}
+                <Image
+                  src="/images/Rajendra Patel.png"
+                  width={200}
+                  height={200}
+                  alt="services"
+                  className="w-[50%] object-cover mb-5"
+                />
+                <div className="w-full">
+                  <h2 className="text-2xl font-normal text-black mb-5">
+                    Rajendra Patel
+                  </h2>
+                  <h3 className="text-black font-normal text-sm mb-5">
+                    Electronics Head
                   </h3>
                   <span className="flex justify-center gap-2.5 text-black">
                     <FaXTwitter />
