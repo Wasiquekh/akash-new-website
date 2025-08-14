@@ -59,8 +59,9 @@ const page = () => {
           <p className=" mx-auto leading-relaxed text-sm font-normal text-white inter-text text-center">
             Lorem Ipsum is simply dummy text of the printing and typesetting
             industry. Lorem Ipsum has been the industry&apos;s standard dummy
-            text ever since the 1500s, when an unknown printer took a galley of
-            type and scrambled it to make a type specimen book. 
+            text ever since the 1500s,
+            <br /> when an unknown printer took a galley of type and scrambled
+            it to make a type specimen book. 
           </p>
         </div>
       </div>
@@ -121,7 +122,7 @@ const page = () => {
                 width={300}
                 height={300}
                 priority // optional: preloads image
-                className=" absolute right-0 bottom-0   "
+                className=" absolute right-0 bottom-0 w-[85%] md:w-[55%]  "
               />
               <p className=" text-2xl font-medium text-black w-1/3 z-10">
                 Want to join our Talented Team?
