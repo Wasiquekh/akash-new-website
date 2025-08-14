@@ -41,51 +41,6 @@ const Header = () => {
             >
               Services
             </Link>
-
-            {/* services submene */}
-            <Link
-              href="/research&development"
-              className="hover:text-blue-600"
-              onClick={() => setIsOpen(false)}
-            >
-              R&D
-            </Link>
-            <Link
-              href="/operation"
-              className="hover:text-blue-600"
-              onClick={() => setIsOpen(false)}
-            >
-              Operations
-            </Link>
-            <Link
-              href="/international-business-deveopment"
-              className="hover:text-blue-600"
-              onClick={() => setIsOpen(false)}
-            >
-              Certification
-            </Link>
-            <Link
-              href="/sales&marketing"
-              className="hover:text-blue-600"
-              onClick={() => setIsOpen(false)}
-            >
-              Sales & Mrkt
-            </Link>
-            <Link
-              href="/human-resource"
-              className="hover:text-blue-600"
-              onClick={() => setIsOpen(false)}
-            >
-              HR Consultancy
-            </Link>
-            <Link
-              href="/legal-consulting"
-              className="hover:text-blue-600"
-              onClick={() => setIsOpen(false)}
-            >
-              Legal Advisory
-            </Link>
-            {/* end submenu */}
             <Link
               href="/customers"
               className="hover:text-blue-600"
