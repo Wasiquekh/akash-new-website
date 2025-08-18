@@ -1,4 +1,12 @@
-import React from "react";
+import * as React from "react";
+export const metadata = {
+  title: "BIS, NABL & ISO Certification in India | QMS Experts – AS Business",
+  description:
+    "AS Business Consulting provides BIS, NABL, and ISO certification services in India, including QMS, inspections, and complete industry compliance support.",
+  alternates: {
+    canonical: "",
+  },
+};
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import Image from "next/image";

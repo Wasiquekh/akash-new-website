@@ -1,4 +1,12 @@
-import React from "react";
+import * as React from "react";
+export const metadata = {
+  title: "R&D & Product Design Services in India | CAD CAM – AS Business",
+  description:
+    "Accelerate innovation with AS Business Consulting’s product design, CAD CAM outsourcing, engineering drafting, reverse engineering, and prototype development services.",
+  alternates: {
+    canonical: "",
+  },
+};
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import { FaCheck } from "react-icons/fa6";

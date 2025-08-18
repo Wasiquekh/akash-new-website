@@ -1,4 +1,12 @@
-import React from "react";
+import * as React from "react";
+export const metadata = {
+  title: "B2B Marketing in India | Digital Strategy & Training – AS Business",
+  description:
+    "Drive growth with AS Business Consulting’s B2B marketing experts, specializing in digital strategy, customer acquisition, and tailored promotional solutions.",
+  alternates: {
+    canonical: "",
+  },
+};
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import { FaArrowUpFromGroundWater, FaCheck } from "react-icons/fa6";

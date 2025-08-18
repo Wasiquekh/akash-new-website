@@ -1,4 +1,12 @@
-import React from "react";
+import * as React from "react";
+export const metadata = {
+  title: "Corporate Legal Advisory in India | Compliance – AS Business",
+  description:
+    "AS Business Consulting delivers corporate legal advisory in India, offering compliance, contract drafting, and cyber law consulting to protect your business.",
+  alternates: {
+    canonical: "",
+  },
+};
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import { FaCheck } from "react-icons/fa6";

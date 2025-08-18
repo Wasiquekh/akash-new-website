@@ -1,4 +1,12 @@
-import React from "react";
+import * as React from "react";
+export const metadata = {
+  title: "Lean Manufacturing & ZED Certification in India – AS Business",
+  description:
+    "Boost efficiency with AS Business Consulting’s lean manufacturing consultants in India, offering ZED certification, reverse engineering, and supply chain optimization.",
+  alternates: {
+    canonical: "",
+  },
+};
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import Image from "next/image";

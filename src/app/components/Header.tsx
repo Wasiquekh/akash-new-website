@@ -28,7 +28,7 @@ const Header = () => {
               Home
             </Link>
             <Link
-              href="/#about"
+              href="/about-us"
               className="hover:text-blue-600"
               onClick={() => setIsOpen(false)}
             >
@@ -114,7 +114,7 @@ const Header = () => {
             <Link href="/" className="mr-0 hover:text-gray-900">
               Home
             </Link>
-            <Link href="/#about" className="mr-0 hover:text-gray-900">
+            <Link href="/about-us" className="mr-0 hover:text-gray-900">
               About Us
             </Link>
             <div className="relative group">

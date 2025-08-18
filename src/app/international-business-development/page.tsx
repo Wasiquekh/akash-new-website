@@ -1,4 +1,12 @@
-import React from "react";
+import * as React from "react";
+export const metadata = {
+  title: "International Business Consultants in India – AS Business",
+  description:
+    "Expand globally with AS Business Consulting, offering export consulting, China market entry, global supply chain advisory, and logistics support in India.",
+  alternates: {
+    canonical: "",
+  },
+};
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import { FaCheck } from "react-icons/fa6";

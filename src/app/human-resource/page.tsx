@@ -1,4 +1,12 @@
-import React from "react";
+import * as React from "react";
+export const metadata = {
+  title: "HR Consulting in India | Recruitment & Engagement – AS Business",
+  description:
+    "AS Business Consulting provides expert HR services in India, including recruitment, policy audits, employee engagement, and campus placement consulting solutions.",
+  alternates: {
+    canonical: "",
+  },
+};
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import { FaCheck, FaUserTie } from "react-icons/fa6";
