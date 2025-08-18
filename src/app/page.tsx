@@ -1,9 +1,18 @@
-"use client";
+import * as React from "react";
+export const metadata = {
+  title: "AS Business Consulting in India | Strategic Advisory – AS Business",
+  description:
+    "AS Business Consulting delivers expert business solutions in India, offering strategic advisory and consulting services tailored for growth and long-term success.",
+  alternates: {
+    canonical: "",
+  },
+};
+
+//("use client");
 
 import Image from "next/image";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
-import * as React from "react";
 //import CountUp from "react-countup";
 //import { useInView } from "react-intersection-observer";
 import Link from "next/link";
