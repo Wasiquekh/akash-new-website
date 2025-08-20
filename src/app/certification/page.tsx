@@ -27,7 +27,7 @@ const page = () => {
           </p>
         </div>
       </div>
-      <section className=" relative">
+      <section className=" relative hidden">
         <Image
           src="/images/leftShape.svg" // path relative to /public
           alt="My beautiful image"
@@ -45,6 +45,187 @@ const page = () => {
           className=" absolute right-0 top-0 "
         />
       </section>
+      <section>
+        <div className="container">
+          <div className=" flex flex-wrap">
+            <div className="flex flex-col text-center w-full mb-20">
+              <h1 className="sm:text-6xl text-2xl font-bold  mb-4 text-primary text-center">
+                Certification & Inspection Services for Quality Compliance and
+                Accreditation
+              </h1>
+              <p className="lg:w-[90%] mx-auto leading-relaxed inter-text text-sm font-normal mb-4">
+                At AS Business Consulting, our expert BIS certification
+                consultants help businesses achieve nationally and
+                internationally recognized certifications with ease. From Bureau
+                of Indian Standards (BIS) approvals to ISO and NABL
+                accreditations, we guide you through the entire process,
+                ensuring full compliance with regulatory and industry
+                requirements. Our services include QMS implementation,
+                certification documentation, inspection support, and audit
+                preparation empowering your organization to meet the highest
+                quality standards
+              </p>
+            </div>
+          </div>
+          <div className="mx-auto flex md:flex-row flex-col items-center">
+            {/* Left Content Section */}
+            <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
+              <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">
+                BIS Certification Consultants in India
+              </h1>
+              <p className="mb-6 leading-relaxed text-gray-700">
+                End-to-End Support for BIS Approval
+              </p>
+              <p className="mb-6 leading-relaxed text-gray-600">
+                Our BIS certification consultants assist manufacturers,
+                importers, and exporters in obtaining BIS licenses and approvals
+                required for product quality and safety compliance in India.
+              </p>
+              <ul className="list-disc pl-5 text-gray-700 space-y-2">
+                <li>Guidance on BIS application and documentation.</li>
+                <li>Pre-certification inspection and testing support.</li>
+                <li>
+                  Assistance with product labeling and compliance requirements.
+                </li>
+              </ul>
+            </div>
+
+            {/* Right Image Section */}
+            <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
+              <img
+                className="object-cover object-center rounded"
+                alt="BIS Certification"
+                src="/images/bis.png"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div className="container">
+          <div className="mx-auto flex md:flex-row flex-col items-center">
+            {/* Left Image Section */}
+            <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">
+              <img
+                className="object-cover object-center rounded"
+                alt="QMS Implementation"
+                src="/images/qms.png" // replace later with your QMS image
+              />
+            </div>
+
+            {/* Right Content Section */}
+            <div className="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
+              <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">
+                QMS Implementation for Quality Excellence
+              </h1>
+              <p className="mb-6 leading-relaxed text-gray-700">
+                Building Robust Quality Management Systems
+              </p>
+              <p className="mb-6 leading-relaxed text-gray-600">
+                We specialize in QMS implementation that meets global best
+                practices. Whether for ISO certification, NABL accreditation, or
+                internal process improvement, our approach ensures your
+                organization delivers consistent quality while maintaining
+                regulatory compliance.
+              </p>
+              <ul className="list-disc pl-5 text-gray-700 space-y-2">
+                <li>Gap analysis and process mapping.</li>
+                <li>Development of SOPs and quality manuals.</li>
+                <li>Employee training for quality assurance practices.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div className="container">
+          <div className="mx-auto flex md:flex-row flex-col items-center">
+            {/* Left Content Section */}
+            <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
+              <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">
+                ISO Consultants for Certification &amp; Compliance
+              </h1>
+              <p className="mb-6 leading-relaxed text-gray-700">
+                Achieve and Maintain Global Quality Standards
+              </p>
+              <p className="mb-6 leading-relaxed text-gray-600">
+                Our experienced ISO consultants help you obtain and maintain ISO
+                certifications such as ISO 9001, ISO 14001, and ISO 45001. We
+                manage the process from start to finish, including audits,
+                documentation, and continual improvement strategies.
+              </p>
+              <ul className="list-disc pl-5 text-gray-700 space-y-2">
+                <li>Identifying the right ISO standard for your business.</li>
+                <li>Preparing for certification and surveillance audits.</li>
+                <li>Ongoing compliance monitoring and quality improvement.</li>
+              </ul>
+            </div>
+
+            {/* Right Image Section */}
+            <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
+              <img
+                className="object-cover object-center rounded"
+                alt="ISO Consultants"
+                src="/images/bis.png" // same image for now
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div className="container">
+          <div className="mx-auto flex md:flex-row flex-col items-center">
+            {/* Left Image Section */}
+            <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">
+              <img
+                className="object-cover object-center rounded"
+                alt="AS Business Consulting"
+                src="/images/bis.png" // replace later with actual image
+              />
+            </div>
+
+            {/* Right Content Section */}
+            <div className="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
+              <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">
+                Why Choose AS Business Consulting for Certification Services
+              </h1>
+
+              <ul className="list-disc pl-5 text-gray-700 space-y-2 mb-6">
+                <li>
+                  Certified BIS, NABL, and ISO consultants with years of
+                  industry experience.
+                </li>
+                <li>
+                  Streamlined certification process to save time and costs.
+                </li>
+                <li>
+                  Expertise in multiple industries and regulatory frameworks.
+                </li>
+                <li>
+                  End-to-end support — from documentation to accreditation.
+                </li>
+              </ul>
+
+              <h2 className="text-2xl font-semibold mb-4 text-gray-900">
+                Explore More Services:
+              </h2>
+              <ul className="list-disc pl-5 text-gray-700 space-y-2">
+                <li>
+                  Operations Consulting – Streamline processes for better
+                  compliance.
+                </li>
+                <li>
+                  Corporate Legal Advisory – Ensure legal alignment with
+                  industry standards.
+                </li>
+                <li>Contact Us – Start your certification process today.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* SHORT TERM COURSE */}
       <section>
         <div className="container">
           <div className=" flex flex-wrap">

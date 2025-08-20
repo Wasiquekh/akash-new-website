@@ -16,7 +16,7 @@ import Footer from "./components/Footer";
 //import CountUp from "react-countup";
 //import { useInView } from "react-intersection-observer";
 import Link from "next/link";
-import { FaInstagram, FaStar, FaXTwitter } from "react-icons/fa6";
+import { FaCircle, FaInstagram, FaStar, FaXTwitter } from "react-icons/fa6";
 import { MdOutlineFacebook } from "react-icons/md";
 import { RiDoubleQuotesL } from "react-icons/ri";
 import ContactFrom from "./components/ContactFrom";
@@ -64,7 +64,7 @@ export default function Home() {
         </div>
       </div>
       {/* ABOUT SECTION */}
-      <section className=" relative" id="about">
+      <section className=" relative">
         <div className="container  flex  md:flex-row flex-col items-center relative">
           <div className="lg:max-w-3/6 lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">
             <Image
@@ -110,6 +110,126 @@ export default function Home() {
           priority // optional: preloads image
           className=" absolute right-0 top-30 "
         />
+      </section>
+      {/* why choose */}
+      <section className=" relative">
+        <div className="container ">
+          <div className="flex flex-col text-center w-full mb-20">
+            <h1 className="sm:text-6xl text-2xl font-bold  mb-4 text-primary w-full md:w-[80%] text-center m-auto">
+              Why choose a trusted business advisory company in India
+            </h1>
+            <p className="lg:w-[60%] mx-auto leading-relaxed inter-text text-sm font-normal">
+              Selecting the right partner can accelerate growth and reduce risk.
+              We bring cross-industry experience, data-driven strategy, and
+              hands-on execution.
+            </p>
+          </div>
+          <div className=" grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div className=" w-full">
+              <p className=" text-black text-2xl font-bold mb-3">
+                Our approach focuses on:
+              </p>
+              <div className=" flex gap-2 items-center bg-tertiary p-3 rounded mb-3">
+                <FaCircle className=" text-primary mb-1 mt-1 text-lg" />
+                <p className="text-sm text-[#2D2D2D]">
+                  Crafting custom strategies aligned with your goals and stage
+                  of growth
+                </p>
+              </div>
+              <div className=" flex gap-2 items-center bg-tertiary p-3 rounded mb-3">
+                <FaCircle className=" text-primary mb-1 mt-1 text-lg" />
+                <p className="text-sm text-[#2D2D2D]">
+                  Market analysis & opportunity assessment to de-risk decisions
+                </p>
+              </div>
+              <div className=" flex gap-2 items-center bg-tertiary p-3 rounded mb-3">
+                <FaCircle className=" text-primary mb-1 mt-1 text-lg" />
+                <p className="text-sm text-[#2D2D2D]">
+                  Corporate restructuring & transformation for measurable
+                  improvement
+                </p>
+              </div>
+              <div className=" flex gap-2 items-center bg-tertiary p-3 rounded mb-3">
+                <FaCircle className=" text-primary mb-1 mt-1 text-lg" />
+                <p className="text-sm text-[#2D2D2D]">
+                  Sustainable business development plans backed by people,
+                  process, and tools
+                </p>
+              </div>
+            </div>
+            <div className=" w-full flex justify-end">
+              <Image
+                src="/images/choose.png"
+                width={500}
+                height={500}
+                alt="Picture of the author"
+              />
+            </div>
+          </div>
+        </div>
+        {/* <Image
+          src="/images/leftShape.svg" 
+          alt="My beautiful image"
+          width={300}
+          height={300}
+          priority
+          className=" absolute left-0 bottom-0 -z-50 "
+        />
+        <Image
+          src="/images/rightShape.svg" 
+          alt="My beautiful image"
+          width={300}
+          height={300}
+          priority 
+          className=" absolute right-0 top-30 "
+        /> */}
+      </section>
+      {/* we work */}
+      <section className=" relative">
+        <div className="container ">
+          <div className="flex flex-col text-center w-full mb-20">
+            <h1 className="sm:text-6xl text-2xl font-bold  mb-4 text-primary w-full md:w-[80%] text-center m-auto">
+              How we work
+            </h1>
+          </div>
+          <div className=" grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div className=" w-full">
+              <div className=" flex gap-2 items-center bg-tertiary p-3 rounded mb-3">
+                <FaCircle className=" text-primary mb-1 mt-1 text-lg" />
+                <p className="text-sm text-[#2D2D2D]">
+                  Diagnose – Baseline current state via data and on-ground study
+                </p>
+              </div>
+              <div className=" flex gap-2 items-center bg-tertiary p-3 rounded mb-3">
+                <FaCircle className=" text-primary mb-1 mt-1 text-lg" />
+                <p className="text-sm text-[#2D2D2D]">
+                  Design – Prioritized roadmap across people, process, and
+                  technology
+                </p>
+              </div>
+              <div className=" flex gap-2 items-center bg-tertiary p-3 rounded mb-3">
+                <FaCircle className=" text-primary mb-1 mt-1 text-lg" />
+                <p className="text-sm text-[#2D2D2D]">
+                  Deliver – Pilot → scale, with governance and KPI tracking
+                </p>
+              </div>
+              <div className=" flex gap-2 items-center bg-tertiary p-3 rounded mb-3">
+                <FaCircle className=" text-primary mb-1 mt-1 text-lg" />
+                <p className="text-sm text-[#2D2D2D]">
+                  Develop – Train internal teams to sustain gains
+                </p>
+              </div>
+            </div>
+            <div className=" w-full flex justify-end">
+              <Image
+                src="/images/we-work.png"
+                width={500}
+                height={500}
+                alt="Picture of the author"
+              />
+            </div>
+          </div>
+        </div>
       </section>
       {/* JOURNER OF SUCCESS */}
       <section className="">

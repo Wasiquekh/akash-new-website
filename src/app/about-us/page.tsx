@@ -12,7 +12,13 @@ import Footer from "../components/Footer";
 import Image from "next/image";
 import ContactFrom from "../components/ContactFrom";
 import Link from "next/link";
-import { FaInstagram, FaXTwitter } from "react-icons/fa6";
+import {
+  FaCheck,
+  FaCircle,
+  FaCircleCheck,
+  FaInstagram,
+  FaXTwitter,
+} from "react-icons/fa6";
 import { MdOutlineFacebook } from "react-icons/md";
 
 const page = () => {
@@ -30,7 +36,315 @@ const page = () => {
           </p>
         </div>
       </div>
+      {/* ABOUT US AFTER HERO SECTION */}
+      <section>
+        <div className="container">
+          <div className=" mx-auto flex flex-wrap">
+            <div className="flex flex-col text-center w-full mb-20">
+              <h1 className="sm:text-6xl text-2xl font-bold  mb-4 text-primary">
+                About AS Business Consulting – Experts Driving Business
+                Excellence in India
+              </h1>
+              <p className="lg:w-[90%] mx-auto leading-relaxed inter-text text-sm font-normal mb-4">
+                AS Business Consulting is a solution provider. We work alongside
+                you to identify potential, build innovation capacity, and make
+                your business more competitive and efficient—so you can grow
+                exponentially in Indian and global markets. We help teams
+                conceptualize and visualize technology-driven transformation and
+                then execute it with discipline.
+              </p>
+            </div>
+          </div>
+          <div className=" grid grid-cols-1 md:grid-cols-3 gap-4">
+            <div className="">
+              <h2 className="text-black text-2xl font-semibold mb-7">
+                Our Business Consulting Company Profile
+              </h2>
+              <div>
+                <p className=" text-sm">
+                  As a leading business advisory firm in India, we combine years
+                  of experience with deep market understanding and a
+                  results-driven, partner-led approach. We analyze challenges,
+                  surface opportunities, and co-create custom strategies aligned
+                  to your vision and goals. Our domain strength covers both
+                  strategy and on-ground execution across diverse
+                  industries—from startups to large enterprises—with the same
+                  level of rigor, dedication, and professionalism.
+                </p>
+              </div>
+            </div>
+            <div>
+              <Image
+                src="/images/about1.png" // path relative to /public
+                alt="My beautiful image"
+                width={500}
+                height={500}
+                priority // optional: preloads image
+                className=" rounded"
+              />
+            </div>
+            <div>
+              <Image
+                src="/images/about2.png" // path relative to /public
+                alt="My beautiful image"
+                width={500}
+                height={500}
+                priority // optional: preloads image
+                className="rounded"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      {/* we work */}
+      <section className=" relative">
+        <div className="container ">
+          <div className="flex flex-col text-center w-full mb-0"></div>
+          <div className=" grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div className=" w-full">
+              <div className=" flex gap-2 items-center bg-tertiary p-3 rounded mb-3">
+                <FaCircle className=" text-primary mb-1 mt-1 text-lg" />
+                <p className="text-sm text-[#2D2D2D]">
+                  Research & Development (R&D) and Product Design
+                </p>
+              </div>
+              <div className=" flex gap-2 items-center bg-tertiary p-3 rounded mb-3">
+                <FaCircle className=" text-primary mb-1 mt-1 text-lg" />
+                <p className="text-sm text-[#2D2D2D]">
+                  Operations Technologies and Lean Manufacturing
+                </p>
+              </div>
+              <div className=" flex gap-2 items-center bg-tertiary p-3 rounded mb-3">
+                <FaCircle className=" text-primary mb-1 mt-1 text-lg" />
+                <p className="text-sm text-[#2D2D2D]">
+                  ZED Consulting, ISO, BIS, NABL readiness and audits
+                </p>
+              </div>
+              <div className=" flex gap-2 items-center bg-tertiary p-3 rounded mb-3">
+                <FaCircle className=" text-primary mb-1 mt-1 text-lg" />
+                <p className="text-sm text-[#2D2D2D]">
+                  QMS/IMS design and implementation
+                </p>
+              </div>
+              <div className=" flex gap-2 items-center bg-tertiary p-3 rounded mb-3">
+                <FaCircle className=" text-primary mb-1 mt-1 text-lg" />
+                <p className="text-sm text-[#2D2D2D]">
+                  Human Resources (policies, hiring, capability building)
+                </p>
+              </div>
+              <div className=" flex gap-2 items-center bg-tertiary p-3 rounded mb-3">
+                <FaCircle className=" text-primary mb-1 mt-1 text-lg" />
+                <p className="text-sm text-[#2D2D2D]">
+                  Import & Export enablement and compliance
+                </p>
+              </div>
+              <div className=" flex gap-2 items-center bg-tertiary p-3 rounded mb-3">
+                <FaCircle className=" text-primary mb-1 mt-1 text-lg" />
+                <p className="text-sm text-[#2D2D2D]">
+                  Management Consulting (strategy, restructuring, governance)
+                </p>
+              </div>
+              <div className=" flex gap-2 items-center bg-tertiary p-3 rounded mb-3">
+                <FaCircle className=" text-primary mb-1 mt-1 text-lg" />
+                <p className="text-sm text-[#2D2D2D]">
+                  Sales & Marketing (GTM, channels, enablement)
+                </p>
+              </div>
+              <div className=" flex gap-2 items-center bg-tertiary p-3 rounded mb-3">
+                <FaCircle className=" text-primary mb-1 mt-1 text-lg" />
+                <p className="text-sm text-[#2D2D2D]">
+                  Legal Advisory (contracts, commercial, risk)
+                </p>
+              </div>
+            </div>
+            <div className=" w-full flex justify-end">
+              <Image
+                src="/images/about3.png"
+                width={500}
+                height={500}
+                alt="Picture of the author"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      {/* vision mission */}
+      <section>
+        <div className="container">
+          <div className=" bg-tertiary py-8 px-20 flex flex-col justify-center w-3/4 m-auto">
+            <p className=" text-center text-4xl font-bold text-primary mb-4">
+              Vision and Mission
+            </p>
+            <p className=" text-center text-sm">
+              Vision: To be India&apos;s most trusted consulting partner,
+              enabling sustainable growth and long-term success.  Mission: To
+              deliver tailored, research-backed, innovation-led consulting with
+              actionable strategies that create measurable business value.
+            </p>
+          </div>
+        </div>
+      </section>
       {/* CLINETNS LOGOS */}
+      {/* core value */}
+      <section className=" relative">
+        <div className="container ">
+          <div className=" grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div className=" w-full">
+              <p className=" text-primary text-2xl font-bold mb-3">
+                Our Core Values
+              </p>
+              <div className=" flex gap-4 items-center  p-0rounded mb-4">
+                <FaCircleCheck className=" text-primary mb-1 mt-1 text-2xl" />
+                <div>
+                  <p className="text-base text-[#2D2D2D] font-medium">
+                    Integrity & Transparency
+                  </p>
+                  <p className="text-base text-[#2D2D2D] font-light">
+                    Crafting custom strategies aligned with your goals and stage
+                    of growth
+                  </p>
+                </div>
+              </div>
+              <div className=" flex gap-4 items-center  p-0rounded mb-4">
+                <FaCircleCheck className=" text-primary mb-1 mt-1 text-2xl" />
+                <div>
+                  <p className="text-base text-[#2D2D2D] font-medium">
+                    Innovation & Adaptability
+                  </p>
+                  <p className="text-base text-[#2D2D2D] font-light">
+                    We evolve strategies with market shifts to keep you ahead of
+                    the curve.
+                  </p>
+                </div>
+              </div>
+              <div className=" flex gap-4 items-center  p-0rounded mb-10">
+                <FaCircleCheck className=" text-primary mb-1 mt-1 text-2xl" />
+                <div>
+                  <p className="text-base text-[#2D2D2D] font-medium">
+                    Client-Centric Execution
+                  </p>
+                  <p className="text-base text-[#2D2D2D] font-light">
+                    Every solution is custom-built for your context,
+                    constraints, and ambition.
+                  </p>
+                </div>
+              </div>
+              <p className=" text-primary text-2xl font-bold mb-3">
+                Meet Our Leadership
+              </p>
+              <p className=" text-sm">
+                Our leadership team consists of experienced, cross-functional
+                consultants—spanning R&D, operations, certifications, HR, GTM,
+                and legal—who guide organizations toward sustainable, scalable
+                outcomes.
+              </p>
+            </div>
+            <div className=" w-full flex justify-end">
+              <Image
+                src="/images/about4.png"
+                width={500}
+                height={500}
+                alt="Picture of the author"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      {/* choose  */}
+      <section className=" relative">
+        <div className="container ">
+          <div className=" grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div className=" w-full">
+              <p className=" text-primary text-2xl font-bold mb-3">
+                Why Choose AS Business Consulting
+              </p>
+              <div className=" flex gap-4 items-center  p-0rounded mb-4">
+                <FaCircleCheck className=" text-primary mb-1 mt-1 text-2xl" />
+                <div>
+                  <p className="text-base text-[#2D2D2D] font-medium">
+                    Proven track record
+                  </p>
+                  <p className="text-base text-[#2D2D2D] font-light">
+                    of delivering measurable results from strategy through
+                    execution
+                  </p>
+                </div>
+              </div>
+              <div className=" flex gap-4 items-center  p-0rounded mb-4">
+                <FaCircleCheck className=" text-primary mb-1 mt-1 text-2xl" />
+                <div>
+                  <p className="text-base text-[#2D2D2D] font-medium">
+                    Full-stack expertise
+                  </p>
+                  <p className="text-base text-[#2D2D2D] font-light">
+                    boardroom strategy to shop-floor/process and market
+                    activation
+                  </p>
+                </div>
+              </div>
+              <div className=" flex gap-4 items-center  p-0rounded mb-10">
+                <FaCircleCheck className=" text-primary mb-1 mt-1 text-2xl" />
+                <div>
+                  <p className="text-base text-[#2D2D2D] font-medium">
+                    Multi-industry experience
+                  </p>
+                  <p className="text-base text-[#2D2D2D] font-light">
+                    across India and global value chains
+                  </p>
+                </div>
+              </div>
+
+              <p className=" text-primary text-2xl font-bold mb-3">
+                Explore More About Us
+              </p>
+              <div className=" flex gap-4 items-center  p-0rounded mb-4">
+                <FaCircleCheck className=" text-primary mb-1 mt-1 text-2xl" />
+                <div>
+                  <p className="text-base text-[#2D2D2D] font-medium">
+                    Our Services –
+                  </p>
+                  <p className="text-base text-[#2D2D2D] font-light">
+                    Strategic advisory, operations, R&D, certifications, HR,
+                    GTM, legal, and more
+                  </p>
+                </div>
+              </div>
+              <div className=" flex gap-4 items-center  p-0rounded mb-4">
+                <FaCircleCheck className=" text-primary mb-1 mt-1 text-2xl" />
+                <div>
+                  <p className="text-base text-[#2D2D2D] font-medium">
+                    Clients –
+                  </p>
+                  <p className="text-base text-[#2D2D2D] font-light">
+                    Industries and organizations we proudly support
+                  </p>
+                </div>
+              </div>
+              <div className=" flex gap-4 items-center  p-0rounded mb-10">
+                <FaCircleCheck className=" text-primary mb-1 mt-1 text-2xl" />
+                <div>
+                  <p className="text-base text-[#2D2D2D] font-medium">
+                    Contact Us –
+                  </p>
+                  <p className="text-base text-[#2D2D2D] font-light">
+                    Let’s discuss your goals and build a roadmap for sustainable
+                    growth.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div className=" w-full flex justify-end">
+              <Image
+                src="/images/about5.png"
+                width={600}
+                height={600}
+                alt="Picture of the author"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
       <div className=" w-full">
         <div className=" container grid grid-cols-3 md:grid-cols-[repeat(auto-fit,_minmax(100px,_1fr))] gap-4">
           <img src="/images/c1.jpg" alt="Logo 1" />
@@ -44,7 +358,7 @@ const page = () => {
         </div>
       </div>
       {/* ABOUT SECTION */}
-      <section className=" relative" id="about">
+      <section className=" relative">
         <div className="container  flex  md:flex-row flex-col items-center relative">
           <div className="lg:max-w-3/6 lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">
             <Image
