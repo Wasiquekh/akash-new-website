@@ -11,6 +11,7 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 import Image from "next/image";
 import ContactFrom from "../components/ContactFrom";
+import { FaCheck } from "react-icons/fa6";
 
 const page = () => {
   return (
@@ -230,7 +231,72 @@ const page = () => {
           </div>
         </div>
       </section>
+      <section>
+        <div className="container">
+          <div className="border border-primary p-6 w-full rounded mb-6">
+            <p className="text-base font-bold">What We Deliver (at a glance)</p>
+            <p className="text-base inter-text">
+              Innovation – Product & process benchmarking, cost saving,
+              technology updates. Systematic Operations – 5S implementation, SOP
+              creation, SCM management. Productivity Improvement – Bottleneck
+              identification, line balancing, higher UPH & productivity. QMS &
+              Quality Excellence – FTR improvement, 7 QC tools, Kaizen,
+              Poka-yoke, quality awareness trainings. MIS & Audit – Business
+              performance analysis, process audits, system audits. Financial
+              Growth Enablement – Institutional financing, fund-flow management,
+              tax advisory.
+            </p>
+          </div>
 
+          <div className="border border-primary p-6 w-full rounded mb-6">
+            <p className="text-base font-bold">
+              ZED Certification Consultants in India
+            </p>
+            <p className="text-base inter-text mb-6">
+              We guide you through India’s Zero Defect Zero Effect (ZED)
+              program—from diagnostics and documentation to implementation and
+              audits—so your manufacturing meets world-class quality and
+              environmental standards. Who we help:
+            </p>
+            <div className="flex items-center mb-3 gap-3">
+              <div className=" flex items-center justify-center  mb-0 p-0">
+                <FaCheck className="rounded-full bg-primary text-xl text-white p-1" />
+              </div>
+              <h2 className="text-black text-base font-medium mb-0">
+                MSME manufacturers reducing defects and rework
+              </h2>
+            </div>
+            <div className="flex items-center mb-3 gap-3">
+              <div className=" flex items-center justify-center  mb-0 p-0">
+                <FaCheck className="rounded-full bg-primary text-xl text-white p-1" />
+              </div>
+              <h2 className="text-black text-base font-medium mb-0">
+                Export-focused units targeting global compliance
+              </h2>
+            </div>
+            <div className="flex items-center mb-3 gap-3">
+              <div className=" flex items-center justify-center  mb-0 p-0">
+                <FaCheck className="rounded-full bg-primary text-xl text-white p-1" />
+              </div>
+              <h2 className="text-black text-base font-medium mb-0">
+                Plants seeking formal recognition for sustainable, efficient
+                production
+              </h2>
+            </div>
+          </div>
+
+          <div className="border border-primary p-6 w-full rounded mb-6">
+            <p className="text-base font-bold">
+              Lean Manufacturing Consultants in India
+            </p>
+            <p className="text-base inter-text mb-6">
+              Driving operational excellence with lean principles We eliminate
+              waste and improve flow using Kaizen, 5S, Value Stream Mapping,
+              line balancing, SMED, and standard work. Benefits of Lean:
+            </p>
+          </div>
+        </div>
+      </section>
       <ContactFrom />
       <Footer />
     </>

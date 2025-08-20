@@ -397,6 +397,127 @@ const page = () => {
               </h1>
             </div>
           </div>
+          <section>
+            <div className=" flex justify-between">
+              <div className="">
+                <div>
+                  <div className="flex items-center mb-3 gap-4">
+                    <div className=" flex items-center justify-center   text-white mb-0 p-0">
+                      <FaCheck className=" text-lg rounded-full p-1  bg-primary " />
+                    </div>
+                    <h2 className="text-black text-base font-medium mb-0">
+                      Proven industry expertise across multiple sectors
+                    </h2>
+                  </div>
+                  <div className="flex items-center mb-3 gap-4">
+                    <div className=" flex items-center justify-center   text-white mb-0 p-0">
+                      <FaCheck className=" text-lg rounded-full p-1  bg-primary " />
+                    </div>
+                    <h2 className="text-black text-base font-medium mb-0">
+                      End-to-end support: concept → CAD → render → prototype →
+                      handoff
+                    </h2>
+                  </div>
+                  <div className="flex items-center mb-3 gap-4">
+                    <div className=" flex items-center justify-center   text-white mb-0 p-0">
+                      <FaCheck className=" text-lg rounded-full p-1  bg-primary " />
+                    </div>
+                    <h2 className="text-black text-base font-medium mb-0">
+                      Cost-effective outsourcing with rapid turnaround
+                    </h2>
+                  </div>
+                  <div className="flex items-center mb-3 gap-4">
+                    <div className=" flex items-center justify-center   text-white mb-0 p-0">
+                      <FaCheck className=" text-lg rounded-full p-1  bg-primary " />
+                    </div>
+                    <h2 className="text-black text-base font-medium mb-0">
+                      Quality by design: standards-compliant drawings and
+                      documentation
+                    </h2>
+                  </div>
+                </div>
+                <h2 className="text-black text-2xl font-semibold my-7">
+                  Deliverables
+                </h2>
+                <div>
+                  <div className="flex items-center mb-3 gap-4">
+                    <div className=" flex items-center justify-center   text-white mb-0 p-0">
+                      <FaCheck className=" text-lg rounded-full p-1  bg-primary " />
+                    </div>
+                    <h2 className="text-black text-base font-medium mb-0">
+                      Native and neutral 3D CAD files
+                    </h2>
+                  </div>
+                  <div className="flex items-center mb-3 gap-4">
+                    <div className=" flex items-center justify-center   text-white mb-0 p-0">
+                      <FaCheck className=" text-lg rounded-full p-1  bg-primary " />
+                    </div>
+                    <h2 className="text-black text-base font-medium mb-0">
+                      2D drawings with GD&T, assemblies, and BOMs
+                    </h2>
+                  </div>
+                  <div className="flex items-center mb-3 gap-4">
+                    <div className=" flex items-center justify-center   text-white mb-0 p-0">
+                      <FaCheck className=" text-lg rounded-full p-1  bg-primary " />
+                    </div>
+                    <h2 className="text-black text-base font-medium mb-0">
+                      Photorealistic renderings/animations
+                    </h2>
+                  </div>
+                  <div className="flex items-center mb-3 gap-4">
+                    <div className=" flex items-center justify-center   text-white mb-0 p-0">
+                      <FaCheck className=" text-lg rounded-full p-1  bg-primary " />
+                    </div>
+                    <h2 className="text-black text-base font-medium mb-0">
+                      Working prototypes and test reports
+                    </h2>
+                  </div>
+                </div>
+                <h2 className="text-black text-2xl font-semibold my-7">
+                  Explore More Services
+                </h2>
+                <div>
+                  <div className="flex items-center mb-3 gap-4">
+                    <div className=" flex items-center justify-center   text-white mb-0 p-0">
+                      <FaCheck className=" text-lg rounded-full p-1  bg-primary " />
+                    </div>
+                    <h2 className="text-black text-base font-medium mb-0">
+                      Engineering Consulting – Scale capability and solve
+                      complex problems
+                    </h2>
+                  </div>
+                  <div className="flex items-center mb-3 gap-4">
+                    <div className=" flex items-center justify-center   text-white mb-0 p-0">
+                      <FaCheck className=" text-lg rounded-full p-1  bg-primary " />
+                    </div>
+                    <h2 className="text-black text-base font-medium mb-0">
+                      Manufacturing Process Optimization – Lean, quality, and
+                      throughput gains
+                    </h2>
+                  </div>
+                  <div className="flex items-center mb-3 gap-4">
+                    <div className=" flex items-center justify-center   text-white mb-0 p-0">
+                      <FaCheck className=" text-lg rounded-full p-1  bg-primary " />
+                    </div>
+                    <h2 className="text-black text-base font-medium mb-0">
+                      Contact Us – Speak with our R&D team about your product
+                      roadmap
+                    </h2>
+                  </div>
+                </div>
+              </div>
+              <div className="">
+                <Image
+                  src="/images/detailing.png" // path relative to /public
+                  alt="My beautiful image"
+                  width={500}
+                  height={500}
+                  priority // optional: preloads image
+                  className="rounded"
+                />
+              </div>
+            </div>
+          </section>
         </div>
       </section>
       <ContactFrom />
