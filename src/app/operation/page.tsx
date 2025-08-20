@@ -290,10 +290,169 @@ const page = () => {
               Lean Manufacturing Consultants in India
             </p>
             <p className="text-base inter-text mb-6">
-              Driving operational excellence with lean principles We eliminate
+              Driving operational excellence with lean principlesWe eliminate
               waste and improve flow using Kaizen, 5S, Value Stream Mapping,
-              line balancing, SMED, and standard work. Benefits of Lean:
+              line balancing, SMED, and standard work.Benefits of Lean:
             </p>
+            <div className="flex items-center mb-3 gap-3">
+              <div className=" flex items-center justify-center  mb-0 p-0">
+                <FaCheck className="rounded-full bg-primary text-xl text-white p-1" />
+              </div>
+              <h2 className="text-black text-base font-medium mb-0">
+                Reduced operating costs
+              </h2>
+            </div>
+            <div className="flex items-center mb-3 gap-3">
+              <div className=" flex items-center justify-center  mb-0 p-0">
+                <FaCheck className="rounded-full bg-primary text-xl text-white p-1" />
+              </div>
+              <h2 className="text-black text-base font-medium mb-0">
+                Faster, more stable processes
+              </h2>
+            </div>
+            <div className="flex items-center mb-3 gap-3">
+              <div className=" flex items-center justify-center  mb-0 p-0">
+                <FaCheck className="rounded-full bg-primary text-xl text-white p-1" />
+              </div>
+              <h2 className="text-black text-base font-medium mb-0">
+                Higher first-time-right quality, fewer defects
+              </h2>
+            </div>
+            <div className="flex items-center mb-3 gap-3">
+              <div className=" flex items-center justify-center  mb-0 p-0">
+                <FaCheck className="rounded-full bg-primary text-xl text-white p-1" />
+              </div>
+              <h2 className="text-black text-base font-medium mb-0">
+                Better on-time delivery and customer satisfaction
+              </h2>
+            </div>
+          </div>
+
+          <div className="border border-primary p-6 w-full rounded mb-6">
+            <p className="text-base font-bold">
+              Cost Optimization for Businesses
+            </p>
+            <p className="text-base inter-text mb-3">
+              Strategies to maximize profitabilityWe look beyond simple cuts to
+              redesign cost drivers: analyze losses, target high-cost steps in
+              manufacturing and logistics, and deploy technology-led fixes
+              (digital work instructions, visual management, OEE tracking) that
+              sustain savings without hurting quality.
+            </p>
+          </div>
+
+          <div className="border border-primary p-6 w-full rounded mb-6">
+            <p className="text-base font-bold">
+              Supply Chain Consultants in India
+            </p>
+            <p className="text-base inter-text mb-6">
+              We design resilient, cost-effective supply chains
+            </p>
+            <div className="flex items-center mb-3 gap-3">
+              <div className=" flex items-center justify-center  mb-0 p-0">
+                <FaCheck className="rounded-full bg-primary text-xl text-white p-1" />
+              </div>
+              <h2 className="text-black text-base font-medium mb-0">
+                Inventory optimization and reorder logic
+              </h2>
+            </div>
+            <div className="flex items-center mb-3 gap-3">
+              <div className=" flex items-center justify-center  mb-0 p-0">
+                <FaCheck className="rounded-full bg-primary text-xl text-white p-1" />
+              </div>
+              <h2 className="text-black text-base font-medium mb-0">
+                Vendor development and procurement strategy
+              </h2>
+            </div>
+            <div className="flex items-center mb-3 gap-3">
+              <div className=" flex items-center justify-center  mb-0 p-0">
+                <FaCheck className="rounded-full bg-primary text-xl text-white p-1" />
+              </div>
+              <h2 className="text-black text-base font-medium mb-0">
+                Network, logistics, and distribution planning with KPIs for
+                service, cost, and reliability
+              </h2>
+            </div>
+          </div>
+
+          <div className="border border-primary p-6 w-full rounded mb-6">
+            <p className="text-base font-bold">Process Improvement Strategy</p>
+            <p className="text-base inter-text mb-6">
+              We combine lean methods with data analytics to build a governance
+              rhythm (daily/weekly/monthly reviews), so improvements stick and
+              performance keeps rising.
+            </p>
+          </div>
+
+          <div className="border border-primary p-6 w-full rounded mb-6">
+            <p className="text-base font-bold mb-3">
+              Why Choose AS Business Consulting for Operations Excellence
+            </p>
+
+            <div className="flex items-center mb-3 gap-3">
+              <div className=" flex items-center justify-center  mb-0 p-0">
+                <FaCheck className="rounded-full bg-primary text-xl text-white p-1" />
+              </div>
+              <h2 className="text-black text-base font-medium mb-0">
+                Certified ZED experts with a proven track record
+              </h2>
+            </div>
+            <div className="flex items-center mb-3 gap-3">
+              <div className=" flex items-center justify-center  mb-0 p-0">
+                <FaCheck className="rounded-full bg-primary text-xl text-white p-1" />
+              </div>
+              <h2 className="text-black text-base font-medium mb-0">
+                Deep hands-on experience in lean implementation and quality
+                systems
+              </h2>
+            </div>
+            <div className="flex items-center mb-3 gap-3">
+              <div className=" flex items-center justify-center  mb-0 p-0">
+                <FaCheck className="rounded-full bg-primary text-xl text-white p-1" />
+              </div>
+              <h2 className="text-black text-base font-medium mb-0">
+                Measurable improvements in cost, UPH/OEE, FTR, and on-time
+                delivery
+              </h2>
+            </div>
+            <div className="flex items-center mb-3 gap-3">
+              <div className=" flex items-center justify-center  mb-0 p-0">
+                <FaCheck className="rounded-full bg-primary text-xl text-white p-1" />
+              </div>
+              <h2 className="text-black text-base font-medium mb-0">
+                End-to-end engagement: assessment → design → pilot → scale →
+                audit readiness
+              </h2>
+            </div>
+          </div>
+
+          <div className="border border-primary p-6 w-full rounded mb-6">
+            <p className="text-base font-bold mb-3">Explore More Services</p>
+
+            <div className="flex items-center mb-3 gap-3">
+              <div className=" flex items-center justify-center  mb-0 p-0">
+                <FaCheck className="rounded-full bg-primary text-xl text-white p-1" />
+              </div>
+              <h2 className="text-black text-base font-medium mb-0">
+                Engineering Consulting – Expertise for industrial innovation
+              </h2>
+            </div>
+            <div className="flex items-center mb-3 gap-3">
+              <div className=" flex items-center justify-center  mb-0 p-0">
+                <FaCheck className="rounded-full bg-primary text-xl text-white p-1" />
+              </div>
+              <h2 className="text-black text-base font-medium mb-0">
+                R&D & Product Design – From concept to prototype
+              </h2>
+            </div>
+            <div className="flex items-center mb-3 gap-3">
+              <div className=" flex items-center justify-center  mb-0 p-0">
+                <FaCheck className="rounded-full bg-primary text-xl text-white p-1" />
+              </div>
+              <h2 className="text-black text-base font-medium mb-0">
+                Contact Us – Start your operations improvement journey today
+              </h2>
+            </div>
           </div>
         </div>
       </section>

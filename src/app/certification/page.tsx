@@ -95,7 +95,7 @@ const page = () => {
               <img
                 className="object-cover object-center rounded"
                 alt="BIS Certification"
-                src="/images/bis.png"
+                src="/images/cer1.png"
               />
             </div>
           </div>
@@ -109,7 +109,7 @@ const page = () => {
               <img
                 className="object-cover object-center rounded"
                 alt="QMS Implementation"
-                src="/images/qms.png" // replace later with your QMS image
+                src="/images/cer2.png" // replace later with your QMS image
               />
             </div>
 
@@ -166,7 +166,7 @@ const page = () => {
               <img
                 className="object-cover object-center rounded"
                 alt="ISO Consultants"
-                src="/images/bis.png" // same image for now
+                src="/images/cer3.png" // same image for now
               />
             </div>
           </div>
@@ -180,7 +180,7 @@ const page = () => {
               <img
                 className="object-cover object-center rounded"
                 alt="AS Business Consulting"
-                src="/images/bis.png" // replace later with actual image
+                src="/images/cer4.png" // replace later with actual image
               />
             </div>
 

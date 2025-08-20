@@ -229,6 +229,274 @@ const page = () => {
           </div>
         </div>
       </section>
+      <section>
+        <div className="container">
+          <div className=" mx-auto flex flex-wrap">
+            <div className="flex flex-col text-center w-full mb-20">
+              <h1 className="sm:text-6xl text-2xl font-bold  mb-4 text-primary">
+                International Business Development & Export Consulting for
+                Global Expansion
+              </h1>
+              <p className="lg:w-[90%] mx-auto leading-relaxed inter-text text-sm font-normal mb-4">
+                At AS Business Consulting, we help Indian businesses enter new
+                countries, build reliable cross-border partnerships, and scale
+                profitably. From regulations and certifications to supply chain
+                and logistics, our team delivers end-to-end support so you can
+                expand with confidence.
+              </p>
+              <p className=" text-[40px] font-bold text-primary mb-4">
+                What We Deliver (End to End)
+              </p>
+              <div className=" bg-[#FEF2FB] px-8 py-5 rounded mb-4">
+                <p className=" text-start text-xl font-medium">
+                  Technology Development
+                </p>
+                <p className=" inter-text text-start">
+                  new technology/setup, machines & tools, international
+                  relations, business development.
+                </p>
+              </div>
+              <div className=" bg-[#FEF2FB] px-8 py-5 rounded mb-4">
+                <p className=" text-start text-xl font-medium">
+                  Import–Export Enablement
+                </p>
+                <p className=" inter-text text-start">
+                  certification, licensing, product sales, franchise programs.
+                </p>
+              </div>
+              <div className=" bg-[#FEF2FB] px-8 py-5 rounded mb-4">
+                <p className=" text-start text-xl font-medium">
+                  Logistics & Compliance
+                </p>
+                <p className=" inter-text text-start">
+                  certification, licensing, product sales, franchise programs.
+                </p>
+              </div>
+              <div className=" bg-[#FEF2FB] px-8 py-5 rounded mb-4">
+                <p className=" text-start text-xl font-medium">
+                  Consultation & Incentives
+                </p>
+                <p className=" inter-text text-start">
+                  cost saving, audits, training, guidance on Govt. benefits &
+                  schemes.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div className="container">
+          <div className=" mx-auto flex flex-wrap"></div>
+          <div className="flex gap-4">
+            <div className="flex-1">
+              <h2 className="text-primary text-3xl font-bold  mb-7">
+                Export Business Consulting
+              </h2>
+              <p className=" text-xl font-bold inter-text my-4">
+                Helping manufacturers, traders, and service providers win in
+                global markets.
+              </p>
+              <div>
+                <div className="flex items-center mb-3 gap-3">
+                  <div className="flex items-center justify-center  mb-0">
+                    <FaCheck className="rounded-full text-xl bg-primary text-white p-1" />
+                  </div>
+                  <h2 className="text-black text-base font-medium mb-0">
+                    Export readiness assessments and market prioritization
+                  </h2>
+                </div>
+                <div className="flex items-center mb-3 gap-3">
+                  <div className="flex items-center justify-center  mb-0">
+                    <FaCheck className="rounded-full text-xl bg-primary text-white p-1" />
+                  </div>
+                  <h2 className="text-black text-base font-medium mb-0">
+                    Trade compliance, documentation, and product/regulatory
+                    certifications
+                  </h2>
+                </div>
+                <div className="flex items-center mb-3 gap-3">
+                  <div className="flex items-center justify-center  mb-0">
+                    <FaCheck className="rounded-full text-xl bg-primary text-white p-1" />
+                  </div>
+                  <h2 className="text-black text-base font-medium mb-0">
+                    International marketing, pricing, and channel/sales
+                    strategies
+                  </h2>
+                </div>
+              </div>
+              <h2 className="text-primary text-3xl font-bold  my-7">
+                China Business Development Advisory
+              </h2>
+              <p className=" text-xl font-bold inter-text my-4">
+                Unlock opportunities in the Chinese market—confidently.
+              </p>
+              <div>
+                <div className="flex items-center mb-3 gap-3">
+                  <div className="flex items-center justify-center  mb-0">
+                    <FaCheck className="rounded-full text-xl bg-primary text-white p-1" />
+                  </div>
+                  <h2 className="text-black text-base font-medium mb-0">
+                    Consumer/industry research and competitive mapping
+                  </h2>
+                </div>
+                <div className="flex items-center mb-3 gap-3">
+                  <div className="flex items-center justify-center  mb-0">
+                    <FaCheck className="rounded-full text-xl bg-primary text-white p-1" />
+                  </div>
+                  <h2 className="text-black text-base font-medium mb-0">
+                    Partner/distributor sourcing and due diligence
+                  </h2>
+                </div>
+                <div className="flex items-center mb-3 gap-3">
+                  <div className="flex items-center justify-center  mb-0">
+                    <FaCheck className="rounded-full text-xl bg-primary text-white p-1" />
+                  </div>
+                  <h2 className="text-black text-base font-medium mb-0">
+                    Negotiation support plus cultural and regulatory guidance
+                  </h2>
+                </div>
+              </div>
+              <h2 className="text-primary text-3xl font-bold  my-7">
+                Logistics Solutions in India for Global Trade
+              </h2>
+              <p className=" text-xl font-bold inter-text my-4">
+                Efficient, compliant, and cost-effective movement—door to door.
+              </p>
+              <div>
+                <div className="flex items-center mb-3 gap-3">
+                  <div className="flex items-center justify-center  mb-0">
+                    <FaCheck className="rounded-full text-xl bg-primary text-white p-1" />
+                  </div>
+                  <h2 className="text-black text-base font-medium mb-0">
+                    Freight forwarding and multimodal transportation
+                  </h2>
+                </div>
+                <div className="flex items-center mb-3 gap-3">
+                  <div className="flex items-center justify-center  mb-0">
+                    <FaCheck className="rounded-full text-xl bg-primary text-white p-1" />
+                  </div>
+                  <h2 className="text-black text-base font-medium mb-0">
+                    Customs & compliance handling (documents, duties, HS codes,
+                    INCOTERMS)
+                  </h2>
+                </div>
+                <div className="flex items-center mb-3 gap-3">
+                  <div className="flex items-center justify-center  mb-0">
+                    <FaCheck className="rounded-full text-xl bg-primary text-white p-1" />
+                  </div>
+                  <h2 className="text-black text-base font-medium mb-0">
+                    Warehousing, inventory management, and export packing
+                    standards
+                  </h2>
+                </div>
+              </div>
+            </div>
+
+            <div className="w-1/3">
+              <Image
+                src="/images/international1.png" // path relative to /public
+                alt="My beautiful image"
+                width={500}
+                height={500}
+                priority // optional: preloads image
+                className="rounded"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div className="container">
+          <div className=" mx-auto flex flex-wrap"></div>
+          <div className="flex gap-4">
+            <div className="flex-1">
+              <h2 className="text-primary text-3xl font-bold  mb-7">
+                Why Choose AS Business Consulting for Global Expansion
+              </h2>
+              <div>
+                <div className="flex items-center mb-3 gap-3">
+                  <div className="flex items-center justify-center  mb-0">
+                    <FaCheck className="rounded-full text-xl bg-primary text-white p-1" />
+                  </div>
+                  <h2 className="text-black text-base font-medium mb-0">
+                    Proven expertise in international trade and market entry
+                  </h2>
+                </div>
+                <div className="flex items-center mb-3 gap-3">
+                  <div className="flex items-center justify-center  mb-0">
+                    <FaCheck className="rounded-full text-xl bg-primary text-white p-1" />
+                  </div>
+                  <h2 className="text-black text-base font-medium mb-0">
+                    Customized strategies by region, industry, and channel
+                  </h2>
+                </div>
+                <div className="flex items-center mb-3 gap-3">
+                  <div className="flex items-center justify-center  mb-0">
+                    <FaCheck className="rounded-full text-xl bg-primary text-white p-1" />
+                  </div>
+                  <h2 className="text-black text-base font-medium mb-0">
+                    Strong global network for partners, distributors, and
+                    financing
+                  </h2>
+                </div>
+                <div className="flex items-center mb-3 gap-3">
+                  <div className="flex items-center justify-center  mb-0">
+                    <FaCheck className="rounded-full text-xl bg-primary text-white p-1" />
+                  </div>
+                  <h2 className="text-black text-base font-medium mb-0">
+                    End-to-end execution: market analysis → certifications →
+                    logistics → scale
+                  </h2>
+                </div>
+              </div>
+              <h2 className="text-primary text-3xl font-bold  my-7">
+                Explore More Services
+              </h2>
+              <div>
+                <div className="flex items-center mb-3 gap-3">
+                  <div className="flex items-center justify-center  mb-0">
+                    <FaCheck className="rounded-full text-xl bg-primary text-white p-1" />
+                  </div>
+                  <h2 className="text-black text-base font-medium mb-0">
+                    B2B Marketing – Targeted strategies to grow demand in new
+                    markets
+                  </h2>
+                </div>
+                <div className="flex items-center mb-3 gap-3">
+                  <div className="flex items-center justify-center  mb-0">
+                    <FaCheck className="rounded-full text-xl bg-primary text-white p-1" />
+                  </div>
+                  <h2 className="text-black text-base font-medium mb-0">
+                    Operations Consulting – Lean processes for export-ready
+                    performance
+                  </h2>
+                </div>
+                <div className="flex items-center mb-3 gap-3">
+                  <div className="flex items-center justify-center  mb-0">
+                    <FaCheck className="rounded-full text-xl bg-primary text-white p-1" />
+                  </div>
+                  <h2 className="text-black text-base font-medium mb-0">
+                    Contact Us – Start your global expansion journey today
+                  </h2>
+                </div>
+              </div>
+            </div>
+
+            <div className="w-1/3">
+              <Image
+                src="/images/international2.png" // path relative to /public
+                alt="My beautiful image"
+                width={500}
+                height={500}
+                priority // optional: preloads image
+                className="rounded"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
       <ContactFrom />
       <Footer />
     </>
