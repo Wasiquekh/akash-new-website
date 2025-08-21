@@ -21,216 +21,24 @@ const page = () => {
       <div className="bg-[url('/images/research-banner.jpg')] bg-cover bg-center">
         <div className=" max-w-7xl m-auto px-5  py-15 md:py-40">
           <h1 className="sm:text-6xl text-2xl font-bold text-white mb-4 text-center ">
-            Research & Development
+            R&D and Product Design Services for Engineering Innovation in India
           </h1>
           <p className=" mx-auto leading-relaxed text-sm font-normal text-white inter-text text-center w-full md:w-[80%]">
-            We help businesses innovate through dedicated research and
-            development, turning ideas into practical solutions that drive
-            growth and global competitiveness.
+            At AS Business Consulting, we turn ideas into market-ready
+            products—fast. Our end-to-end R&D and product design services cover
+            CAD/CAM outsourcing, engineering drafting, 3D modeling, real-time
+            renderings, prototype development, reverse engineering, and file
+            conversion so you can accelerate innovation and reduce
+            time-to-market.
           </p>
         </div>
       </div>
-      <section className=" relative">
-        <div className="container mx-auto flex flex-wrap">
-          <div className="flex flex-col text-center w-full mb-10 md:mb-20">
-            <h1 className="sm:text-6xl text-2xl font-bold  mb-4 text-primary">
-              Introduction
-            </h1>
-            <p className="lg:w-[80%] mx-auto leading-relaxed inter-text text-sm font-normal">
-              ASBC is a Design company highly specialized in providing quality
-              services to companies willing to outsource their Design - Drafting
-              side of the product development. Our main goal is to offer you the
-              best CAD services for all your engineering needs in implementing
-              and developing CAD/CAM activities. As a busy CAD professional, you
-              are obviously pressed for time, and seeking better ways to
-              streamline the creation, use and maintenance of your CAD data.
-              ASBC can help you turn your ideas and Designs into functional
-              components that can be produced and marketed in a SHORT PERIOD OF
-              TIME, and offers services.
-            </p>
-          </div>
-
-          <div className="lg:w-1/2 w-full mb-10 lg:mb-0 rounded-lg overflow-hidden flex items-center">
-            <img
-              alt="feature"
-              className="object-cover object-center h-auto w-full"
-              src="/images/research&development.png"
-            />
-          </div>
-          <div className="flex flex-col flex-wrap lg:py-6 -mb-10 lg:w-1/2 lg:pl-12 lg:text-left text-center">
-            <div className="flex flex-col mb-6 lg:items-start items-center p-0 md:p-6 ">
-              <div className="flex-grow">
-                <div className="flex items-center mb-5 gap-3">
-                  <div className=" flex items-center justify-center rounded-full bg-primary text-white mb-0 p-2">
-                    <FaCheck />
-                  </div>
-                  <h2 className="text-black text-2xl font-semibold mb-0">
-                    Real Time Renderings
-                  </h2>
-                </div>
-
-                <p className=" text-sm font-normal text-black inter-text w-full text-left md:w-[80%]">
-                  Any Concept you have or is supposed to be developed, Come to
-                  us, We Will Turn Your Imaginations into Virtual Reality by
-                  means of sophisticated Soft wares
-                </p>
-              </div>
-            </div>
-            <div className="flex flex-col mb-6 lg:items-start items-center bg-tertiary p-1 md:p-6 rounded">
-              <div className="flex-grow">
-                <div className="flex items-center mb-5 gap-3">
-                  <div className=" flex items-center justify-center rounded-full bg-primary text-white mb-0 p-2">
-                    <FaCheck />
-                  </div>
-                  <h2 className="text-black text-2xl text-left font-semibold mb-0">
-                    3D Computer Modeling
-                  </h2>
-                </div>
-
-                <p className="text-sm font-normal text-black inter-text w-full text-left md:w-[80%]">
-                  üComplex surfaces and intricate details using Pro/Engineer®
-                  Wildfire Versions.
-                </p>
-              </div>
-            </div>
-            <div className="flex flex-col mb-6 lg:items-start items-center p-0 md:p-6">
-              <div className="flex-grow">
-                <div className="flex items-center mb-5 gap-3">
-                  <div className=" flex items-center justify-center rounded-full bg-primary text-white mb-0 p-2">
-                    <FaCheck />
-                  </div>
-                  <h2 className="text-black text-2xl font-semibold mb-0">
-                    2D Drawings
-                  </h2>
-                </div>
-
-                <p className=" text-sm font-normal text-black inter-text w-full text-left md:w-[80%]">
-                  üUsing the standards of preference, including geometric
-                  tolerance instructions.
-                </p>
-              </div>
-            </div>
-            <div className="flex flex-col mb-6 lg:items-start items-center p-0  md:p-6">
-              <div className="flex-grow">
-                <div className="flex items-center mb-5 gap-3">
-                  <div className=" flex items-center justify-center rounded-full bg-primary text-white mb-0 p-2">
-                    <FaCheck />
-                  </div>
-                  <h2 className="text-black text-2xl font-semibold mb-0">
-                    File Conversion
-                  </h2>
-                </div>
-
-                <p className=" text-sm font-normal text-black inter-text w-full text-left md:w-[80%]">
-                  Convert 2D (including any art work) or 3D data into a useful
-                  format.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <Image
-          src="/images/leftShape.svg" // path relative to /public
-          alt="My beautiful image"
-          width={300}
-          height={300}
-          priority // optional: preloads image
-          className=" absolute left-0 top-0 "
-        />
-        <Image
-          src="/images/rightShape.svg" // path relative to /public
-          alt="My beautiful image"
-          width={300}
-          height={300}
-          priority // optional: preloads image
-          className=" absolute right-0 top-0 "
-        />
-      </section>
-      <section>
-        <div className=" container grid grid-cols-1 md:grid-cols-3 gap-4">
-          <div className="">
-            <h2 className="text-black text-2xl font-semibold mb-7">
-              That can serve your needs in the following fields
-            </h2>
-            <div>
-              <div className="flex items-center mb-3 gap-3">
-                <div className=" flex items-center justify-center rounded-full bg-primary text-white mb-0 p-1">
-                  <FaCheck />
-                </div>
-                <h2 className="text-black text-2xl font-medium mb-0">
-                  Drafting
-                </h2>
-              </div>
-              <div className="flex items-center mb-3 gap-3">
-                <div className=" flex items-center justify-center rounded-full bg-primary text-white mb-0 p-1">
-                  <FaCheck />
-                </div>
-                <h2 className="text-black text-2xl font-medium mb-0">
-                  Detailing
-                </h2>
-              </div>
-              <div className="flex items-center mb-3 gap-3">
-                <div className=" flex items-center justify-center rounded-full bg-primary text-white mb-0 p-1">
-                  <FaCheck />
-                </div>
-                <h2 className="text-black text-2xl font-medium mb-0">
-                  Designing
-                </h2>
-              </div>
-              <div className="flex items-center mb-3 gap-3">
-                <div className=" flex items-center justify-center rounded-full bg-primary text-white mb-0 p-1">
-                  <FaCheck />
-                </div>
-                <h2 className="text-black text-2xl font-medium mb-0">
-                  3D Modeling
-                </h2>
-              </div>
-              <div className="flex items-center mb-3 gap-3">
-                <div className=" flex items-center justify-center rounded-full bg-primary text-white mb-0 p-1">
-                  <FaCheck />
-                </div>
-                <h2 className="text-black text-2xl font-medium mb-0">
-                  Reverse Engineering
-                </h2>
-              </div>
-              <div className="flex items-center mb-3 gap-3">
-                <div className=" flex items-center justify-center rounded-full bg-primary text-white mb-0 p-1">
-                  <FaCheck />
-                </div>
-                <h2 className="text-black text-2xl font-medium mb-0">
-                  Prototypes
-                </h2>
-              </div>
-            </div>
-          </div>
-          <div>
-            <Image
-              src="/images/drafting.png" // path relative to /public
-              alt="My beautiful image"
-              width={500}
-              height={500}
-              priority // optional: preloads image
-              className=" rounded"
-            />
-          </div>
-          <div>
-            <Image
-              src="/images/detailing.png" // path relative to /public
-              alt="My beautiful image"
-              width={500}
-              height={500}
-              priority // optional: preloads image
-              className="rounded"
-            />
-          </div>
-        </div>
-      </section>
       {/* what we do */}
 
       {/* choose  */}
       <section className=" ">
         <div className="container ">
-          <div className=" mx-auto flex flex-wrap">
+          {/* <div className=" mx-auto flex flex-wrap">
             <div className="flex flex-col text-center w-full mb-10 md:mb-20">
               <h1 className="sm:text-6xl text-2xl font-bold  mb-4 text-primary">
                 R&D and Product Design Services for Engineering Innovation in
@@ -245,7 +53,7 @@ const page = () => {
                 innovation and reduce time-to-market.
               </p>
             </div>
-          </div>
+          </div> */}
           <div className=" grid grid-cols-1 md:grid-cols-2 gap-0 md:gap-8">
             <div className=" w-full">
               <p className=" text-primary text-2xl font-bold mb-8 text-center md:text-left">
@@ -514,6 +322,202 @@ const page = () => {
           </div>
         </div>
       </section>
+      <section className=" relative">
+        <div className="container mx-auto flex flex-wrap">
+          {/* <div className="flex flex-col text-center w-full mb-10 md:mb-20">
+            <h1 className="sm:text-6xl text-2xl font-bold  mb-4 text-primary">
+              Introduction
+            </h1>
+            <p className="lg:w-[80%] mx-auto leading-relaxed inter-text text-sm font-normal">
+              ASBC is a Design company highly specialized in providing quality
+              services to companies willing to outsource their Design - Drafting
+              side of the product development. Our main goal is to offer you the
+              best CAD services for all your engineering needs in implementing
+              and developing CAD/CAM activities. As a busy CAD professional, you
+              are obviously pressed for time, and seeking better ways to
+              streamline the creation, use and maintenance of your CAD data.
+              ASBC can help you turn your ideas and Designs into functional
+              components that can be produced and marketed in a SHORT PERIOD OF
+              TIME, and offers services.
+            </p>
+          </div> */}
+
+          <div className="lg:w-1/2 w-full mb-10 lg:mb-0 rounded-lg overflow-hidden flex items-center">
+            <img
+              alt="feature"
+              className="object-cover object-center h-auto w-full"
+              src="/images/research&development.png"
+            />
+          </div>
+          <div className="flex flex-col flex-wrap lg:py-6 -mb-10 lg:w-1/2 lg:pl-12 lg:text-left text-center">
+            <div className="flex flex-col mb-6 lg:items-start items-center p-0 md:p-6 ">
+              <div className="flex-grow">
+                <div className="flex items-center mb-5 gap-3">
+                  <div className=" flex items-center justify-center rounded-full bg-primary text-white mb-0 p-2">
+                    <FaCheck />
+                  </div>
+                  <h2 className="text-black text-2xl font-semibold mb-0">
+                    Real Time Renderings
+                  </h2>
+                </div>
+
+                <p className=" text-sm font-normal text-black inter-text w-full text-left md:w-[80%]">
+                  Any Concept you have or is supposed to be developed, Come to
+                  us, We Will Turn Your Imaginations into Virtual Reality by
+                  means of sophisticated Soft wares
+                </p>
+              </div>
+            </div>
+            <div className="flex flex-col mb-6 lg:items-start items-center bg-tertiary p-1 md:p-6 rounded">
+              <div className="flex-grow">
+                <div className="flex items-center mb-5 gap-3">
+                  <div className=" flex items-center justify-center rounded-full bg-primary text-white mb-0 p-2">
+                    <FaCheck />
+                  </div>
+                  <h2 className="text-black text-2xl text-left font-semibold mb-0">
+                    3D Computer Modeling
+                  </h2>
+                </div>
+
+                <p className="text-sm font-normal text-black inter-text w-full text-left md:w-[80%]">
+                  üComplex surfaces and intricate details using Pro/Engineer®
+                  Wildfire Versions.
+                </p>
+              </div>
+            </div>
+            <div className="flex flex-col mb-6 lg:items-start items-center p-0 md:p-6">
+              <div className="flex-grow">
+                <div className="flex items-center mb-5 gap-3">
+                  <div className=" flex items-center justify-center rounded-full bg-primary text-white mb-0 p-2">
+                    <FaCheck />
+                  </div>
+                  <h2 className="text-black text-2xl font-semibold mb-0">
+                    2D Drawings
+                  </h2>
+                </div>
+
+                <p className=" text-sm font-normal text-black inter-text w-full text-left md:w-[80%]">
+                  üUsing the standards of preference, including geometric
+                  tolerance instructions.
+                </p>
+              </div>
+            </div>
+            <div className="flex flex-col mb-6 lg:items-start items-center p-0  md:p-6">
+              <div className="flex-grow">
+                <div className="flex items-center mb-5 gap-3">
+                  <div className=" flex items-center justify-center rounded-full bg-primary text-white mb-0 p-2">
+                    <FaCheck />
+                  </div>
+                  <h2 className="text-black text-2xl font-semibold mb-0">
+                    File Conversion
+                  </h2>
+                </div>
+
+                <p className=" text-sm font-normal text-black inter-text w-full text-left md:w-[80%]">
+                  Convert 2D (including any art work) or 3D data into a useful
+                  format.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <Image
+          src="/images/leftShape.svg" // path relative to /public
+          alt="My beautiful image"
+          width={300}
+          height={300}
+          priority // optional: preloads image
+          className=" absolute left-0 top-0 "
+        />
+        <Image
+          src="/images/rightShape.svg" // path relative to /public
+          alt="My beautiful image"
+          width={300}
+          height={300}
+          priority // optional: preloads image
+          className=" absolute right-0 top-0 "
+        />
+      </section>
+      <section>
+        <div className=" container grid grid-cols-1 md:grid-cols-3 gap-4">
+          <div className="">
+            <h2 className="text-black text-2xl font-semibold mb-7">
+              That can serve your needs in the following fields
+            </h2>
+            <div>
+              <div className="flex items-center mb-3 gap-3">
+                <div className=" flex items-center justify-center rounded-full bg-primary text-white mb-0 p-1">
+                  <FaCheck />
+                </div>
+                <h2 className="text-black text-2xl font-medium mb-0">
+                  Drafting
+                </h2>
+              </div>
+              <div className="flex items-center mb-3 gap-3">
+                <div className=" flex items-center justify-center rounded-full bg-primary text-white mb-0 p-1">
+                  <FaCheck />
+                </div>
+                <h2 className="text-black text-2xl font-medium mb-0">
+                  Detailing
+                </h2>
+              </div>
+              <div className="flex items-center mb-3 gap-3">
+                <div className=" flex items-center justify-center rounded-full bg-primary text-white mb-0 p-1">
+                  <FaCheck />
+                </div>
+                <h2 className="text-black text-2xl font-medium mb-0">
+                  Designing
+                </h2>
+              </div>
+              <div className="flex items-center mb-3 gap-3">
+                <div className=" flex items-center justify-center rounded-full bg-primary text-white mb-0 p-1">
+                  <FaCheck />
+                </div>
+                <h2 className="text-black text-2xl font-medium mb-0">
+                  3D Modeling
+                </h2>
+              </div>
+              <div className="flex items-center mb-3 gap-3">
+                <div className=" flex items-center justify-center rounded-full bg-primary text-white mb-0 p-1">
+                  <FaCheck />
+                </div>
+                <h2 className="text-black text-2xl font-medium mb-0">
+                  Reverse Engineering
+                </h2>
+              </div>
+              <div className="flex items-center mb-3 gap-3">
+                <div className=" flex items-center justify-center rounded-full bg-primary text-white mb-0 p-1">
+                  <FaCheck />
+                </div>
+                <h2 className="text-black text-2xl font-medium mb-0">
+                  Prototypes
+                </h2>
+              </div>
+            </div>
+          </div>
+          <div>
+            <Image
+              src="/images/drafting.png" // path relative to /public
+              alt="My beautiful image"
+              width={500}
+              height={500}
+              priority // optional: preloads image
+              className=" rounded"
+            />
+          </div>
+          <div>
+            <Image
+              src="/images/detailing.png" // path relative to /public
+              alt="My beautiful image"
+              width={500}
+              height={500}
+              priority // optional: preloads image
+              className="rounded"
+            />
+          </div>
+        </div>
+      </section>
+
       <ContactFrom />
       <Footer />
     </>

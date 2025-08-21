@@ -111,10 +111,13 @@ const Header = () => {
             />
           </Link>
           <nav className=" m-auto flex flex-wrap gap-6 items-center text-base font-light leading-4 justify-center">
-            <Link href="/" className="mr-0 hover:text-gray-900">
+            <Link href="/" className="mr-0 hover:text-gray-900 cursor-pointer">
               Home
             </Link>
-            <Link href="/about-us" className="mr-0 hover:text-gray-900">
+            <Link
+              href="/about-us"
+              className="mr-0 hover:text-gray-900 cursor-pointer"
+            >
               About Us
             </Link>
             <div className="relative group">

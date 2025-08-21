@@ -28,15 +28,321 @@ const page = () => {
       <div className="bg-[url('/images/sales&marketing.jpg')] bg-cover bg-center">
         <div className=" max-w-7xl m-auto px-5  py-15 md:py-40">
           <h1 className="sm:text-6xl text-2xl font-bold text-white mb-4 text-center ">
-            Sales & Marketing
+            Sales & Marketing Consulting for B2B & B2C Growth in India
           </h1>
           <p className=" mx-auto leading-relaxed text-sm font-normal text-white inter-text text-center">
-            We craft result-driven sales and marketing strategies that
-            strengthen your brand,
-            <br /> boost customer engagement, and accelerate business growth.
+            At AS Business Consulting, we help brands win the market with
+            data-driven strategy, precise execution, and transparent reporting.
+            Whether you sell B2B or B2C, we align advertising, market planning,
+            pricing, distribution, and branding to deliver measurable revenue
+            impact.
           </p>
         </div>
       </div>
+      <section className="">
+        <div className="container">
+          {/* <div className="flex flex-col text-center w-full mb-10 md:mb-20">
+            <h1 className="sm:text-6xl text-2xl font-bold  mb-4 text-primary">
+              Sales & Marketing Consulting for B2B & B2C Growth in India
+            </h1>
+            <p className="lg:w-[80%] mx-auto leading-relaxed inter-text text-sm font-normal mb-6">
+              At AS Business Consulting, we help brands win the market with
+              data-driven strategy, precise execution, and transparent
+              reporting. Whether you sell B2B or B2C, we align advertising,
+              market planning, pricing, distribution, and branding to deliver
+              measurable revenue impact.
+            </p>
+          </div> */}
+          {/* what we do */}
+          <div>
+            <p className=" text-xl md:text-[40px] font-bold text-primary my-6">
+              What We Do
+            </p>
+            <div className=" grid grid-cols-1 md:grid-cols-2 gap-4">
+              <div className=" bg-[#FEF2FB] p-6 rounded  w-full">
+                <p className=" text-xl font-normal md:font-medium">
+                  B2B Marketing – account-based plays, LinkedIn + email funnels,
+                  webinars, sales enablement
+                </p>
+              </div>
+              <div className=" bg-[#FEF2FB] p-4 w-full">
+                <p className=" text-xl font-normal md:font-medium">
+                  B2C Marketing – performance ads (Meta/Google), social &
+                  influencer, remarketing, CRM journeys
+                </p>
+              </div>
+              <div className=" bg-[#FEF2FB] p-6 rounded w-full">
+                <p className=" text-xl font-normal md:font-medium">
+                  Growth Consulting – market research, project reports, GTM &
+                  channel strategy, conversion rate optimization
+                </p>
+              </div>
+              <div className=" bg-[#FEF2FB] p-6 rounded w-full">
+                <p className=" text-xl font-normal md:font-medium">
+                  Training – latest tools and techniques for your marketing &
+                  sales teams (platforms, analytics, playbooks)
+                </p>
+              </div>
+            </div>
+          </div>
+
+          {/* our strenth */}
+          <div>
+            <p className=" text-xl md:text-[40px] font-bold text-primary my-6">
+              Our Strengths
+            </p>
+            <div className=" grid grid-cols-1 md:grid-cols-2 gap-4">
+              <div className=" bg-[#FEF2FB] p-6 rounded  w-full">
+                <p className=" text-xl font-normal md:font-medium">
+                  Concrete Data Analysis – research, audience insights,
+                  competitive mapping
+                </p>
+              </div>
+              <div className=" bg-[#FEF2FB] p-4 w-full">
+                <p className=" text-xl font-normal md:font-medium">
+                  Structured Strategy – ICP/personas, value proposition, channel
+                  mix, objectives & KPIs
+                </p>
+              </div>
+              <div className=" bg-[#FEF2FB] p-6 rounded w-full">
+                <p className=" text-xl font-normal md:font-medium">
+                  Multiple Plans – A/B media plans, creative variants,
+                  contingency plays
+                </p>
+              </div>
+              <div className=" bg-[#FEF2FB] p-6 rounded w-full">
+                <p className=" text-xl font-normal md:font-medium">
+                  Improved Brand Recognition – positioning, messaging, content
+                  frameworks
+                </p>
+              </div>
+              <div className=" bg-[#FEF2FB] p-6 rounded w-full">
+                <p className=" text-xl font-normal md:font-medium">
+                  Logical Execution – sprint-based campaigns with QA checklists
+                  and governance
+                </p>
+              </div>
+              <div className=" bg-[#FEF2FB] p-6 rounded w-full">
+                <p className=" text-xl font-normal md:font-medium">
+                  Marketing Analytics & Reporting – dashboards, cohort analysis,
+                  ROAS/CAC/CPL tracking
+                </p>
+              </div>
+            </div>
+          </div>
+          {/* core capabilities */}
+          <div>
+            <p className=" text-xl md:text-[40px] font-bold text-primary my-6">
+              Core Capabilities
+            </p>
+            <div className=" grid grid-cols-1  gap-4">
+              <div className=" bg-[#FEF2FB] p-6 rounded  w-full border border-primary">
+                <p className=" text-xl font-medium mb-2">
+                  Advertising & Campaign Management
+                </p>
+                <p className=" text-sm inter-text">
+                  Full-funnel campaigns (awareness → consideration →
+                  conversion), creative direction, media buying, and continuous
+                  optimization.
+                </p>
+              </div>
+              <div className=" bg-[#FEF2FB] p-6 rounded  w-full border border-primary">
+                <p className=" text-xl font-medium mb-2">
+                  Market Planning & Target/Goal Setting
+                </p>
+                <p className=" text-sm inter-text">
+                  Bottom-up forecasts, seasonality planning, SMART targets, and
+                  budget allocation by channel and audience.
+                </p>
+              </div>
+              <div className=" bg-[#FEF2FB] p-6 rounded  w-full border border-primary">
+                <p className=" text-xl font-medium mb-2">
+                  Product Pricing & Packaging
+                </p>
+                <p className=" text-sm inter-text">
+                  Value-based pricing, promo calendars, and margin-safe offers
+                  that convert without eroding profitability.
+                </p>
+              </div>
+              <div className=" bg-[#FEF2FB] p-6 rounded  w-full border border-primary">
+                <p className=" text-xl font-medium mb-2">
+                  Distribution & Channel Planning
+                </p>
+                <p className=" text-sm inter-text">
+                  Online/offline channel maps, partner programs, last-mile
+                  logistics coordination, and territory rollout.
+                </p>
+              </div>
+              <div className=" bg-[#FEF2FB] p-6 rounded  w-full border border-primary">
+                <p className=" text-xl font-medium mb-2">
+                  Brand Building & Value Creation
+                </p>
+                <p className=" text-sm inter-text">
+                  Positioning workshops, brand identity systems, content
+                  pillars, and reputation management.
+                </p>
+              </div>
+              <div className=" bg-[#FEF2FB] p-6 rounded  w-full border border-primary">
+                <p className=" text-xl font-medium mb-2">
+                  Project Reports & Business Cases
+                </p>
+                <p className=" text-sm inter-text">
+                  Investor-ready market sizing, feasibility assessments, and
+                  go-live roadmaps.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* training program tool */}
+      <section>
+        <div className="container">
+          <div className=" mx-auto flex flex-wrap"></div>
+          <div className=" grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div className="w-full">
+              <h2 className="text-primary text-xl md:text-3xl font-bold  mb-7">
+                Training Programs (Tools & Techniques)
+              </h2>
+              <div>
+                <div className="flex items-center mb-3 gap-3">
+                  <div className="flex items-center justify-center  mb-0">
+                    <FaCheck className="rounded-full text-xl bg-primary text-white p-1" />
+                  </div>
+                  <h2 className="text-black text-base font-medium mb-0">
+                    Performance marketing (Meta, Google, YouTube, LinkedIn)
+                  </h2>
+                </div>
+                <div className="flex items-center mb-3 gap-3">
+                  <div className="flex items-center justify-center  mb-0">
+                    <FaCheck className="rounded-full text-xl bg-primary text-white p-1" />
+                  </div>
+                  <h2 className="text-black text-base font-medium mb-0">
+                    Marketing analytics & dashboards (GA4, Looker/Data Studio)
+                  </h2>
+                </div>
+                <div className="flex items-center mb-3 gap-3">
+                  <div className="flex items-center justify-center  mb-0">
+                    <FaCheck className="rounded-full text-xl bg-primary text-white p-1" />
+                  </div>
+                  <h2 className="text-black text-base font-medium mb-0">
+                    Sales playbooks, pitch crafting, and objection handling
+                  </h2>
+                </div>
+                <div className="flex items-center mb-3 gap-3">
+                  <div className="flex items-center justify-center  mb-0">
+                    <FaCheck className="rounded-full text-xl bg-primary text-white p-1" />
+                  </div>
+                  <h2 className="text-black text-base font-medium mb-0">
+                    Content & brand storytelling for teams
+                  </h2>
+                </div>
+              </div>
+            </div>
+            <div className="w-full">
+              <h2 className="text-primary text-xl md:text-3xl font-bold  mb-7">
+                Deliverables You Receive
+              </h2>
+              <div>
+                <div className="flex items-center mb-3 gap-3">
+                  <div className="flex items-center justify-center  mb-0">
+                    <FaCheck className="rounded-full text-xl bg-primary text-white p-1" />
+                  </div>
+                  <h2 className="text-black text-base font-medium mb-0">
+                    GTM strategy, ICP/personas, value proposition
+                  </h2>
+                </div>
+                <div className="flex items-center mb-3 gap-3">
+                  <div className="flex items-center justify-center  mb-0">
+                    <FaCheck className="rounded-full text-xl bg-primary text-white p-1" />
+                  </div>
+                  <h2 className="text-black text-base font-medium mb-0">
+                    Media plan & budget, creative guidelines, ad copies
+                  </h2>
+                </div>
+                <div className="flex items-center mb-3 gap-3">
+                  <div className="flex items-center justify-center  mb-0">
+                    <FaCheck className="rounded-full text-xl bg-primary text-white p-1" />
+                  </div>
+                  <h2 className="text-black text-base font-medium mb-0">
+                    Pricing architecture & promo plan
+                  </h2>
+                </div>
+                <div className="flex items-center mb-3 gap-3">
+                  <div className="flex items-center justify-center  mb-0">
+                    <FaCheck className="rounded-full text-xl bg-primary text-white p-1" />
+                  </div>
+                  <h2 className="text-black text-base font-medium mb-0">
+                    Distribution blueprint & partner kit
+                  </h2>
+                </div>
+                <div className="flex items-center mb-3 gap-3">
+                  <div className="flex items-center justify-center  mb-0">
+                    <FaCheck className="rounded-full text-xl bg-primary text-white p-1" />
+                  </div>
+                  <h2 className="text-black text-base font-medium mb-0">
+                    Weekly dashboards and monthly performance reviews with
+                    actions
+                  </h2>
+                </div>
+              </div>
+            </div>
+            <div className="w-full">
+              <h2 className="text-primary text-xl md:text-3xl font-bold  mb-7">
+                Why Choose AS Business Consulting
+              </h2>
+              <div>
+                <div className="flex items-center mb-3 gap-3">
+                  <div className="flex items-center justify-center  mb-0">
+                    <FaCheck className="rounded-full text-xl bg-primary text-white p-1" />
+                  </div>
+                  <h2 className="text-black text-base font-medium mb-0">
+                    Data-first approach with structured experimentation
+                  </h2>
+                </div>
+                <div className="flex items-center mb-3 gap-3">
+                  <div className="flex items-center justify-center  mb-0">
+                    <FaCheck className="rounded-full text-xl bg-primary text-white p-1" />
+                  </div>
+                  <h2 className="text-black text-base font-medium mb-0">
+                    End-to-end ownership from plan to execution to reporting
+                  </h2>
+                </div>
+                <div className="flex items-center mb-3 gap-3">
+                  <div className="flex items-center justify-center  mb-0">
+                    <FaCheck className="rounded-full text-xl bg-primary text-white p-1" />
+                  </div>
+                  <h2 className="text-black text-base font-medium mb-0">
+                    B2B + B2C expertise across industries
+                  </h2>
+                </div>
+                <div className="flex items-center mb-3 gap-3">
+                  <div className="flex items-center justify-center  mb-0">
+                    <FaCheck className="rounded-full text-xl bg-primary text-white p-1" />
+                  </div>
+                  <h2 className="text-black text-base font-medium mb-0">
+                    Training + handover so your team sustains results
+                  </h2>
+                </div>
+              </div>
+            </div>
+            <div className="w-full">
+              <h2 className="text-primary text-xl md:text-3xl font-bold  mb-7">
+                Explore More Services
+              </h2>
+              <div>
+                <p className=" inter-text text-sm">
+                  Operations Consulting – Lean, quality, and supply-chain
+                  excellence R&D & Product Design – From concept to prototype
+                  and market readiness Contact Us – Let’s design a growth plan
+                  and start scaling your revenue.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
       <section className=" relative">
         <div className="container">
@@ -414,310 +720,6 @@ const page = () => {
         </div>
       </section>
 
-      <section className="">
-        <div className="container">
-          <div className="flex flex-col text-center w-full mb-10 md:mb-20">
-            <h1 className="sm:text-6xl text-2xl font-bold  mb-4 text-primary">
-              Sales & Marketing Consulting for B2B & B2C Growth in India
-            </h1>
-            <p className="lg:w-[80%] mx-auto leading-relaxed inter-text text-sm font-normal mb-6">
-              At AS Business Consulting, we help brands win the market with
-              data-driven strategy, precise execution, and transparent
-              reporting. Whether you sell B2B or B2C, we align advertising,
-              market planning, pricing, distribution, and branding to deliver
-              measurable revenue impact.
-            </p>
-          </div>
-          {/* what we do */}
-          <div>
-            <p className=" text-xl md:text-[40px] font-bold text-primary my-6">
-              What We Do
-            </p>
-            <div className=" grid grid-cols-1 md:grid-cols-2 gap-4">
-              <div className=" bg-[#FEF2FB] p-6 rounded  w-full">
-                <p className=" text-xl font-normal md:font-medium">
-                  B2B Marketing – account-based plays, LinkedIn + email funnels,
-                  webinars, sales enablement
-                </p>
-              </div>
-              <div className=" bg-[#FEF2FB] p-4 w-full">
-                <p className=" text-xl font-normal md:font-medium">
-                  B2C Marketing – performance ads (Meta/Google), social &
-                  influencer, remarketing, CRM journeys
-                </p>
-              </div>
-              <div className=" bg-[#FEF2FB] p-6 rounded w-full">
-                <p className=" text-xl font-normal md:font-medium">
-                  Growth Consulting – market research, project reports, GTM &
-                  channel strategy, conversion rate optimization
-                </p>
-              </div>
-              <div className=" bg-[#FEF2FB] p-6 rounded w-full">
-                <p className=" text-xl font-normal md:font-medium">
-                  Training – latest tools and techniques for your marketing &
-                  sales teams (platforms, analytics, playbooks)
-                </p>
-              </div>
-            </div>
-          </div>
-
-          {/* our strenth */}
-          <div>
-            <p className=" text-xl md:text-[40px] font-bold text-primary my-6">
-              Our Strengths
-            </p>
-            <div className=" grid grid-cols-1 md:grid-cols-2 gap-4">
-              <div className=" bg-[#FEF2FB] p-6 rounded  w-full">
-                <p className=" text-xl font-normal md:font-medium">
-                  Concrete Data Analysis – research, audience insights,
-                  competitive mapping
-                </p>
-              </div>
-              <div className=" bg-[#FEF2FB] p-4 w-full">
-                <p className=" text-xl font-normal md:font-medium">
-                  Structured Strategy – ICP/personas, value proposition, channel
-                  mix, objectives & KPIs
-                </p>
-              </div>
-              <div className=" bg-[#FEF2FB] p-6 rounded w-full">
-                <p className=" text-xl font-normal md:font-medium">
-                  Multiple Plans – A/B media plans, creative variants,
-                  contingency plays
-                </p>
-              </div>
-              <div className=" bg-[#FEF2FB] p-6 rounded w-full">
-                <p className=" text-xl font-normal md:font-medium">
-                  Improved Brand Recognition – positioning, messaging, content
-                  frameworks
-                </p>
-              </div>
-              <div className=" bg-[#FEF2FB] p-6 rounded w-full">
-                <p className=" text-xl font-normal md:font-medium">
-                  Logical Execution – sprint-based campaigns with QA checklists
-                  and governance
-                </p>
-              </div>
-              <div className=" bg-[#FEF2FB] p-6 rounded w-full">
-                <p className=" text-xl font-normal md:font-medium">
-                  Marketing Analytics & Reporting – dashboards, cohort analysis,
-                  ROAS/CAC/CPL tracking
-                </p>
-              </div>
-            </div>
-          </div>
-          {/* core capabilities */}
-          <div>
-            <p className=" text-xl md:text-[40px] font-bold text-primary my-6">
-              Core Capabilities
-            </p>
-            <div className=" grid grid-cols-1  gap-4">
-              <div className=" bg-[#FEF2FB] p-6 rounded  w-full border border-primary">
-                <p className=" text-xl font-medium mb-2">
-                  Advertising & Campaign Management
-                </p>
-                <p className=" text-sm inter-text">
-                  Full-funnel campaigns (awareness → consideration →
-                  conversion), creative direction, media buying, and continuous
-                  optimization.
-                </p>
-              </div>
-              <div className=" bg-[#FEF2FB] p-6 rounded  w-full border border-primary">
-                <p className=" text-xl font-medium mb-2">
-                  Market Planning & Target/Goal Setting
-                </p>
-                <p className=" text-sm inter-text">
-                  Bottom-up forecasts, seasonality planning, SMART targets, and
-                  budget allocation by channel and audience.
-                </p>
-              </div>
-              <div className=" bg-[#FEF2FB] p-6 rounded  w-full border border-primary">
-                <p className=" text-xl font-medium mb-2">
-                  Product Pricing & Packaging
-                </p>
-                <p className=" text-sm inter-text">
-                  Value-based pricing, promo calendars, and margin-safe offers
-                  that convert without eroding profitability.
-                </p>
-              </div>
-              <div className=" bg-[#FEF2FB] p-6 rounded  w-full border border-primary">
-                <p className=" text-xl font-medium mb-2">
-                  Distribution & Channel Planning
-                </p>
-                <p className=" text-sm inter-text">
-                  Online/offline channel maps, partner programs, last-mile
-                  logistics coordination, and territory rollout.
-                </p>
-              </div>
-              <div className=" bg-[#FEF2FB] p-6 rounded  w-full border border-primary">
-                <p className=" text-xl font-medium mb-2">
-                  Brand Building & Value Creation
-                </p>
-                <p className=" text-sm inter-text">
-                  Positioning workshops, brand identity systems, content
-                  pillars, and reputation management.
-                </p>
-              </div>
-              <div className=" bg-[#FEF2FB] p-6 rounded  w-full border border-primary">
-                <p className=" text-xl font-medium mb-2">
-                  Project Reports & Business Cases
-                </p>
-                <p className=" text-sm inter-text">
-                  Investor-ready market sizing, feasibility assessments, and
-                  go-live roadmaps.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* training program tool */}
-      <section>
-        <div className="container">
-          <div className=" mx-auto flex flex-wrap"></div>
-          <div className=" grid grid-cols-1 md:grid-cols-2 gap-6">
-            <div className="w-full">
-              <h2 className="text-primary text-xl md:text-3xl font-bold  mb-7">
-                Training Programs (Tools & Techniques)
-              </h2>
-              <div>
-                <div className="flex items-center mb-3 gap-3">
-                  <div className="flex items-center justify-center  mb-0">
-                    <FaCheck className="rounded-full text-xl bg-primary text-white p-1" />
-                  </div>
-                  <h2 className="text-black text-base font-medium mb-0">
-                    Performance marketing (Meta, Google, YouTube, LinkedIn)
-                  </h2>
-                </div>
-                <div className="flex items-center mb-3 gap-3">
-                  <div className="flex items-center justify-center  mb-0">
-                    <FaCheck className="rounded-full text-xl bg-primary text-white p-1" />
-                  </div>
-                  <h2 className="text-black text-base font-medium mb-0">
-                    Marketing analytics & dashboards (GA4, Looker/Data Studio)
-                  </h2>
-                </div>
-                <div className="flex items-center mb-3 gap-3">
-                  <div className="flex items-center justify-center  mb-0">
-                    <FaCheck className="rounded-full text-xl bg-primary text-white p-1" />
-                  </div>
-                  <h2 className="text-black text-base font-medium mb-0">
-                    Sales playbooks, pitch crafting, and objection handling
-                  </h2>
-                </div>
-                <div className="flex items-center mb-3 gap-3">
-                  <div className="flex items-center justify-center  mb-0">
-                    <FaCheck className="rounded-full text-xl bg-primary text-white p-1" />
-                  </div>
-                  <h2 className="text-black text-base font-medium mb-0">
-                    Content & brand storytelling for teams
-                  </h2>
-                </div>
-              </div>
-            </div>
-            <div className="w-full">
-              <h2 className="text-primary text-xl md:text-3xl font-bold  mb-7">
-                Deliverables You Receive
-              </h2>
-              <div>
-                <div className="flex items-center mb-3 gap-3">
-                  <div className="flex items-center justify-center  mb-0">
-                    <FaCheck className="rounded-full text-xl bg-primary text-white p-1" />
-                  </div>
-                  <h2 className="text-black text-base font-medium mb-0">
-                    GTM strategy, ICP/personas, value proposition
-                  </h2>
-                </div>
-                <div className="flex items-center mb-3 gap-3">
-                  <div className="flex items-center justify-center  mb-0">
-                    <FaCheck className="rounded-full text-xl bg-primary text-white p-1" />
-                  </div>
-                  <h2 className="text-black text-base font-medium mb-0">
-                    Media plan & budget, creative guidelines, ad copies
-                  </h2>
-                </div>
-                <div className="flex items-center mb-3 gap-3">
-                  <div className="flex items-center justify-center  mb-0">
-                    <FaCheck className="rounded-full text-xl bg-primary text-white p-1" />
-                  </div>
-                  <h2 className="text-black text-base font-medium mb-0">
-                    Pricing architecture & promo plan
-                  </h2>
-                </div>
-                <div className="flex items-center mb-3 gap-3">
-                  <div className="flex items-center justify-center  mb-0">
-                    <FaCheck className="rounded-full text-xl bg-primary text-white p-1" />
-                  </div>
-                  <h2 className="text-black text-base font-medium mb-0">
-                    Distribution blueprint & partner kit
-                  </h2>
-                </div>
-                <div className="flex items-center mb-3 gap-3">
-                  <div className="flex items-center justify-center  mb-0">
-                    <FaCheck className="rounded-full text-xl bg-primary text-white p-1" />
-                  </div>
-                  <h2 className="text-black text-base font-medium mb-0">
-                    Weekly dashboards and monthly performance reviews with
-                    actions
-                  </h2>
-                </div>
-              </div>
-            </div>
-            <div className="w-full">
-              <h2 className="text-primary text-xl md:text-3xl font-bold  mb-7">
-                Why Choose AS Business Consulting
-              </h2>
-              <div>
-                <div className="flex items-center mb-3 gap-3">
-                  <div className="flex items-center justify-center  mb-0">
-                    <FaCheck className="rounded-full text-xl bg-primary text-white p-1" />
-                  </div>
-                  <h2 className="text-black text-base font-medium mb-0">
-                    Data-first approach with structured experimentation
-                  </h2>
-                </div>
-                <div className="flex items-center mb-3 gap-3">
-                  <div className="flex items-center justify-center  mb-0">
-                    <FaCheck className="rounded-full text-xl bg-primary text-white p-1" />
-                  </div>
-                  <h2 className="text-black text-base font-medium mb-0">
-                    End-to-end ownership from plan to execution to reporting
-                  </h2>
-                </div>
-                <div className="flex items-center mb-3 gap-3">
-                  <div className="flex items-center justify-center  mb-0">
-                    <FaCheck className="rounded-full text-xl bg-primary text-white p-1" />
-                  </div>
-                  <h2 className="text-black text-base font-medium mb-0">
-                    B2B + B2C expertise across industries
-                  </h2>
-                </div>
-                <div className="flex items-center mb-3 gap-3">
-                  <div className="flex items-center justify-center  mb-0">
-                    <FaCheck className="rounded-full text-xl bg-primary text-white p-1" />
-                  </div>
-                  <h2 className="text-black text-base font-medium mb-0">
-                    Training + handover so your team sustains results
-                  </h2>
-                </div>
-              </div>
-            </div>
-            <div className="w-full">
-              <h2 className="text-primary text-xl md:text-3xl font-bold  mb-7">
-                Explore More Services
-              </h2>
-              <div>
-                <p className=" inter-text text-sm">
-                  Operations Consulting – Lean, quality, and supply-chain
-                  excellence R&D & Product Design – From concept to prototype
-                  and market readiness Contact Us – Let’s design a growth plan
-                  and start scaling your revenue.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
       <ContactFrom />
       <Footer />
     </>

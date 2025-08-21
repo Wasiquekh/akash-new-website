@@ -30,22 +30,20 @@ export default function Home() {
     <>
       <Header />
       {/* HOME TOP SECTION */}
-      <div className="bg-[url('/images/landingTop.jpg')] bg-cover bg-center h-auto md:h-[600px] w-full flex justify-center items-center">
+      <div className="bg-[url('/images/landingTop.png')] bg-cover bg-center h-auto md:h-[600px] w-full flex justify-center items-center">
         <div className="container ">
           <div className="flex flex-col text-center w-full mb-0 md:mb-0">
             <h1 className="sm:text-6xl text-2xl font-bold text-white mb-4 ">
-              AS BUSINESS CONSULTING
+              Professional Business Consulting Firm Services for Sustainable
+              Growth
             </h1>
-            <h2 className="sm:text-3xl text-lg font-semibold text-white mb-6">
-              SPIRIT OF EXPERTIES
-            </h2>
-
             <p className="lg:w-2/3 mx-auto leading-relaxed text-sm font-normal text-white inter-text">
-              We provide strategic business solutions tailored to your growth.
-              From startup guidance to operational optimization, our expert
-              consulting helps you navigate challenges, increase efficiency, and
-              achieve sustainable success. Partner with us to turn your vision
-              into results.
+              At AS Business Consulting Firm, we don’t just advise—we co-create
+              results. As your long-term growth partner, we combine strategy,
+              operations, product/R&D, certification, HR, sales & marketing,
+              legal, and international business to help organizations improve
+              performance, enhance profitability, and stay competitive in
+              dynamic markets.
             </p>
           </div>
         </div>
@@ -79,7 +77,7 @@ export default function Home() {
             <h1 className="text-2xl sm:text-6xl   mb-4 font-bold text-primary">
               About Us
             </h1>
-            <p className="mb-8 leading-relaxed text-black inter-text text-justify">
+            <p className="mb-8 leading-relaxed text-black inter-text">
               AS BUSINESS CONSULTING is a Solution Provider. we work with you,
               helping you to identify your potential and become more innovative,
               competitive & efficient to help you grow exponentially in the
@@ -116,7 +114,7 @@ export default function Home() {
         <div className="container ">
           <div className="flex flex-col text-center w-full mb-10 md:mb-20">
             <h1 className="sm:text-6xl text-2xl font-bold  mb-4 text-primary w-full md:w-[80%] text-center m-auto">
-              Why choose a trusted business advisory company in India
+              Why we are trusted business advisory company in India
             </h1>
             <p className="lg:w-[60%] mx-auto leading-relaxed inter-text text-sm font-normal">
               Selecting the right partner can accelerate growth and reduce risk.
@@ -981,7 +979,61 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* EXPLORE MORE */}
+      <section>
+        <div className="container">
+          <div className="flex flex-col text-center w-full mb-10 md:mb-16">
+            <h2 className="sm:text-6xl text-2xl font-bold mb-4 text-primary uppercase">
+              Explore More
+            </h2>
+            <p className="lg:w-[60%] mx-auto leading-relaxed inter-text text-sm font-normal">
+              Discover more about our vision, expertise, and how we can support
+              your business growth.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-6 lg:gap-10 text-left">
+            {/* About Us */}
+            <div className="p-6 bg-white rounded-2xl shadow hover:shadow-lg transition">
+              <h3 className="text-xl font-semibold text-primary mb-3">
+                About Us
+              </h3>
+              <p className="text-sm text-gray-600">
+                Vision, mission, leadership, and recognitions that define our
+                journey.
+              </p>
+            </div>
+
+            {/* Services */}
+            <div className="p-6 bg-white rounded-2xl shadow hover:shadow-lg transition">
+              <h3 className="text-xl font-semibold text-primary mb-3">
+                Services
+              </h3>
+              <p className="text-sm text-gray-600">
+                Full catalog across strategy, operations, R&D, certification,
+                HR, GTM, legal, and international business.
+              </p>
+            </div>
+
+            {/* Contact Us */}
+            <div className="p-6 bg-white rounded-2xl shadow hover:shadow-lg transition">
+              <h3 className="text-xl font-semibold text-primary mb-3">
+                Contact Us
+              </h3>
+              <p className="text-sm text-gray-600">
+                Schedule a consultation with our team for a tailored growth
+                plan.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* TESTIMONIAL */}
+      <section>
+        <div></div>
+      </section>
       <section className="" id="customer">
         <div className="container">
           <div className="flex flex-col text-center w-full mb-10 md:mb-20">

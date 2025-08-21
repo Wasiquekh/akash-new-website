@@ -21,12 +21,14 @@ const page = () => {
       <div className="bg-[url('/images/services.jpg')] bg-cover bg-center">
         <div className=" max-w-7xl m-auto px-5  py-15 md:py-40">
           <h1 className="sm:text-6xl text-2xl font-bold text-white mb-4 text-center uppercase ">
-            Operations Consulting
+            Operations & Lean Manufacturing Solutions for Business Efficiency
           </h1>
           <p className=" mx-auto leading-relaxed text-sm font-normal text-white inter-text text-center">
-            We streamline processes, optimize resources, and implement smart
-            strategies to make your operations more efficient, <br />
-            cost-effective, and growth-driven.
+            At AS Business Consulting, we help you run smarter, faster, and more
+            profitably. Our operations consulting blends lean manufacturing, ZED
+            certification, quality systems, and supply chain excellence to
+            remove waste, lower cost, lift throughput, and strengthen
+            compliance—end to end.
           </p>
         </div>
       </div>
@@ -53,9 +55,9 @@ const page = () => {
           <div className=" flex flex-wrap">
             <div className="flex flex-col text-center w-full mb-10 md:mb-20">
               <h1 className="sm:text-6xl text-2xl font-bold  mb-4 text-primary">
-                Operations Consulting
+                Our Consulting
               </h1>
-              <p className="lg:w-[90%] mx-auto leading-relaxed inter-text text-sm font-normal mb-4">
+              {/* <p className="lg:w-[90%] mx-auto leading-relaxed inter-text text-sm font-normal mb-4">
                 Businesses are always looking to better optimize their
                 operational processes in a variety of ways, like increasing
                 efficiency, cutting costs, improvement quality, etc. In certain
@@ -63,7 +65,7 @@ const page = () => {
                 management, or technological rollouts, operations consultants
                 will be brought in to advise on significant changes to a
                 business operational processes.
-              </p>
+              </p> */}
             </div>
           </div>
           <div className=" grid grid-cols-1 md:grid-cols-2 gap-4">

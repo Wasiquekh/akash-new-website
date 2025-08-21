@@ -20,12 +20,19 @@ const page = () => {
       <div className="bg-[url('/images/services.jpg')] bg-cover bg-center">
         <div className=" max-w-7xl m-auto px-5  py-15 md:py-40">
           <h1 className="sm:text-6xl text-2xl font-bold text-white mb-4 text-center ">
-            CERTIFICATION
+            Certification & Inspection Services for Quality Compliance and
+            Accreditation
           </h1>
           <p className=" mx-auto leading-relaxed text-sm font-normal text-white inter-text text-center">
-            We assist businesses in achieving ISO, BIS, NABL, and other quality
-            certifications, ensuring compliance, <br />
-            credibility, and global recognition.
+            At AS Business Consulting, our expert BIS certification consultants
+            help businesses achieve nationally and internationally recognized
+            certifications with ease. From Bureau of Indian Standards (BIS)
+            approvals to ISO and NABL accreditations, we guide you through the
+            entire process, ensuring full compliance with regulatory and
+            industry requirements. Our services include QMS implementation,
+            certification documentation, inspection support, and audit
+            preparation empowering your organization to meet the highest quality
+            standards
           </p>
         </div>
       </div>
@@ -50,7 +57,7 @@ const page = () => {
       <section>
         <div className="container">
           <div className=" flex flex-wrap">
-            <div className="flex flex-col text-center w-full mb-10 md:mb-20">
+            {/* <div className="flex flex-col text-center w-full mb-10 md:mb-20">
               <h1 className="sm:text-6xl text-2xl font-bold  mb-4 text-primary text-center">
                 Certification & Inspection Services for Quality Compliance and
                 Accreditation
@@ -67,7 +74,7 @@ const page = () => {
                 preparation empowering your organization to meet the highest
                 quality standards
               </p>
-            </div>
+            </div> */}
           </div>
           <div className="mx-auto flex flex-col-reverse md:flex-row items-center gap-8">
             {/* Left Content Section */}

@@ -44,7 +44,7 @@ const page = () => {
           <div className=" flex flex-wrap">
             <div className="flex flex-col text-center w-full mb-20">
               <h1 className="sm:text-6xl text-2xl font-bold  mb-4 text-primary">
-                Our Customers
+                Trusted by Our Clients
               </h1>
               <p className="lg:w-[90%] mx-auto leading-relaxed inter-text text-sm font-normal mb-4">
                 We proudly serve businesses across industries, delivering

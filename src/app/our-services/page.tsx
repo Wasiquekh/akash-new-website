@@ -43,7 +43,7 @@ const page = () => {
       {/* SERVICES */}
       <section className="bg-[linear-gradient(180deg,_#FFF_0%,_#F0DEEC_100%)]">
         <div className="container">
-          <div className="flex flex-col text-center w-full mb-10 md:mb-20">
+          {/* <div className="flex flex-col text-center w-full mb-10 md:mb-20">
             <h1 className="sm:text-6xl text-2xl font-bold  mb-4 text-primary">
               OUR SERVICES
             </h1>
@@ -52,7 +52,7 @@ const page = () => {
               operations, certifications, <br /> HR, management, sales, and
               legal to drive business growth and excellence.
             </p>
-          </div>
+          </div> */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
             <div className="w-full bg-white rounded-lg overflow-hidden shadow-md ">
               <Image

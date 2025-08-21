@@ -29,19 +29,22 @@ const page = () => {
       <div className="bg-[url('/images/services.jpg')] bg-cover bg-center">
         <div className=" max-w-7xl m-auto px-5  py-15 md:py-40">
           <h1 className="sm:text-6xl text-2xl font-bold text-white mb-4 text-center uppercase ">
-            about us
+            Business Consulting – Experts Driving Business Excellence in India
           </h1>
           <p className=" mx-auto leading-relaxed text-sm font-normal text-white inter-text text-center">
-            AS Business Consulting helps businesses grow smarter and faster with
-            expert solutions in innovation,
-            <br /> operations, certifications, HR, and global expansion.
+            Consulting is a solution provider. We work alongside you to identify
+            potential, build innovation capacity, and make your business more
+            competitive and efficient—so you can grow exponentially in Indian
+            and global markets. We help teams conceptualize and visualize
+            technology-driven transformation and then execute it with
+            discipline.
           </p>
         </div>
       </div>
       {/* ABOUT US AFTER HERO SECTION */}
       <section>
         <div className="container">
-          <div className=" mx-auto flex flex-wrap">
+          {/* <div className=" mx-auto flex flex-wrap">
             <div className="flex flex-col text-center w-full mb-10 md:mb-20">
               <h1 className="sm:text-6xl text-2xl font-bold  mb-4 text-primary">
                 About AS Business Consulting – Experts Driving Business
@@ -56,10 +59,10 @@ const page = () => {
                 then execute it with discipline.
               </p>
             </div>
-          </div>
-          <div className=" grid grid-cols-1 md:grid-cols-3 gap-4">
-            <div className="">
-              <h2 className="text-black text-2xl font-semibold mb-7">
+          </div> */}
+          <div className=" flex flex-col-reverse md:flex-row justify-between gap-4 items-center">
+            <div className=" w-full">
+              <h2 className=" text-2xl md:text-6xl  font-semibold mb-7 text-primary ">
                 Our Business Consulting Company Profile
               </h2>
               <div>
@@ -75,7 +78,7 @@ const page = () => {
                 </p>
               </div>
             </div>
-            <div>
+            <div className=" w-full flex justify-end ">
               <Image
                 src="/images/about1.png" // path relative to /public
                 alt="My beautiful image"
@@ -83,16 +86,6 @@ const page = () => {
                 height={500}
                 priority // optional: preloads image
                 className=" rounded"
-              />
-            </div>
-            <div>
-              <Image
-                src="/images/about2.png" // path relative to /public
-                alt="My beautiful image"
-                width={500}
-                height={500}
-                priority // optional: preloads image
-                className="rounded"
               />
             </div>
           </div>
@@ -178,10 +171,17 @@ const page = () => {
               Vision and Mission
             </p>
             <p className=" text-center text-sm">
-              Vision: To be India&apos;s most trusted consulting partner,
-              enabling sustainable growth and long-term success. Mission: To
-              deliver tailored, research-backed, innovation-led consulting with
-              actionable strategies that create measurable business value.
+              <span>
+                <strong>Vision:</strong>
+              </span>{" "}
+              To be India&apos;s most trusted consulting partner, enabling
+              sustainable growth and long-term success. 
+              <br />{" "}
+              <span>
+                <strong>Mission:</strong>
+              </span>{" "}
+              To deliver tailored, research-backed, innovation-led consulting
+              with actionable strategies that create measurable business value.
             </p>
           </div>
         </div>
@@ -362,7 +362,7 @@ const page = () => {
         </div>
       </div>
       {/* ABOUT SECTION */}
-      <section className=" relative">
+      {/* <section className=" relative">
         <div className="container  flex  md:flex-row flex-col items-center relative">
           <div className="lg:max-w-3/6 lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">
             <Image
@@ -408,7 +408,7 @@ const page = () => {
           priority // optional: preloads image
           className=" absolute right-0 top-30 "
         />
-      </section>
+      </section> */}
       {/* JOURNER OF SUCCESS */}
       <section className="">
         <div className="container">
