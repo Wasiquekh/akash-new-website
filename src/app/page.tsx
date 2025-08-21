@@ -239,11 +239,9 @@ export default function Home() {
               JOURNEY OF SUCCESS
             </h1>
             <p className="lg:w-[60%] mx-auto leading-relaxed inter-text text-sm font-normal">
-              We provide strategic business solutions tailored to your growth.
-              From startup guidance to operational optimization, our expert
-              consulting helps you navigate challenges, increase efficiency, and
-              achieve sustainable success. Partner with us to turn your vision
-              into results.
+              At AS Business Consulting, we guide businesses through every step
+              of their growth journey — from strategy and innovation to global
+              expansion — turning challenges into milestones of success.
             </p>
           </div>
           <div className="flex justify-between">
@@ -481,11 +479,10 @@ export default function Home() {
               OUR SERVICES
             </h1>
             <p className="lg:w-[60%] mx-auto leading-relaxed inter-text text-sm font-normal">
-              We provide strategic business solutions tailored to your growth.
-              From startup guidance to operational optimization, our expert
-              consulting helps you navigate challenges, increase efficiency, and
-              achieve sustainable success. Partner with us to turn your vision
-              into results.
+              We offer end-to-end consulting solutions across research, product
+              design, operations, certifications, HR, management, sales, and
+              legal — empowering businesses to grow with innovation and
+              excellence.
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
@@ -677,11 +674,10 @@ export default function Home() {
               OUR TEAM
             </h1>
             <p className="lg:w-[60%] mx-auto leading-relaxed inter-text text-sm font-normal">
-              We provide strategic business solutions tailored to your growth.
-              From startup guidance to operational optimization, our expert
-              consulting helps you navigate challenges, increase efficiency, and
-              achieve sustainable success. Partner with us to turn your vision
-              into results.
+              Our team brings together experienced professionals, industry
+              experts, and innovative thinkers dedicated to delivering tailored
+              solutions that drive measurable growth and long-term success for
+              our clients.
             </p>
           </div>
           <div className=" grid grid-cols-1 md:grid-cols-4 gap-6 md:gap-8">
@@ -944,11 +940,9 @@ export default function Home() {
               AWARDS
             </h1>
             <p className="lg:w-[60%] mx-auto leading-relaxed inter-text text-sm font-normal">
-              We provide strategic business solutions tailored to your growth.
-              From startup guidance to operational optimization, our expert
-              consulting helps you navigate challenges, increase efficiency, and
-              achieve sustainable success. Partner with us to turn your vision
-              into results.
+              Our awards and recognitions reflect our commitment to excellence,
+              innovation, and delivering value-driven solutions that empower
+              businesses to achieve global success.
             </p>
           </div>
           <div className="grid grid-cols-1 gap-4 p-0">
@@ -995,11 +989,9 @@ export default function Home() {
               Customer&apos;s Testimonials
             </h1>
             <p className="lg:w-[60%] mx-auto leading-relaxed inter-text text-sm font-normal">
-              We provide strategic business solutions tailored to your growth.
-              From startup guidance to operational optimization, our expert
-              consulting helps you navigate challenges, increase efficiency, and
-              achieve sustainable success. Partner with us to turn your vision
-              into results.
+              The trust and satisfaction of our clients are the true measure of
+              our success. Hear what our customers have to say about their
+              journey with AS Business Consulting.
             </p>
           </div>
           <div className=" grid grid-cols-1 md:grid-cols-3 gap-4 mb-0">
