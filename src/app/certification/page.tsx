@@ -23,7 +23,9 @@ const page = () => {
             CERTIFICATION
           </h1>
           <p className=" mx-auto leading-relaxed text-sm font-normal text-white inter-text text-center">
-            Short Term Courses
+            We assist businesses in achieving ISO, BIS, NABL, and other quality
+            certifications, ensuring compliance, <br />
+            credibility, and global recognition.
           </p>
         </div>
       </div>

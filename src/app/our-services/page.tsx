@@ -16,7 +16,9 @@ const page = () => {
             OUR SERVICES
           </h1>
           <p className=" mx-auto leading-relaxed text-sm font-normal text-white inter-text text-center">
-            International Business Development & Logistics Services
+            We provide end-to-end consulting services in research, design,
+            operations, certifications, <br /> HR, management, sales, and legal
+            to drive business growth and excellence.
           </p>
         </div>
       </div>
@@ -46,11 +48,9 @@ const page = () => {
               OUR SERVICES
             </h1>
             <p className="lg:w-[60%] mx-auto leading-relaxed inter-text text-sm font-normal">
-              We provide strategic business solutions tailored to your growth.
-              From startup guidance to operational optimization, our expert
-              consulting helps you navigate challenges, increase efficiency, and
-              achieve sustainable success. Partner with us to turn your vision
-              into results.
+              We provide end-to-end consulting services in research, design,
+              operations, certifications, <br /> HR, management, sales, and
+              legal to drive business growth and excellence.
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4">

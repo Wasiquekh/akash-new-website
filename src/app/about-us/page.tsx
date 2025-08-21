@@ -32,7 +32,9 @@ const page = () => {
             about us
           </h1>
           <p className=" mx-auto leading-relaxed text-sm font-normal text-white inter-text text-center">
-            International Business Development & Logistics Services
+            AS Business Consulting helps businesses grow smarter and faster with
+            expert solutions in innovation,
+            <br /> operations, certifications, HR, and global expansion.
           </p>
         </div>
       </div>
@@ -40,7 +42,7 @@ const page = () => {
       <section>
         <div className="container">
           <div className=" mx-auto flex flex-wrap">
-            <div className="flex flex-col text-center w-full mb-10 md: mb-20">
+            <div className="flex flex-col text-center w-full mb-10 md:mb-20">
               <h1 className="sm:text-6xl text-2xl font-bold  mb-4 text-primary">
                 About AS Business Consulting – Experts Driving Business
                 Excellence in India
@@ -415,11 +417,9 @@ const page = () => {
               JOURNEY OF SUCCESS
             </h1>
             <p className="lg:w-[60%] mx-auto leading-relaxed inter-text text-sm font-normal">
-              We provide strategic business solutions tailored to your growth.
-              From startup guidance to operational optimization, our expert
-              consulting helps you navigate challenges, increase efficiency, and
-              achieve sustainable success. Partner with us to turn your vision
-              into results.
+              At AS Business Consulting, we guide businesses through every step
+              of their growth journey — from strategy and innovation to global
+              expansion — turning challenges into milestones of success.
             </p>
           </div>
           <div className="flex justify-between">
@@ -571,16 +571,15 @@ const page = () => {
       {/* TEAM */}
       <section className=" relative">
         <div className="container">
-          <div className="flex flex-col text-center w-full mb-10 md: mb-20">
+          <div className="flex flex-col text-center w-full mb-10 md:mb-20">
             <h1 className="sm:text-6xl text-2xl font-bold  mb-4 text-primary">
               OUR TEAM
             </h1>
             <p className="lg:w-[60%] mx-auto leading-relaxed inter-text text-sm font-normal">
-              We provide strategic business solutions tailored to your growth.
-              From startup guidance to operational optimization, our expert
-              consulting helps you navigate challenges, increase efficiency, and
-              achieve sustainable success. Partner with us to turn your vision
-              into results.
+              Our team brings together experienced professionals, industry
+              experts, and innovative thinkers dedicated to delivering tailored
+              solutions that drive measurable growth and long-term success for
+              our clients.
             </p>
           </div>
           <div className=" grid grid-cols-1 md:grid-cols-4 gap-6 md:gap-8">

@@ -16,7 +16,8 @@ const page = () => {
             our customers
           </h1>
           <p className=" mx-auto leading-relaxed text-sm font-normal text-white inter-text text-center">
-            International Business Development & Logistics Services
+            We proudly serve businesses across industries, delivering solutions
+            that help them grow, innovate, and succeed.
           </p>
         </div>
       </div>
@@ -46,13 +47,8 @@ const page = () => {
                 Our Customers
               </h1>
               <p className="lg:w-[90%] mx-auto leading-relaxed inter-text text-sm font-normal mb-4">
-                Businesses are always looking to better optimize their
-                operational processes in a variety of ways, like increasing
-                efficiency, cutting costs, improvement quality, etc. In certain
-                scenarios, however, such as economic downturns, changes in
-                management, or technological rollouts, operations consultants
-                will be brought in to advise on significant changes to a
-                business operational processes.
+                We proudly serve businesses across industries, delivering
+                solutions that help them grow, innovate, and succeed.
               </p>
             </div>
           </div>

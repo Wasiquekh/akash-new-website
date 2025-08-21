@@ -57,11 +57,8 @@ const page = () => {
             Contact
           </h1>
           <p className=" mx-auto leading-relaxed text-sm font-normal text-white inter-text text-center">
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry&apos;s standard dummy
-            text ever since the 1500s,
-            <br /> when an unknown printer took a galley of type and scrambled
-            it to make a type specimen book. 
+            Get in touch with us to explore how AS Business Consulting can help
+            your business grow and succeed.
           </p>
         </div>
       </div>

@@ -24,7 +24,9 @@ const page = () => {
             Operations Consulting
           </h1>
           <p className=" mx-auto leading-relaxed text-sm font-normal text-white inter-text text-center">
-            International Business Development & Logistics Services
+            We streamline processes, optimize resources, and implement smart
+            strategies to make your operations more efficient, <br />
+            cost-effective, and growth-driven.
           </p>
         </div>
       </div>

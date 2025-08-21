@@ -24,11 +24,9 @@ const page = () => {
             Research & Development
           </h1>
           <p className=" mx-auto leading-relaxed text-sm font-normal text-white inter-text text-center w-full md:w-[80%]">
-            We provide strategic business solutions tailored to your growth.
-            From startup guidance to operational optimization, our expert
-            consulting helps you navigate challenges, increase efficiency, and
-            achieve sustainable success. Partner with us to turn your vision
-            into results.
+            We help businesses innovate through dedicated research and
+            development, turning ideas into practical solutions that drive
+            growth and global competitiveness.
           </p>
         </div>
       </div>

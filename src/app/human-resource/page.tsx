@@ -37,11 +37,10 @@ const page = () => {
             Human Resources
           </h1>
           <p className=" mx-auto leading-relaxed text-sm font-normal text-white inter-text text-center">
-            We provide strategic business solutions tailored to your growth.
-            From startup guidance to operational optimization, our expert
-            consulting helps you navigate challenges, increase efficiency, and
-            achieve sustainable success. Partner with us to turn your vision
-            into results.
+            We provide HR solutions that enhance talent management, employee
+            engagement,
+            <br /> and organizational efficiency to build strong and
+            future-ready teams.
           </p>
         </div>
       </div>

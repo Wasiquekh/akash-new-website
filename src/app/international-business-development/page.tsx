@@ -24,7 +24,9 @@ const page = () => {
             Internation Business Development
           </h1>
           <p className=" mx-auto leading-relaxed text-sm font-normal text-white inter-text text-center w-full md:w-[80%]">
-            International Business Development & Logistics Services
+            We support businesses in exploring global markets, building
+            international partnerships, and creating strategies that ensure
+            sustainable cross-border growth.
           </p>
         </div>
       </div>
@@ -54,11 +56,9 @@ const page = () => {
                 International Business
               </h1>
               <p className="lg:w-[90%] mx-auto leading-relaxed inter-text text-sm font-normal mb-4">
-                We are one of the end to end service provider company. After
-                successfully working in Design, New product Development, Lean
-                Manufacturing, HR and Marketing sector we start “International
-                Business Development And Logistics” Services for our valuable
-                customer. 
+                We support businesses in exploring global markets, building
+                international partnerships, and creating strategies that ensure
+                sustainable cross-border growth.
               </p>
             </div>
           </div>

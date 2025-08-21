@@ -24,11 +24,9 @@ const page = () => {
             Legal Consulting
           </h1>
           <p className=" mx-auto leading-relaxed text-sm font-normal text-white inter-text text-center">
-            We provide strategic business solutions tailored to your growth.
-            From startup guidance to operational optimization, our expert
-            consulting helps you navigate challenges, increase efficiency, and
-            achieve sustainable success. Partner with us to turn your vision
-            into results.
+            We offer expert legal consulting to help businesses navigate
+            compliance, contracts, <br />
+            and regulatory frameworks with confidence and clarity.
           </p>
         </div>
       </div>

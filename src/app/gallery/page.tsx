@@ -16,10 +16,8 @@ const page = () => {
             Gallery
           </h1>
           <p className=" mx-auto leading-relaxed text-sm font-normal text-white inter-text text-center w-full md:w-[80%]">
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry&apos;s standard dummy
-            text ever since the 1500s, when an unknown printer took a galley of
-            type and scrambled it to make a type specimen book. 
+            Explore our gallery to see milestones, achievements, and moments
+            that showcase our journey of success with clients and partners.
           </p>
         </div>
       </div>
@@ -48,10 +46,8 @@ const page = () => {
               AWARDS
             </h1>
             <p className="lg:w-[90%] mx-auto leading-relaxed inter-text text-sm font-normal mb-4">
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry&apos;s standard dummy
-              text ever since the 1500s, when an unknown printer took a galley
-              of type and scrambled it to make a type specimen book. 
+              Our awards highlight our commitment to excellence, innovation, and
+              trusted business solutions.
             </p>
           </div>
           <div className="grid grid-cols-2 md:grid-cols-3 gap-4 uppercase">
