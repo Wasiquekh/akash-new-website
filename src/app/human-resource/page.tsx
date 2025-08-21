@@ -47,7 +47,7 @@ const page = () => {
       </div>
       <section className=" relative">
         <div className="container">
-          <div className="flex flex-col text-center w-full mb-20">
+          <div className="flex flex-col text-center w-full mb:10  md:mb-20">
             <h1 className="sm:text-6xl text-2xl font-bold  mb-4 text-primary">
               Introduction
             </h1>
@@ -145,7 +145,7 @@ const page = () => {
                 <div className=" flex items-center justify-center rounded-full bg-primary text-white mb-0 p-1">
                   <FaCheck />
                 </div>
-                <h2 className="text-black text-2xl font-medium mb-0">
+                <h2 className="text-black text-xl md:text-2xl font-medium mb-0">
                   Recruitment
                 </h2>
               </div>
@@ -153,7 +153,7 @@ const page = () => {
                 <div className=" flex items-center justify-center rounded-full bg-primary text-white mb-0 p-1">
                   <FaCheck />
                 </div>
-                <h2 className="text-black text-2xl font-medium mb-0">
+                <h2 className="text-black text-xl md:text-2xl font-medium mb-0">
                   Job Search Tips
                 </h2>
               </div>
@@ -161,7 +161,7 @@ const page = () => {
                 <div className=" flex items-center justify-center rounded-full bg-primary text-white mb-0 p-1">
                   <FaCheck />
                 </div>
-                <h2 className="text-black text-2xl font-medium mb-0">
+                <h2 className="text-black text-xl md:text-2xl font-medium mb-0">
                   Third Party Employer
                 </h2>
               </div>
@@ -169,7 +169,7 @@ const page = () => {
                 <div className=" flex items-center justify-center rounded-full bg-primary text-white mb-0 p-1">
                   <FaCheck />
                 </div>
-                <h2 className="text-black text-2xl font-medium mb-0">
+                <h2 className="text-black text-xl md:text-2xl font-medium mb-0">
                   Employee Engagement
                 </h2>
               </div>
@@ -177,7 +177,7 @@ const page = () => {
                 <div className=" flex items-center justify-center rounded-full bg-primary text-white mb-0 p-1">
                   <FaCheck />
                 </div>
-                <h2 className="text-black text-2xl font-medium mb-0">
+                <h2 className="text-black text-xl md:text-2xl font-medium mb-0">
                   Professional Trainings
                 </h2>
               </div>
@@ -185,7 +185,7 @@ const page = () => {
                 <div className=" flex items-center justify-center rounded-full bg-primary text-white mb-0 p-1">
                   <FaCheck />
                 </div>
-                <h2 className="text-black text-2xl font-medium mb-0">
+                <h2 className="text-black text-xl md:text-2xl font-medium mb-0">
                   Seminars / Lectures
                 </h2>
               </div>
@@ -193,7 +193,7 @@ const page = () => {
                 <div className=" flex items-center justify-center rounded-full bg-primary text-white mb-0 p-1">
                   <FaCheck />
                 </div>
-                <h2 className="text-black text-2xl font-medium mb-0">
+                <h2 className="text-black text-xl md:text-2xl font-medium mb-0">
                   College Campus
                 </h2>
               </div>
@@ -201,7 +201,9 @@ const page = () => {
                 <div className=" flex items-center justify-center rounded-full bg-primary text-white mb-0 p-1">
                   <FaCheck />
                 </div>
-                <h2 className="text-black text-2xl font-medium mb-0">Policy</h2>
+                <h2 className="text-black text-xl md:text-2xl font-medium mb-0">
+                  Policy
+                </h2>
               </div>
             </div>
             <div className="w-full md:w-[69%]">
@@ -243,7 +245,7 @@ const page = () => {
       </section>
       <section className=" ">
         <div className="container">
-          <div className="flex flex-col text-center w-full mb-20">
+          <div className="flex flex-col text-center w-full mb:10  md:mb-20">
             <h1 className="sm:text-6xl text-2xl font-bold  mb-4 text-primary">
               Human Resource Consulting for Recruitment, Policy Audits &
               Engagement in India
@@ -257,86 +259,87 @@ const page = () => {
               enterprise.
             </p>
           </div>
-          <div className=" bg-[#F0DEEC] py-6 px-10 rounded">
-            <div className=" flex justify-between items-center">
-              <div>
+          <div className=" bg-[#F0DEEC] py-6 px-5 md:px-10 rounded">
+            <div className=" flex flex-col-reverse md:flex-row gap-8 justify-between items-center">
+              <div className=" w-full">
                 <p className=" text-2xl inter-text font-bold mb-5">
                   What We Solve
                 </p>
-                <p className=" text-xl font-medium mb-2">
+                <p className=" text-xl font-normal md:font-medium mb-2">
                   Gaps in hiring quality and speed
                 </p>
-                <p className=" text-xl font-medium mb-2">
+                <p className=" text-xl font-normal md:font-medium mb-2">
                   Outdated or non-compliant HR policies
                 </p>
-                <p className=" text-xl font-medium mb-2">
+                <p className=" text-xl font-normal md:font-medium mb-2">
                   Low engagement, high turnover, and skill gaps
                 </p>
-                <p className=" text-xl font-medium mb-2">
+                <p className=" text-xl font-normal md:font-medium mb-2">
                   Need for structured audits, SOPs, and change management
                 </p>
               </div>
-              <div>
+              <div className=" w-full flex justify-end">
                 <Image
                   src="/images/hr1.png"
-                  width={500}
-                  height={500}
+                  width={1000}
+                  height={1000}
                   alt="Picture of the author"
+                  className=" w-full md:w-[80%]"
                 />
               </div>
             </div>
           </div>
           {/* what we do */}
           <div className=" mb-10">
-            <p className=" text-[40px] font-bold text-primary my-12 text-center">
+            <p className=" text-xl md:text-[40px] font-bold text-primary my-12 leading-8 text-center">
               HR Consulting Services in India (End-to-End)
             </p>
             <div className=" grid grid-cols-1 md:grid-cols-2 gap-4">
               <div className=" bg-[#FEF2FB] p-6 rounded  w-full">
-                <p className=" text-xl font-medium">
+                <p className=" text-xl  font-normal md:font-medium">
                   Workforce Planning & Talent Acquisition – role design,
                   sourcing strategy, interview frameworks
                 </p>
               </div>
               <div className=" bg-[#FEF2FB] p-4 w-full">
-                <p className=" text-xl font-medium">
+                <p className=" text-xl  font-normal md:font-medium">
                   Recruitment & Executive Search – leadership hiring and niche
                   industry roles
                 </p>
               </div>
               <div className=" bg-[#FEF2FB] p-6 rounded w-full">
-                <p className=" text-xl font-medium">
+                <p className=" text-xl  font-normal md:font-medium">
                   Third-Party Employer (EOR) & Payroll Support – compliant
                   onboarding and employment administration
                 </p>
               </div>
               <div className=" bg-[#FEF2FB] p-6 rounded w-full">
-                <p className=" text-xl font-medium">
+                <p className=" text-xl  font-normal md:font-medium">
                   Policy Design & Compliance Audits – assessment, documentation,
                   implementation, and training
                 </p>
               </div>
               <div className=" bg-[#FEF2FB] p-6 rounded w-full">
-                <p className=" text-xl font-medium">
+                <p className=" text-xl  font-normal md:font-medium">
                   Employee Engagement Programs – recognition, wellness,
                   communication rhythm, pulse surveys
                 </p>
               </div>
               <div className=" bg-[#FEF2FB] p-6 rounded w-full">
-                <p className=" text-xl font-medium">
+                <p className=" text-xl  font-normal md:font-medium">
                   Training & Capability Building – professional trainings,
                   seminars/lectures, leadership coaching
                 </p>
               </div>
               <div className=" bg-[#FEF2FB] p-6 rounded w-full">
-                <p className=" text-xl font-medium">
+                <p className=" text-xl  font-normal md:font-medium">
                   Campus & Early-Talent Programs – college outreach, internship
                   funnels, job-readiness workshops
                 </p>
               </div>
             </div>
           </div>
-          <div className="flex flex-col text-center w-full mb-20">
+          <div className="flex flex-col text-center w-full mb:10  md:mb-20">
             <h1 className="sm:text-6xl text-2xl font-bold  mb-4 text-primary">
               Recruitment Consulting: Finding the Right Talent
             </h1>
@@ -347,7 +350,7 @@ const page = () => {
               placement programs designed to scale.
             </p>
           </div>
-          <div className="flex flex-col text-center w-full mb-20">
+          <div className="flex flex-col text-center w-full mb:10  md:mb-20">
             <h1 className="sm:text-6xl text-2xl font-bold  mb-4 text-primary">
               Employee Engagement Strategies: Boosting Productivity & Retention
             </h1>
@@ -358,7 +361,7 @@ const page = () => {
               productivity.
             </p>
           </div>
-          <div className="flex flex-col text-center w-full mb-20">
+          <div className="flex flex-col text-center w-full mb:10  md:mb-20">
             <h1 className="sm:text-6xl text-2xl font-bold  mb-4 text-primary">
               HR Policy Audit Services: Ensuring Compliance & Best Practice
             </h1>
@@ -369,7 +372,7 @@ const page = () => {
               so the new ways of working stick.
             </p>
           </div>
-          <div className="flex flex-col text-center w-full mb-20">
+          <div className="flex flex-col text-center w-full mb:10  md:mb-20">
             <h1 className="sm:text-6xl text-2xl font-bold  mb-4 text-primary">
               Training & Development: Skills that Scale
             </h1>
@@ -380,7 +383,7 @@ const page = () => {
               translate to results.
             </p>
           </div>
-          <div className="flex flex-col text-center w-full mb-20">
+          <div className="flex flex-col text-center w-full mb:10  md:mb-20">
             <h1 className="sm:text-6xl text-2xl font-bold  mb-4 text-primary">
               Packages Include
             </h1>
@@ -396,9 +399,9 @@ const page = () => {
       <section>
         <div className="container">
           <div className=" mx-auto flex flex-wrap"></div>
-          <div className="flex gap-12">
-            <div className="flex-1">
-              <h2 className="text-primary text-3xl font-bold  mb-7">
+          <div className="flex flex-col-reverse md:flex-row gap-12">
+            <div className="">
+              <h2 className="text-primary text-xl md:text-3xl font-bold  mb-7">
                 Why Choose AS Business Consulting for HR Solutions
               </h2>
               <div>
@@ -436,7 +439,7 @@ const page = () => {
                     Culture & compliance first—better workplaces, lower risk
                   </h2>
                 </div>
-                <h2 className="text-primary text-3xl font-bold  my-7">
+                <h2 className="text-primary text-xl md:text-3xl font-bold  my-7">
                   Explore More Services
                 </h2>
                 <p className=" inter-text">
@@ -446,7 +449,7 @@ const page = () => {
               </div>
             </div>
 
-            <div className="w-1/3">
+            <div className="w-full md:w-1/3">
               <Image
                 src="/images/hr2.png" // path relative to /public
                 alt="My beautiful image"

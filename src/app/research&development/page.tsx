@@ -34,7 +34,7 @@ const page = () => {
       </div>
       <section className=" relative">
         <div className="container mx-auto flex flex-wrap">
-          <div className="flex flex-col text-center w-full mb-20">
+          <div className="flex flex-col text-center w-full mb-10 md:mb-20">
             <h1 className="sm:text-6xl text-2xl font-bold  mb-4 text-primary">
               Introduction
             </h1>
@@ -228,10 +228,12 @@ const page = () => {
         </div>
       </section>
       {/* what we do */}
-      <section>
-        <div className="container">
+
+      {/* choose  */}
+      <section className=" ">
+        <div className="container ">
           <div className=" mx-auto flex flex-wrap">
-            <div className="flex flex-col text-center w-full mb-20">
+            <div className="flex flex-col text-center w-full mb-10 md:mb-20">
               <h1 className="sm:text-6xl text-2xl font-bold  mb-4 text-primary">
                 R&D and Product Design Services for Engineering Innovation in
                 India
@@ -246,278 +248,272 @@ const page = () => {
               </p>
             </div>
           </div>
-          {/* choose  */}
-          <section className=" relative">
-            <div className="container ">
-              <div className=" grid grid-cols-1 md:grid-cols-2 gap-8">
-                <div className=" w-full">
-                  <p className=" text-primary text-2xl font-bold mb-8">
-                    What We Do
-                  </p>
-                  <div className=" flex gap-4  p-0 rounded mb-4">
-                    <div>
-                      <FaCircleCheck className=" text-primary   text-2xl" />
-                    </div>
-
-                    <div>
-                      <p className="text-2xl text-[#2D2D2D] font-medium">
-                        Product Design & Engineering
-                      </p>
-                      <p className="text-base text-[#2D2D2D] font-light">
-                        From concept sketches to functional models, we design
-                        for DFM/DFA, balancing aesthetics, performance,
-                        reliability, and cost.
-                      </p>
-                    </div>
-                  </div>
-                  <div className=" flex gap-4  p-0 rounded mb-4">
-                    <div>
-                      <FaCircleCheck className=" text-primary   text-2xl" />
-                    </div>
-                    <div>
-                      <p className="text-2xl text-[#2D2D2D] font-medium">
-                        Engineering Drafting & Documentation
-                      </p>
-                      <p className="text-base text-[#2D2D2D] font-light">
-                        Production-ready 2D/3D drawings, assemblies, BOMs, and
-                        technical packs with GD&T (ISO/ASME) and tolerance
-                        stacks for seamless handoff to manufacturing.
-                      </p>
-                    </div>
-                  </div>
-                  <div className=" flex gap-4  p-0 rounded mb-4">
-                    <div>
-                      <FaCircleCheck className=" text-primary   text-2xl" />
-                    </div>
-                    <div>
-                      <p className="text-2xl text-[#2D2D2D] font-medium">
-                        Real-Time Renderings & Visualization
-                      </p>
-                      <p className="text-base text-[#2D2D2D] font-light">
-                        Photorealistic visuals and animations to validate
-                        designs, support stakeholder buy-in, and power marketing
-                        before tooling.
-                      </p>
-                    </div>
-                  </div>
-                  <div className=" flex gap-4  p-0 rounded mb-4">
-                    <div>
-                      <FaCircleCheck className=" text-primary   text-2xl" />
-                    </div>
-                    <div>
-                      <p className="text-2xl text-[#2D2D2D] font-medium">
-                        Reverse Engineering (India)
-                      </p>
-                      <p className="text-base text-[#2D2D2D] font-light">
-                        Recreate or improve legacy parts using precise
-                        measurements/3D scans; generate updated CAD, drawings,
-                        and specs for replacement or enhancement.
-                      </p>
-                    </div>
-                  </div>
+          <div className=" grid grid-cols-1 md:grid-cols-2 gap-0 md:gap-8">
+            <div className=" w-full">
+              <p className=" text-primary text-2xl font-bold mb-8 text-center md:text-left">
+                What We Do
+              </p>
+              <div className=" flex gap-4  p-0 rounded mb-4">
+                <div>
+                  <FaCircleCheck className=" text-primary   text-2xl" />
                 </div>
-                <div className=" w-full">
-                  <p className=" text-primary text-2xl font-bold mb-3 invisible">
-                    Why Choose AS Business Consulting
+
+                <div>
+                  <p className="text-2xl text-[#2D2D2D] font-medium">
+                    Product Design & Engineering
                   </p>
-                  <div className=" flex gap-4  p-0 rounded mb-4">
-                    <div>
-                      <FaCircleCheck className=" text-primary   text-2xl" />
-                    </div>
-                    <div>
-                      <p className="text-2xl text-[#2D2D2D] font-medium">
-                        CAD/CAM Outsourcing
-                      </p>
-                      <p className="text-base text-[#2D2D2D] font-light">
-                        On-demand access to expert engineers and advanced tools
-                        (e.g., PTC Creo/Pro-Engineer®, SolidWorks, AutoCAD) for
-                        precise models and manufacturable toolpaths—without
-                        in-house overhead.
-                      </p>
-                    </div>
-                  </div>
-                  <div className=" flex gap-4  p-0 rounded mb-4">
-                    <div>
-                      <FaCircleCheck className=" text-primary   text-2xl" />
-                    </div>
-                    <div>
-                      <p className="text-2xl text-[#2D2D2D] font-medium">
-                        3D Modeling & Advanced Surfacing
-                      </p>
-                      <p className="text-base text-[#2D2D2D] font-light">
-                        Parametric and freeform modeling for complex surfaces
-                        and intricate details—ideal for appliances, HVAC, and
-                        engineered products.
-                      </p>
-                    </div>
-                  </div>
-                  <div className=" flex gap-4  p-0 rounded mb-4">
-                    <div>
-                      <FaCircleCheck className=" text-primary   text-2xl" />
-                    </div>
-                    <div>
-                      <p className="text-2xl text-[#2D2D2D] font-medium">
-                        Prototype Development
-                      </p>
-                      <p className="text-base text-[#2D2D2D] font-light">
-                        Rapid prototyping (3D printing, CNC, sheet-metal, soft
-                        tooling) to test form, fit, and function—iterate
-                        quickly, then move to pilot build.
-                      </p>
-                    </div>
-                  </div>
-                  <div className=" flex gap-4  p-0 rounded mb-4">
-                    <div>
-                      <FaCircleCheck className=" text-primary   text-2xl" />
-                    </div>
-                    <div>
-                      <p className="text-2xl text-[#2D2D2D] font-medium">
-                        File Conversion & Data Migration
-                      </p>
-                      <p className="text-base text-[#2D2D2D] font-light">
-                        Convert 2D (incl. artwork) or 3D data into usable
-                        manufacturing formats (STEP, IGES, STL, DWG/DXF, native
-                        CAD) while preserving design intent.
-                      </p>
-                    </div>
-                  </div>
+                  <p className="text-base text-[#2D2D2D] font-light">
+                    From concept sketches to functional models, we design for
+                    DFM/DFA, balancing aesthetics, performance, reliability, and
+                    cost.
+                  </p>
+                </div>
+              </div>
+              <div className=" flex gap-4  p-0 rounded mb-4">
+                <div>
+                  <FaCircleCheck className=" text-primary   text-2xl" />
+                </div>
+                <div>
+                  <p className="text-2xl text-[#2D2D2D] font-medium">
+                    Engineering Drafting & Documentation
+                  </p>
+                  <p className="text-base text-[#2D2D2D] font-light">
+                    Production-ready 2D/3D drawings, assemblies, BOMs, and
+                    technical packs with GD&T (ISO/ASME) and tolerance stacks
+                    for seamless handoff to manufacturing.
+                  </p>
+                </div>
+              </div>
+              <div className=" flex gap-4  p-0 rounded mb-4">
+                <div>
+                  <FaCircleCheck className=" text-primary   text-2xl" />
+                </div>
+                <div>
+                  <p className="text-2xl text-[#2D2D2D] font-medium">
+                    Real-Time Renderings & Visualization
+                  </p>
+                  <p className="text-base text-[#2D2D2D] font-light">
+                    Photorealistic visuals and animations to validate designs,
+                    support stakeholder buy-in, and power marketing before
+                    tooling.
+                  </p>
+                </div>
+              </div>
+              <div className=" flex gap-4  p-0 rounded mb-4">
+                <div>
+                  <FaCircleCheck className=" text-primary   text-2xl" />
+                </div>
+                <div>
+                  <p className="text-2xl text-[#2D2D2D] font-medium">
+                    Reverse Engineering (India)
+                  </p>
+                  <p className="text-base text-[#2D2D2D] font-light">
+                    Recreate or improve legacy parts using precise
+                    measurements/3D scans; generate updated CAD, drawings, and
+                    specs for replacement or enhancement.
+                  </p>
                 </div>
               </div>
             </div>
-          </section>
+            <div className=" w-full">
+              <p className=" text-primary text-2xl font-bold mb-3 invisible">
+                Why Choose AS Business Consulting
+              </p>
+              <div className=" flex gap-4  p-0 rounded mb-4">
+                <div>
+                  <FaCircleCheck className=" text-primary   text-2xl" />
+                </div>
+                <div>
+                  <p className="text-2xl text-[#2D2D2D] font-medium">
+                    CAD/CAM Outsourcing
+                  </p>
+                  <p className="text-base text-[#2D2D2D] font-light">
+                    On-demand access to expert engineers and advanced tools
+                    (e.g., PTC Creo/Pro-Engineer®, SolidWorks, AutoCAD) for
+                    precise models and manufacturable toolpaths—without in-house
+                    overhead.
+                  </p>
+                </div>
+              </div>
+              <div className=" flex gap-4  p-0 rounded mb-4">
+                <div>
+                  <FaCircleCheck className=" text-primary   text-2xl" />
+                </div>
+                <div>
+                  <p className="text-2xl text-[#2D2D2D] font-medium">
+                    3D Modeling & Advanced Surfacing
+                  </p>
+                  <p className="text-base text-[#2D2D2D] font-light">
+                    Parametric and freeform modeling for complex surfaces and
+                    intricate details—ideal for appliances, HVAC, and engineered
+                    products.
+                  </p>
+                </div>
+              </div>
+              <div className=" flex gap-4  p-0 rounded mb-4">
+                <div>
+                  <FaCircleCheck className=" text-primary   text-2xl" />
+                </div>
+                <div>
+                  <p className="text-2xl text-[#2D2D2D] font-medium">
+                    Prototype Development
+                  </p>
+                  <p className="text-base text-[#2D2D2D] font-light">
+                    Rapid prototyping (3D printing, CNC, sheet-metal, soft
+                    tooling) to test form, fit, and function—iterate quickly,
+                    then move to pilot build.
+                  </p>
+                </div>
+              </div>
+              <div className=" flex gap-4  p-0 rounded mb-4">
+                <div>
+                  <FaCircleCheck className=" text-primary   text-2xl" />
+                </div>
+                <div>
+                  <p className="text-2xl text-[#2D2D2D] font-medium">
+                    File Conversion & Data Migration
+                  </p>
+                  <p className="text-base text-[#2D2D2D] font-light">
+                    Convert 2D (incl. artwork) or 3D data into usable
+                    manufacturing formats (STEP, IGES, STL, DWG/DXF, native CAD)
+                    while preserving design intent.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
+
       {/* what we do */}
       <section>
         <div className="container">
           <div className=" mx-auto flex flex-wrap">
-            <div className="flex flex-col text-center w-full mb-20">
+            <div className="flex flex-col text-center w-full mb-10 md:mb-20">
               <h1 className="sm:text-6xl text-2xl font-bold  mb-4 text-primary">
                 Why Choose AS Business Consulting for R&D
               </h1>
             </div>
           </div>
-          <section>
-            <div className=" flex justify-between">
-              <div className="">
-                <div>
-                  <div className="flex items-center mb-3 gap-4">
-                    <div className=" flex items-center justify-center   text-white mb-0 p-0">
-                      <FaCheck className=" text-lg rounded-full p-1  bg-primary " />
-                    </div>
-                    <h2 className="text-black text-base font-medium mb-0">
-                      Proven industry expertise across multiple sectors
-                    </h2>
+          <div className=" flex flex-col-reverse md:flex-row gap-8 justify-between">
+            <div className="">
+              <div>
+                <div className="flex items-center mb-3 gap-4">
+                  <div className=" flex items-center justify-center   text-white mb-0 p-0">
+                    <FaCheck className=" text-lg rounded-full p-1  bg-primary " />
                   </div>
-                  <div className="flex items-center mb-3 gap-4">
-                    <div className=" flex items-center justify-center   text-white mb-0 p-0">
-                      <FaCheck className=" text-lg rounded-full p-1  bg-primary " />
-                    </div>
-                    <h2 className="text-black text-base font-medium mb-0">
-                      End-to-end support: concept → CAD → render → prototype →
-                      handoff
-                    </h2>
-                  </div>
-                  <div className="flex items-center mb-3 gap-4">
-                    <div className=" flex items-center justify-center   text-white mb-0 p-0">
-                      <FaCheck className=" text-lg rounded-full p-1  bg-primary " />
-                    </div>
-                    <h2 className="text-black text-base font-medium mb-0">
-                      Cost-effective outsourcing with rapid turnaround
-                    </h2>
-                  </div>
-                  <div className="flex items-center mb-3 gap-4">
-                    <div className=" flex items-center justify-center   text-white mb-0 p-0">
-                      <FaCheck className=" text-lg rounded-full p-1  bg-primary " />
-                    </div>
-                    <h2 className="text-black text-base font-medium mb-0">
-                      Quality by design: standards-compliant drawings and
-                      documentation
-                    </h2>
-                  </div>
+                  <h2 className="text-black text-base font-medium mb-0">
+                    Proven industry expertise across multiple sectors
+                  </h2>
                 </div>
-                <h2 className="text-black text-2xl font-semibold my-7">
-                  Deliverables
-                </h2>
-                <div>
-                  <div className="flex items-center mb-3 gap-4">
-                    <div className=" flex items-center justify-center   text-white mb-0 p-0">
-                      <FaCheck className=" text-lg rounded-full p-1  bg-primary " />
-                    </div>
-                    <h2 className="text-black text-base font-medium mb-0">
-                      Native and neutral 3D CAD files
-                    </h2>
+                <div className="flex items-center mb-3 gap-4">
+                  <div className=" flex items-center justify-center   text-white mb-0 p-0">
+                    <FaCheck className=" text-lg rounded-full p-1  bg-primary " />
                   </div>
-                  <div className="flex items-center mb-3 gap-4">
-                    <div className=" flex items-center justify-center   text-white mb-0 p-0">
-                      <FaCheck className=" text-lg rounded-full p-1  bg-primary " />
-                    </div>
-                    <h2 className="text-black text-base font-medium mb-0">
-                      2D drawings with GD&T, assemblies, and BOMs
-                    </h2>
-                  </div>
-                  <div className="flex items-center mb-3 gap-4">
-                    <div className=" flex items-center justify-center   text-white mb-0 p-0">
-                      <FaCheck className=" text-lg rounded-full p-1  bg-primary " />
-                    </div>
-                    <h2 className="text-black text-base font-medium mb-0">
-                      Photorealistic renderings/animations
-                    </h2>
-                  </div>
-                  <div className="flex items-center mb-3 gap-4">
-                    <div className=" flex items-center justify-center   text-white mb-0 p-0">
-                      <FaCheck className=" text-lg rounded-full p-1  bg-primary " />
-                    </div>
-                    <h2 className="text-black text-base font-medium mb-0">
-                      Working prototypes and test reports
-                    </h2>
-                  </div>
+                  <h2 className="text-black text-base font-medium mb-0">
+                    End-to-end support: concept → CAD → render → prototype →
+                    handoff
+                  </h2>
                 </div>
-                <h2 className="text-black text-2xl font-semibold my-7">
-                  Explore More Services
-                </h2>
-                <div>
-                  <div className="flex items-center mb-3 gap-4">
-                    <div className=" flex items-center justify-center   text-white mb-0 p-0">
-                      <FaCheck className=" text-lg rounded-full p-1  bg-primary " />
-                    </div>
-                    <h2 className="text-black text-base font-medium mb-0">
-                      Engineering Consulting – Scale capability and solve
-                      complex problems
-                    </h2>
+                <div className="flex items-center mb-3 gap-4">
+                  <div className=" flex items-center justify-center   text-white mb-0 p-0">
+                    <FaCheck className=" text-lg rounded-full p-1  bg-primary " />
                   </div>
-                  <div className="flex items-center mb-3 gap-4">
-                    <div className=" flex items-center justify-center   text-white mb-0 p-0">
-                      <FaCheck className=" text-lg rounded-full p-1  bg-primary " />
-                    </div>
-                    <h2 className="text-black text-base font-medium mb-0">
-                      Manufacturing Process Optimization – Lean, quality, and
-                      throughput gains
-                    </h2>
+                  <h2 className="text-black text-base font-medium mb-0">
+                    Cost-effective outsourcing with rapid turnaround
+                  </h2>
+                </div>
+                <div className="flex items-center mb-3 gap-4">
+                  <div className=" flex items-center justify-center   text-white mb-0 p-0">
+                    <FaCheck className=" text-lg rounded-full p-1  bg-primary " />
                   </div>
-                  <div className="flex items-center mb-3 gap-4">
-                    <div className=" flex items-center justify-center   text-white mb-0 p-0">
-                      <FaCheck className=" text-lg rounded-full p-1  bg-primary " />
-                    </div>
-                    <h2 className="text-black text-base font-medium mb-0">
-                      Contact Us – Speak with our R&D team about your product
-                      roadmap
-                    </h2>
-                  </div>
+                  <h2 className="text-black text-base font-medium mb-0">
+                    Quality by design: standards-compliant drawings and
+                    documentation
+                  </h2>
                 </div>
               </div>
-              <div className="">
-                <Image
-                  src="/images/detailing.png" // path relative to /public
-                  alt="My beautiful image"
-                  width={500}
-                  height={500}
-                  priority // optional: preloads image
-                  className="rounded"
-                />
+              <h2 className="text-black text-2xl font-semibold my-7">
+                Deliverables
+              </h2>
+              <div>
+                <div className="flex items-center mb-3 gap-4">
+                  <div className=" flex items-center justify-center   text-white mb-0 p-0">
+                    <FaCheck className=" text-lg rounded-full p-1  bg-primary " />
+                  </div>
+                  <h2 className="text-black text-base font-medium mb-0">
+                    Native and neutral 3D CAD files
+                  </h2>
+                </div>
+                <div className="flex items-center mb-3 gap-4">
+                  <div className=" flex items-center justify-center   text-white mb-0 p-0">
+                    <FaCheck className=" text-lg rounded-full p-1  bg-primary " />
+                  </div>
+                  <h2 className="text-black text-base font-medium mb-0">
+                    2D drawings with GD&T, assemblies, and BOMs
+                  </h2>
+                </div>
+                <div className="flex items-center mb-3 gap-4">
+                  <div className=" flex items-center justify-center   text-white mb-0 p-0">
+                    <FaCheck className=" text-lg rounded-full p-1  bg-primary " />
+                  </div>
+                  <h2 className="text-black text-base font-medium mb-0">
+                    Photorealistic renderings/animations
+                  </h2>
+                </div>
+                <div className="flex items-center mb-3 gap-4">
+                  <div className=" flex items-center justify-center   text-white mb-0 p-0">
+                    <FaCheck className=" text-lg rounded-full p-1  bg-primary " />
+                  </div>
+                  <h2 className="text-black text-base font-medium mb-0">
+                    Working prototypes and test reports
+                  </h2>
+                </div>
+              </div>
+              <h2 className="text-black text-2xl font-semibold my-7">
+                Explore More Services
+              </h2>
+              <div>
+                <div className="flex items-center mb-3 gap-4">
+                  <div className=" flex items-center justify-center   text-white mb-0 p-0">
+                    <FaCheck className=" text-lg rounded-full p-1  bg-primary " />
+                  </div>
+                  <h2 className="text-black text-base font-medium mb-0">
+                    Engineering Consulting – Scale capability and solve complex
+                    problems
+                  </h2>
+                </div>
+                <div className="flex items-center mb-3 gap-4">
+                  <div className=" flex items-center justify-center   text-white mb-0 p-0">
+                    <FaCheck className=" text-lg rounded-full p-1  bg-primary " />
+                  </div>
+                  <h2 className="text-black text-base font-medium mb-0">
+                    Manufacturing Process Optimization – Lean, quality, and
+                    throughput gains
+                  </h2>
+                </div>
+                <div className="flex items-center mb-3 gap-4">
+                  <div className=" flex items-center justify-center   text-white mb-0 p-0">
+                    <FaCheck className=" text-lg rounded-full p-1  bg-primary " />
+                  </div>
+                  <h2 className="text-black text-base font-medium mb-0">
+                    Contact Us – Speak with our R&D team about your product
+                    roadmap
+                  </h2>
+                </div>
               </div>
             </div>
-          </section>
+            <div className="">
+              <Image
+                src="/images/detailing.png" // path relative to /public
+                alt="My beautiful image"
+                width={500}
+                height={500}
+                priority // optional: preloads image
+                className="rounded"
+              />
+            </div>
+          </div>
         </div>
       </section>
       <ContactFrom />

@@ -48,7 +48,7 @@ const page = () => {
       <section>
         <div className="container">
           <div className=" flex flex-wrap">
-            <div className="flex flex-col text-center w-full mb-20">
+            <div className="flex flex-col text-center w-full mb-10 md:mb-20">
               <h1 className="sm:text-6xl text-2xl font-bold  mb-4 text-primary text-center">
                 Certification & Inspection Services for Quality Compliance and
                 Accreditation
@@ -67,9 +67,9 @@ const page = () => {
               </p>
             </div>
           </div>
-          <div className="mx-auto flex md:flex-row flex-col items-center">
+          <div className="mx-auto flex flex-col-reverse md:flex-row items-center gap-8">
             {/* Left Content Section */}
-            <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
+            <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col items-start text-left mb-0 md:mb-0">
               <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">
                 BIS Certification Consultants in India
               </h1>
@@ -91,11 +91,11 @@ const page = () => {
             </div>
 
             {/* Right Image Section */}
-            <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
+            <div className="w-full md:max-w-lg lg:w-full md:w-1/2">
               <img
-                className="object-cover object-center rounded"
+                className="object-cover object-center rounded w-full"
                 alt="BIS Certification"
-                src="/images/cer1.png"
+                src="/images/BIS Certification Consultants in India.png"
               />
             </div>
           </div>
@@ -103,18 +103,18 @@ const page = () => {
       </section>
       <section>
         <div className="container">
-          <div className="mx-auto flex md:flex-row flex-col items-center">
+          <div className="mx-auto flex flex-col md:flex-row items-center gap-8">
             {/* Left Image Section */}
-            <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">
+            <div className="w-full md:max-w-lg lg:w-full md:w-1/2 mb-10 md:mb-0">
               <img
-                className="object-cover object-center rounded"
+                className="object-cover object-center rounded w-full"
                 alt="QMS Implementation"
-                src="/images/cer2.png" // replace later with your QMS image
+                src="/images/QMS Implementation for Quality Excellence.png" // replace later with your QMS image
               />
             </div>
 
             {/* Right Content Section */}
-            <div className="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
+            <div className="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col items-start text-left">
               <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">
                 QMS Implementation for Quality Excellence
               </h1>
@@ -139,9 +139,9 @@ const page = () => {
       </section>
       <section>
         <div className="container">
-          <div className="mx-auto flex md:flex-row flex-col items-center">
+          <div className="mx-auto flex flex-col-reverse md:flex-row items-center gap-8">
             {/* Left Content Section */}
-            <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
+            <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col items-start text-left mb-0 md:mb-0">
               <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">
                 ISO Consultants for Certification &amp; Compliance
               </h1>
@@ -162,11 +162,11 @@ const page = () => {
             </div>
 
             {/* Right Image Section */}
-            <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
+            <div className="w-full md:max-w-lg lg:w-full md:w-1/2">
               <img
-                className="object-cover object-center rounded"
+                className="object-cover object-center rounded w-full"
                 alt="ISO Consultants"
-                src="/images/cer3.png" // same image for now
+                src="/images/ISO Consultants for Certification & Compliance.png" // same image for now
               />
             </div>
           </div>
@@ -174,18 +174,18 @@ const page = () => {
       </section>
       <section>
         <div className="container">
-          <div className="mx-auto flex md:flex-row flex-col items-center">
+          <div className="mx-auto flex flex-col md:flex-row items-center gap-8">
             {/* Left Image Section */}
-            <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">
+            <div className="w-full md:max-w-lg lg:w-full md:w-1/2 mb-10 md:mb-0">
               <img
-                className="object-cover object-center rounded"
+                className="object-cover object-center rounded w-full"
                 alt="AS Business Consulting"
-                src="/images/cer4.png" // replace later with actual image
+                src="/images/Why Choose AS Business Consulting for Certification Services.png" // replace later with actual image
               />
             </div>
 
             {/* Right Content Section */}
-            <div className="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
+            <div className="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col items-start text-left">
               <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">
                 Why Choose AS Business Consulting for Certification Services
               </h1>

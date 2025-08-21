@@ -42,7 +42,7 @@ const page = () => {
 
       <section className=" relative">
         <div className="container">
-          <div className="flex flex-col text-center w-full mb-20">
+          <div className="flex flex-col text-center w-full mb-10 md:mb-20">
             <h1 className="sm:text-6xl text-2xl font-bold  mb-4 text-primary">
               We do
             </h1>
@@ -358,7 +358,7 @@ const page = () => {
       </section>
       <section>
         <div className=" container">
-          <div className="flex flex-col text-center w-full mb-20">
+          <div className="flex flex-col text-center w-full mb-10 md:mb-20">
             <h1 className="sm:text-6xl text-2xl font-bold  mb-4 text-primary">
               Our Strengths
             </h1>
@@ -418,7 +418,7 @@ const page = () => {
 
       <section className="">
         <div className="container">
-          <div className="flex flex-col text-center w-full mb-20">
+          <div className="flex flex-col text-center w-full mb-10 md:mb-20">
             <h1 className="sm:text-6xl text-2xl font-bold  mb-4 text-primary">
               Sales & Marketing Consulting for B2B & B2C Growth in India
             </h1>
@@ -432,30 +432,30 @@ const page = () => {
           </div>
           {/* what we do */}
           <div>
-            <p className=" text-[40px] font-bold text-primary my-6">
+            <p className=" text-xl md:text-[40px] font-bold text-primary my-6">
               What We Do
             </p>
             <div className=" grid grid-cols-1 md:grid-cols-2 gap-4">
               <div className=" bg-[#FEF2FB] p-6 rounded  w-full">
-                <p className=" text-xl font-medium">
+                <p className=" text-xl font-normal md:font-medium">
                   B2B Marketing – account-based plays, LinkedIn + email funnels,
                   webinars, sales enablement
                 </p>
               </div>
               <div className=" bg-[#FEF2FB] p-4 w-full">
-                <p className=" text-xl font-medium">
+                <p className=" text-xl font-normal md:font-medium">
                   B2C Marketing – performance ads (Meta/Google), social &
                   influencer, remarketing, CRM journeys
                 </p>
               </div>
               <div className=" bg-[#FEF2FB] p-6 rounded w-full">
-                <p className=" text-xl font-medium">
+                <p className=" text-xl font-normal md:font-medium">
                   Growth Consulting – market research, project reports, GTM &
                   channel strategy, conversion rate optimization
                 </p>
               </div>
               <div className=" bg-[#FEF2FB] p-6 rounded w-full">
-                <p className=" text-xl font-medium">
+                <p className=" text-xl font-normal md:font-medium">
                   Training – latest tools and techniques for your marketing &
                   sales teams (platforms, analytics, playbooks)
                 </p>
@@ -465,42 +465,42 @@ const page = () => {
 
           {/* our strenth */}
           <div>
-            <p className=" text-[40px] font-bold text-primary my-6">
+            <p className=" text-xl md:text-[40px] font-bold text-primary my-6">
               Our Strengths
             </p>
             <div className=" grid grid-cols-1 md:grid-cols-2 gap-4">
               <div className=" bg-[#FEF2FB] p-6 rounded  w-full">
-                <p className=" text-xl font-medium">
+                <p className=" text-xl font-normal md:font-medium">
                   Concrete Data Analysis – research, audience insights,
                   competitive mapping
                 </p>
               </div>
               <div className=" bg-[#FEF2FB] p-4 w-full">
-                <p className=" text-xl font-medium">
+                <p className=" text-xl font-normal md:font-medium">
                   Structured Strategy – ICP/personas, value proposition, channel
                   mix, objectives & KPIs
                 </p>
               </div>
               <div className=" bg-[#FEF2FB] p-6 rounded w-full">
-                <p className=" text-xl font-medium">
+                <p className=" text-xl font-normal md:font-medium">
                   Multiple Plans – A/B media plans, creative variants,
                   contingency plays
                 </p>
               </div>
               <div className=" bg-[#FEF2FB] p-6 rounded w-full">
-                <p className=" text-xl font-medium">
+                <p className=" text-xl font-normal md:font-medium">
                   Improved Brand Recognition – positioning, messaging, content
                   frameworks
                 </p>
               </div>
               <div className=" bg-[#FEF2FB] p-6 rounded w-full">
-                <p className=" text-xl font-medium">
+                <p className=" text-xl font-normal md:font-medium">
                   Logical Execution – sprint-based campaigns with QA checklists
                   and governance
                 </p>
               </div>
               <div className=" bg-[#FEF2FB] p-6 rounded w-full">
-                <p className=" text-xl font-medium">
+                <p className=" text-xl font-normal md:font-medium">
                   Marketing Analytics & Reporting – dashboards, cohort analysis,
                   ROAS/CAC/CPL tracking
                 </p>
@@ -509,7 +509,7 @@ const page = () => {
           </div>
           {/* core capabilities */}
           <div>
-            <p className=" text-[40px] font-bold text-primary my-6">
+            <p className=" text-xl md:text-[40px] font-bold text-primary my-6">
               Core Capabilities
             </p>
             <div className=" grid grid-cols-1  gap-4">
@@ -579,7 +579,7 @@ const page = () => {
           <div className=" mx-auto flex flex-wrap"></div>
           <div className=" grid grid-cols-1 md:grid-cols-2 gap-6">
             <div className="w-full">
-              <h2 className="text-primary text-3xl font-bold  mb-7">
+              <h2 className="text-primary text-xl md:text-3xl font-bold  mb-7">
                 Training Programs (Tools & Techniques)
               </h2>
               <div>
@@ -618,7 +618,7 @@ const page = () => {
               </div>
             </div>
             <div className="w-full">
-              <h2 className="text-primary text-3xl font-bold  mb-7">
+              <h2 className="text-primary text-xl md:text-3xl font-bold  mb-7">
                 Deliverables You Receive
               </h2>
               <div>
@@ -666,7 +666,7 @@ const page = () => {
               </div>
             </div>
             <div className="w-full">
-              <h2 className="text-primary text-3xl font-bold  mb-7">
+              <h2 className="text-primary text-xl md:text-3xl font-bold  mb-7">
                 Why Choose AS Business Consulting
               </h2>
               <div>
@@ -705,7 +705,7 @@ const page = () => {
               </div>
             </div>
             <div className="w-full">
-              <h2 className="text-primary text-3xl font-bold  mb-7">
+              <h2 className="text-primary text-xl md:text-3xl font-bold  mb-7">
                 Explore More Services
               </h2>
               <div>

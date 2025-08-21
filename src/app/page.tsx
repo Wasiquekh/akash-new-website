@@ -114,7 +114,7 @@ export default function Home() {
       {/* why choose */}
       <section className=" relative">
         <div className="container ">
-          <div className="flex flex-col text-center w-full mb-20">
+          <div className="flex flex-col text-center w-full mb-10 md:mb-20">
             <h1 className="sm:text-6xl text-2xl font-bold  mb-4 text-primary w-full md:w-[80%] text-center m-auto">
               Why choose a trusted business advisory company in India
             </h1>
@@ -124,7 +124,7 @@ export default function Home() {
               hands-on execution.
             </p>
           </div>
-          <div className=" grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div className="flex flex-col-reverse md:grid md:grid-cols-2 gap-8">
             <div className=" w-full">
               <p className=" text-black text-2xl font-bold mb-3">
                 Our approach focuses on:
@@ -187,7 +187,7 @@ export default function Home() {
       {/* we work */}
       <section className=" relative">
         <div className="container ">
-          <div className="flex flex-col text-center w-full mb-20">
+          <div className="flex flex-col text-center w-full mb-10 md:mb-20">
             <h1 className="sm:text-6xl text-2xl font-bold  mb-4 text-primary w-full md:w-[80%] text-center m-auto">
               How we work
             </h1>
@@ -234,7 +234,7 @@ export default function Home() {
       {/* JOURNER OF SUCCESS */}
       <section className="">
         <div className="container">
-          <div className="flex flex-col text-center w-full mb-20">
+          <div className="flex flex-col text-center w-full mb-10 md:mb-20">
             <h1 className="sm:text-6xl text-2xl font-bold  mb-4 text-primary">
               JOURNEY OF SUCCESS
             </h1>
@@ -397,7 +397,7 @@ export default function Home() {
       <section className="bg-primary w-ful pb-20">
         <div className="container pb-0">
           <div className="flex flex-col text-center w-full mb-0">
-            <h1 className="   rounded m-auto text-3xl md:text-6xl font-medium text-white mb-2 ">
+            <h1 className="   rounded m-auto text-3xl md:text-6xl font-medium text-white mb-5 md:mb-2 ">
               OUR ACHIEVEMENTS
             </h1>
             {/* <p className="lg:w-2/3 mx-auto text-base  md:text-base md:font-normal text-white">
@@ -417,7 +417,7 @@ export default function Home() {
               height={55}
               className=" mb-2 w-14"
             />
-            <h2 className=" font-poppins text-5xl font-bold  mb-2">
+            <h2 className=" font-poppins text-5xl font-bold mb-10 md:mb-2">
               {/* {counterInView && <CountUp end={53} duration={5} />}+ */}
               53+
             </h2>
@@ -672,7 +672,7 @@ export default function Home() {
       {/* TEAM */}
       <section className=" relative">
         <div className="container">
-          <div className="flex flex-col text-center w-full mb-20">
+          <div className="flex flex-col text-center w-full mb-10 md:mb-20">
             <h1 className="sm:text-6xl text-2xl font-bold  mb-4 text-primary">
               OUR TEAM
             </h1>
@@ -939,7 +939,7 @@ export default function Home() {
       {/* AWARDS */}
       <section className="">
         <div className="container">
-          <div className="flex flex-col text-center w-full mb-20">
+          <div className="flex flex-col text-center w-full mb-10 md:mb-20">
             <h1 className="sm:text-6xl text-2xl font-bold  mb-4 text-primary">
               AWARDS
             </h1>
@@ -990,7 +990,7 @@ export default function Home() {
       {/* TESTIMONIAL */}
       <section className="" id="customer">
         <div className="container">
-          <div className="flex flex-col text-center w-full mb-20">
+          <div className="flex flex-col text-center w-full mb-10 md:mb-20">
             <h1 className="sm:text-6xl text-2xl font-bold  mb-4 text-primary uppercase">
               Customer&apos;s Testimonials
             </h1>

@@ -41,7 +41,7 @@ const page = () => {
       {/* SERVICES */}
       <section className="bg-[linear-gradient(180deg,_#FFF_0%,_#F0DEEC_100%)]">
         <div className="container">
-          <div className="flex flex-col text-center w-full mb-20">
+          <div className="flex flex-col text-center w-full mb-10 md:mb-20">
             <h1 className="sm:text-6xl text-2xl font-bold  mb-4 text-primary">
               OUR SERVICES
             </h1>

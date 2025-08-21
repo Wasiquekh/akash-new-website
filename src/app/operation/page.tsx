@@ -49,7 +49,7 @@ const page = () => {
       <section>
         <div className="container">
           <div className=" flex flex-wrap">
-            <div className="flex flex-col text-center w-full mb-20">
+            <div className="flex flex-col text-center w-full mb-10 md:mb-20">
               <h1 className="sm:text-6xl text-2xl font-bold  mb-4 text-primary">
                 Operations Consulting
               </h1>

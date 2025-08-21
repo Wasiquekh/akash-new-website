@@ -40,7 +40,7 @@ const page = () => {
       <section>
         <div className="container">
           <div className=" mx-auto flex flex-wrap">
-            <div className="flex flex-col text-center w-full mb-20">
+            <div className="flex flex-col text-center w-full mb-10 md: mb-20">
               <h1 className="sm:text-6xl text-2xl font-bold  mb-4 text-primary">
                 About AS Business Consulting – Experts Driving Business
                 Excellence in India
@@ -171,13 +171,13 @@ const page = () => {
       {/* vision mission */}
       <section>
         <div className="container">
-          <div className=" bg-tertiary py-8 px-20 flex flex-col justify-center w-3/4 m-auto">
+          <div className=" bg-tertiary py-8 px-4 md:px-20 flex flex-col justify-center w-full md:w-3/4 m-auto">
             <p className=" text-center text-4xl font-bold text-primary mb-4">
               Vision and Mission
             </p>
             <p className=" text-center text-sm">
               Vision: To be India&apos;s most trusted consulting partner,
-              enabling sustainable growth and long-term success.  Mission: To
+              enabling sustainable growth and long-term success. Mission: To
               deliver tailored, research-backed, innovation-led consulting with
               actionable strategies that create measurable business value.
             </p>
@@ -188,7 +188,7 @@ const page = () => {
       {/* core value */}
       <section className=" relative">
         <div className="container ">
-          <div className=" grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div className=" flex flex-col-reverse md:flex-row gap-8">
             <div className=" w-full">
               <p className=" text-primary text-2xl font-bold mb-3">
                 Our Core Values
@@ -242,9 +242,10 @@ const page = () => {
             <div className=" w-full flex justify-end">
               <Image
                 src="/images/about4.png"
-                width={500}
-                height={500}
+                width={1000}
+                height={1000}
                 alt="Picture of the author"
+                className=" w-full md:w-[80%]"
               />
             </div>
           </div>
@@ -253,7 +254,7 @@ const page = () => {
       {/* choose  */}
       <section className=" relative">
         <div className="container ">
-          <div className=" grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div className="flex flex-col-reverse md:flex-row gap-8">
             <div className=" w-full">
               <p className=" text-primary text-2xl font-bold mb-3">
                 Why Choose AS Business Consulting
@@ -337,9 +338,10 @@ const page = () => {
             <div className=" w-full flex justify-end">
               <Image
                 src="/images/about5.png"
-                width={600}
-                height={600}
+                width={1000}
+                height={1000}
                 alt="Picture of the author"
+                className=" w-full md:w-[80%]"
               />
             </div>
           </div>
@@ -408,7 +410,7 @@ const page = () => {
       {/* JOURNER OF SUCCESS */}
       <section className="">
         <div className="container">
-          <div className="flex flex-col text-center w-full mb-20">
+          <div className="flex flex-col text-center w-full mb-10 md: mb-20">
             <h1 className="sm:text-6xl text-2xl font-bold  mb-4 text-primary">
               JOURNEY OF SUCCESS
             </h1>
@@ -569,7 +571,7 @@ const page = () => {
       {/* TEAM */}
       <section className=" relative">
         <div className="container">
-          <div className="flex flex-col text-center w-full mb-20">
+          <div className="flex flex-col text-center w-full mb-10 md: mb-20">
             <h1 className="sm:text-6xl text-2xl font-bold  mb-4 text-primary">
               OUR TEAM
             </h1>

@@ -82,7 +82,7 @@ const page = () => {
       <section>
         <div className=" container grid grid-cols-1 md:grid-cols-3 gap-4">
           <div className="">
-            <h2 className="text-black text-2xl font-semibold mb-7">
+            <h2 className="text-black text-xl md:text-2xl font-semibold mb-7">
               Package include
             </h2>
             <div>
@@ -90,7 +90,7 @@ const page = () => {
                 <div className=" flex items-center justify-center rounded-full bg-primary text-white mb-0 p-1">
                   <FaCheck />
                 </div>
-                <h2 className="text-black text-2xl font-medium mb-0">
+                <h2 className="text-black text-xl md:text-2xl font-medium mb-0">
                   Corporate Legal Advisory
                 </h2>
               </div>
@@ -98,7 +98,7 @@ const page = () => {
                 <div className=" flex items-center justify-center rounded-full bg-primary text-white mb-0 p-1">
                   <FaCheck />
                 </div>
-                <h2 className="text-black text-2xl font-medium mb-0">
+                <h2 className="text-black text-xl md:text-2xl font-medium mb-0">
                   Commercial advisory
                 </h2>
               </div>
@@ -106,7 +106,7 @@ const page = () => {
                 <div className=" flex items-center justify-center rounded-full bg-primary text-white mb-0 p-1">
                   <FaCheck />
                 </div>
-                <h2 className="text-black text-2xl font-medium mb-0">
+                <h2 className="text-black text-xl md:text-2xl font-medium mb-0">
                   Contracts & Agreements
                 </h2>
               </div>
@@ -114,7 +114,7 @@ const page = () => {
                 <div className=" flex items-center justify-center rounded-full bg-primary text-white mb-0 p-1">
                   <FaCheck />
                 </div>
-                <h2 className="text-black text-2xl font-medium mb-0">
+                <h2 className="text-black text-xl md:text-2xl font-medium mb-0">
                   Banking & Finance law
                 </h2>
               </div>
@@ -122,7 +122,7 @@ const page = () => {
                 <div className=" flex items-center justify-center rounded-full bg-primary text-white mb-0 p-1">
                   <FaCheck />
                 </div>
-                <h2 className="text-black text-2xl font-medium mb-0">
+                <h2 className="text-black text-xl md:text-2xl font-medium mb-0">
                   Family advisory
                 </h2>
               </div>
@@ -130,7 +130,7 @@ const page = () => {
                 <div className=" flex items-center justify-center rounded-full bg-primary text-white mb-0 p-1">
                   <FaCheck />
                 </div>
-                <h2 className="text-black text-2xl font-medium mb-0">
+                <h2 className="text-black text-xl md:text-2xl font-medium mb-0">
                   Asset Management
                 </h2>
               </div>
@@ -138,7 +138,7 @@ const page = () => {
                 <div className=" flex items-center justify-center rounded-full bg-primary text-white mb-0 p-1">
                   <FaCheck />
                 </div>
-                <h2 className="text-black text-2xl font-medium mb-0">
+                <h2 className="text-black text-xl md:text-2xl font-medium mb-0">
                   Background investigation
                 </h2>
               </div>
@@ -186,8 +186,8 @@ const page = () => {
       <section>
         <div className="container">
           <div className=" mx-auto flex flex-wrap"></div>
-          <div className="flex justify-between gap-4 mb-20">
-            <div className="w-[60%]">
+          <div className="flex flex-col-reverse md:flex-row justify-between gap-4 mb-20">
+            <div className=" w-full md:w-[60%]">
               <h2 className="text-primary text-3xl font-bold  mb-7">
                 What We Cover
               </h2>
@@ -316,7 +316,7 @@ const page = () => {
                 </div>
               </div>
             </div>
-            <div className="w-[30%]">
+            <div className="w-full md:w-[30%]">
               <div>
                 <Image
                   src="/images/legal1.png" // path relative to /public
@@ -324,7 +324,7 @@ const page = () => {
                   width={500}
                   height={500}
                   priority // optional: preloads image
-                  className="rounded mb-20"
+                  className="rounded mb-10 md:mb-20"
                 />
               </div>
               <div>
@@ -334,13 +334,13 @@ const page = () => {
                   width={500}
                   height={500}
                   priority // optional: preloads image
-                  className="rounded"
+                  className="rounded hidden md:block"
                 />
               </div>
             </div>
           </div>
-          <div className="flex justify-between gap-4">
-            <div className="w-[60%]">
+          <div className=" flex flex-col-reverse md:flex-row justify-between gap-4">
+            <div className="w-full md:w-[60%]">
               <p className=" text-xl font-bold inter-text my-4">
                 IP, IT & Cyber Law
               </p>
@@ -551,7 +551,7 @@ const page = () => {
                 </div>
               </div>
             </div>
-            <div className="w-[30%]">
+            <div className="w-full md:w-[30%]">
               <div className=" mb-20">
                 <Image
                   src="/images/legal3.png" // path relative to /public
@@ -569,7 +569,7 @@ const page = () => {
                   width={500}
                   height={500}
                   priority // optional: preloads image
-                  className="rounded"
+                  className="rounded hidden md:block"
                 />
               </div>
               <div className=" mb-20">
@@ -579,7 +579,7 @@ const page = () => {
                   width={500}
                   height={500}
                   priority // optional: preloads image
-                  className="rounded"
+                  className="rounded hidden md:block"
                 />
               </div>
             </div>

@@ -49,7 +49,7 @@ const page = () => {
       <section>
         <div className="container">
           <div className=" mx-auto flex flex-wrap">
-            <div className="flex flex-col text-center w-full mb-20">
+            <div className="flex flex-col text-center w-full mb-10 md:mb-20">
               <h1 className="sm:text-6xl text-2xl font-bold  mb-4 text-primary">
                 International Business
               </h1>
@@ -64,7 +64,7 @@ const page = () => {
           </div>
           <div className=" grid grid-cols-1 md:grid-cols-3 gap-4">
             <div className="">
-              <h2 className="text-black text-2xl font-semibold mb-7">
+              <h2 className="text-black text-xl md:text-2xl font-semibold mb-7">
                 Package include
               </h2>
               <div>
@@ -72,7 +72,7 @@ const page = () => {
                   <div className=" flex items-center justify-center rounded-full bg-primary text-white mb-0 p-1">
                     <FaCheck />
                   </div>
-                  <h2 className="text-black text-2xl font-medium mb-0">
+                  <h2 className="text-black text-xl md:text-2xl font-medium mb-0">
                     Corporate Legal Advisory
                   </h2>
                 </div>
@@ -80,7 +80,7 @@ const page = () => {
                   <div className=" flex items-center justify-center rounded-full bg-primary text-white mb-0 p-1">
                     <FaCheck />
                   </div>
-                  <h2 className="text-black text-2xl font-medium mb-0">
+                  <h2 className="text-black text-xl md:text-2xl font-medium mb-0">
                     Commercial advisory
                   </h2>
                 </div>
@@ -88,7 +88,7 @@ const page = () => {
                   <div className=" flex items-center justify-center rounded-full bg-primary text-white mb-0 p-1">
                     <FaCheck />
                   </div>
-                  <h2 className="text-black text-2xl font-medium mb-0">
+                  <h2 className="text-black text-xl md:text-2xl font-medium mb-0">
                     Contracts & Agreements
                   </h2>
                 </div>
@@ -96,7 +96,7 @@ const page = () => {
                   <div className=" flex items-center justify-center rounded-full bg-primary text-white mb-0 p-1">
                     <FaCheck />
                   </div>
-                  <h2 className="text-black text-2xl font-medium mb-0">
+                  <h2 className="text-black text-xl md:text-2xl font-medium mb-0">
                     Banking & Finance law
                   </h2>
                 </div>
@@ -104,7 +104,7 @@ const page = () => {
                   <div className=" flex items-center justify-center rounded-full bg-primary text-white mb-0 p-1">
                     <FaCheck />
                   </div>
-                  <h2 className="text-black text-2xl font-medium mb-0">
+                  <h2 className="text-black text-xl md:text-2xl font-medium mb-0">
                     Family advisory
                   </h2>
                 </div>
@@ -112,7 +112,7 @@ const page = () => {
                   <div className=" flex items-center justify-center rounded-full bg-primary text-white mb-0 p-1">
                     <FaCheck />
                   </div>
-                  <h2 className="text-black text-2xl font-medium mb-0">
+                  <h2 className="text-black text-xl md:text-2xl font-medium mb-0">
                     Asset Management
                   </h2>
                 </div>
@@ -120,7 +120,7 @@ const page = () => {
                   <div className=" flex items-center justify-center rounded-full bg-primary text-white mb-0 p-1">
                     <FaCheck />
                   </div>
-                  <h2 className="text-black text-2xl font-medium mb-0">
+                  <h2 className="text-black text-xl md:text-2xl font-medium mb-0">
                     Background investigation
                   </h2>
                 </div>
@@ -232,7 +232,7 @@ const page = () => {
       <section>
         <div className="container">
           <div className=" mx-auto flex flex-wrap">
-            <div className="flex flex-col text-center w-full mb-20">
+            <div className="flex flex-col text-center w-full mb-0">
               <h1 className="sm:text-6xl text-2xl font-bold  mb-4 text-primary">
                 International Business Development & Export Consulting for
                 Global Expansion
@@ -244,7 +244,7 @@ const page = () => {
                 and logistics, our team delivers end-to-end support so you can
                 expand with confidence.
               </p>
-              <p className=" text-[40px] font-bold text-primary mb-4">
+              <p className=" text-xl md:text-[40px] font-bold text-primary mb-4">
                 What We Deliver (End to End)
               </p>
               <div className=" bg-[#FEF2FB] px-8 py-5 rounded mb-4">
@@ -272,7 +272,7 @@ const page = () => {
                   certification, licensing, product sales, franchise programs.
                 </p>
               </div>
-              <div className=" bg-[#FEF2FB] px-8 py-5 rounded mb-4">
+              <div className=" bg-[#FEF2FB] px-8 py-5 rounded mb-0">
                 <p className=" text-start text-xl font-medium">
                   Consultation & Incentives
                 </p>
@@ -288,9 +288,9 @@ const page = () => {
       <section>
         <div className="container">
           <div className=" mx-auto flex flex-wrap"></div>
-          <div className="flex gap-4">
-            <div className="flex-1">
-              <h2 className="text-primary text-3xl font-bold  mb-7">
+          <div className="flex flex-col-reverse md:flex-row justify-between gap-8">
+            <div className="">
+              <h2 className="text-primary text-2xl md:text-3xl font-bold  mb-7">
                 Export Business Consulting
               </h2>
               <p className=" text-xl font-bold inter-text my-4">
@@ -325,7 +325,7 @@ const page = () => {
                   </h2>
                 </div>
               </div>
-              <h2 className="text-primary text-3xl font-bold  my-7">
+              <h2 className="text-primary text-2xl md:text-3xl font-bold  my-7">
                 China Business Development Advisory
               </h2>
               <p className=" text-xl font-bold inter-text my-4">
@@ -357,7 +357,7 @@ const page = () => {
                   </h2>
                 </div>
               </div>
-              <h2 className="text-primary text-3xl font-bold  my-7">
+              <h2 className="text-primary text-2xl md:text-3xl font-bold  my-7">
                 Logistics Solutions in India for Global Trade
               </h2>
               <p className=" text-xl font-bold inter-text my-4">
@@ -393,7 +393,7 @@ const page = () => {
               </div>
             </div>
 
-            <div className="w-1/3">
+            <div className="w-full  md:w-1/3 ">
               <Image
                 src="/images/international1.png" // path relative to /public
                 alt="My beautiful image"
@@ -410,9 +410,9 @@ const page = () => {
       <section>
         <div className="container">
           <div className=" mx-auto flex flex-wrap"></div>
-          <div className="flex gap-4">
-            <div className="flex-1">
-              <h2 className="text-primary text-3xl font-bold  mb-7">
+          <div className="flex flex-col-reverse md:flex-row justify-between gap-8">
+            <div className="">
+              <h2 className="text-primary text-2xl md:text-3xl font-bold  mb-7">
                 Why Choose AS Business Consulting for Global Expansion
               </h2>
               <div>
@@ -451,7 +451,7 @@ const page = () => {
                   </h2>
                 </div>
               </div>
-              <h2 className="text-primary text-3xl font-bold  my-7">
+              <h2 className="text-primary text-2xl md:text-3xl font-bold  my-7">
                 Explore More Services
               </h2>
               <div>
@@ -484,7 +484,7 @@ const page = () => {
               </div>
             </div>
 
-            <div className="w-1/3">
+            <div className="w-full md:w-1/3">
               <Image
                 src="/images/international2.png" // path relative to /public
                 alt="My beautiful image"
