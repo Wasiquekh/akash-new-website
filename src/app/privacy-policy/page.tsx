@@ -200,24 +200,25 @@ const page = () => {
               </h2>
               <address className="not-italic">
                 <p className="font-medium">
-                  Data Protection Officer (DPO): Naafis Gazi
+                  Data Protection Officer (DPO): Akash Shahane
                 </p>
                 <p>
                   Email:{" "}
                   <a
-                    href="mailto:naafis@dynsimulation.com"
+                    href="mailto:akash.shahane@asbconsulting.in"
                     className="text-blue-600 underline"
                   >
-                    naafis@dynsimulation.com
+                    akash.shahane@asbconsulting.in
                   </a>
                 </p>
-                <p>Phone: +91-8850139961</p>
+                <p>Phone: +91-9529322665</p>
                 <p>
-                  Dynsimulation Technologies Pvt Ltd
+                  AS BUSINESS CONSULTING
                   <br />
-                  Plot 26/N/4, Shivaji Nagar, Govandi
+                  21/3, Isha-krupa Apartment, Behind Sant Eknath Rangamandir,
+                  Osmanpura,
                   <br />
-                  Mumbai, Maharashtra 400043, India
+                  Aurangabad, MH (IN) – 431005
                 </p>
               </address>
             </section>
@@ -229,11 +230,11 @@ const page = () => {
               <p>
                 You may request review, update, or deletion of your data here:{" "}
                 <a
-                  href="https://dynsimulation.com/Contact"
+                  href="akash.shahane@asbconsulting.in"
                   target="_blank"
                   className="text-blue-600 underline"
                 >
-                  https://dynsimulation.com/Contact
+                  akash.shahane@asbconsulting.in
                 </a>
               </p>
             </section>
