@@ -205,7 +205,7 @@ const Footer = () => {
             <Link target="_blank" href="https://www.dynsimulation.com/">
               {" "}
               <p className=" hover:text-tertiary">
-                Dynsimulation Private Limited.
+                Powred by Dynsimulation Private Limited.
               </p>
             </Link>
           </div>
