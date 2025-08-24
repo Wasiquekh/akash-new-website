@@ -200,7 +200,16 @@ const Footer = () => {
           <div className="w-full border-b border-tertiary"></div>
         </div>
         <div className=" mx-auto max-w-screen-xl px-[20px] flex flex-col md:flex-row justify-center items-center gap-2 md:gap-0 md:justify-between text-xs">
-          <div>© 2025 AS Consulting All rights reserved.</div>
+          <div className=" flex gap-2">
+            <p>© 2025 AS Consulting All rights reserved.</p>
+            <Link target="_blank" href="https://www.dynsimulation.com/">
+              {" "}
+              <p className=" hover:text-tertiary">
+                Dynsimulation Private Limited.
+              </p>
+            </Link>
+          </div>
+
           <div className="flex gap-4 text-sm">
             <Link href="/">
               <FaFacebook />
