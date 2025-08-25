@@ -1,3 +1,6 @@
+export const runtime = "nodejs";
+export const dynamic = "force-dynamic"; // optional, avoids any caching
+
 import { NextResponse } from "next/server";
 import nodemailer from "nodemailer";
 
