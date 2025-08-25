@@ -235,7 +235,7 @@ const Page = () => {
                       Phone number
                     </label>
                     <Field
-                      type="number"
+                      type="tel"
                       id="phone"
                       name="phone"
                       className={`w-full bg-white rounded border ${
