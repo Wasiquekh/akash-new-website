@@ -98,7 +98,7 @@ const Page = () => {
           </h1>
           <p className="mx-auto leading-relaxed text-sm font-normal text-white inter-text text-center">
             Get in touch with us to explore how AS Business Consulting can help
-            your business grow and succeed.
+            your business grow and succeed
           </p>
         </div>
       </div>
