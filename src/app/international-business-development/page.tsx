@@ -91,7 +91,8 @@ const page = () => {
                   Logistics & Compliance
                 </p>
                 <p className=" inter-text text-start">
-                  certification, licensing, product sales, franchise programs.
+                  freight forwarding, customs clearance, transportation,
+                  packing.
                 </p>
               </div>
               <div className=" bg-[#FEF2FB] px-8 py-5 rounded mb-0">

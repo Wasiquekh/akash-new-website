@@ -142,7 +142,7 @@ const page = () => {
                 </p>
                 <p className=" text-sm inter-text">
                   Full-funnel campaigns (awareness → consideration →
-                  conversion), creative direction, media buying, and continuous
+                  conversion), creative direction, media buying, and continious
                   optimization.
                 </p>
               </div>
@@ -235,7 +235,7 @@ const page = () => {
                     <FaCheck className="rounded-full text-xl bg-primary text-white p-1" />
                   </div>
                   <h2 className="text-black text-base font-medium mb-0">
-                    Content & brand storytelling for teams
+                    Content & brand story telling for teams
                   </h2>
                 </div>
               </div>

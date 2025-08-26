@@ -294,7 +294,7 @@ const page = () => {
               Lean Manufacturing Consultants in India
             </p>
             <p className="text-base inter-text mb-6">
-              Driving operational excellence with lean principlesWe eliminate
+              Driving operational excellence with lean principles We eliminate
               waste and improve flow using Kaizen, 5S, Value Stream Mapping,
               line balancing, SMED, and standard work.Benefits of Lean:
             </p>
@@ -337,7 +337,7 @@ const page = () => {
               Cost Optimization for Businesses
             </p>
             <p className="text-base inter-text mb-3">
-              Strategies to maximize profitabilityWe look beyond simple cuts to
+              Strategies to maximize profitability We look beyond simple cuts to
               redesign cost drivers: analyze losses, target high-cost steps in
               manufacturing and logistics, and deploy technology-led fixes
               (digital work instructions, visual management, OEE tracking) that

@@ -74,7 +74,7 @@ export default function Home() {
             />
           </div>
           <div className="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
-            <h1 className="text-2xl sm:text-6xl   mb-4 font-bold text-primary">
+            <h1 className="text-2xl sm:text-6xl   mb-4 font-bold text-primary uppercase">
               About Us
             </h1>
             <p className="mb-8 leading-relaxed text-black inter-text">
@@ -551,7 +551,7 @@ export default function Home() {
                 </h2>
                 <p className="text-black text-sm mb-0">- BIS & OTR</p>
                 <p className="text-black text-sm mb-0">- NABL -ISO</p>
-                <p className="text-black text-sm mb-0">- Lean Mfg</p>
+                <p className="text-black text-sm mb-0">- Lean Manufacturing</p>
                 {/* <p className="text-black text-sm mb-0">
                   - Zed Certification -3rd Party Inspection
                 </p> */}

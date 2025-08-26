@@ -311,7 +311,8 @@ const page = () => {
                   Cost Innovation Module
                 </p>
                 <p className=" text-sm font-normal text-black inter-text text-center md:text-left">
-                  You can edit this text for your presentation
+                  Cost fundamentals, Intermediate: Lean tools, Advanced:
+                  Strategic cost management
                 </p>
               </div>
             </div>
@@ -332,7 +333,7 @@ const page = () => {
                   Rapid Supply China Improvement
                 </p>
                 <p className=" text-sm font-normal text-black inter-text text-center md:text-left">
-                  You can edit this text for your presentation
+                  Streamlined processes, reduced lead time, enhanced reliability
                 </p>
               </div>
             </div>
@@ -353,7 +354,8 @@ const page = () => {
                   Third Party Audit
                 </p>
                 <p className=" text-sm font-normal text-black inter-text text-center md:text-left">
-                  You can edit this text for your presentation
+                  Independent compliance check, risk mitigation, and performance
+                  improvement
                 </p>
               </div>
             </div>
@@ -374,7 +376,8 @@ const page = () => {
                   100 Day Renovation Program
                 </p>
                 <p className=" text-sm font-normal text-black inter-text text-center md:text-left">
-                  You can edit this text for your presentation
+                  Fast-track business transformation with measurable results in
+                  100 days
                 </p>
               </div>
             </div>

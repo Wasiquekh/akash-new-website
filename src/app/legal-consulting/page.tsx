@@ -123,7 +123,7 @@ const page = () => {
                     <FaCheck className="rounded-full text-xl bg-primary text-white p-1" />
                   </div>
                   <h2 className="text-black text-base font-medium mb-0">
-                    Licensing & technology/IP agreements; template libraries &
+                    Licensing & technology/IP agreements, template libraries &
                     playbooks
                   </h2>
                 </div>
@@ -270,7 +270,7 @@ const page = () => {
                     <FaCheck className="rounded-full text-xl bg-primary text-white p-1" />
                   </div>
                   <h2 className="text-black text-base font-medium mb-0">
-                    Statutory and process audits; gap analysis with corrective
+                    Statutory and process audits, gap analysis with corrective
                     action plans
                   </h2>
                 </div>
