@@ -34,6 +34,7 @@ const page = () => {
     <>
       {/* BreadcrumbList Schema (Home → HR) */}
       <Script
+        id="breadcrumb-schema-human-resource"
         type="application/ld+json"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify({
@@ -63,8 +64,9 @@ const page = () => {
         }}
       />
 
-      {/* WebPage Schema (no Service schema) */}
+      {/* WebPage Schema */}
       <Script
+        id="webpage-schema-human-resource"
         type="application/ld+json"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify({

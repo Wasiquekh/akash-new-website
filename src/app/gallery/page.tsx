@@ -33,6 +33,7 @@ const page = () => {
     <>
       {/* BreadcrumbList (Home → Gallery) */}
       <Script
+        id="breadcrumb-schema-gallery"
         type="application/ld+json"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify({
@@ -58,6 +59,7 @@ const page = () => {
 
       {/* ImageGallery schema (specialized CollectionPage for images) */}
       <Script
+        id="imagegallery-schema-gallery"
         type="application/ld+json"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify({

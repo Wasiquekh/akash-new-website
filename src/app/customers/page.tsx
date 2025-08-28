@@ -19,7 +19,9 @@ const page = () => {
   return (
     <>
       {/* BreadcrumbList (Home → Customers) */}
+      {/* BreadcrumbList (Home → Customers) */}
       <Script
+        id="breadcrumb-schema-customers"
         type="application/ld+json"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify({
@@ -45,6 +47,7 @@ const page = () => {
 
       {/* CollectionPage (Customers listing page) */}
       <Script
+        id="collectionpage-schema-customers"
         type="application/ld+json"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify({

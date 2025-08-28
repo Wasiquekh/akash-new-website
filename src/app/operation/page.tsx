@@ -20,6 +20,7 @@ const page = () => {
   return (
     <>
       <Script
+        id="breadcrumb-schema-operation"
         type="application/ld+json"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify({
@@ -50,6 +51,7 @@ const page = () => {
       />
 
       <Script
+        id="webpage-schema-operation"
         type="application/ld+json"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify({

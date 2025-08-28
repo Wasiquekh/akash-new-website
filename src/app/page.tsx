@@ -1,5 +1,4 @@
 import * as React from "react";
-import Head from "next/head";
 
 export const metadata = {
   title: "AS Business Consulting in India | Strategic Advisory – AS Business",
@@ -25,6 +24,7 @@ export default function Home() {
     <>
       {/* BreadcrumbList Schema (Home only) */}
       <Script
+        id="breadcrumb-schema"
         type="application/ld+json"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify({
@@ -44,6 +44,7 @@ export default function Home() {
 
       {/* WebSite Schema */}
       <Script
+        id="webpage-schema"
         type="application/ld+json"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify({
@@ -65,6 +66,7 @@ export default function Home() {
 
       {/* Organization Schema */}
       <Script
+        id="organization-schema"
         type="application/ld+json"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify({
@@ -78,8 +80,7 @@ export default function Home() {
           }),
         }}
       />
-      <Header/>
-
+      <Header />
 
       {/* HOME TOP SECTION */}
       <div className="bg-[url('/images/landingTop.png')] bg-cover bg-center h-auto md:h-[600px] w-full flex justify-center items-center">
@@ -103,14 +104,14 @@ export default function Home() {
       {/* CLINETNS LOGOS */}
       <div className=" w-full">
         <div className=" container grid grid-cols-3 md:grid-cols-[repeat(auto-fit,_minmax(100px,_1fr))] gap-4">
-          <img src="/images/c1.jpg" alt="Logo 1" />
-          <img src="/images/c2.jpg" alt="Logo 1" />
-          <img src="/images/c3.jpg" alt="Logo 1" />
-          <img src="/images/c4.jpg" alt="Logo 1" />
-          <img src="/images/c5.jpg" alt="Logo 1" />
-          <img src="/images/c6.jpg" alt="Logo 1" />
-          <img src="/images/c7.jpg" alt="Logo 1" />
-          <img src="/images/c8.jpg" alt="Logo 1" />
+          <Image src="/images/c1.jpg" alt="Logo 1" />
+          <Image src="/images/c2.jpg" alt="Logo 1" />
+          <Image src="/images/c3.jpg" alt="Logo 1" />
+          <Image src="/images/c4.jpg" alt="Logo 1" />
+          <Image src="/images/c5.jpg" alt="Logo 1" />
+          <Image src="/images/c6.jpg" alt="Logo 1" />
+          <Image src="/images/c7.jpg" alt="Logo 1" />
+          <Image src="/images/c8.jpg" alt="Logo 1" />
         </div>
       </div>
       {/* ABOUT SECTION */}
@@ -733,7 +734,7 @@ export default function Home() {
           <div className=" grid grid-cols-1 md:grid-cols-4 gap-6 md:gap-8">
             <div className="p-0">
               <div className="h-full flex flex-col items-center text-center">
-                {/* <img
+                {/* <Image
                   alt="team"
                   className="flex-shrink-0 rounded-lg w-[280px] h-[319px] object-cover object-center mb-4"
                   src="/images/Akash Shahane.png"
@@ -762,7 +763,7 @@ export default function Home() {
             </div>
             <div className="p-0">
               <div className="h-full flex flex-col items-center text-center">
-                {/* <img
+                {/* <Image
                   alt="team"
                   className="flex-shrink-0 rounded-lg w-[280px] h-[319px] object-cover object-center mb-4"
                   src="/images/Akash Shahane.png"
@@ -791,7 +792,7 @@ export default function Home() {
             </div>
             <div className="p-0">
               <div className="h-full flex flex-col items-center text-center">
-                {/* <img
+                {/* <Image
                   alt="team"
                   className="flex-shrink-0 rounded-lg w-[280px] h-[319px] object-cover object-center mb-4"
                   src="/images/Akash Shahane.png"
@@ -820,7 +821,7 @@ export default function Home() {
             </div>
             <div className="p-0">
               <div className="h-full flex flex-col items-center text-center">
-                {/* <img
+                {/* <Image
                   alt="team"
                   className="flex-shrink-0 rounded-lg w-[280px] h-[319px] object-cover object-center mb-4"
                   src="/images/Akash Shahane.png"
@@ -849,7 +850,7 @@ export default function Home() {
             </div>
             <div className="p-0">
               <div className="h-full flex flex-col items-center text-center">
-                {/* <img
+                {/* <Image
                   alt="team"
                   className="flex-shrink-0 rounded-lg w-[280px] h-[319px] object-cover object-center mb-4"
                   src="/images/Akash Shahane.png"
@@ -878,7 +879,7 @@ export default function Home() {
             </div>
             <div className="p-0">
               <div className="h-full flex flex-col items-center text-center">
-                {/* <img
+                {/* <Image
                   alt="team"
                   className="flex-shrink-0 rounded-lg w-[280px] h-[319px] object-cover object-center mb-4"
                   src="/images/Akash Shahane.png"
@@ -907,7 +908,7 @@ export default function Home() {
             </div>
             <div className="p-0">
               <div className="h-full flex flex-col items-center text-center">
-                {/* <img
+                {/* <Image
                   alt="team"
                   className="flex-shrink-0 rounded-lg w-[280px] h-[319px] object-cover object-center mb-4"
                   src="/images/Akash Shahane.png"
@@ -936,7 +937,7 @@ export default function Home() {
             </div>
             <div className="p-0">
               <div className="h-full flex flex-col items-center text-center">
-                {/* <img
+                {/* <Image
                   alt="team"
                   className="flex-shrink-0 rounded-lg w-[280px] h-[319px] object-cover object-center mb-4"
                   src="/images/Akash Shahane.png"

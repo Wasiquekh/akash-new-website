@@ -31,6 +31,7 @@ const page = () => {
     <>
       {/* BreadcrumbList (Home → Terms & Conditions) */}
       <Script
+        id="breadcrumb-schema-terms"
         type="application/ld+json"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify({
@@ -56,6 +57,7 @@ const page = () => {
 
       {/* WebPage schema for Terms */}
       <Script
+        id="webpage-schema-terms"
         type="application/ld+json"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify({
@@ -80,7 +82,7 @@ const page = () => {
           }),
         }}
       />
-
+      <Header />
       {/*  TOP SECTION Banner */}
       <div className="bg-[url('/images/services.jpg')] bg-cover bg-center">
         <div className=" max-w-7xl m-auto px-5  py-15 md:py-40">

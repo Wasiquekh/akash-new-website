@@ -20,6 +20,7 @@ const page = () => {
     <>
       {/* BreadcrumbList (Home → Our Services) */}
       <Script
+       id="breadcrumb-schema-our-services"
         type="application/ld+json"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify({
@@ -35,6 +36,7 @@ const page = () => {
 
       {/* CollectionPage + ItemList of service categories (no Service schema) */}
       <Script
+      id="webpage-schema-our-services"
         type="application/ld+json"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify({

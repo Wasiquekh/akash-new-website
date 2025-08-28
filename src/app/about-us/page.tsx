@@ -400,15 +400,15 @@ const Page = () => {
         </div>
       </section>
       <div className=" w-full">
-        <div className=" container grid grid-cols-3 md:grid-cols-[repeat(auto-fit,_minmax(100px,_1fr))] gap-4">
-          <img src="/images/c1.jpg" alt="Logo 1" />
-          <img src="/images/c2.jpg" alt="Logo 1" />
-          <img src="/images/c3.jpg" alt="Logo 1" />
-          <img src="/images/c4.jpg" alt="Logo 1" />
-          <img src="/images/c5.jpg" alt="Logo 1" />
-          <img src="/images/c6.jpg" alt="Logo 1" />
-          <img src="/images/c7.jpg" alt="Logo 1" />
-          <img src="/images/c8.jpg" alt="Logo 1" />
+        <div className="container grid grid-cols-3 md:grid-cols-[repeat(auto-fit,_minmax(100px,_1fr))] gap-4">
+          <Image src="/images/c1.jpg" alt="Logo 1" width={200} height={200} />
+          <Image src="/images/c2.jpg" alt="Logo 2" width={200} height={200} />
+          <Image src="/images/c3.jpg" alt="Logo 3" width={200} height={200} />
+          <Image src="/images/c4.jpg" alt="Logo 4" width={200} height={200} />
+          <Image src="/images/c5.jpg" alt="Logo 5" width={200} height={200} />
+          <Image src="/images/c6.jpg" alt="Logo 6" width={200} height={200} />
+          <Image src="/images/c7.jpg" alt="Logo 7" width={200} height={200} />
+          <Image src="/images/c8.jpg" alt="Logo 8" width={200} height={200} />
         </div>
       </div>
       {/* ABOUT SECTION */}

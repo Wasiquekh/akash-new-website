@@ -28,23 +28,39 @@ const page = () => {
     <>
       {/* BreadcrumbList Schema (Home → Sales & Marketing) */}
       <Script
-  type="application/ld+json"
-  dangerouslySetInnerHTML={{
-    __html: JSON.stringify({
-      "@context": "https://schema.org",
-      "@type": "BreadcrumbList",
-      itemListElement: [
-        { "@type": "ListItem", position: 1, name: "Home", item: "https://www.asbconsulting.in/" },
-        { "@type": "ListItem", position: 2, name: "Our Services", item: "https://www.asbconsulting.in/our-services" },
-        { "@type": "ListItem", position: 3, name: "Sales & Marketing", item: "https://www.asbconsulting.in/sales&26marketing" }
-      ],
-    }),
-  }}
-/>
-
+        id="breadcrumb-schema-sales-marketing"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            itemListElement: [
+              {
+                "@type": "ListItem",
+                position: 1,
+                name: "Home",
+                item: "https://www.asbconsulting.in/",
+              },
+              {
+                "@type": "ListItem",
+                position: 2,
+                name: "Our Services",
+                item: "https://www.asbconsulting.in/our-services",
+              },
+              {
+                "@type": "ListItem",
+                position: 3,
+                name: "Sales & Marketing",
+                item: "https://www.asbconsulting.in/sales&26marketing",
+              },
+            ],
+          }),
+        }}
+      />
 
       {/* WebPage Schema (no Service schema) */}
       <Script
+        id="webpage-schema-sales-marketing"
         type="application/ld+json"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify({

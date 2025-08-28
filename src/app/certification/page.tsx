@@ -16,57 +16,59 @@ import Script from "next/script";
 const page = () => {
   return (
     <>
-      <Script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "BreadcrumbList",
-            itemListElement: [
-              {
-                "@type": "ListItem",
-                position: 1,
-                name: "Home",
-                item: "https://www.asbconsulting.in/",
-              },
-              {
-                "@type": "ListItem",
-                position: 2,
-                name: "Our Services",
-                item: "https://www.asbconsulting.in/our-services",
-              },
-              {
-                "@type": "ListItem",
-                position: 3,
-                name: "Certification",
-                item: "https://www.asbconsulting.in/certification",
-              },
-            ],
-          }),
-        }}
-      />
+    <Script
+  id="breadcrumb-schema"
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{
+    __html: JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      itemListElement: [
+        {
+          "@type": "ListItem",
+          position: 1,
+          name: "Home",
+          item: "https://www.asbconsulting.in/",
+        },
+        {
+          "@type": "ListItem",
+          position: 2,
+          name: "Our Services",
+          item: "https://www.asbconsulting.in/our-services",
+        },
+        {
+          "@type": "ListItem",
+          position: 3,
+          name: "Certification",
+          item: "https://www.asbconsulting.in/certification",
+        },
+      ],
+    }),
+  }}
+/>
 
-      {/* WebPage Schema (no Service schema) */}
-      <Script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "WebPage",
-            "@id": "https://www.asbconsulting.in/certification#webpage",
-            url: "https://www.asbconsulting.in/certification",
-            name: "BIS, NABL & ISO Certification in India | QMS Experts – AS Business",
-            description:
-              "AS Business Consulting provides BIS, NABL, and ISO certification services in India, including QMS, inspections, and complete industry compliance support.",
-            isPartOf: {
-              "@type": "WebSite",
-              "@id": "https://www.asbconsulting.in/#website",
-              url: "https://www.asbconsulting.in/",
-              name: "AS Business Consulting",
-            },
-          }),
-        }}
-      />
+<Script
+  id="webpage-schema"
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{
+    __html: JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "@id": "https://www.asbconsulting.in/certification#webpage",
+      url: "https://www.asbconsulting.in/certification",
+      name: "BIS, NABL & ISO Certification in India | QMS Experts – AS Business",
+      description:
+        "AS Business Consulting provides BIS, NABL, and ISO certification services in India, including QMS, inspections, and complete industry compliance support.",
+      isPartOf: {
+        "@type": "WebSite",
+        "@id": "https://www.asbconsulting.in/#website",
+        url: "https://www.asbconsulting.in/",
+        name: "AS Business Consulting",
+      },
+    }),
+  }}
+/>
+
 
       <Header />
       {/*  TOP SECTION Banner */}
@@ -154,7 +156,7 @@ const page = () => {
 
             {/* Right Image Section */}
             <div className="w-full md:max-w-lg lg:w-full md:w-1/2">
-              <img
+              <Image
                 className="object-cover object-center rounded w-full"
                 alt="BIS Certification"
                 src="/images/BIS Certification Consultants in India.png"
@@ -168,7 +170,7 @@ const page = () => {
           <div className="mx-auto flex flex-col md:flex-row items-center gap-8">
             {/* Left Image Section */}
             <div className="w-full md:max-w-lg lg:w-full md:w-1/2 mb-10 md:mb-0">
-              <img
+              <Image
                 className="object-cover object-center rounded w-full"
                 alt="QMS Implementation"
                 src="/images/QMS Implementation for Quality Excellence.png" // replace later with your QMS image
@@ -225,7 +227,7 @@ const page = () => {
 
             {/* Right Image Section */}
             <div className="w-full md:max-w-lg lg:w-full md:w-1/2">
-              <img
+              <Image
                 className="object-cover object-center rounded w-full"
                 alt="ISO Consultants"
                 src="/images/ISO Consultants for Certification & Compliance.png" // same image for now
@@ -239,7 +241,7 @@ const page = () => {
           <div className="mx-auto flex flex-col md:flex-row items-center gap-8">
             {/* Left Image Section */}
             <div className="w-full md:max-w-lg lg:w-full md:w-1/2 mb-10 md:mb-0">
-              <img
+              <Image
                 className="object-cover object-center rounded w-full"
                 alt="AS Business Consulting"
                 src="/images/Why Choose AS Business Consulting for Certification Services.png" // replace later with actual image
