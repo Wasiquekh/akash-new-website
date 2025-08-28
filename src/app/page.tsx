@@ -1,34 +1,86 @@
 import * as React from "react";
+import Head from "next/head";
+
 export const metadata = {
   title: "AS Business Consulting in India | Strategic Advisory – AS Business",
   description:
     "AS Business Consulting delivers expert business solutions in India, offering strategic advisory and consulting services tailored for growth and long-term success.",
   alternates: {
-    canonical: "",
+    canonical: "https://www.asbconsulting.in/",
   },
 };
-
-//("use client");
 
 import Image from "next/image";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
-//import CountUp from "react-countup";
-//import { useInView } from "react-intersection-observer";
 import Link from "next/link";
 import { FaCircle, FaInstagram, FaStar, FaXTwitter } from "react-icons/fa6";
 import { MdOutlineFacebook } from "react-icons/md";
 import { RiDoubleQuotesL } from "react-icons/ri";
 import ContactFrom from "./components/ContactFrom";
+import Script from "next/script";
 
 export default function Home() {
-  // const { ref: counterRef, inView: counterInView } = useInView({
-  //   triggerOnce: true,
-  //   threshold: 0.5,
-  // });
   return (
     <>
-      <Header />
+      {/* BreadcrumbList Schema (Home only) */}
+      <Script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            itemListElement: [
+              {
+                "@type": "ListItem",
+                position: 1,
+                name: "Home",
+                item: "https://www.asbconsulting.in/",
+              },
+            ],
+          }),
+        }}
+      />
+
+      {/* WebSite Schema */}
+      <Script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "WebSite",
+            "@id": "https://www.asbconsulting.in/#website",
+            url: "https://www.asbconsulting.in/",
+            name: "AS Business Consulting",
+            publisher: { "@id": "https://www.asbconsulting.in/#organization" },
+            potentialAction: {
+              "@type": "SearchAction",
+              target:
+                "https://www.asbconsulting.in/search?q={search_term_string}",
+              "query-input": "required name=search_term_string",
+            },
+          }),
+        }}
+      />
+
+      {/* Organization Schema */}
+      <Script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "@id": "https://www.asbconsulting.in/#organization",
+            name: "AS Business Consulting",
+            url: "https://www.asbconsulting.in/",
+            // logo: "https://www.asbconsulting.in/logo.png", // ← add your actual logo URL if available
+            // sameAs: ["https://twitter.com/...", "https://www.linkedin.com/company/..."]
+          }),
+        }}
+      />
+      <Header/>
+
+
       {/* HOME TOP SECTION */}
       <div className="bg-[url('/images/landingTop.png')] bg-cover bg-center h-auto md:h-[600px] w-full flex justify-center items-center">
         <div className="container ">

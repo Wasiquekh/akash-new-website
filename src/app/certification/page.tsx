@@ -11,10 +11,63 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 import Image from "next/image";
 import ContactFrom from "../components/ContactFrom";
+import Script from "next/script";
 
 const page = () => {
   return (
     <>
+      <Script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            itemListElement: [
+              {
+                "@type": "ListItem",
+                position: 1,
+                name: "Home",
+                item: "https://www.asbconsulting.in/",
+              },
+              {
+                "@type": "ListItem",
+                position: 2,
+                name: "Our Services",
+                item: "https://www.asbconsulting.in/our-services",
+              },
+              {
+                "@type": "ListItem",
+                position: 3,
+                name: "Certification",
+                item: "https://www.asbconsulting.in/certification",
+              },
+            ],
+          }),
+        }}
+      />
+
+      {/* WebPage Schema (no Service schema) */}
+      <Script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "WebPage",
+            "@id": "https://www.asbconsulting.in/certification#webpage",
+            url: "https://www.asbconsulting.in/certification",
+            name: "BIS, NABL & ISO Certification in India | QMS Experts – AS Business",
+            description:
+              "AS Business Consulting provides BIS, NABL, and ISO certification services in India, including QMS, inspections, and complete industry compliance support.",
+            isPartOf: {
+              "@type": "WebSite",
+              "@id": "https://www.asbconsulting.in/#website",
+              url: "https://www.asbconsulting.in/",
+              name: "AS Business Consulting",
+            },
+          }),
+        }}
+      />
+
       <Header />
       {/*  TOP SECTION Banner */}
       <div className="bg-[url('/images/services.jpg')] bg-cover bg-center">

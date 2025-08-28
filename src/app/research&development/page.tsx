@@ -1,22 +1,51 @@
 import * as React from "react";
+import Script from "next/script";
+
 export const metadata = {
   title: "R&D & Product Design Services in India | CAD CAM – AS Business",
   description:
     "Accelerate innovation with AS Business Consulting’s product design, CAD CAM outsourcing, engineering drafting, reverse engineering, and prototype development services.",
   alternates: {
-    canonical: "",
+    canonical: "https://www.asbconsulting.in/research&development",
   },
 };
+
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import { FaCheck, FaCircleCheck } from "react-icons/fa6";
 import Image from "next/image";
 import ContactFrom from "../components/ContactFrom";
 
-const page = () => {
+const Page = () => {
   return (
     <>
+<Script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{
+    __html: JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      itemListElement: [
+        { "@type": "ListItem", position: 1, name: "Home", item: "https://www.asbconsulting.in/" },
+        { "@type": "ListItem", position: 2, name: "Our Services", item: "https://www.asbconsulting.in/our-services" },
+        { "@type": "ListItem", position: 3, name: "R&D & Product Design", item: "https://www.asbconsulting.in/research&26development" }
+      ],
+    }),
+  }}
+/>
+
+<Script type="application/ld+json" dangerouslySetInnerHTML={{
+  __html: JSON.stringify({
+    "@context":"https://schema.org","@type":"WebPage",
+    "@id":"https://www.asbconsulting.in/research&development#webpage",
+    url:"https://www.asbconsulting.in/research&development",
+    name:"R&D & Product Design Services in India | CAD CAM – AS Business",
+    description:"Accelerate innovation with AS Business Consulting’s product design, CAD/CAM outsourcing, engineering drafting, reverse engineering, and prototype development services.",
+    isPartOf:{ "@type":"WebSite","@id":"https://www.asbconsulting.in/#website",url:"https://www.asbconsulting.in/",name:"AS Business Consulting" }
+  })
+}} />
       <Header />
+
       {/*  TOP SECTION Banner */}
       <div className="bg-[url('/images/research-banner.jpg')] bg-cover bg-center">
         <div className=" max-w-7xl m-auto px-5  py-15 md:py-40">
@@ -524,4 +553,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;

@@ -1,12 +1,15 @@
 import * as React from "react";
+import Script from "next/script";
+
 export const metadata = {
   title: "Lean Manufacturing & ZED Certification in India – AS Business",
   description:
     "Boost efficiency with AS Business Consulting’s lean manufacturing consultants in India, offering ZED certification, reverse engineering, and supply chain optimization.",
   alternates: {
-    canonical: "",
+    canonical: "https://www.asbconsulting.in/operation",
   },
 };
+
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import Image from "next/image";
@@ -16,7 +19,59 @@ import { FaCheck } from "react-icons/fa6";
 const page = () => {
   return (
     <>
+      <Script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            itemListElement: [
+              {
+                "@type": "ListItem",
+                position: 1,
+                name: "Home",
+                item: "https://www.asbconsulting.in/",
+              },
+              {
+                "@type": "ListItem",
+                position: 2,
+                name: "Our Services",
+                item: "https://www.asbconsulting.in/our-services",
+              },
+              {
+                "@type": "ListItem",
+                position: 3,
+                name: "Operations (Lean & ZED)",
+                item: "https://www.asbconsulting.in/operation",
+              },
+            ],
+          }),
+        }}
+      />
+
+      <Script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "WebPage",
+            "@id": "https://www.asbconsulting.in/operation#webpage",
+            url: "https://www.asbconsulting.in/operation",
+            name: "Lean Manufacturing & ZED Certification in India – AS Business",
+            description:
+              "Boost efficiency with AS Business Consulting’s lean manufacturing consultants in India, offering ZED certification, reverse engineering, and supply chain optimization.",
+            isPartOf: {
+              "@type": "WebSite",
+              "@id": "https://www.asbconsulting.in/#website",
+              url: "https://www.asbconsulting.in/",
+              name: "AS Business Consulting",
+            },
+          }),
+        }}
+      />
+
       <Header />
+
       {/*  TOP SECTION Banner */}
       <div className="bg-[url('/images/services.jpg')] bg-cover bg-center">
         <div className=" max-w-7xl m-auto px-5  py-15 md:py-40">

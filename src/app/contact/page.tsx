@@ -10,6 +10,14 @@ import Image from "next/image";
 import { FiInstagram } from "react-icons/fi";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import Script from "next/script";
+import Head from "next/head";
+
+const CANONICAL = "https://www.asbconsulting.in/contact";
+const TITLE =
+  "Contact AS Business Consulting | Talk to Consulting Experts in India";
+const DESCRIPTION =
+  "Have a question or need a proposal? Contact AS Business Consulting for strategy, operations, R&D, international business, HR, legal, certification, and B2B marketing support.";
 
 // ---------- Form Types ----------
 interface FormValues {
@@ -87,6 +95,83 @@ const Page = () => {
 
   return (
     <>
+      <Head>
+        <title>{TITLE}</title>
+        <meta name="description" content={DESCRIPTION} />
+        <link rel="canonical" href={CANONICAL} />
+        <meta
+          name="robots"
+          content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1"
+        />
+
+        {/* Open Graph / Twitter */}
+        <meta property="og:type" content="website" />
+        <meta property="og:site_name" content="AS Business Consulting" />
+        <meta property="og:title" content={TITLE} />
+        <meta property="og:description" content={DESCRIPTION} />
+        <meta property="og:url" content={CANONICAL} />
+        {/* If you have a social preview image, uncomment and set it
+        <meta property="og:image" content="https://www.asbconsulting.in/og-image.jpg" />
+        <meta name="twitter:image" content="https://www.asbconsulting.in/og-image.jpg" />
+        */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content={TITLE} />
+        <meta name="twitter:description" content={DESCRIPTION} />
+      </Head>
+
+      {/* BreadcrumbList (Home → Contact) */}
+      <Script
+        id="ld-breadcrumbs"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            itemListElement: [
+              {
+                "@type": "ListItem",
+                position: 1,
+                name: "Home",
+                item: "https://www.asbconsulting.in/",
+              },
+              {
+                "@type": "ListItem",
+                position: 2,
+                name: "Contact",
+                item: CANONICAL,
+              },
+            ],
+          }),
+        }}
+      />
+
+      {/* ContactPage schema */}
+      <Script
+        id="ld-contactpage"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "ContactPage",
+            "@id": `${CANONICAL}#contact`,
+            url: CANONICAL,
+            name: "Contact AS Business Consulting",
+            description: DESCRIPTION,
+            inLanguage: "en-IN",
+            isPartOf: {
+              "@type": "WebSite",
+              "@id": "https://www.asbconsulting.in/#website",
+              url: "https://www.asbconsulting.in/",
+              name: "AS Business Consulting",
+            },
+            about: { "@id": "https://www.asbconsulting.in/#organization" },
+            potentialAction: {
+              "@type": "ContactAction",
+              target: `${CANONICAL}#contact-form`, // add id="contact-form" to your form wrapper
+            },
+          }),
+        }}
+      />
       <ToastContainer />
       <Header />
 
