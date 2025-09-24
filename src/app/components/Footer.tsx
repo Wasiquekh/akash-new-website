@@ -24,8 +24,7 @@ const Footer = () => {
               />
             </Link>
             <p className="mt-5 text-white text-xs font-light">
-              We provide top-quality HVAC services tailored to your needs,
-              ensuring comfort and satisfaction with reliable solutions.
+            We deliver innovative business consulting solutions that empower growth, efficiency, and long-term success across diverse industries.
             </p>
           </div>
 
