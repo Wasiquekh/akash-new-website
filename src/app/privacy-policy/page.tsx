@@ -1,10 +1,78 @@
 import React from "react";
+import Script from "next/script";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 
+export const metadata = {
+  title: "Privacy Policy | AS Business Consulting",
+  description:
+    "Learn how AS Business Consulting collects, uses, and protects your personal data. Read about cookies, analytics, third-party processors, data retention, security measures, and your rights in India.",
+  alternates: {
+    canonical: "https://www.asbconsulting.in/privacy-policy",
+  },
+  openGraph: {
+    title: "Privacy Policy | AS Business Consulting",
+    description:
+      "How AS Business Consulting handles your personal information: collection, use, cookies, analytics, retention, and your rights in India.",
+    url: "https://www.asbconsulting.in/privacy-policy",
+    siteName: "AS Business Consulting",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Privacy Policy | AS Business Consulting",
+    description:
+      "Understand our practices for data collection, cookies, analytics, retention, and user rights in India.",
+  },
+};
+
 const page = () => {
   return (
-    <div>
+    <>
+      {/* BreadcrumbList (Home → Privacy Policy) */}
+      <Script
+        id="ld-breadcrumbs"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            itemListElement: [
+              { "@type": "ListItem", position: 1, name: "Home", item: "https://www.asbconsulting.in/" },
+              { "@type": "ListItem", position: 2, name: "Privacy Policy", item: "https://www.asbconsulting.in/privacy-policy" },
+            ],
+          }),
+        }}
+      />
+
+      {/* PrivacyPolicy schema */}
+      <Script
+        id="ld-privacy"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "PrivacyPolicy",
+            "@id": "https://www.asbconsulting.in/privacy-policy#policy",
+            url: "https://www.asbconsulting.in/privacy-policy",
+            name: "Privacy Policy | AS Business Consulting",
+            description:
+              "AS Business Consulting’s Privacy Policy explains how we collect, use, disclose, and safeguard personal information, including cookies, analytics, data retention, security, and user rights in India.",
+            inLanguage: "en-IN",
+            isPartOf: {
+              "@type": "WebSite",
+              "@id": "https://www.asbconsulting.in/#website",
+              url: "https://www.asbconsulting.in/",
+              name: "AS Business Consulting",
+            },
+            about: { "@id": "https://www.asbconsulting.in/#organization" },
+            // You can add dates if you track them:
+            // datePublished: "2025-01-01",
+            // dateModified: "2025-08-28"
+          }),
+        }}
+      />
+
       <Header />
       {/*  TOP SECTION Banner */}
       <div className="bg-[url('/images/services.jpg')] bg-cover bg-center">
@@ -242,7 +310,7 @@ const page = () => {
         </div>
       </section>
       <Footer />
-    </div>
+    </>
   );
 };
 

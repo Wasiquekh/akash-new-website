@@ -1,12 +1,15 @@
 import * as React from "react";
+import Script from "next/script";
+
 export const metadata = {
   title: "HR Consulting in India | Recruitment & Engagement – AS Business",
   description:
     "AS Business Consulting provides expert HR services in India, including recruitment, policy audits, employee engagement, and campus placement consulting solutions.",
   alternates: {
-    canonical: "",
+    canonical: "https://www.asbconsulting.in/human-resource",
   },
 };
+
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import { FaCheck, FaUserTie } from "react-icons/fa6";
@@ -29,6 +32,61 @@ import { PiReadCvLogoLight } from "react-icons/pi";
 const page = () => {
   return (
     <>
+      {/* BreadcrumbList Schema (Home → HR) */}
+      <Script
+        id="breadcrumb-schema-human-resource"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            itemListElement: [
+              {
+                "@type": "ListItem",
+                position: 1,
+                name: "Home",
+                item: "https://www.asbconsulting.in/",
+              },
+              {
+                "@type": "ListItem",
+                position: 2,
+                name: "Our Services",
+                item: "https://www.asbconsulting.in/our-services",
+              },
+              {
+                "@type": "ListItem",
+                position: 3,
+                name: "Human Resource (HR) Consulting",
+                item: "https://www.asbconsulting.in/human-resource",
+              },
+            ],
+          }),
+        }}
+      />
+
+      {/* WebPage Schema */}
+      <Script
+        id="webpage-schema-human-resource"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "WebPage",
+            "@id": "https://www.asbconsulting.in/human-resource#webpage",
+            url: "https://www.asbconsulting.in/human-resource",
+            name: "HR Consulting in India | Recruitment & Engagement – AS Business",
+            description:
+              "AS Business Consulting provides expert HR services in India, including recruitment, policy audits, employee engagement, and campus placement consulting solutions.",
+            isPartOf: {
+              "@type": "WebSite",
+              "@id": "https://www.asbconsulting.in/#website",
+              url: "https://www.asbconsulting.in/",
+              name: "AS Business Consulting",
+            },
+          }),
+        }}
+      />
+
       <Header />
       {/*  TOP SECTION Banner */}
       <div className="bg-[url('/images/human-resource.jpg')] bg-cover bg-center">

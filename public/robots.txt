@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://www.asbconsulting.in
+
+# Sitemaps
+Sitemap: https://www.asbconsulting.in/sitemap.xml

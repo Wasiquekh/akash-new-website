@@ -1,19 +1,20 @@
 import * as React from "react";
+import Script from "next/script";
+
 export const metadata = {
   title: "About Business Consultants in India | Company Profile – AS Business",
   description:
     "Learn about AS Business Consulting, a leading consulting firm in India. Discover our leadership, mission, values, and professional profile for business success.",
   alternates: {
-    canonical: "",
+    canonical: "https://www.asbconsulting.in/about-us",
   },
 };
+
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import Image from "next/image";
 import ContactFrom from "../components/ContactFrom";
-import Link from "next/link";
 import {
-  FaCheck,
   FaCircle,
   FaCircleCheck,
   FaInstagram,
@@ -21,9 +22,58 @@ import {
 } from "react-icons/fa6";
 import { MdOutlineFacebook } from "react-icons/md";
 
-const page = () => {
+const Page = () => {
   return (
     <>
+      {/* BreadcrumbList Schema */}
+      <Script
+        id="breadcrumb-schema"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            itemListElement: [
+              {
+                "@type": "ListItem",
+                position: 1,
+                name: "Home",
+                item: "https://www.asbconsulting.in/",
+              },
+              {
+                "@type": "ListItem",
+                position: 2,
+                name: "About Us",
+                item: "https://www.asbconsulting.in/about-us",
+              },
+            ],
+          }),
+        }}
+      />
+
+      {/* Organization Schema */}
+      <Script
+        id="organization-schema"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "@id": "https://www.asbconsulting.in/#organization",
+            name: "AS Business Consulting",
+            url: "https://www.asbconsulting.in/",
+            description:
+              "AS Business Consulting is a trusted consulting firm in India, providing strategic advisory and growth-focused business consulting solutions.",
+            logo: "https://www.asbconsulting.in/logo.png",
+            sameAs: [
+              "https://www.facebook.com/yourpage",
+              "https://twitter.com/yourprofile",
+              "https://www.instagram.com/yourprofile",
+            ],
+          }),
+        }}
+      />
+
       <Header />
       {/*  TOP SECTION Banner */}
       <div className="bg-[url('/images/services.jpg')] bg-cover bg-center">
@@ -350,15 +400,15 @@ const page = () => {
         </div>
       </section>
       <div className=" w-full">
-        <div className=" container grid grid-cols-3 md:grid-cols-[repeat(auto-fit,_minmax(100px,_1fr))] gap-4">
-          <img src="/images/c1.jpg" alt="Logo 1" />
-          <img src="/images/c2.jpg" alt="Logo 1" />
-          <img src="/images/c3.jpg" alt="Logo 1" />
-          <img src="/images/c4.jpg" alt="Logo 1" />
-          <img src="/images/c5.jpg" alt="Logo 1" />
-          <img src="/images/c6.jpg" alt="Logo 1" />
-          <img src="/images/c7.jpg" alt="Logo 1" />
-          <img src="/images/c8.jpg" alt="Logo 1" />
+        <div className="container grid grid-cols-3 md:grid-cols-[repeat(auto-fit,_minmax(100px,_1fr))] gap-4">
+          <Image src="/images/c1.jpg" alt="Logo 1" width={200} height={200} />
+          <Image src="/images/c2.jpg" alt="Logo 2" width={200} height={200} />
+          <Image src="/images/c3.jpg" alt="Logo 3" width={200} height={200} />
+          <Image src="/images/c4.jpg" alt="Logo 4" width={200} height={200} />
+          <Image src="/images/c5.jpg" alt="Logo 5" width={200} height={200} />
+          <Image src="/images/c6.jpg" alt="Logo 6" width={200} height={200} />
+          <Image src="/images/c7.jpg" alt="Logo 7" width={200} height={200} />
+          <Image src="/images/c8.jpg" alt="Logo 8" width={200} height={200} />
         </div>
       </div>
       {/* ABOUT SECTION */}
@@ -841,4 +891,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;

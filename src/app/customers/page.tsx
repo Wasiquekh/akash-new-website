@@ -1,13 +1,73 @@
 import React from "react";
+import Script from "next/script";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import Image from "next/image";
 import ContactFrom from "../components/ContactFrom";
 import Link from "next/link";
 
+export const metadata = {
+  title: "Our Clients & Case Studies in India | AS Business",
+  description:
+    "Explore AS Business Consulting’s customers across industries. Browse clients, case studies, sectors served, and measurable outcomes from real engagements.",
+  alternates: {
+    canonical: "https://www.asbconsulting.in/customers",
+  },
+};
+
 const page = () => {
   return (
     <>
+      {/* BreadcrumbList (Home → Customers) */}
+      {/* BreadcrumbList (Home → Customers) */}
+      <Script
+        id="breadcrumb-schema-customers"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            itemListElement: [
+              {
+                "@type": "ListItem",
+                position: 1,
+                name: "Home",
+                item: "https://www.asbconsulting.in/",
+              },
+              {
+                "@type": "ListItem",
+                position: 2,
+                name: "Customers",
+                item: "https://www.asbconsulting.in/customers",
+              },
+            ],
+          }),
+        }}
+      />
+
+      {/* CollectionPage (Customers listing page) */}
+      <Script
+        id="collectionpage-schema-customers"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "CollectionPage",
+            "@id": "https://www.asbconsulting.in/customers#page",
+            url: "https://www.asbconsulting.in/customers",
+            name: "Our Clients & Case Studies in India | AS Business",
+            description:
+              "AS Business Consulting’s customer portfolio: clients, industries served, and case studies with outcomes.",
+            isPartOf: {
+              "@type": "WebSite",
+              "@id": "https://www.asbconsulting.in/#website",
+              url: "https://www.asbconsulting.in/",
+              name: "AS Business Consulting",
+            },
+          }),
+        }}
+      />
+
       <Header />
       {/*  TOP SECTION Banner */}
       <div className="bg-[url('/images/services.jpg')] bg-cover bg-center">

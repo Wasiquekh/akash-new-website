@@ -1,10 +1,87 @@
 import React from "react";
+import Script from "next/script";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 
+export const metadata = {
+  title: "Terms & Conditions | AS Business Consulting",
+  description:
+    "Read AS Business Consulting’s Terms & Conditions covering website use, services, intellectual property, disclaimers, liability limits, and governing law in India.",
+  alternates: {
+    canonical: "https://www.asbconsulting.in/terms",
+  },
+  openGraph: {
+    title: "Terms & Conditions | AS Business Consulting",
+    description:
+      "AS Business Consulting’s Terms & Conditions for website use, services, IP, disclaimers, liability, and governing law in India.",
+    url: "https://www.asbconsulting.in/terms",
+    siteName: "AS Business Consulting",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Terms & Conditions | AS Business Consulting",
+    description:
+      "AS Business Consulting’s Terms & Conditions for website use, services, IP, disclaimers, liability, and governing law in India.",
+  },
+};
+
 const page = () => {
   return (
-    <div>
+    <>
+      {/* BreadcrumbList (Home → Terms & Conditions) */}
+      <Script
+        id="breadcrumb-schema-terms"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            itemListElement: [
+              {
+                "@type": "ListItem",
+                position: 1,
+                name: "Home",
+                item: "https://www.asbconsulting.in/",
+              },
+              {
+                "@type": "ListItem",
+                position: 2,
+                name: "Terms & Conditions",
+                item: "https://www.asbconsulting.in/terms",
+              },
+            ],
+          }),
+        }}
+      />
+
+      {/* WebPage schema for Terms */}
+      <Script
+        id="webpage-schema-terms"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "WebPage",
+            "@id": "https://www.asbconsulting.in/terms#webpage",
+            url: "https://www.asbconsulting.in/terms",
+            name: "Terms & Conditions | AS Business Consulting",
+            description:
+              "Terms & Conditions that govern the use of AS Business Consulting’s website and services in India, including intellectual property, disclaimers, and limitations of liability.",
+            inLanguage: "en-IN",
+            isPartOf: {
+              "@type": "WebSite",
+              "@id": "https://www.asbconsulting.in/#website",
+              url: "https://www.asbconsulting.in/",
+              name: "AS Business Consulting",
+            },
+            about: { "@id": "https://www.asbconsulting.in/#organization" },
+            // Optional if you track updates:
+            // datePublished: "2025-01-01",
+            // dateModified: "2025-08-28",
+          }),
+        }}
+      />
       <Header />
       {/*  TOP SECTION Banner */}
       <div className="bg-[url('/images/services.jpg')] bg-cover bg-center">
@@ -529,7 +606,7 @@ const page = () => {
         </div>
       </section>
       <Footer />
-    </div>
+    </>
   );
 };
 

@@ -1,12 +1,15 @@
 import * as React from "react";
+import Script from "next/script";
+
 export const metadata = {
   title: "Corporate Legal Advisory in India | Compliance – AS Business",
   description:
     "AS Business Consulting delivers corporate legal advisory in India, offering compliance, contract drafting, and cyber law consulting to protect your business.",
   alternates: {
-    canonical: "",
+    canonical: "https://www.asbconsulting.in/legal-consulting",
   },
 };
+
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import { FaCheck } from "react-icons/fa6";
@@ -16,7 +19,62 @@ import ContactFrom from "../components/ContactFrom";
 const page = () => {
   return (
     <>
+      <Script
+       id="breadcrumb-schema-legal-consulting"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            itemListElement: [
+              {
+                "@type": "ListItem",
+                position: 1,
+                name: "Home",
+                item: "https://www.asbconsulting.in/",
+              },
+              {
+                "@type": "ListItem",
+                position: 2,
+                name: "Our Services",
+                item: "https://www.asbconsulting.in/our-services",
+              },
+              {
+                "@type": "ListItem",
+                position: 3,
+                name: "Legal Consulting",
+                item: "https://www.asbconsulting.in/legal-consulting",
+              },
+            ],
+          }),
+        }}
+      />
+
+      {/* WebPage Schema (no Service schema) */}
+      <Script
+      id="webpage-schema-legal-consulting"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "WebPage",
+            "@id": "https://www.asbconsulting.in/legal-consulting#webpage",
+            url: "https://www.asbconsulting.in/legal-consulting",
+            name: "Corporate Legal Advisory in India | Compliance – AS Business",
+            description:
+              "AS Business Consulting delivers corporate legal advisory in India, offering compliance, contract drafting, and cyber law consulting to protect your business.",
+            isPartOf: {
+              "@type": "WebSite",
+              "@id": "https://www.asbconsulting.in/#website",
+              url: "https://www.asbconsulting.in/",
+              name: "AS Business Consulting",
+            },
+          }),
+        }}
+      />
+
       <Header />
+
       {/*  TOP SECTION Banner */}
       <div className="bg-[url('/images/legal-consulting.jpg')] bg-cover bg-center">
         <div className=" max-w-7xl m-auto px-5 py-15 md:py-40">

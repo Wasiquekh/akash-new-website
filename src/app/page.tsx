@@ -1,34 +1,87 @@
 import * as React from "react";
+
 export const metadata = {
   title: "AS Business Consulting in India | Strategic Advisory – AS Business",
   description:
     "AS Business Consulting delivers expert business solutions in India, offering strategic advisory and consulting services tailored for growth and long-term success.",
   alternates: {
-    canonical: "",
+    canonical: "https://www.asbconsulting.in/",
   },
 };
-
-//("use client");
 
 import Image from "next/image";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
-//import CountUp from "react-countup";
-//import { useInView } from "react-intersection-observer";
 import Link from "next/link";
 import { FaCircle, FaInstagram, FaStar, FaXTwitter } from "react-icons/fa6";
 import { MdOutlineFacebook } from "react-icons/md";
 import { RiDoubleQuotesL } from "react-icons/ri";
 import ContactFrom from "./components/ContactFrom";
+import Script from "next/script";
 
 export default function Home() {
-  // const { ref: counterRef, inView: counterInView } = useInView({
-  //   triggerOnce: true,
-  //   threshold: 0.5,
-  // });
   return (
     <>
+      {/* BreadcrumbList Schema (Home only) */}
+      <Script
+        id="breadcrumb-schema"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            itemListElement: [
+              {
+                "@type": "ListItem",
+                position: 1,
+                name: "Home",
+                item: "https://www.asbconsulting.in/",
+              },
+            ],
+          }),
+        }}
+      />
+
+      {/* WebSite Schema */}
+      <Script
+        id="webpage-schema"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "WebSite",
+            "@id": "https://www.asbconsulting.in/#website",
+            url: "https://www.asbconsulting.in/",
+            name: "AS Business Consulting",
+            publisher: { "@id": "https://www.asbconsulting.in/#organization" },
+            potentialAction: {
+              "@type": "SearchAction",
+              target:
+                "https://www.asbconsulting.in/search?q={search_term_string}",
+              "query-input": "required name=search_term_string",
+            },
+          }),
+        }}
+      />
+
+      {/* Organization Schema */}
+      <Script
+        id="organization-schema"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "@id": "https://www.asbconsulting.in/#organization",
+            name: "AS Business Consulting",
+            url: "https://www.asbconsulting.in/",
+            // logo: "https://www.asbconsulting.in/logo.png", // ← add your actual logo URL if available
+            // sameAs: ["https://twitter.com/...", "https://www.linkedin.com/company/..."]
+          }),
+        }}
+      />
       <Header />
+
       {/* HOME TOP SECTION */}
       <div className="bg-[url('/images/landingTop.png')] bg-cover bg-center h-auto md:h-[600px] w-full flex justify-center items-center">
         <div className="container ">
@@ -51,14 +104,14 @@ export default function Home() {
       {/* CLINETNS LOGOS */}
       <div className=" w-full">
         <div className=" container grid grid-cols-3 md:grid-cols-[repeat(auto-fit,_minmax(100px,_1fr))] gap-4">
-          <img src="/images/c1.jpg" alt="Logo 1" />
-          <img src="/images/c2.jpg" alt="Logo 1" />
-          <img src="/images/c3.jpg" alt="Logo 1" />
-          <img src="/images/c4.jpg" alt="Logo 1" />
-          <img src="/images/c5.jpg" alt="Logo 1" />
-          <img src="/images/c6.jpg" alt="Logo 1" />
-          <img src="/images/c7.jpg" alt="Logo 1" />
-          <img src="/images/c8.jpg" alt="Logo 1" />
+          <Image src="/images/c1.jpg" alt="Logo 1" />
+          <Image src="/images/c2.jpg" alt="Logo 1" />
+          <Image src="/images/c3.jpg" alt="Logo 1" />
+          <Image src="/images/c4.jpg" alt="Logo 1" />
+          <Image src="/images/c5.jpg" alt="Logo 1" />
+          <Image src="/images/c6.jpg" alt="Logo 1" />
+          <Image src="/images/c7.jpg" alt="Logo 1" />
+          <Image src="/images/c8.jpg" alt="Logo 1" />
         </div>
       </div>
       {/* ABOUT SECTION */}
@@ -681,7 +734,7 @@ export default function Home() {
           <div className=" grid grid-cols-1 md:grid-cols-4 gap-6 md:gap-8">
             <div className="p-0">
               <div className="h-full flex flex-col items-center text-center">
-                {/* <img
+                {/* <Image
                   alt="team"
                   className="flex-shrink-0 rounded-lg w-[280px] h-[319px] object-cover object-center mb-4"
                   src="/images/Akash Shahane.png"
@@ -710,7 +763,7 @@ export default function Home() {
             </div>
             <div className="p-0">
               <div className="h-full flex flex-col items-center text-center">
-                {/* <img
+                {/* <Image
                   alt="team"
                   className="flex-shrink-0 rounded-lg w-[280px] h-[319px] object-cover object-center mb-4"
                   src="/images/Akash Shahane.png"
@@ -739,7 +792,7 @@ export default function Home() {
             </div>
             <div className="p-0">
               <div className="h-full flex flex-col items-center text-center">
-                {/* <img
+                {/* <Image
                   alt="team"
                   className="flex-shrink-0 rounded-lg w-[280px] h-[319px] object-cover object-center mb-4"
                   src="/images/Akash Shahane.png"
@@ -768,7 +821,7 @@ export default function Home() {
             </div>
             <div className="p-0">
               <div className="h-full flex flex-col items-center text-center">
-                {/* <img
+                {/* <Image
                   alt="team"
                   className="flex-shrink-0 rounded-lg w-[280px] h-[319px] object-cover object-center mb-4"
                   src="/images/Akash Shahane.png"
@@ -797,7 +850,7 @@ export default function Home() {
             </div>
             <div className="p-0">
               <div className="h-full flex flex-col items-center text-center">
-                {/* <img
+                {/* <Image
                   alt="team"
                   className="flex-shrink-0 rounded-lg w-[280px] h-[319px] object-cover object-center mb-4"
                   src="/images/Akash Shahane.png"
@@ -826,7 +879,7 @@ export default function Home() {
             </div>
             <div className="p-0">
               <div className="h-full flex flex-col items-center text-center">
-                {/* <img
+                {/* <Image
                   alt="team"
                   className="flex-shrink-0 rounded-lg w-[280px] h-[319px] object-cover object-center mb-4"
                   src="/images/Akash Shahane.png"
@@ -855,7 +908,7 @@ export default function Home() {
             </div>
             <div className="p-0">
               <div className="h-full flex flex-col items-center text-center">
-                {/* <img
+                {/* <Image
                   alt="team"
                   className="flex-shrink-0 rounded-lg w-[280px] h-[319px] object-cover object-center mb-4"
                   src="/images/Akash Shahane.png"
@@ -884,7 +937,7 @@ export default function Home() {
             </div>
             <div className="p-0">
               <div className="h-full flex flex-col items-center text-center">
-                {/* <img
+                {/* <Image
                   alt="team"
                   className="flex-shrink-0 rounded-lg w-[280px] h-[319px] object-cover object-center mb-4"
                   src="/images/Akash Shahane.png"

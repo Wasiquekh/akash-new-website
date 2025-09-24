@@ -1,13 +1,87 @@
 import React from "react";
+import Script from "next/script";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
-//import { FaCheck } from "react-icons/fa6";
 import Image from "next/image";
 import ContactFrom from "../components/ContactFrom";
+
+export const metadata = {
+  title: "Project Gallery & Client Work in India | AS Business Consulting",
+  description:
+    "Browse AS Business Consulting’s project gallery: operations improvements, R&D prototypes, certifications, international business events, HR trainings, and B2B marketing launches.",
+  alternates: {
+    canonical: "https://www.asbconsulting.in/gallery",
+  },
+  openGraph: {
+    title: "Project Gallery & Client Work in India | AS Business Consulting",
+    description:
+      "Browse AS Business Consulting’s project gallery: operations improvements, R&D prototypes, certifications, international business events, HR trainings, and B2B marketing launches.",
+    url: "https://www.asbconsulting.in/gallery",
+    siteName: "AS Business Consulting",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Project Gallery & Client Work in India | AS Business Consulting",
+    description:
+      "Browse AS Business Consulting’s project gallery: operations improvements, R&D prototypes, certifications, international business events, HR trainings, and B2B marketing launches.",
+  },
+};
 
 const page = () => {
   return (
     <>
+      {/* BreadcrumbList (Home → Gallery) */}
+      <Script
+        id="breadcrumb-schema-gallery"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            itemListElement: [
+              {
+                "@type": "ListItem",
+                position: 1,
+                name: "Home",
+                item: "https://www.asbconsulting.in/",
+              },
+              {
+                "@type": "ListItem",
+                position: 2,
+                name: "Gallery",
+                item: "https://www.asbconsulting.in/gallery",
+              },
+            ],
+          }),
+        }}
+      />
+
+      {/* ImageGallery schema (specialized CollectionPage for images) */}
+      <Script
+        id="imagegallery-schema-gallery"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "ImageGallery",
+            "@id": "https://www.asbconsulting.in/gallery#gallery",
+            url: "https://www.asbconsulting.in/gallery",
+            name: "Project Gallery & Client Work in India | AS Business Consulting",
+            description:
+              "A curated gallery of AS Business Consulting’s work across operations, R&D, certification, international business, HR, legal, and B2B marketing.",
+            inLanguage: "en-IN",
+            isPartOf: {
+              "@type": "WebSite",
+              "@id": "https://www.asbconsulting.in/#website",
+              url: "https://www.asbconsulting.in/",
+              name: "AS Business Consulting",
+            },
+            about: { "@id": "https://www.asbconsulting.in/#organization" },
+          }),
+        }}
+      />
+
       <Header />
       {/*  TOP SECTION Banner */}
       <div className="bg-[url('/images/services.jpg')] bg-cover bg-center">
