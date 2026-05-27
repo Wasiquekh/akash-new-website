@@ -102,18 +102,34 @@ export default function Home() {
         </div>
       </div>
       {/* CLINETNS LOGOS */}
-      <div className=" w-full">
-        <div className=" container grid grid-cols-3 md:grid-cols-[repeat(auto-fit,_minmax(100px,_1fr))] gap-4">
-          <Image src="/images/c1.jpg" alt="Logo 1" />
-          <Image src="/images/c2.jpg" alt="Logo 1" />
-          <Image src="/images/c3.jpg" alt="Logo 1" />
-          <Image src="/images/c4.jpg" alt="Logo 1" />
-          <Image src="/images/c5.jpg" alt="Logo 1" />
-          <Image src="/images/c6.jpg" alt="Logo 1" />
-          <Image src="/images/c7.jpg" alt="Logo 1" />
-          <Image src="/images/c8.jpg" alt="Logo 1" />
-        </div>
+     {/* CLIENTS LOGOS */}
+<div className="w-full bg-white py-8">
+  <div className="container grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-8 gap-4 items-center">
+    {[
+      "/images/c1.jpg",
+      "/images/c2.jpg",
+      "/images/c3.jpg",
+      "/images/c4.jpg",
+      "/images/c5.jpg",
+      "/images/c6.jpg",
+      "/images/c7.jpg",
+      "/images/c8.jpg",
+    ].map((logo, index) => (
+      <div
+        key={index}
+        className="flex h-24 items-center justify-center rounded-xl border border-gray-100 bg-white p-4 shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-md"
+      >
+        <Image
+          src={logo}
+          alt={`Client logo ${index + 1}`}
+          width={180}
+          height={90}
+          className="max-h-16 w-auto object-contain"
+        />
       </div>
+    ))}
+  </div>
+</div>
       {/* ABOUT SECTION */}
       <section className=" relative">
         <div className="container  flex  md:flex-row flex-col items-center relative">

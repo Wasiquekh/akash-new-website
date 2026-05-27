@@ -400,10 +400,12 @@ const Page = () => {
 
           <div className="lg:w-1/2 w-full mb-10 lg:mb-0 rounded-lg overflow-hidden flex items-center">
             <Image
-              alt="feature"
-              className="object-cover object-center h-auto w-full"
-              src="/images/research&development.png"
-            />
+  src="/images/research&development.png"
+  alt="Research and development services"
+  width={700}
+  height={500}
+  className="object-cover object-center h-auto w-full"
+/>
           </div>
           <div className="flex flex-col flex-wrap lg:py-6 -mb-10 lg:w-1/2 lg:pl-12 lg:text-left text-center">
             <div className="flex flex-col mb-6 lg:items-start items-center p-0 md:p-6 ">
