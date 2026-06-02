@@ -7,7 +7,6 @@ import {
   FaBoxesStacked,
   FaCircleCheck,
   FaClipboardCheck,
-  FaCompassDrafting,
   FaCube,
   FaCubes,
   FaDiagramProject,
@@ -17,11 +16,9 @@ import {
   FaIndustry,
   FaLayerGroup,
   FaLightbulb,
-  FaPalette,
   FaPenRuler,
   FaRocket,
   FaRulerCombined,
-  FaShapes,
   FaScrewdriverWrench,
   FaShieldHalved,
   FaWandMagicSparkles,
@@ -32,321 +29,309 @@ import Footer from "../../components/Footer";
 import ContactFrom from "../../components/ContactFrom";
 
 export const metadata = {
-  title: "3D Modeling & Advanced Surfacing Services in India | AS Business",
+  title: "CAD File Conversion & Data Migration Services in India | AS Business",
   description:
-    "AS Business provides 3D modeling & advanced surfacing services in India, including parametric modeling, freeform surfaces, CAD models, product design, and manufacturing support.",
+    "AS Business provides CAD file conversion & data migration services in India, including STEP, IGES, STL, DWG, DXF, native CAD files, 2D to 3D conversion, and CAD data cleanup.",
   alternates: {
     canonical:
-      "https://www.asbconsulting.in/research&development/modeling-advanced-surfacing", 
+      "https://www.asbconsulting.in/research&development/file-conversion-data-migration",
   },
 };
 
-const modelingServices = [
+const conversionServices = [
   {
-    title: "3D CAD Modeling",
+    title: "CAD File Conversion Services",
     description:
-      "We create accurate 3D CAD models for parts, products, assemblies, appliances, HVAC components, industrial products, and engineered components.",
-  },
-  {
-    title: "Parametric Modeling",
-    description:
-      "We create editable parametric CAD models using dimensions, features, relationships, and constraints for controlled design changes.",
-  },
-  {
-    title: "Freeform Modeling",
-    description:
-      "We develop organic and creative product shapes using freeform modeling techniques while keeping the design practical for development and manufacturing.",
-  },
-  {
-    title: "Advanced Surface Modeling",
-    description:
-      "Our advanced surfacing support helps create smooth, clean, and complex product surfaces for appliances, HVAC products, plastic housings, panels, and engineered products.",
-  },
-  {
-    title: "Complex Surface Development",
-    description:
-      "We support products with intricate details, curved profiles, blended surfaces, non-linear shapes, and advanced product forms.",
-  },
-  {
-    title: "Product Modeling Services",
-    description:
-      "We create product-ready 3D models for design validation, prototyping, visualization, rendering, and manufacturing handoff.",
-  },
-  {
-    title: "Mechanical 3D Modeling",
-    description:
-      "We provide mechanical 3D modeling for machine parts, industrial components, tools, fixtures, mechanical assemblies, and engineered products.",
-  },
-  {
-    title: "Industrial Product Modeling",
-    description:
-      "We support industrial product modeling for equipment parts, enclosures, fabricated components, sheet metal products, and manufacturing assemblies.",
-  },
-  {
-    title: "Appliance Product Modeling",
-    description:
-      "We create 3D models for appliance products where surface quality, external appearance, panel design, fitment, and presentation matter.",
-  },
-  {
-    title: "HVAC Component Modeling",
-    description:
-      "We support HVAC component modeling for covers, panels, airflow parts, housings, ducts, product enclosures, and engineered components.",
-  },
-  {
-    title: "Plastic Part Modeling",
-    description:
-      "We create plastic part models with attention to geometry, surface flow, moldability, assembly fitment, and product appearance.",
-  },
-  {
-    title: "Sheet Metal Product Modeling",
-    description:
-      "We prepare sheet metal product models with proper bends, thickness, cutouts, holes, flat pattern consideration, and fabrication feasibility.",
-  },
-  {
-    title: "Product Housing and Enclosure Modeling",
-    description:
-      "We design housings, covers, casings, panels, and enclosures with clean geometry, accurate fitment, and professional surface quality.",
-  },
-  {
-    title: "Assembly Modeling",
-    description:
-      "We create assembly models to check component fitment, part interaction, spacing, movement, and overall product structure.",
-  },
-  {
-    title: "CAD Model Cleanup and Optimization",
-    description:
-      "We clean, refine, optimize, and correct CAD models to improve usability, geometry quality, editability, and manufacturing readiness.",
+      "We convert 2D and 3D CAD files into usable engineering, manufacturing, prototyping, documentation, and vendor-ready formats.",
   },
   {
     title: "2D to 3D CAD Conversion",
     description:
-      "We convert 2D drawings, sketches, reference images, and old design data into accurate 3D CAD models for review and production.",
+      "We convert 2D drawings, sketches, scanned layouts, and technical files into accurate 3D CAD models for visualization, prototyping, redesign, and manufacturing.",
   },
   {
-    title: "CAD Modeling from Sketches or Samples",
+    title: "3D CAD Model Conversion",
     description:
-      "We convert concept sketches, reference images, physical samples, and existing parts into accurate and usable 3D CAD models.",
+      "We convert 3D models into required neutral or native CAD formats for design review, simulation, rendering, CNC machining, 3D printing, and vendor communication.",
   },
   {
-    title: "CAD Modeling from Scan Data",
+    title: "DWG to DXF Conversion",
     description:
-      "We help convert scan data into clean CAD models that can be used for design review, reverse engineering, prototyping, and manufacturing.",
+      "We prepare DWG and DXF files for drafting, CNC cutting, laser cutting, sheet metal work, fabrication, and technical documentation.",
   },
   {
-    title: "Surface Refinement and Geometry Correction",
+    title: "STEP File Conversion",
     description:
-      "We refine surfaces, correct geometry issues, improve transitions, and prepare smooth, professional, and technically usable 3D models.",
+      "We prepare STEP files for reliable 3D CAD data exchange across different engineering software, vendors, and manufacturing workflows.",
   },
   {
-    title: "Prototype-Ready CAD Model Preparation",
+    title: "IGES File Conversion",
     description:
-      "Our 3D CAD models can be used for 3D printing, CNC machining, mold development, sheet metal fabrication, and pilot production.",
+      "We support IGES conversion for surface and geometry exchange between CAD platforms while maintaining scale, structure, and design intent.",
   },
   {
-    title: "Manufacturing-Ready CAD Files",
+    title: "STL File Conversion",
     description:
-      "We prepare CAD files with manufacturing feasibility in mind, supporting prototyping, tooling, production planning, and documentation.",
+      "We prepare STL files for 3D printing, rapid prototyping, model sharing, concept validation, and prototype development workflows.",
   },
   {
-    title: "Rendering-Ready 3D Models",
+    title: "PDF to CAD Conversion",
     description:
-      "We prepare clean and detailed 3D models that can be used for photorealistic rendering, animation, product marketing, and client presentation.",
+      "We convert PDF drawings and technical documents into editable CAD files for future modification, engineering updates, and production use.",
+  },
+  {
+    title: "Scanned Drawing to CAD Conversion",
+    description:
+      "We digitize scanned drawings, paper layouts, and old technical documents into clean CAD files with correct dimensions, layers, and geometry.",
+  },
+  {
+    title: "Native CAD File Conversion",
+    description:
+      "We help convert and prepare native CAD files where editable design history, assemblies, features, and detailed CAD workflows are required.",
+  },
+  {
+    title: "CAD Data Migration",
+    description:
+      "We help businesses migrate old CAD files and legacy design data into modern, organized, editable, and reusable engineering formats.",
+  },
+  {
+    title: "Legacy CAD Data Modernization",
+    description:
+      "We modernize outdated design files, old drawings, and legacy CAD data for better accessibility, editing, storage, and future product development.",
+  },
+  {
+    title: "CAD File Cleanup and Repair",
+    description:
+      "We clean and repair CAD files by addressing broken geometry, duplicate lines, scale issues, missing surfaces, layer errors, and unusable file structures.",
+  },
+  {
+    title: "Geometry Validation and Correction",
+    description:
+      "We check converted files for geometry issues, missing surfaces, broken edges, distorted curves, wrong scale, and compatibility concerns.",
+  },
+  {
+    title: "Layer Cleanup and Drawing Standardization",
+    description:
+      "We organize layers, line types, drawing structure, annotations, dimensions, and CAD standards to make files cleaner and easier to reuse.",
+  },
+  {
+    title: "Artwork to CAD Conversion",
+    description:
+      "We convert artwork, logos, patterns, decorative layouts, and design files into CAD-ready formats for cutting, engraving, printing, and manufacturing.",
+  },
+  {
+    title: "Manufacturing File Conversion",
+    description:
+      "We prepare files for CNC machining, laser cutting, sheet metal fabrication, mold development, 3D printing, vendor handoff, and production documentation.",
+  },
+  {
+    title: "3D Printing File Preparation",
+    description:
+      "We prepare and validate STL and other 3D printing files so models are suitable for rapid prototyping and physical sample development.",
+  },
+  {
+    title: "CNC and Laser Cutting File Preparation",
+    description:
+      "We prepare accurate CAD files for CNC cutting, laser cutting, engraving, sheet cutting, nesting, and fabrication workflows.",
+  },
+  {
+    title: "Vendor-Ready CAD File Preparation",
+    description:
+      "We prepare clean, accurate, and properly formatted CAD files for vendors, production teams, machining partners, and fabrication suppliers.",
   },
 ];
 
 const benefits = [
   {
-    title: "Better Product Visualization",
+    title: "Better File Compatibility",
     description:
-      "3D models allow clients to view the product clearly from different angles before manufacturing, making design review and decision-making easier.",
+      "Our conversion services help make CAD files usable across different software, vendors, machines, and manufacturing workflows.",
   },
   {
-    title: "Accurate Engineering Design",
+    title: "Preserved Design Intent",
     description:
-      "Parametric CAD models help maintain dimensional accuracy, design control, and technical consistency throughout the product development process.",
+      "We focus on maintaining correct dimensions, geometry, scale, layers, surfaces, and product details during file conversion.",
   },
   {
-    title: "Smooth and Professional Surface Quality",
+    title: "Improved Manufacturing Readiness",
     description:
-      "Advanced surfacing helps create clean, smooth, and visually refined product geometry for products with curves, contours, and complex details.",
+      "Converted files can be prepared for CNC machining, 3D printing, laser cutting, sheet metal fabrication, mold development, and vendor communication.",
   },
   {
-    title: "Faster Design Iterations",
+    title: "Modernized Legacy Data",
     description:
-      "Editable CAD models make it easier to modify dimensions, features, surfaces, and assemblies during product development.",
+      "Old drawings, outdated CAD files, paper documents, and scanned data can be converted into updated digital formats for future use.",
   },
   {
-    title: "Prototype and Manufacturing Support",
+    title: "Reduced Design Rework",
     description:
-      "3D models can be used for 3D printing, CNC machining, mold development, sheet metal fabrication, product rendering, and manufacturing documentation.",
+      "Accurate conversion reduces the need to recreate files manually and helps save engineering time during design and production preparation.",
   },
   {
-    title: "Improved Fitment and Assembly",
+    title: "Clean and Editable CAD Files",
     description:
-      "Assembly modeling helps check how different parts fit together, reducing issues during prototyping and production.",
+      "We help convert and clean files so that they are easier to edit, modify, document, standardize, and reuse for future projects.",
   },
   {
-    title: "Better Product Presentation",
+    title: "Support for Multiple CAD Formats",
     description:
-      "High-quality 3D models can be used for renderings, animations, marketing visuals, catalogs, client presentations, and investor discussions.",
+      "We support common CAD and manufacturing formats such as STEP, IGES, STL, DWG, DXF, PDF, and native CAD files.",
   },
   {
-    title: "Suitable for Complex Products",
+    title: "Smooth Design-to-Manufacturing Workflow",
     description:
-      "Advanced surfacing makes it possible to design complex product shapes that are difficult to create using basic CAD modeling methods.",
+      "Properly converted files help teams move from design review to prototyping, machining, fabrication, and production more efficiently.",
   },
 ];
 
 const industries = [
-  "Appliance manufacturers",
-  "HVAC product companies",
-  "Industrial product manufacturers",
-  "Consumer product brands",
-  "Automotive component companies",
-  "Plastic product manufacturers",
-  "Sheet metal fabrication units",
-  "Machine part manufacturers",
+  "Manufacturing companies",
+  "Engineering design firms",
   "Product development companies",
-  "Engineering consultancies",
-  "Prototype development companies",
-  "Startups developing new products",
-  "CAD/CAM outsourcing projects",
+  "CAD/CAM outsourcing teams",
+  "Industrial equipment manufacturers",
+  "Automotive component companies",
+  "Sheet metal fabrication units",
+  "CNC machining workshops",
+  "Laser cutting and engraving businesses",
+  "3D printing service providers",
+  "Architecture and interior design teams",
   "Furniture and fixture manufacturers",
-  "Mold and tooling companies",
+  "Packaging and product branding teams",
+  "Reverse engineering projects",
+  "Legacy product documentation teams",
 ];
 
 const keyPoints = [
   {
-    title: "Parametric 3D Modeling",
+    title: "2D to 3D CAD Conversion",
     description:
-      "We create editable parametric CAD models using dimensions, features, and constraints. This makes future design changes faster, easier, and more controlled.",
+      "We convert 2D drawings, sketches, scanned layouts, and technical files into accurate 3D CAD models that can be used for visualization, prototyping, redesign, and manufacturing.",
   },
   {
-    title: "Advanced Surface Modeling",
+    title: "3D CAD Format Conversion",
     description:
-      "Our advanced surfacing support helps create smooth, clean, and complex product surfaces for appliances, HVAC components, plastic housings, panels, and engineered products.",
+      "We convert 3D models into required formats such as STEP, IGES, STL, Parasolid, OBJ, and native CAD formats for different CAD/CAM software and manufacturing processes.",
   },
   {
-    title: "Freeform Modeling",
+    title: "DWG and DXF Conversion",
     description:
-      "We develop organic and creative product shapes using freeform modeling techniques while keeping the design practical for product development and manufacturing.",
+      "We support DWG and DXF file conversion for drafting, laser cutting, CNC cutting, sheet metal design, fabrication, and technical documentation.",
   },
   {
-    title: "Product Visualization",
+    title: "STEP, IGES, and STL File Preparation",
     description:
-      "3D models help clients understand product form, size, proportions, details, and assembly before investing in prototypes or production.",
+      "We prepare STEP and IGES files for CAD data exchange and STL files for 3D printing, rapid prototyping, and model sharing.",
   },
   {
-    title: "Complex Geometry Development",
+    title: "CAD Data Migration",
     description:
-      "We support products with intricate details, curved profiles, blended surfaces, non-linear shapes, and advanced product forms.",
+      "We help businesses migrate old CAD files, legacy drawings, and outdated design data into modern, editable, and usable CAD formats.",
   },
   {
-    title: "2D to 3D Conversion",
+    title: "Scanned Drawing and Paper Drawing Digitization",
     description:
-      "We convert 2D drawings, sketches, reference images, and old design data into accurate 3D CAD models for review, prototyping, and production.",
+      "Old paper drawings and scanned documents can be converted into clean digital CAD files for future editing, documentation, and manufacturing.",
   },
   {
-    title: "Assembly Modeling",
+    title: "Artwork to CAD Conversion",
     description:
-      "We create assembly models to check component fitment, part interaction, spacing, movement, and overall product structure.",
+      "We convert artwork, logos, patterns, and design layouts into CAD-ready formats for cutting, engraving, printing, product decoration, and manufacturing use.",
   },
   {
-    title: "Prototype-Ready Models",
+    title: "CAD File Cleanup and Repair",
     description:
-      "Our 3D CAD models can be used for 3D printing, CNC machining, mold development, sheet metal fabrication, and pilot production.",
+      "We help clean and correct CAD files by fixing broken geometry, missing surfaces, scale issues, duplicate lines, layer errors, and unusable file structures.",
   },
   {
-    title: "Rendering-Ready CAD Models",
+    title: "Manufacturing-Ready File Output",
     description:
-      "We prepare clean and detailed 3D models that can be used for photorealistic rendering, animation, product marketing, and client presentation.",
+      "Converted files can be prepared for CNC machining, 3D printing, laser cutting, sheet metal fabrication, mold development, and vendor communication.",
   },
   {
-    title: "Manufacturing Support",
+    title: "Preserved Design Intent",
     description:
-      "Our models are created with manufacturing feasibility in mind, helping reduce errors during prototyping, tooling, and production.",
+      "During conversion, we focus on maintaining original dimensions, scale, geometry, surfaces, layers, and technical details so that the final file remains accurate and usable.",
   },
 ];
 
 const serviceIcons: IconType[] = [
+  FaFileLines,
   FaCube,
-  FaRulerCombined,
-  FaShapes,
-  FaWandMagicSparkles,
+  FaCubes,
+  FaDiagramProject,
+  FaFileCircleCheck,
   FaLayerGroup,
+  FaWandMagicSparkles,
+  FaClipboardCheck,
   FaPenRuler,
   FaGears,
-  FaIndustry,
-  FaCubes,
-  FaScrewdriverWrench,
   FaBoxesStacked,
-  FaFileLines,
-  FaDiagramProject,
-  FaCubes,
-  FaShieldHalved,
-  FaCompassDrafting,
-  FaLightbulb,
-  FaLayerGroup,
-  FaWandMagicSparkles,
   FaRocket,
+  FaScrewdriverWrench,
+  FaShieldHalved,
+  FaRulerCombined,
+  FaLightbulb,
+  FaIndustry,
+  FaCube,
+  FaDiagramProject,
   FaFileCircleCheck,
-  FaPalette,
 ];
 
 const benefitIcons: IconType[] = [
-  FaCube,
-  FaRulerCombined,
-  FaWandMagicSparkles,
+  FaDiagramProject,
+  FaShieldHalved,
+  FaIndustry,
   FaRocket,
+  FaGears,
+  FaFileCircleCheck,
+  FaLayerGroup,
   FaScrewdriverWrench,
-  FaCubes,
-  FaPalette,
-  FaShapes,
 ];
 
 const processItems = [
   {
-    title: "Parametric Models",
-    icon: FaRulerCombined,
+    title: "STEP • IGES • STL",
+    icon: FaFileCircleCheck,
   },
   {
-    title: "Advanced Surfaces",
-    icon: FaWandMagicSparkles,
+    title: "DWG • DXF Files",
+    icon: FaDiagramProject,
   },
   {
-    title: "Assembly Fitment",
-    icon: FaCubes,
+    title: "2D to 3D Conversion",
+    icon: FaCube,
   },
   {
-    title: "Manufacturing Files",
-    icon: FaFileLines,
+    title: "CAD Data Cleanup",
+    icon: FaShieldHalved,
   },
 ];
 
-const modelingCards = [
+const conversionCards = [
   {
-    title: "Parametric 3D Modeling for Accurate Product Design",
+    title: "2D to 3D CAD Conversion for Legacy Drawings and Product Data",
     description:
-      "Parametric modeling is useful when a product requires accurate dimensions, editable features, controlled design changes, and engineering precision. AS Business creates parametric CAD models for mechanical parts, industrial components, assemblies, fixtures, tools, appliances, HVAC products, and engineered products.",
-    icon: FaRulerCombined,
+      "Many businesses still have old 2D drawings, paper drawings, scanned documents, artwork files, or basic technical layouts that need to be converted into usable 3D CAD models. We convert 2D drawings into 3D CAD models with proper dimensions, features, surfaces, holes, cuts, bends, assembly details, and design references.",
+    icon: FaCube,
   },
   {
-    title: "Advanced Surfacing for Complex Shapes and Smooth Finishes",
+    title: "3D CAD File Conversion for Engineering and Manufacturing Workflows",
     description:
-      "Our advanced surfacing services help create accurate and smooth surface models for complex product forms. We focus on surface continuity, clean geometry, accurate transitions, aesthetic appeal, manufacturability, and design intent.",
-    icon: FaWandMagicSparkles,
+      "Different CAD/CAM platforms use different file formats, and not every file is directly usable for every workflow. We convert 3D models into required neutral or native formats so they can be used across multiple software and production processes.",
+    icon: FaCubes,
   },
   {
-    title: "Freeform Modeling for Creative and Engineered Products",
+    title: "DWG, DXF, STEP, IGES, STL, and Native CAD Conversion",
     description:
-      "Freeform modeling allows the creation of organic shapes, curved surfaces, non-linear forms, and visually refined product designs. Our modeling process balances design creativity with engineering practicality so that the final model remains usable for manufacturing.",
-    icon: FaShapes,
+      "Each format serves a different purpose. DWG and DXF support drafting and cutting workflows, STEP and IGES support CAD data exchange, STL supports 3D printing, and native CAD files support detailed editable CAD workflows.",
+    icon: FaFileLines,
   },
   {
-    title: "3D CAD Modeling for Appliances, HVAC, and Industrial Products",
+    title: "CAD Data Migration and Legacy File Modernization",
     description:
-      "Our 3D modeling and advanced surfacing services are ideal for products that require precision, function, and visual quality. We support appliances, HVAC systems, engineered components, industrial products, machine parts, plastic parts, sheet metal products, and consumer product designs.",
-    icon: FaIndustry,
+      "We help companies move from old software to new CAD/CAM platforms, organize years of engineering files, standardize drawings, clean data, validate geometry, and convert outdated files into manufacturing-ready CAD documents.",
+    icon: FaRocket,
   },
 ];
 
@@ -354,7 +339,7 @@ const Page = () => {
   return (
     <>
       <Script
-        id="breadcrumb-schema-3d-modeling-advanced-surfacing"
+        id="breadcrumb-schema-cad-file-conversion-data-migration"
         type="application/ld+json"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify({
@@ -376,8 +361,8 @@ const Page = () => {
               {
                 "@type": "ListItem",
                 position: 3,
-                name: "3D Modeling & Advanced Surfacing",
-                item: "https://www.asbconsulting.in/research&development/3d-modeling-advanced-surfacing-services",
+                name: "CAD File Conversion & Data Migration",
+                item: "https://www.asbconsulting.in/research&development/cad-file-conversion-data-migration-services",
               },
             ],
           }),
@@ -385,18 +370,18 @@ const Page = () => {
       />
 
       <Script
-        id="webpage-schema-3d-modeling-advanced-surfacing"
+        id="webpage-schema-cad-file-conversion-data-migration"
         type="application/ld+json"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "WebPage",
             "@id":
-              "https://www.asbconsulting.in/research&development/3d-modeling-advanced-surfacing-services#webpage",
-            url: "https://www.asbconsulting.in/research&development/3d-modeling-advanced-surfacing-services",
-            name: "3D Modeling & Advanced Surfacing Services in India",
+              "https://www.asbconsulting.in/research&development/cad-file-conversion-data-migration-services#webpage",
+            url: "https://www.asbconsulting.in/research&development/cad-file-conversion-data-migration-services",
+            name: "CAD File Conversion & Data Migration Services in India",
             description:
-              "AS Business provides professional 3D Modeling & Advanced Surfacing Services in India for manufacturers, product developers, engineering companies, startups, and industrial businesses that need accurate, detailed, and production-ready 3D CAD models.",
+              "AS Business provides professional CAD File Conversion & Data Migration Services in India for manufacturers, engineering companies, product developers, CAD/CAM teams, architects, designers, and industrial businesses that need accurate conversion of 2D and 3D design data into usable engineering and manufacturing formats.",
             isPartOf: {
               "@type": "WebSite",
               "@id": "https://www.asbconsulting.in/#website",
@@ -418,19 +403,20 @@ const Page = () => {
           <div className="relative max-w-7xl mx-auto px-5 py-20 md:py-28 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
               <p className="text-sm tracking-[0.28em] uppercase text-[#f3d6f6] font-semibold mb-5">
-                3D CAD • Parametric Modeling • Advanced Surfacing
+                CAD Conversion • Data Migration • Manufacturing Files
               </p>
 
               <h1 className="text-4xl md:text-6xl font-bold leading-tight mb-6">
-                3D Modeling & Advanced Surfacing Services in India
+                CAD File Conversion & Data Migration Services in India
               </h1>
 
               <p className="text-base md:text-lg leading-relaxed text-white/85 mb-8 max-w-2xl">
-                AS Business provides professional 3D Modeling & Advanced
-                Surfacing Services in India for manufacturers, product
-                developers, engineering companies, startups, and industrial
-                businesses that need accurate, detailed, and production-ready 3D
-                CAD models.
+                AS Business provides professional CAD File Conversion & Data
+                Migration Services in India for manufacturers, engineering
+                companies, product developers, CAD/CAM teams, architects,
+                designers, and industrial businesses that need accurate
+                conversion of 2D and 3D design data into usable engineering and
+                manufacturing formats.
               </p>
 
               <div className="flex flex-wrap gap-4">
@@ -438,7 +424,7 @@ const Page = () => {
                   href="/contact"
                   className="inline-flex items-center gap-3 rounded-full bg-white text-[#502D52] px-6 py-3 font-semibold shadow-lg hover:shadow-xl transition"
                 >
-                  Create Your 3D Model <FaArrowRight />
+                  Convert Your CAD Files <FaArrowRight />
                 </Link>
 
                 <Link
@@ -455,38 +441,38 @@ const Page = () => {
                 <div className="rounded-[1.5rem] bg-[#f7f0f8] p-5 md:p-6 text-[#502D52]">
                   <div className="grid grid-cols-2 gap-4 mb-5">
                     <div className="rounded-2xl bg-white p-5 shadow-sm">
-                      <FaCube className="text-4xl mb-5" />
+                      <FaFileLines className="text-4xl mb-5" />
                       <p className="text-sm font-semibold">
-                        Parametric 3D Modeling
+                        STEP, IGES, STL, DWG, DXF
                       </p>
                     </div>
 
                     <div className="rounded-2xl bg-white p-5 shadow-sm">
-                      <FaWandMagicSparkles className="text-4xl mb-5" />
+                      <FaDiagramProject className="text-4xl mb-5" />
                       <p className="text-sm font-semibold">
-                        Advanced Surfacing
+                        CAD Data Migration
                       </p>
                     </div>
                   </div>
 
                   <div className="rounded-2xl bg-[#502D52] text-white p-6">
-                    <FaShapes className="text-5xl mb-6 text-[#f3d6f6]" />
+                    <FaShieldHalved className="text-5xl mb-6 text-[#f3d6f6]" />
                     <h3 className="text-2xl font-bold mb-3">
-                      Smooth, Accurate, Production-Ready Geometry
+                      Clean, Editable, Production-Ready CAD Data
                     </h3>
                     <p className="text-sm text-white/80 leading-relaxed">
-                      Create parametric models, freeform surfaces, assembly
-                      models, rendering-ready CAD models, and manufacturing-ready
-                      files.
+                      Convert old drawings, artwork, scanned files, 2D CAD
+                      files, 3D models, and legacy CAD data into usable
+                      manufacturing formats while preserving design intent.
                     </p>
                   </div>
                 </div>
               </div>
 
               <div className="absolute -bottom-6 -left-6 hidden md:block rounded-3xl bg-white p-5 shadow-xl">
-                <p className="text-[#502D52] font-bold text-3xl">3D CAD</p>
+                <p className="text-[#502D52] font-bold text-3xl">CAD</p>
                 <p className="text-sm text-gray-500">
-                  Advanced Product Geometry
+                  Conversion & Data Cleanup
                 </p>
               </div>
             </div>
@@ -498,10 +484,10 @@ const Page = () => {
           <div className="max-w-6xl mx-auto px-5">
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4 rounded-[2rem] bg-white p-5 shadow-xl border border-[#eaddec]">
               {[
-                "Parametric Modeling",
-                "Advanced Surfacing",
-                "Freeform Geometry",
-                "Manufacturing-Ready CAD",
+                "2D to 3D Conversion",
+                "STEP / IGES / STL",
+                "DWG / DXF Cleanup",
+                "Legacy CAD Migration",
               ].map((item, index) => (
                 <div
                   key={index}
@@ -521,32 +507,32 @@ const Page = () => {
         <section className="py-20">
           <div className="max-w-5xl mx-auto px-5 text-center">
             <p className="text-[#502D52] text-sm font-bold tracking-[0.22em] uppercase mb-4">
-              Accurate Geometry. Smooth Surfaces. Practical Engineering.
+              Accurate Conversion. Clean Geometry. Better CAD Compatibility.
             </p>
 
             <h2 className="text-3xl md:text-5xl font-bold mb-6 text-[#211827]">
-              Professional 3D Modeling Support for Product Development and
-              Manufacturing
+              Professional CAD File Conversion Support for Engineering and
+              Manufacturing Workflows
             </h2>
 
             <p className="leading-relaxed text-gray-600 mb-4">
-              Our services include parametric modeling, freeform modeling,
-              surface modeling, complex geometry development, product modeling,
-              assembly modeling, and CAD data preparation for design validation,
-              prototyping, and manufacturing.
+              In engineering and manufacturing, file compatibility is extremely
+              important. A design file may be available in one format, but
+              production, prototyping, CNC machining, 3D printing, vendor
+              communication, or documentation may require another format.
             </p>
 
             <p className="leading-relaxed text-gray-600 mb-4">
-              3D modeling plays an important role in modern product design and
-              engineering. It helps businesses visualize products before
-              manufacturing, check fitment, improve design accuracy, validate
-              product form, and prepare files for prototyping or production.
+              AS Business helps businesses convert CAD files into formats such
+              as STEP, IGES, STL, DWG, DXF, PDF, and native CAD files while
+              preserving design intent, dimensions, geometry, and technical
+              accuracy.
             </p>
 
             <p className="leading-relaxed text-gray-600">
-              At AS Business, we create 3D models that are not only visually
-              clear but also technically practical, editable, and suitable for
-              real-world engineering and manufacturing needs.
+              Our file conversion and data migration process focuses on
+              accuracy, usability, clean geometry, proper layering, editable
+              models, and smooth transfer between different CAD/CAM platforms.
             </p>
           </div>
         </section>
@@ -556,25 +542,27 @@ const Page = () => {
           <div className="max-w-7xl mx-auto px-5 grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
             <div className="rounded-[2rem] bg-white p-6 md:p-8 shadow-lg border border-[#eaddec]">
               <p className="text-[#502D52] text-sm font-bold tracking-[0.18em] uppercase mb-3">
-                3D Modeling & Advanced Surfacing Services in India
+                CAD File Conversion & Data Migration Services in India
               </p>
 
               <h2 className="text-3xl md:text-5xl font-bold mb-5 text-[#211827]">
-                From Concept Sketches and 2D Drawings to Complex Surface Models
-                and Production-Ready CAD Files
+                Convert Old Drawings, 2D Files, 3D Models, Scans, and Legacy CAD
+                Data into Usable Formats
               </h2>
 
               <p className="leading-relaxed text-gray-600 mb-4">
-                AS Business provides professional 3D modeling and advanced
-                surfacing services in India for products that require accurate
-                geometry, smooth surfaces, complex details, and
-                manufacturing-ready CAD models.
+                AS Business provides professional CAD file conversion and data
+                migration services in India to convert 2D drawings, artwork, 3D
+                models, scanned files, and legacy CAD data into usable
+                engineering and manufacturing formats.
               </p>
 
               <p className="leading-relaxed text-gray-600">
-                Our 3D modeling services help clients visualize products,
-                validate design form, check fitment, prepare prototypes, create
-                renderings, and move smoothly toward manufacturing.
+                Our services help businesses modernize old design data, improve
+                file compatibility, prepare manufacturing-ready outputs, and
+                support smooth workflows for CAD design, CNC machining, 3D
+                printing, laser cutting, prototyping, reverse engineering, and
+                production documentation.
               </p>
             </div>
 
@@ -598,10 +586,10 @@ const Page = () => {
           </div>
         </section>
 
-        {/* Modeling Cards */}
+        {/* Conversion Cards */}
         <section className="py-16">
           <div className="max-w-7xl mx-auto px-5 grid grid-cols-1 md:grid-cols-2 gap-6">
-            {modelingCards.map((item, index) => {
+            {conversionCards.map((item, index) => {
               const Icon = item.icon;
 
               return (
@@ -631,16 +619,16 @@ const Page = () => {
           <div className="max-w-7xl mx-auto px-5">
             <div className="text-center mb-14">
               <p className="text-[#502D52] text-sm font-bold tracking-[0.22em] uppercase mb-3">
-                Our 3D Modeling Services
+                Our CAD Conversion Services
               </p>
 
               <h2 className="text-3xl md:text-5xl font-bold text-[#211827]">
-                Our 3D Modeling & Advanced Surfacing Services Include
+                Our File Conversion & Data Migration Services Include
               </h2>
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-5">
-              {modelingServices.map((service, index) => {
+              {conversionServices.map((service, index) => {
                 const Icon = serviceIcons[index] || FaCircleCheck;
 
                 return (
@@ -675,7 +663,7 @@ const Page = () => {
               </p>
 
               <h2 className="text-3xl md:text-5xl font-bold text-[#211827]">
-                Key Benefits of 3D Modeling & Advanced Surfacing
+                Key Benefits of File Conversion & Data Migration Services
               </h2>
             </div>
 
@@ -719,10 +707,11 @@ const Page = () => {
               </h2>
 
               <p className="leading-relaxed text-gray-600">
-                Our 3D modeling and advanced surfacing services are suitable for
-                appliance manufacturers, HVAC companies, industrial product
-                manufacturers, automotive component companies, startups,
-                prototype developers, and CAD/CAM outsourcing projects.
+                Our file conversion and data migration services are suitable for
+                manufacturers, engineering design firms, CAD/CAM outsourcing
+                teams, product development companies, sheet metal units, CNC
+                workshops, laser cutting businesses, 3D printing providers,
+                architecture teams, and legacy documentation projects.
               </p>
             </div>
 
@@ -759,30 +748,31 @@ const Page = () => {
                 </h2>
 
                 <p className="leading-relaxed text-white/80 mb-4">
-                  AS Business provides reliable 3D modeling and advanced
-                  surfacing support with a strong focus on accuracy, design
-                  quality, manufacturability, and technical clarity. We
-                  understand that a 3D model must not only look good but also
-                  support real product development, prototyping, manufacturing,
-                  and future design changes.
+                  AS Business provides reliable CAD file conversion and data
+                  migration support with a strong focus on accuracy, usability,
+                  and manufacturing readiness. We understand that converted
+                  files must not only open in software but also remain useful for
+                  real engineering, design, production, and documentation
+                  workflows.
                 </p>
 
                 <p className="leading-relaxed text-white/80">
-                  Our team creates CAD models that are clean, editable,
-                  detailed, and suitable for engineering use. Whether you need
-                  parametric modeling, freeform surface design, complex product
-                  geometry, 2D to 3D conversion, product visualization models,
-                  or manufacturing-ready CAD files, AS Business can support your
-                  complete 3D modeling requirement.
+                  Our team carefully handles file structure, scale, dimensions,
+                  geometry, layers, surfaces, and design details to ensure
+                  high-quality conversion results. Whether you need 2D to 3D CAD
+                  conversion, STEP/IGES/STL conversion, DWG/DXF conversion,
+                  scanned drawing digitization, artwork conversion, or legacy CAD
+                  data migration, AS Business can support your complete
+                  requirement.
                 </p>
               </div>
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 {[
-                  "Clean Editable CAD Models",
-                  "Smooth Surface Quality",
-                  "Manufacturing-Ready Geometry",
-                  "Prototype and Rendering Support",
+                  "Clean Editable CAD Files",
+                  "Preserved Design Intent",
+                  "Modernized Legacy Data",
+                  "Manufacturing-Ready Output",
                 ].map((item, index) => (
                   <div
                     key={index}
@@ -806,22 +796,21 @@ const Page = () => {
               <div className="relative grid grid-cols-1 lg:grid-cols-3 gap-8 items-center">
                 <div className="lg:col-span-2">
                   <h2 className="text-3xl md:text-5xl font-bold mb-5">
-                    Create Accurate 3D Models for Your Product Ideas
+                    Convert Your CAD Data into Usable Manufacturing Formats
                   </h2>
 
                   <p className="text-white/80 leading-relaxed mb-4">
-                    If you have a product concept, sketch, reference image,
-                    existing part, appliance design, HVAC component, or
-                    industrial product that needs professional 3D modeling, AS
-                    Business can help you convert it into an accurate CAD model.
+                    If you have old drawings, 2D files, 3D models, scanned
+                    documents, artwork files, or legacy CAD data that needs to
+                    be converted into usable formats, AS Business can help you
+                    prepare accurate and production-ready CAD files.
                   </p>
 
                   <p className="text-white/80 leading-relaxed">
-                    Contact us today for 3D Modeling & Advanced Surfacing
-                    Services in India, including parametric modeling, freeform
-                    modeling, advanced surface modeling, product modeling, CAD
-                    model preparation, and manufacturing-ready 3D design
-                    support.
+                    Contact us today for CAD File Conversion & Data Migration
+                    Services in India, including 2D to 3D conversion, STEP,
+                    IGES, STL, DWG, DXF, native CAD conversion, CAD cleanup, and
+                    manufacturing file preparation.
                   </p>
                 </div>
 
@@ -847,7 +836,7 @@ const Page = () => {
               </p>
 
               <h2 className="text-3xl md:text-5xl font-bold text-[#211827]">
-                Key Points of 3D Modeling & Advanced Surfacing Services
+                Key Points of File Conversion & Data Migration Services
               </h2>
             </div>
 

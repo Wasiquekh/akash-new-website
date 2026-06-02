@@ -7,7 +7,6 @@ import {
   FaBoxesStacked,
   FaCircleCheck,
   FaClipboardCheck,
-  FaCompassDrafting,
   FaCube,
   FaCubes,
   FaDiagramProject,
@@ -17,13 +16,13 @@ import {
   FaIndustry,
   FaLayerGroup,
   FaLightbulb,
-  FaPalette,
   FaPenRuler,
   FaRocket,
   FaRulerCombined,
-  FaShapes,
   FaScrewdriverWrench,
   FaShieldHalved,
+  FaTruckFast,
+  FaVialCircleCheck,
   FaWandMagicSparkles,
 } from "react-icons/fa6";
 
@@ -32,320 +31,308 @@ import Footer from "../../components/Footer";
 import ContactFrom from "../../components/ContactFrom";
 
 export const metadata = {
-  title: "3D Modeling & Advanced Surfacing Services in India | AS Business",
+  title: "Prototype Development Services in India | AS Business Consulting",
   description:
-    "AS Business provides 3D modeling & advanced surfacing services in India, including parametric modeling, freeform surfaces, CAD models, product design, and manufacturing support.",
+    "AS Business Consulting provides prototype development services in India, including 3D printing, CNC prototypes, sheet metal, soft tooling, product testing, and pilot build support.",
   alternates: {
     canonical:
-      "https://www.asbconsulting.in/research&development/modeling-advanced-surfacing", 
+      "https://www.asbconsulting.in/research&development/prototype-development",
   },
 };
 
-const modelingServices = [
+const prototypeServices = [
   {
-    title: "3D CAD Modeling",
+    title: "Rapid Prototyping Services",
     description:
-      "We create accurate 3D CAD models for parts, products, assemblies, appliances, HVAC components, industrial products, and engineered components.",
+      "We help businesses quickly convert product ideas, CAD models, sketches, and engineering designs into physical prototypes for review, testing, and approval.",
   },
   {
-    title: "Parametric Modeling",
+    title: "3D Printing Prototype Development",
     description:
-      "We create editable parametric CAD models using dimensions, features, relationships, and constraints for controlled design changes.",
+      "We support 3D printed prototypes for concept models, product housings, plastic parts, fitment checks, visual samples, and early-stage product validation.",
   },
   {
-    title: "Freeform Modeling",
+    title: "CNC Prototype Machining",
     description:
-      "We develop organic and creative product shapes using freeform modeling techniques while keeping the design practical for development and manufacturing.",
+      "We support accurate CNC prototypes for metal parts, plastic parts, mechanical components, machine parts, assemblies, and functional testing requirements.",
   },
   {
-    title: "Advanced Surface Modeling",
+    title: "Sheet Metal Prototyping",
     description:
-      "Our advanced surfacing support helps create smooth, clean, and complex product surfaces for appliances, HVAC products, plastic housings, panels, and engineered products.",
+      "We help develop sheet metal prototypes for enclosures, brackets, panels, covers, cabinets, frames, machine guards, and industrial components.",
   },
   {
-    title: "Complex Surface Development",
+    title: "Soft Tooling Support",
     description:
-      "We support products with intricate details, curved profiles, blended surfaces, non-linear shapes, and advanced product forms.",
+      "Soft tooling helps create limited prototype batches and pre-production samples before investing in final hard tooling or mass manufacturing.",
   },
   {
-    title: "Product Modeling Services",
+    title: "Functional Prototype Development",
     description:
-      "We create product-ready 3D models for design validation, prototyping, visualization, rendering, and manufacturing handoff.",
+      "We support prototypes that can be tested for movement, fitment, assembly, strength, function, performance, and real-world usability.",
   },
   {
-    title: "Mechanical 3D Modeling",
+    title: "Visual Prototype Development",
     description:
-      "We provide mechanical 3D modeling for machine parts, industrial components, tools, fixtures, mechanical assemblies, and engineered products.",
+      "We create visual prototypes that help clients, stakeholders, investors, and internal teams understand product form, size, proportion, and appearance.",
   },
   {
-    title: "Industrial Product Modeling",
+    title: "Product Sample Development",
     description:
-      "We support industrial product modeling for equipment parts, enclosures, fabricated components, sheet metal products, and manufacturing assemblies.",
+      "We help clients prepare product samples for review, presentation, market validation, customer feedback, and internal decision-making.",
   },
   {
-    title: "Appliance Product Modeling",
+    title: "Form, Fit, and Function Testing Support",
     description:
-      "We create 3D models for appliance products where surface quality, external appearance, panel design, fitment, and presentation matter.",
+      "We help validate product appearance, dimensional fit, assembly logic, usability, movement, strength, and functional performance before production.",
   },
   {
-    title: "HVAC Component Modeling",
+    title: "Prototype Design Improvement",
     description:
-      "We support HVAC component modeling for covers, panels, airflow parts, housings, ducts, product enclosures, and engineered components.",
+      "Based on prototype feedback, we support design changes, CAD refinements, dimensional corrections, feature improvements, and manufacturability updates.",
   },
   {
-    title: "Plastic Part Modeling",
+    title: "CAD Model Preparation for Prototyping",
     description:
-      "We create plastic part models with attention to geometry, surface flow, moldability, assembly fitment, and product appearance.",
+      "We prepare clean prototype-ready CAD models suitable for 3D printing, CNC machining, sheet metal fabrication, tooling, and pilot build preparation.",
   },
   {
-    title: "Sheet Metal Product Modeling",
+    title: "Prototype-Ready Engineering Drawings",
     description:
-      "We prepare sheet metal product models with proper bends, thickness, cutouts, holes, flat pattern consideration, and fabrication feasibility.",
+      "We prepare practical engineering drawings and technical inputs required for prototype manufacturing, vendor coordination, and production planning.",
   },
   {
-    title: "Product Housing and Enclosure Modeling",
+    title: "Material Selection Support",
     description:
-      "We design housings, covers, casings, panels, and enclosures with clean geometry, accurate fitment, and professional surface quality.",
+      "We help evaluate suitable materials for prototypes based on strength, finish, cost, testing purpose, manufacturing method, and product requirement.",
   },
   {
-    title: "Assembly Modeling",
+    title: "Product Testing and Validation Support",
     description:
-      "We create assembly models to check component fitment, part interaction, spacing, movement, and overall product structure.",
+      "We support product validation through physical testing, dimensional review, assembly checks, fitment checks, and functional performance feedback.",
   },
   {
-    title: "CAD Model Cleanup and Optimization",
+    title: "Assembly Prototype Development",
     description:
-      "We clean, refine, optimize, and correct CAD models to improve usability, geometry quality, editability, and manufacturing readiness.",
+      "We support assembly prototypes to check part interaction, fastening, movement, spacing, alignment, and practical assembly sequence.",
   },
   {
-    title: "2D to 3D CAD Conversion",
+    title: "Pilot Build Preparation",
     description:
-      "We convert 2D drawings, sketches, reference images, and old design data into accurate 3D CAD models for review and production.",
+      "We help clients move from prototype to pilot build by preparing design files, drawings, documentation, vendor inputs, and manufacturing readiness support.",
   },
   {
-    title: "CAD Modeling from Sketches or Samples",
+    title: "Small Batch Prototype Support",
     description:
-      "We convert concept sketches, reference images, physical samples, and existing parts into accurate and usable 3D CAD models.",
+      "We support limited prototype batches for testing, stakeholder review, market validation, pre-production trials, and internal quality checks.",
   },
   {
-    title: "CAD Modeling from Scan Data",
+    title: "Pre-Production Prototype Development",
     description:
-      "We help convert scan data into clean CAD models that can be used for design review, reverse engineering, prototyping, and manufacturing.",
+      "We help develop pre-production prototypes that allow teams to test design maturity, process feasibility, material behavior, and product quality.",
   },
   {
-    title: "Surface Refinement and Geometry Correction",
+    title: "Design Iteration and Refinement",
     description:
-      "We refine surfaces, correct geometry issues, improve transitions, and prepare smooth, professional, and technically usable 3D models.",
+      "Prototype testing helps identify issues early. We support controlled design iterations to improve product performance before manufacturing.",
   },
   {
-    title: "Prototype-Ready CAD Model Preparation",
+    title: "Manufacturing Feasibility Review",
     description:
-      "Our 3D CAD models can be used for 3D printing, CNC machining, mold development, sheet metal fabrication, and pilot production.",
-  },
-  {
-    title: "Manufacturing-Ready CAD Files",
-    description:
-      "We prepare CAD files with manufacturing feasibility in mind, supporting prototyping, tooling, production planning, and documentation.",
-  },
-  {
-    title: "Rendering-Ready 3D Models",
-    description:
-      "We prepare clean and detailed 3D models that can be used for photorealistic rendering, animation, product marketing, and client presentation.",
+      "We review prototypes with manufacturability in mind, helping reduce production errors, rework, tooling issues, and unnecessary development cost.",
   },
 ];
 
 const benefits = [
   {
-    title: "Better Product Visualization",
+    title: "Test Before Manufacturing",
     description:
-      "3D models allow clients to view the product clearly from different angles before manufacturing, making design review and decision-making easier.",
+      "Prototype development allows businesses to test product design, dimensions, function, assembly, and usability before moving into production.",
   },
   {
-    title: "Accurate Engineering Design",
+    title: "Reduce Product Development Risk",
     description:
-      "Parametric CAD models help maintain dimensional accuracy, design control, and technical consistency throughout the product development process.",
+      "By identifying design issues early, prototypes help reduce costly mistakes, rework, tooling errors, and production delays.",
   },
   {
-    title: "Smooth and Professional Surface Quality",
+    title: "Faster Design Iteration",
     description:
-      "Advanced surfacing helps create clean, smooth, and visually refined product geometry for products with curves, contours, and complex details.",
+      "Physical prototypes make it easier to review, improve, and refine the product quickly based on real testing and feedback.",
   },
   {
-    title: "Faster Design Iterations",
+    title: "Better Form, Fit, and Function Validation",
     description:
-      "Editable CAD models make it easier to modify dimensions, features, surfaces, and assemblies during product development.",
+      "Prototypes help check product appearance, component fitment, assembly logic, movement, strength, and performance before production.",
   },
   {
-    title: "Prototype and Manufacturing Support",
+    title: "Improved Stakeholder Approval",
     description:
-      "3D models can be used for 3D printing, CNC machining, mold development, sheet metal fabrication, product rendering, and manufacturing documentation.",
+      "A working or visual prototype helps clients, investors, teams, and decision-makers understand the product clearly and approve it with confidence.",
   },
   {
-    title: "Improved Fitment and Assembly",
+    title: "Multiple Prototype Methods",
     description:
-      "Assembly modeling helps check how different parts fit together, reducing issues during prototyping and production.",
+      "We support 3D printing, CNC machining, sheet metal prototyping, soft tooling, and pilot build preparation based on product requirements.",
   },
   {
-    title: "Better Product Presentation",
+    title: "Better Manufacturing Preparation",
     description:
-      "High-quality 3D models can be used for renderings, animations, marketing visuals, catalogs, client presentations, and investor discussions.",
+      "Prototype testing helps improve manufacturability, material selection, assembly methods, and production planning before final manufacturing.",
   },
   {
-    title: "Suitable for Complex Products",
+    title: "Cost and Time Saving",
     description:
-      "Advanced surfacing makes it possible to design complex product shapes that are difficult to create using basic CAD modeling methods.",
+      "Early prototype validation helps avoid expensive changes during tooling, production, or market launch.",
   },
 ];
 
 const industries = [
-  "Appliance manufacturers",
-  "HVAC product companies",
-  "Industrial product manufacturers",
+  "Product development companies",
+  "Manufacturing companies",
+  "Startups developing new products",
+  "Industrial equipment manufacturers",
   "Consumer product brands",
   "Automotive component companies",
-  "Plastic product manufacturers",
+  "Appliance manufacturers",
+  "HVAC product companies",
+  "Plastic component manufacturers",
   "Sheet metal fabrication units",
+  "CNC machining units",
   "Machine part manufacturers",
-  "Product development companies",
   "Engineering consultancies",
-  "Prototype development companies",
-  "Startups developing new products",
-  "CAD/CAM outsourcing projects",
-  "Furniture and fixture manufacturers",
-  "Mold and tooling companies",
+  "R&D teams",
+  "Tooling and mold development companies",
 ];
 
 const keyPoints = [
   {
-    title: "Parametric 3D Modeling",
+    title: "Rapid Prototyping Support",
     description:
-      "We create editable parametric CAD models using dimensions, features, and constraints. This makes future design changes faster, easier, and more controlled.",
+      "We help businesses quickly convert product designs and CAD models into physical prototypes for design review, testing, and approval.",
   },
   {
-    title: "Advanced Surface Modeling",
+    title: "3D Printing Prototypes",
     description:
-      "Our advanced surfacing support helps create smooth, clean, and complex product surfaces for appliances, HVAC components, plastic housings, panels, and engineered products.",
+      "3D printing is useful for concept models, visual samples, fitment checks, product housings, plastic parts, and early-stage design validation.",
   },
   {
-    title: "Freeform Modeling",
+    title: "CNC Prototype Machining",
     description:
-      "We develop organic and creative product shapes using freeform modeling techniques while keeping the design practical for product development and manufacturing.",
+      "CNC prototyping helps create accurate and strong prototypes for functional testing, dimensional checking, fitment validation, and performance review.",
   },
   {
-    title: "Product Visualization",
+    title: "Sheet Metal Prototyping",
     description:
-      "3D models help clients understand product form, size, proportions, details, and assembly before investing in prototypes or production.",
+      "We support sheet metal prototype development for brackets, panels, covers, enclosures, cabinets, frames, and industrial parts.",
   },
   {
-    title: "Complex Geometry Development",
+    title: "Soft Tooling Support",
     description:
-      "We support products with intricate details, curved profiles, blended surfaces, non-linear shapes, and advanced product forms.",
+      "Soft tooling helps create limited prototype batches or pre-production samples before investing in final production tooling.",
   },
   {
-    title: "2D to 3D Conversion",
+    title: "Form, Fit, and Function Testing",
     description:
-      "We convert 2D drawings, sketches, reference images, and old design data into accurate 3D CAD models for review, prototyping, and production.",
+      "Prototype development helps test product appearance, size, assembly, usability, movement, strength, and functional performance.",
   },
   {
-    title: "Assembly Modeling",
+    title: "Design Improvement Before Production",
     description:
-      "We create assembly models to check component fitment, part interaction, spacing, movement, and overall product structure.",
+      "Prototype feedback helps identify issues early and improve the design before tooling, pilot build, or mass manufacturing.",
   },
   {
-    title: "Prototype-Ready Models",
+    title: "Pilot Build Preparation",
     description:
-      "Our 3D CAD models can be used for 3D printing, CNC machining, mold development, sheet metal fabrication, and pilot production.",
+      "We support the transition from prototype to pilot build by preparing design files, drawings, documentation, and manufacturing inputs.",
   },
   {
-    title: "Rendering-Ready CAD Models",
+    title: "Reduced Manufacturing Risk",
     description:
-      "We prepare clean and detailed 3D models that can be used for photorealistic rendering, animation, product marketing, and client presentation.",
+      "Testing prototypes before production helps reduce errors, rework, delays, and unnecessary manufacturing costs.",
   },
   {
-    title: "Manufacturing Support",
+    title: "Suitable for Multiple Products",
     description:
-      "Our models are created with manufacturing feasibility in mind, helping reduce errors during prototyping, tooling, and production.",
+      "Our prototype development services support industrial products, consumer products, appliances, HVAC parts, machine components, plastic parts, and sheet metal products.",
   },
 ];
 
 const serviceIcons: IconType[] = [
-  FaCube,
-  FaRulerCombined,
-  FaShapes,
-  FaWandMagicSparkles,
-  FaLayerGroup,
-  FaPenRuler,
-  FaGears,
-  FaIndustry,
-  FaCubes,
-  FaScrewdriverWrench,
-  FaBoxesStacked,
-  FaFileLines,
-  FaDiagramProject,
-  FaCubes,
-  FaShieldHalved,
-  FaCompassDrafting,
-  FaLightbulb,
-  FaLayerGroup,
-  FaWandMagicSparkles,
   FaRocket,
+  FaCube,
+  FaGears,
+  FaLayerGroup,
+  FaScrewdriverWrench,
+  FaVialCircleCheck,
+  FaLightbulb,
+  FaBoxesStacked,
+  FaClipboardCheck,
+  FaPenRuler,
+  FaFileLines,
   FaFileCircleCheck,
-  FaPalette,
+  FaShieldHalved,
+  FaCircleCheck,
+  FaCubes,
+  FaTruckFast,
+  FaBoxesStacked,
+  FaIndustry,
+  FaDiagramProject,
+  FaRulerCombined,
 ];
 
 const benefitIcons: IconType[] = [
-  FaCube,
-  FaRulerCombined,
-  FaWandMagicSparkles,
+  FaClipboardCheck,
+  FaShieldHalved,
   FaRocket,
+  FaVialCircleCheck,
+  FaCircleCheck,
   FaScrewdriverWrench,
-  FaCubes,
-  FaPalette,
-  FaShapes,
+  FaIndustry,
+  FaTruckFast,
 ];
 
 const processItems = [
   {
-    title: "Parametric Models",
-    icon: FaRulerCombined,
+    title: "Build Prototype",
+    icon: FaCube,
   },
   {
-    title: "Advanced Surfaces",
-    icon: FaWandMagicSparkles,
+    title: "Test Function",
+    icon: FaVialCircleCheck,
   },
   {
-    title: "Assembly Fitment",
-    icon: FaCubes,
+    title: "Improve Design",
+    icon: FaPenRuler,
   },
   {
-    title: "Manufacturing Files",
-    icon: FaFileLines,
+    title: "Prepare Pilot Build",
+    icon: FaTruckFast,
   },
 ];
 
-const modelingCards = [
+const prototypeCards = [
   {
-    title: "Parametric 3D Modeling for Accurate Product Design",
+    title: "Rapid Prototyping for Faster Product Development",
     description:
-      "Parametric modeling is useful when a product requires accurate dimensions, editable features, controlled design changes, and engineering precision. AS Business creates parametric CAD models for mechanical parts, industrial components, assemblies, fixtures, tools, appliances, HVAC products, and engineered products.",
-    icon: FaRulerCombined,
+      "Rapid prototyping helps businesses quickly create physical models of product ideas for review and testing. Clients can evaluate the product at an early stage and make necessary improvements before manufacturing.",
+    icon: FaRocket,
   },
   {
-    title: "Advanced Surfacing for Complex Shapes and Smooth Finishes",
+    title: "3D Printing Prototype Development",
     description:
-      "Our advanced surfacing services help create accurate and smooth surface models for complex product forms. We focus on surface continuity, clean geometry, accurate transitions, aesthetic appeal, manufacturability, and design intent.",
-    icon: FaWandMagicSparkles,
+      "3D printing is effective for concept models, visual prototypes, fitment models, product housings, appliance parts, fixtures, small mechanisms, and early-stage product validation.",
+    icon: FaCube,
   },
   {
-    title: "Freeform Modeling for Creative and Engineered Products",
+    title: "CNC Prototype Machining",
     description:
-      "Freeform modeling allows the creation of organic shapes, curved surfaces, non-linear forms, and visually refined product designs. Our modeling process balances design creativity with engineering practicality so that the final model remains usable for manufacturing.",
-    icon: FaShapes,
+      "CNC prototypes are useful when a product requires higher strength, precision, material accuracy, dimensional checking, surface finish review, and functional testing.",
+    icon: FaGears,
   },
   {
-    title: "3D CAD Modeling for Appliances, HVAC, and Industrial Products",
+    title: "Sheet Metal, Soft Tooling, and Pilot Build Support",
     description:
-      "Our 3D modeling and advanced surfacing services are ideal for products that require precision, function, and visual quality. We support appliances, HVAC systems, engineered components, industrial products, machine parts, plastic parts, sheet metal products, and consumer product designs.",
+      "We support sheet metal prototypes, soft tooling, small batch prototype development, and pilot build preparation to help clients move from product validation toward production.",
     icon: FaIndustry,
   },
 ];
@@ -354,7 +341,7 @@ const Page = () => {
   return (
     <>
       <Script
-        id="breadcrumb-schema-3d-modeling-advanced-surfacing"
+        id="breadcrumb-schema-prototype-development"
         type="application/ld+json"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify({
@@ -376,8 +363,8 @@ const Page = () => {
               {
                 "@type": "ListItem",
                 position: 3,
-                name: "3D Modeling & Advanced Surfacing",
-                item: "https://www.asbconsulting.in/research&development/3d-modeling-advanced-surfacing-services",
+                name: "Prototype Development Services",
+                item: "https://www.asbconsulting.in/research&development/prototype-development-services",
               },
             ],
           }),
@@ -385,18 +372,18 @@ const Page = () => {
       />
 
       <Script
-        id="webpage-schema-3d-modeling-advanced-surfacing"
+        id="webpage-schema-prototype-development"
         type="application/ld+json"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "WebPage",
             "@id":
-              "https://www.asbconsulting.in/research&development/3d-modeling-advanced-surfacing-services#webpage",
-            url: "https://www.asbconsulting.in/research&development/3d-modeling-advanced-surfacing-services",
-            name: "3D Modeling & Advanced Surfacing Services in India",
+              "https://www.asbconsulting.in/research&development/prototype-development-services#webpage",
+            url: "https://www.asbconsulting.in/research&development/prototype-development-services",
+            name: "Prototype Development Services in India",
             description:
-              "AS Business provides professional 3D Modeling & Advanced Surfacing Services in India for manufacturers, product developers, engineering companies, startups, and industrial businesses that need accurate, detailed, and production-ready 3D CAD models.",
+              "AS Business Consulting provides professional prototype development services in India, including 3D printing, CNC machining, sheet metal prototyping, soft tooling, functional testing, and pilot build preparation.",
             isPartOf: {
               "@type": "WebSite",
               "@id": "https://www.asbconsulting.in/#website",
@@ -418,19 +405,19 @@ const Page = () => {
           <div className="relative max-w-7xl mx-auto px-5 py-20 md:py-28 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
               <p className="text-sm tracking-[0.28em] uppercase text-[#f3d6f6] font-semibold mb-5">
-                3D CAD • Parametric Modeling • Advanced Surfacing
+                3D Printing • CNC Prototypes • Pilot Build Support
               </p>
 
               <h1 className="text-4xl md:text-6xl font-bold leading-tight mb-6">
-                3D Modeling & Advanced Surfacing Services in India
+                Prototype Development Services in India
               </h1>
 
               <p className="text-base md:text-lg leading-relaxed text-white/85 mb-8 max-w-2xl">
-                AS Business provides professional 3D Modeling & Advanced
-                Surfacing Services in India for manufacturers, product
-                developers, engineering companies, startups, and industrial
-                businesses that need accurate, detailed, and production-ready 3D
-                CAD models.
+                AS Business Consulting provides professional Prototype
+                Development Services in India to help businesses, manufacturers,
+                startups, product developers, and engineering teams convert
+                product ideas and CAD designs into physical prototypes for
+                testing, validation, and improvement.
               </p>
 
               <div className="flex flex-wrap gap-4">
@@ -438,7 +425,7 @@ const Page = () => {
                   href="/contact"
                   className="inline-flex items-center gap-3 rounded-full bg-white text-[#502D52] px-6 py-3 font-semibold shadow-lg hover:shadow-xl transition"
                 >
-                  Create Your 3D Model <FaArrowRight />
+                  Start Your Prototype <FaArrowRight />
                 </Link>
 
                 <Link
@@ -457,36 +444,36 @@ const Page = () => {
                     <div className="rounded-2xl bg-white p-5 shadow-sm">
                       <FaCube className="text-4xl mb-5" />
                       <p className="text-sm font-semibold">
-                        Parametric 3D Modeling
+                        3D Printed Prototypes
                       </p>
                     </div>
 
                     <div className="rounded-2xl bg-white p-5 shadow-sm">
-                      <FaWandMagicSparkles className="text-4xl mb-5" />
+                      <FaGears className="text-4xl mb-5" />
                       <p className="text-sm font-semibold">
-                        Advanced Surfacing
+                        CNC Prototype Machining
                       </p>
                     </div>
                   </div>
 
                   <div className="rounded-2xl bg-[#502D52] text-white p-6">
-                    <FaShapes className="text-5xl mb-6 text-[#f3d6f6]" />
+                    <FaVialCircleCheck className="text-5xl mb-6 text-[#f3d6f6]" />
                     <h3 className="text-2xl font-bold mb-3">
-                      Smooth, Accurate, Production-Ready Geometry
+                      Build, Test, Improve, and Prepare for Production
                     </h3>
                     <p className="text-sm text-white/80 leading-relaxed">
-                      Create parametric models, freeform surfaces, assembly
-                      models, rendering-ready CAD models, and manufacturing-ready
-                      files.
+                      Validate form, fit, function, material behavior,
+                      manufacturability, assembly logic, and pilot build
+                      readiness before mass production.
                     </p>
                   </div>
                 </div>
               </div>
 
               <div className="absolute -bottom-6 -left-6 hidden md:block rounded-3xl bg-white p-5 shadow-xl">
-                <p className="text-[#502D52] font-bold text-3xl">3D CAD</p>
+                <p className="text-[#502D52] font-bold text-3xl">Prototype</p>
                 <p className="text-sm text-gray-500">
-                  Advanced Product Geometry
+                  Physical Product Validation
                 </p>
               </div>
             </div>
@@ -498,10 +485,10 @@ const Page = () => {
           <div className="max-w-6xl mx-auto px-5">
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4 rounded-[2rem] bg-white p-5 shadow-xl border border-[#eaddec]">
               {[
-                "Parametric Modeling",
-                "Advanced Surfacing",
-                "Freeform Geometry",
-                "Manufacturing-Ready CAD",
+                "3D Printing",
+                "CNC Prototypes",
+                "Sheet Metal Samples",
+                "Pilot Build Support",
               ].map((item, index) => (
                 <div
                   key={index}
@@ -521,32 +508,31 @@ const Page = () => {
         <section className="py-20">
           <div className="max-w-5xl mx-auto px-5 text-center">
             <p className="text-[#502D52] text-sm font-bold tracking-[0.22em] uppercase mb-4">
-              Accurate Geometry. Smooth Surfaces. Practical Engineering.
+              Test Earlier. Improve Faster. Manufacture Smarter.
             </p>
 
             <h2 className="text-3xl md:text-5xl font-bold mb-6 text-[#211827]">
-              Professional 3D Modeling Support for Product Development and
-              Manufacturing
+              Professional Prototype Development Support for Product Testing and
+              Validation
             </h2>
 
             <p className="leading-relaxed text-gray-600 mb-4">
-              Our services include parametric modeling, freeform modeling,
-              surface modeling, complex geometry development, product modeling,
-              assembly modeling, and CAD data preparation for design validation,
-              prototyping, and manufacturing.
+              Prototype development is an important stage in the product design
+              and engineering process. Before moving into mass production,
+              businesses need to test whether a product looks right, fits
+              correctly, functions properly, and can be manufactured efficiently.
             </p>
 
             <p className="leading-relaxed text-gray-600 mb-4">
-              3D modeling plays an important role in modern product design and
-              engineering. It helps businesses visualize products before
-              manufacturing, check fitment, improve design accuracy, validate
-              product form, and prepare files for prototyping or production.
+              A prototype helps identify design issues, improve usability, check
+              dimensions, validate material choices, and reduce production risk
+              before investing in tooling or large-scale manufacturing.
             </p>
 
             <p className="leading-relaxed text-gray-600">
-              At AS Business, we create 3D models that are not only visually
-              clear but also technically practical, editable, and suitable for
-              real-world engineering and manufacturing needs.
+              At AS Business Consulting, we help clients develop prototypes that
+              support faster decision-making, better product testing, and a
+              smoother transition from concept to production.
             </p>
           </div>
         </section>
@@ -556,25 +542,25 @@ const Page = () => {
           <div className="max-w-7xl mx-auto px-5 grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
             <div className="rounded-[2rem] bg-white p-6 md:p-8 shadow-lg border border-[#eaddec]">
               <p className="text-[#502D52] text-sm font-bold tracking-[0.18em] uppercase mb-3">
-                3D Modeling & Advanced Surfacing Services in India
+                Prototype Development Services in India
               </p>
 
               <h2 className="text-3xl md:text-5xl font-bold mb-5 text-[#211827]">
-                From Concept Sketches and 2D Drawings to Complex Surface Models
-                and Production-Ready CAD Files
+                From CAD Design and Product Ideas to Physical Prototype Testing
               </h2>
 
               <p className="leading-relaxed text-gray-600 mb-4">
-                AS Business provides professional 3D modeling and advanced
-                surfacing services in India for products that require accurate
-                geometry, smooth surfaces, complex details, and
-                manufacturing-ready CAD models.
+                AS Business Consulting supports prototype development through
+                suitable processes such as 3D printing, CNC machining, sheet
+                metal fabrication, and soft tooling depending on the product
+                requirement, material, complexity, strength, surface finish, and
+                testing purpose.
               </p>
 
               <p className="leading-relaxed text-gray-600">
-                Our 3D modeling services help clients visualize products,
-                validate design form, check fitment, prepare prototypes, create
-                renderings, and move smoothly toward manufacturing.
+                Our approach helps reduce development time, improve design
+                accuracy, make iterations faster, and prepare products for pilot
+                build or manufacturing.
               </p>
             </div>
 
@@ -598,10 +584,10 @@ const Page = () => {
           </div>
         </section>
 
-        {/* Modeling Cards */}
+        {/* Prototype Cards */}
         <section className="py-16">
           <div className="max-w-7xl mx-auto px-5 grid grid-cols-1 md:grid-cols-2 gap-6">
-            {modelingCards.map((item, index) => {
+            {prototypeCards.map((item, index) => {
               const Icon = item.icon;
 
               return (
@@ -631,16 +617,16 @@ const Page = () => {
           <div className="max-w-7xl mx-auto px-5">
             <div className="text-center mb-14">
               <p className="text-[#502D52] text-sm font-bold tracking-[0.22em] uppercase mb-3">
-                Our 3D Modeling Services
+                Our Prototype Development Services
               </p>
 
               <h2 className="text-3xl md:text-5xl font-bold text-[#211827]">
-                Our 3D Modeling & Advanced Surfacing Services Include
+                Our Prototype Development Services Include
               </h2>
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-5">
-              {modelingServices.map((service, index) => {
+              {prototypeServices.map((service, index) => {
                 const Icon = serviceIcons[index] || FaCircleCheck;
 
                 return (
@@ -675,7 +661,7 @@ const Page = () => {
               </p>
 
               <h2 className="text-3xl md:text-5xl font-bold text-[#211827]">
-                Key Benefits of 3D Modeling & Advanced Surfacing
+                Key Benefits of Prototype Development Services
               </h2>
             </div>
 
@@ -719,10 +705,11 @@ const Page = () => {
               </h2>
 
               <p className="leading-relaxed text-gray-600">
-                Our 3D modeling and advanced surfacing services are suitable for
-                appliance manufacturers, HVAC companies, industrial product
-                manufacturers, automotive component companies, startups,
-                prototype developers, and CAD/CAM outsourcing projects.
+                Our prototype development services are suitable for product
+                development companies, manufacturers, startups, engineering
+                teams, R&D teams, appliance manufacturers, HVAC companies,
+                automotive component companies, and industrial product
+                businesses.
               </p>
             </div>
 
@@ -755,34 +742,33 @@ const Page = () => {
                 </p>
 
                 <h2 className="text-3xl md:text-5xl font-bold mb-6">
-                  Why Choose AS Business?
+                  Why Choose AS Business Consulting?
                 </h2>
 
                 <p className="leading-relaxed text-white/80 mb-4">
-                  AS Business provides reliable 3D modeling and advanced
-                  surfacing support with a strong focus on accuracy, design
-                  quality, manufacturability, and technical clarity. We
-                  understand that a 3D model must not only look good but also
-                  support real product development, prototyping, manufacturing,
-                  and future design changes.
+                  AS Business Consulting provides reliable prototype development
+                  support with a strong focus on speed, accuracy, functionality,
+                  and manufacturing readiness. We understand that a prototype is
+                  not just a sample; it is an important testing stage that helps
+                  improve the product before production.
                 </p>
 
                 <p className="leading-relaxed text-white/80">
-                  Our team creates CAD models that are clean, editable,
-                  detailed, and suitable for engineering use. Whether you need
-                  parametric modeling, freeform surface design, complex product
-                  geometry, 2D to 3D conversion, product visualization models,
-                  or manufacturing-ready CAD files, AS Business can support your
-                  complete 3D modeling requirement.
+                  Our team supports clients from CAD model preparation to
+                  prototype development, testing, design improvement, and pilot
+                  build preparation. Whether you need a 3D printed prototype,
+                  CNC prototype, sheet metal sample, functional prototype, soft
+                  tooling, or small-batch pilot build support, we can help you
+                  move from concept to production with confidence.
                 </p>
               </div>
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 {[
-                  "Clean Editable CAD Models",
-                  "Smooth Surface Quality",
-                  "Manufacturing-Ready Geometry",
-                  "Prototype and Rendering Support",
+                  "3D Printing and CNC Support",
+                  "Form, Fit, and Function Testing",
+                  "Prototype-Ready CAD Files",
+                  "Pilot Build Preparation",
                 ].map((item, index) => (
                   <div
                     key={index}
@@ -806,22 +792,21 @@ const Page = () => {
               <div className="relative grid grid-cols-1 lg:grid-cols-3 gap-8 items-center">
                 <div className="lg:col-span-2">
                   <h2 className="text-3xl md:text-5xl font-bold mb-5">
-                    Create Accurate 3D Models for Your Product Ideas
+                    Build, Test, Improve, and Move Toward Production
                   </h2>
 
                   <p className="text-white/80 leading-relaxed mb-4">
-                    If you have a product concept, sketch, reference image,
-                    existing part, appliance design, HVAC component, or
-                    industrial product that needs professional 3D modeling, AS
-                    Business can help you convert it into an accurate CAD model.
+                    If you have a product idea, CAD model, engineering design,
+                    industrial component, appliance concept, or machine part
+                    that needs physical validation, AS Business Consulting can
+                    help you create a prototype for testing and improvement.
                   </p>
 
                   <p className="text-white/80 leading-relaxed">
-                    Contact us today for 3D Modeling & Advanced Surfacing
-                    Services in India, including parametric modeling, freeform
-                    modeling, advanced surface modeling, product modeling, CAD
-                    model preparation, and manufacturing-ready 3D design
-                    support.
+                    Contact us today for Prototype Development Services in
+                    India, including rapid prototyping, 3D printing, CNC
+                    prototyping, sheet metal prototyping, soft tooling,
+                    functional testing, and pilot build support.
                   </p>
                 </div>
 
@@ -847,7 +832,7 @@ const Page = () => {
               </p>
 
               <h2 className="text-3xl md:text-5xl font-bold text-[#211827]">
-                Key Points of 3D Modeling & Advanced Surfacing Services
+                Key Points of Prototype Development Services
               </h2>
             </div>
 
