@@ -172,7 +172,7 @@ const Header = () => {
                       <RxChevronRight />
                     </Link>
 
-                    {/* RIGHT SIDE 8 LINKS */}
+                    {/* RIGHT SIDE RESEARCH AND DEVELOPMENT LINKS */}
                     <div
                       className={`
                         absolute left-full top-0
@@ -195,28 +195,28 @@ const Header = () => {
                         href="/research&development/engineering-drafting-documentation"
                         className="block px-3 py-3 hover:bg-tertiary"
                       >
-                        Engineering Drafting & Documentation
+                        Engineering Drafting &amp; Documentation
                       </Link>
 
                       <Link
                         href="/research&development/file-conversion-data-migration"
                         className="block px-3 py-3 hover:bg-tertiary"
                       >
-                        File Conversion & Data Migration
+                        File Conversion &amp; Data Migration
                       </Link>
 
                       <Link
                         href="/research&development/modeling-advanced-surfacing"
                         className="block px-3 py-3 hover:bg-tertiary"
                       >
-                        3D Modeling & Advanced Surfacing
+                        3D Modeling &amp; Advanced Surfacing
                       </Link>
 
                       <Link
                         href="/research&development/product-design-engineering"
                         className="block px-3 py-3 hover:bg-tertiary"
                       >
-                        Product Design & Engineering
+                        Product Design &amp; Engineering
                       </Link>
 
                       <Link
@@ -230,7 +230,7 @@ const Header = () => {
                         href="/research&development/Realtime-renderings-visualization"
                         className="block px-3 py-3 hover:bg-tertiary"
                       >
-                        Realtime Renderings & Visualization
+                        Realtime Renderings &amp; Visualization
                       </Link>
 
                       <Link
@@ -249,19 +249,109 @@ const Header = () => {
                     Operations
                   </Link>
 
-                  <Link
-                    href="/international-business-development"
-                    className="block px-3 py-3 hover:bg-tertiary"
-                  >
-                    International Business
-                  </Link>
+                  {/* INTERNATIONAL BUSINESS WITH RIGHT SIDE SUBMENU */}
+                  <div className="relative group/international">
+                    <Link
+                      href="/international-business-development"
+                      className="flex items-center justify-between px-3 py-3 hover:bg-tertiary"
+                    >
+                      <span>International Business</span>
+                      <RxChevronRight />
+                    </Link>
 
-                  <Link
-                    href="/sales&marketing"
-                    className="block px-3 py-3 hover:bg-tertiary"
-                  >
-                    Sales &amp; Marketing
-                  </Link>
+                    {/* RIGHT SIDE INTERNATIONAL BUSINESS LINKS */}
+                    <div
+                      className={`
+                        absolute left-full top-0
+                        invisible opacity-0 translate-x-1
+                        group-hover/international:visible group-hover/international:opacity-100 group-hover/international:translate-x-0
+                        transition-all duration-150
+                        bg-white rounded w-80 pb-2 z-50 text-[15px]
+                        pointer-events-none group-hover/international:pointer-events-auto
+                        pt-2 shadow-lg
+                        before:content-[''] before:absolute before:-left-2 before:top-0 before:w-2 before:h-full`}
+                    >
+                      <Link
+                        href="/international-business-development/consultation-incentives"
+                        className="block px-3 py-3 hover:bg-tertiary"
+                      >
+                        Consultation &amp; Incentives
+                      </Link>
+
+                      <Link
+                        href="/international-business-development/development-technology"
+                        className="block px-3 py-3 hover:bg-tertiary"
+                      >
+                        Development Technology
+                      </Link>
+
+                      <Link
+                        href="/international-business-development/import-export-enablement"
+                        className="block px-3 py-3 hover:bg-tertiary"
+                      >
+                        Import Export Enablement
+                      </Link>
+
+                      <Link
+                        href="/international-business-development/logistics-compliance"
+                        className="block px-3 py-3 hover:bg-tertiary"
+                      >
+                        Logistics &amp; Compliance
+                      </Link>
+                    </div>
+                  </div>
+
+                  {/* SALES & MARKETING WITH RIGHT SIDE SUBMENU */}
+                  <div className="relative group/salesmarketing">
+                    <Link
+                      href="/sales&marketing"
+                      className="flex items-center justify-between px-3 py-3 hover:bg-tertiary"
+                    >
+                      <span>Sales &amp; Marketing</span>
+                      <RxChevronRight />
+                    </Link>
+
+                    {/* RIGHT SIDE SALES & MARKETING LINKS */}
+                    <div
+                      className={`
+                        absolute left-full top-0
+                        invisible opacity-0 translate-x-1
+                        group-hover/salesmarketing:visible group-hover/salesmarketing:opacity-100 group-hover/salesmarketing:translate-x-0
+                        transition-all duration-150
+                        bg-white rounded w-80 pb-2 z-50 text-[15px]
+                        pointer-events-none group-hover/salesmarketing:pointer-events-auto
+                        pt-2 shadow-lg
+                        before:content-[''] before:absolute before:-left-2 before:top-0 before:w-2 before:h-full`}
+                    >
+                      <Link
+                        href="/sales&marketing/b2b-marketing"
+                        className="block px-3 py-3 hover:bg-tertiary"
+                      >
+                        B2B Marketing
+                      </Link>
+
+                      <Link
+                        href="/sales&marketing/b2c-marketing"
+                        className="block px-3 py-3 hover:bg-tertiary"
+                      >
+                        B2C Marketing
+                      </Link>
+
+                      <Link
+                        href="/sales&marketing/growth-consulting"
+                        className="block px-3 py-3 hover:bg-tertiary"
+                      >
+                        Growth Consulting
+                      </Link>
+
+                      <Link
+                        href="/sales&marketing/training"
+                        className="block px-3 py-3 hover:bg-tertiary"
+                      >
+                        Training
+                      </Link>
+                    </div>
+                  </div>
 
                   <Link
                     href="/human-resource"
