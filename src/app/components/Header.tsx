@@ -172,7 +172,6 @@ const Header = () => {
                       <RxChevronRight />
                     </Link>
 
-                    {/* RIGHT SIDE RESEARCH AND DEVELOPMENT LINKS */}
                     <div
                       className={`
                         absolute left-full top-0
@@ -259,7 +258,6 @@ const Header = () => {
                       <RxChevronRight />
                     </Link>
 
-                    {/* RIGHT SIDE INTERNATIONAL BUSINESS LINKS */}
                     <div
                       className={`
                         absolute left-full top-0
@@ -311,7 +309,6 @@ const Header = () => {
                       <RxChevronRight />
                     </Link>
 
-                    {/* RIGHT SIDE SALES & MARKETING LINKS */}
                     <div
                       className={`
                         absolute left-full top-0
@@ -353,12 +350,77 @@ const Header = () => {
                     </div>
                   </div>
 
-                  <Link
-                    href="/human-resource"
-                    className="block px-3 py-3 hover:bg-tertiary"
-                  >
-                    HR Consultancy
-                  </Link>
+                  {/* HR CONSULTANCY WITH RIGHT SIDE SUBMENU */}
+                  <div className="relative group/hr">
+                    <Link
+                      href="/human-resource"
+                      className="flex items-center justify-between px-3 py-3 hover:bg-tertiary"
+                    >
+                      <span>HR Consultancy</span>
+                      <RxChevronRight />
+                    </Link>
+
+                    <div
+                      className={`
+                        absolute left-full top-0
+                        invisible opacity-0 translate-x-1
+                        group-hover/hr:visible group-hover/hr:opacity-100 group-hover/hr:translate-x-0
+                        transition-all duration-150
+                        bg-white rounded w-96 pb-2 z-50 text-[15px]
+                        pointer-events-none group-hover/hr:pointer-events-auto
+                        pt-2 shadow-lg
+                        before:content-[''] before:absolute before:-left-2 before:top-0 before:w-2 before:h-full`}
+                    >
+                      <Link
+                        href="/human-resource/workforce-planning"
+                        className="block px-3 py-3 hover:bg-tertiary"
+                      >
+                        Workforce Planning
+                      </Link>
+
+                      <Link
+                        href="/human-resource/recruitment-executive-search"
+                        className="block px-3 py-3 hover:bg-tertiary"
+                      >
+                        Recruitment &amp; Executive Search
+                      </Link>
+
+                      <Link
+                        href="/human-resource/policy-design-compliance-audits"
+                        className="block px-3 py-3 hover:bg-tertiary"
+                      >
+                        Policy Design &amp; Compliance Audits
+                      </Link>
+
+                      <Link
+                        href="/human-resource/training-capability-building"
+                        className="block px-3 py-3 hover:bg-tertiary"
+                      >
+                        Training &amp; Capability Building
+                      </Link>
+
+                      <Link
+                        href="/human-resource/campus-early-talent-programs"
+                        className="block px-3 py-3 hover:bg-tertiary"
+                      >
+                        Campus &amp; Early-Talent Programs
+                      </Link>
+
+                      <Link
+                        href="/human-resource/employee-engagement"
+                        className="block px-3 py-3 hover:bg-tertiary"
+                      >
+                        Employee Engagement
+                      </Link>
+
+                      <Link
+                        href="/human-resource/payroll-support"
+                        className="block px-3 py-3 hover:bg-tertiary"
+                      >
+                        Payroll Support
+                      </Link>
+                    </div>
+                  </div>
 
                   <Link
                     href="/legal-consulting"
