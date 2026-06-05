@@ -26,51 +26,27 @@ const Header = () => {
           />
 
           <nav className="flex flex-col items-center justify-center h-full space-y-6 text-lg font-light">
-            <Link
-              href="/"
-              className="hover:text-blue-600"
-              onClick={() => setIsOpen(false)}
-            >
+            <Link href="/" className="hover:text-blue-600" onClick={() => setIsOpen(false)}>
               Home
             </Link>
 
-            <Link
-              href="/about-us"
-              className="hover:text-blue-600"
-              onClick={() => setIsOpen(false)}
-            >
+            <Link href="/about-us" className="hover:text-blue-600" onClick={() => setIsOpen(false)}>
               About Us
             </Link>
 
-            <Link
-              href="/our-services"
-              className="hover:text-blue-600"
-              onClick={() => setIsOpen(false)}
-            >
+            <Link href="/our-services" className="hover:text-blue-600" onClick={() => setIsOpen(false)}>
               Services
             </Link>
 
-            <Link
-              href="/customers"
-              className="hover:text-blue-600"
-              onClick={() => setIsOpen(false)}
-            >
+            <Link href="/customers" className="hover:text-blue-600" onClick={() => setIsOpen(false)}>
               Customers
             </Link>
 
-            <Link
-              href="/gallery"
-              className="hover:text-blue-600"
-              onClick={() => setIsOpen(false)}
-            >
+            <Link href="/gallery" className="hover:text-blue-600" onClick={() => setIsOpen(false)}>
               Our Gallery
             </Link>
 
-            <Link
-              href="/contact"
-              className="hover:text-blue-600"
-              onClick={() => setIsOpen(false)}
-            >
+            <Link href="/contact" className="hover:text-blue-600" onClick={() => setIsOpen(false)}>
               Contact Us
             </Link>
           </nav>
@@ -134,10 +110,7 @@ const Header = () => {
                 Home
               </Link>
 
-              <Link
-                href="/about-us"
-                className="mr-0 hover:text-gray-900 cursor-pointer"
-              >
+              <Link href="/about-us" className="mr-0 hover:text-gray-900 cursor-pointer">
                 About Us
               </Link>
 
@@ -183,70 +156,86 @@ const Header = () => {
                         pt-2 shadow-lg
                         before:content-[''] before:absolute before:-left-2 before:top-0 before:w-2 before:h-full`}
                     >
-                      <Link
-                        href="/research&development/cad-cam-outsourcing"
-                        className="block px-3 py-3 hover:bg-tertiary"
-                      >
+                      <Link href="/research&development/cad-cam-outsourcing" className="block px-3 py-3 hover:bg-tertiary">
                         CAD/CAM Outsourcing
                       </Link>
 
-                      <Link
-                        href="/research&development/engineering-drafting-documentation"
-                        className="block px-3 py-3 hover:bg-tertiary"
-                      >
+                      <Link href="/research&development/engineering-drafting-documentation" className="block px-3 py-3 hover:bg-tertiary">
                         Engineering Drafting &amp; Documentation
                       </Link>
 
-                      <Link
-                        href="/research&development/file-conversion-data-migration"
-                        className="block px-3 py-3 hover:bg-tertiary"
-                      >
+                      <Link href="/research&development/file-conversion-data-migration" className="block px-3 py-3 hover:bg-tertiary">
                         File Conversion &amp; Data Migration
                       </Link>
 
-                      <Link
-                        href="/research&development/modeling-advanced-surfacing"
-                        className="block px-3 py-3 hover:bg-tertiary"
-                      >
+                      <Link href="/research&development/modeling-advanced-surfacing" className="block px-3 py-3 hover:bg-tertiary">
                         3D Modeling &amp; Advanced Surfacing
                       </Link>
 
-                      <Link
-                        href="/research&development/product-design-engineering"
-                        className="block px-3 py-3 hover:bg-tertiary"
-                      >
+                      <Link href="/research&development/product-design-engineering" className="block px-3 py-3 hover:bg-tertiary">
                         Product Design &amp; Engineering
                       </Link>
 
-                      <Link
-                        href="/research&development/prototype-development"
-                        className="block px-3 py-3 hover:bg-tertiary"
-                      >
+                      <Link href="/research&development/prototype-development" className="block px-3 py-3 hover:bg-tertiary">
                         Prototype Development
                       </Link>
 
-                      <Link
-                        href="/research&development/Realtime-renderings-visualization"
-                        className="block px-3 py-3 hover:bg-tertiary"
-                      >
+                      <Link href="/research&development/Realtime-renderings-visualization" className="block px-3 py-3 hover:bg-tertiary">
                         Realtime Renderings &amp; Visualization
                       </Link>
 
-                      <Link
-                        href="/research&development/reverse-engineering"
-                        className="block px-3 py-3 hover:bg-tertiary"
-                      >
+                      <Link href="/research&development/reverse-engineering" className="block px-3 py-3 hover:bg-tertiary">
                         Reverse Engineering
                       </Link>
                     </div>
                   </div>
 
-                  <Link
-                    href="/operation"
-                    className="block px-3 py-3 hover:bg-tertiary"
-                  >
-                    Operations
-                  </Link>
+                  {/* OPERATIONS WITH RIGHT SIDE SUBMENU */}
+                  <div className="relative group/operations">
+                    <Link
+                      href="/operation"
+                      className="flex items-center justify-between px-3 py-3 hover:bg-tertiary"
+                    >
+                      <span>Operations</span>
+                      <RxChevronRight />
+                    </Link>
+
+                    <div
+                      className={`
+                        absolute left-full top-0
+                        invisible opacity-0 translate-x-1
+                        group-hover/operations:visible group-hover/operations:opacity-100 group-hover/operations:translate-x-0
+                        transition-all duration-150
+                        bg-white rounded w-80 pb-2 z-50 text-[15px]
+                        pointer-events-none group-hover/operations:pointer-events-auto
+                        pt-2 shadow-lg
+                        before:content-[''] before:absolute before:-left-2 before:top-0 before:w-2 before:h-full`}
+                    >
+                      <Link href="/operation/audit" className="block px-3 py-3 hover:bg-tertiary">
+                       MIS & Audit
+                      </Link>
+
+                      <Link href="/operation/financial-growth" className="block px-3 py-3 hover:bg-tertiary">
+                        Financial Growth
+                      </Link>
+
+                      <Link href="/operation/innovation" className="block px-3 py-3 hover:bg-tertiary">
+                        Innovation
+                      </Link>
+
+                      <Link href="/operation/productivity-improvement" className="block px-3 py-3 hover:bg-tertiary">
+                        Productivity Improvement
+                      </Link>
+
+                      <Link href="/operation/qms" className="block px-3 py-3 hover:bg-tertiary">
+                        QMS
+                      </Link>
+
+                      <Link href="/operation/systematic-operation" className="block px-3 py-3 hover:bg-tertiary">
+                        Systematic Operation
+                      </Link>
+                    </div>
+                  </div>
 
                   {/* INTERNATIONAL BUSINESS WITH RIGHT SIDE SUBMENU */}
                   <div className="relative group/international">
@@ -269,31 +258,19 @@ const Header = () => {
                         pt-2 shadow-lg
                         before:content-[''] before:absolute before:-left-2 before:top-0 before:w-2 before:h-full`}
                     >
-                      <Link
-                        href="/international-business-development/consultation-incentives"
-                        className="block px-3 py-3 hover:bg-tertiary"
-                      >
+                      <Link href="/international-business-development/consultation-incentives" className="block px-3 py-3 hover:bg-tertiary">
                         Consultation &amp; Incentives
                       </Link>
 
-                      <Link
-                        href="/international-business-development/development-technology"
-                        className="block px-3 py-3 hover:bg-tertiary"
-                      >
+                      <Link href="/international-business-development/development-technology" className="block px-3 py-3 hover:bg-tertiary">
                         Development Technology
                       </Link>
 
-                      <Link
-                        href="/international-business-development/import-export-enablement"
-                        className="block px-3 py-3 hover:bg-tertiary"
-                      >
+                      <Link href="/international-business-development/import-export-enablement" className="block px-3 py-3 hover:bg-tertiary">
                         Import Export Enablement
                       </Link>
 
-                      <Link
-                        href="/international-business-development/logistics-compliance"
-                        className="block px-3 py-3 hover:bg-tertiary"
-                      >
+                      <Link href="/international-business-development/logistics-compliance" className="block px-3 py-3 hover:bg-tertiary">
                         Logistics &amp; Compliance
                       </Link>
                     </div>
@@ -320,31 +297,19 @@ const Header = () => {
                         pt-2 shadow-lg
                         before:content-[''] before:absolute before:-left-2 before:top-0 before:w-2 before:h-full`}
                     >
-                      <Link
-                        href="/sales&marketing/b2b-marketing"
-                        className="block px-3 py-3 hover:bg-tertiary"
-                      >
+                      <Link href="/sales&marketing/b2b-marketing" className="block px-3 py-3 hover:bg-tertiary">
                         B2B Marketing
                       </Link>
 
-                      <Link
-                        href="/sales&marketing/b2c-marketing"
-                        className="block px-3 py-3 hover:bg-tertiary"
-                      >
+                      <Link href="/sales&marketing/b2c-marketing" className="block px-3 py-3 hover:bg-tertiary">
                         B2C Marketing
                       </Link>
 
-                      <Link
-                        href="/sales&marketing/growth-consulting"
-                        className="block px-3 py-3 hover:bg-tertiary"
-                      >
+                      <Link href="/sales&marketing/growth-consulting" className="block px-3 py-3 hover:bg-tertiary">
                         Growth Consulting
                       </Link>
 
-                      <Link
-                        href="/sales&marketing/training"
-                        className="block px-3 py-3 hover:bg-tertiary"
-                      >
+                      <Link href="/sales&marketing/training" className="block px-3 py-3 hover:bg-tertiary">
                         Training
                       </Link>
                     </div>
@@ -371,68 +336,41 @@ const Header = () => {
                         pt-2 shadow-lg
                         before:content-[''] before:absolute before:-left-2 before:top-0 before:w-2 before:h-full`}
                     >
-                      <Link
-                        href="/human-resource/workforce-planning"
-                        className="block px-3 py-3 hover:bg-tertiary"
-                      >
+                      <Link href="/human-resource/workforce-planning" className="block px-3 py-3 hover:bg-tertiary">
                         Workforce Planning
                       </Link>
 
-                      <Link
-                        href="/human-resource/recruitment-executive-search"
-                        className="block px-3 py-3 hover:bg-tertiary"
-                      >
+                      <Link href="/human-resource/recruitment-executive-search" className="block px-3 py-3 hover:bg-tertiary">
                         Recruitment &amp; Executive Search
                       </Link>
 
-                      <Link
-                        href="/human-resource/policy-design-compliance-audits"
-                        className="block px-3 py-3 hover:bg-tertiary"
-                      >
+                      <Link href="/human-resource/policy-design-compliance-audits" className="block px-3 py-3 hover:bg-tertiary">
                         Policy Design &amp; Compliance Audits
                       </Link>
 
-                      <Link
-                        href="/human-resource/training-capability-building"
-                        className="block px-3 py-3 hover:bg-tertiary"
-                      >
+                      <Link href="/human-resource/training-capability-building" className="block px-3 py-3 hover:bg-tertiary">
                         Training &amp; Capability Building
                       </Link>
 
-                      <Link
-                        href="/human-resource/campus-early-talent-programs"
-                        className="block px-3 py-3 hover:bg-tertiary"
-                      >
+                      <Link href="/human-resource/campus-early-talent-programs" className="block px-3 py-3 hover:bg-tertiary">
                         Campus &amp; Early-Talent Programs
                       </Link>
 
-                      <Link
-                        href="/human-resource/employee-engagement"
-                        className="block px-3 py-3 hover:bg-tertiary"
-                      >
+                      <Link href="/human-resource/employee-engagement" className="block px-3 py-3 hover:bg-tertiary">
                         Employee Engagement
                       </Link>
 
-                      <Link
-                        href="/human-resource/payroll-support"
-                        className="block px-3 py-3 hover:bg-tertiary"
-                      >
+                      <Link href="/human-resource/payroll-support" className="block px-3 py-3 hover:bg-tertiary">
                         Payroll Support
                       </Link>
                     </div>
                   </div>
 
-                  <Link
-                    href="/legal-consulting"
-                    className="block px-3 py-3 hover:bg-tertiary"
-                  >
+                  <Link href="/legal-consulting" className="block px-3 py-3 hover:bg-tertiary">
                     Legal Advisory
                   </Link>
 
-                  <Link
-                    href="/certification"
-                    className="block px-3 py-3 hover:bg-tertiary"
-                  >
+                  <Link href="/certification" className="block px-3 py-3 hover:bg-tertiary">
                     Certification
                   </Link>
                 </div>
@@ -463,10 +401,7 @@ const Header = () => {
       {/* HEADER FOR MOBILE */}
       <header className="md:hidden w-full">
         <div className="max-w-7xl px-5 mx-auto flex justify-between items-center py-3.5">
-          <Link
-            href="/"
-            className="flex title-font font-medium items-center mb-0 md:mb-0"
-          >
+          <Link href="/" className="flex title-font font-medium items-center mb-0 md:mb-0">
             <Image
               src="/images/asConsultingLogo.svg"
               alt="AS logo"

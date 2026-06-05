@@ -1,5 +1,6 @@
 import * as React from "react";
 import Script from "next/script";
+import Link from "next/link";
 
 export const metadata = {
   title: "Corporate Legal Advisory in India | Compliance – AS Business",
@@ -17,10 +18,13 @@ import Image from "next/image";
 import ContactFrom from "../components/ContactFrom";
 
 const page = () => {
+  const internalLinkClass =
+    "text-black hover:text-primary transition-colors duration-200";
+
   return (
     <>
       <Script
-       id="breadcrumb-schema-legal-consulting"
+        id="breadcrumb-schema-legal-consulting"
         type="application/ld+json"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify({
@@ -50,9 +54,8 @@ const page = () => {
         }}
       />
 
-      {/* WebPage Schema (no Service schema) */}
       <Script
-      id="webpage-schema-legal-consulting"
+        id="webpage-schema-legal-consulting"
         type="application/ld+json"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify({
@@ -75,14 +78,13 @@ const page = () => {
 
       <Header />
 
-      {/*  TOP SECTION Banner */}
       <div className="bg-[url('/images/legal-consulting.jpg')] bg-cover bg-center">
-        <div className=" max-w-7xl m-auto px-5 py-15 md:py-40">
-          <h1 className="sm:text-6xl text-2xl font-bold text-white mb-4 text-center ">
+        <div className="max-w-7xl m-auto px-5 py-15 md:py-40">
+          <h1 className="sm:text-6xl text-2xl font-bold text-white mb-4 text-center">
             Legal & Compliance Consulting for Corporate Governance & Risk
             Management
           </h1>
-          <p className=" mx-auto leading-relaxed text-sm font-normal text-white inter-text text-center w-full  md:w-[80%] ">
+          <p className="mx-auto leading-relaxed text-sm font-normal text-white inter-text text-center w-full md:w-[80%]">
             At AS Business Consulting, we help you operate confidently within
             the law while minimizing risk. Our comprehensive and cost-effective
             legal services safeguard operations, strengthen governance, and
@@ -93,20 +95,29 @@ const page = () => {
           </p>
         </div>
       </div>
+
       <section>
         <div className="container">
-          <div className=" mx-auto flex flex-wrap"></div>
+          <div className="mx-auto flex flex-wrap"></div>
+
           <div className="flex flex-col-reverse md:flex-row justify-between gap-4 mb-20">
-            <div className=" w-full md:w-[60%]">
-              <h2 className="text-primary text-3xl font-bold  mb-7">
+            <div className="w-full md:w-[60%]">
+              <h2 className="text-primary text-3xl font-bold mb-7">
                 What We Cover
               </h2>
-              <p className=" text-xl font-bold inter-text my-4">
-                Corporate Legal Advisory & Governance
+
+              <p className="text-xl font-bold inter-text my-4">
+                <Link
+                  href="/legal-consulting/corporate-legal-advisory"
+                  className={internalLinkClass}
+                >
+                  Corporate Legal Advisory & Governance
+                </Link>
               </p>
-              <div className=" mb-6">
+
+              <div className="mb-6">
                 <div className="flex items-center mb-3 gap-3">
-                  <div className="flex items-center justify-center  mb-0">
+                  <div className="flex items-center justify-center mb-0">
                     <FaCheck className="rounded-full text-xl bg-primary text-white p-1" />
                   </div>
                   <h2 className="text-black text-base font-medium mb-0">
@@ -114,8 +125,9 @@ const page = () => {
                     matters
                   </h2>
                 </div>
+
                 <div className="flex items-center mb-3 gap-3">
-                  <div className="flex items-center justify-center  mb-0">
+                  <div className="flex items-center justify-center mb-0">
                     <FaCheck className="rounded-full text-xl bg-primary text-white p-1" />
                   </div>
                   <h2 className="text-black text-base font-medium mb-0">
@@ -123,8 +135,9 @@ const page = () => {
                     calendars
                   </h2>
                 </div>
+
                 <div className="flex items-center mb-3 gap-3">
-                  <div className="flex items-center justify-center  mb-0">
+                  <div className="flex items-center justify-center mb-0">
                     <FaCheck className="rounded-full text-xl bg-primary text-white p-1" />
                   </div>
                   <h2 className="text-black text-base font-medium mb-0">
@@ -133,28 +146,36 @@ const page = () => {
                 </div>
               </div>
 
-              <p className=" text-xl font-bold inter-text my-4">
-                Commercial Advisory & Transactions
+              <p className="text-xl font-bold inter-text my-4">
+                <Link
+                  href="/legal-consulting/commercial-advisory"
+                  className={internalLinkClass}
+                >
+                  Commercial Advisory & Transactions
+                </Link>
               </p>
-              <div className=" mb-5">
+
+              <div className="mb-5">
                 <div className="flex items-center mb-3 gap-3">
-                  <div className="flex items-center justify-center  mb-0">
+                  <div className="flex items-center justify-center mb-0">
                     <FaCheck className="rounded-full text-xl bg-primary text-white p-1" />
                   </div>
                   <h2 className="text-black text-base font-medium mb-0">
                     M&A, JV/partnerships, slump sales, business transfers
                   </h2>
                 </div>
+
                 <div className="flex items-center mb-3 gap-3">
-                  <div className="flex items-center justify-center  mb-0">
+                  <div className="flex items-center justify-center mb-0">
                     <FaCheck className="rounded-full text-xl bg-primary text-white p-1" />
                   </div>
                   <h2 className="text-black text-base font-medium mb-0">
                     Competition, taxation interface, and commercial risk reviews
                   </h2>
                 </div>
+
                 <div className="flex items-center mb-3 gap-3">
-                  <div className="flex items-center justify-center  mb-0">
+                  <div className="flex items-center justify-center mb-0">
                     <FaCheck className="rounded-full text-xl bg-primary text-white p-1" />
                   </div>
                   <h2 className="text-black text-base font-medium mb-0">
@@ -164,20 +185,27 @@ const page = () => {
                 </div>
               </div>
 
-              <p className=" text-xl font-bold inter-text my-4">
-                Contracts & Agreements
+              <p className="text-xl font-bold inter-text my-4">
+                <Link
+                  href="/legal-consulting/contracts-agreements"
+                  className={internalLinkClass}
+                >
+                  Contracts & Agreements
+                </Link>
               </p>
-              <div className=" mb-5">
+
+              <div className="mb-5">
                 <div className="flex items-center mb-3 gap-3">
-                  <div className="flex items-center justify-center  mb-0">
+                  <div className="flex items-center justify-center mb-0">
                     <FaCheck className="rounded-full text-xl bg-primary text-white p-1" />
                   </div>
                   <h2 className="text-black text-base font-medium mb-0">
                     MSAs, procurement/vendor & distributor contracts, SLAs, NDAs
                   </h2>
                 </div>
+
                 <div className="flex items-center mb-3 gap-3">
-                  <div className="flex items-center justify-center  mb-0">
+                  <div className="flex items-center justify-center mb-0">
                     <FaCheck className="rounded-full text-xl bg-primary text-white p-1" />
                   </div>
                   <h2 className="text-black text-base font-medium mb-0">
@@ -185,8 +213,9 @@ const page = () => {
                     playbooks
                   </h2>
                 </div>
+
                 <div className="flex items-center mb-3 gap-3">
-                  <div className="flex items-center justify-center  mb-0">
+                  <div className="flex items-center justify-center mb-0">
                     <FaCheck className="rounded-full text-xl bg-primary text-white p-1" />
                   </div>
                   <h2 className="text-black text-base font-medium mb-0">
@@ -195,28 +224,36 @@ const page = () => {
                 </div>
               </div>
 
-              <p className=" text-xl font-bold inter-text my-4">
-                Banking & Finance Law
+              <p className="text-xl font-bold inter-text my-4">
+                <Link
+                  href="/legal-consulting/banking-finance-law"
+                  className={internalLinkClass}
+                >
+                  Banking & Finance Law
+                </Link>
               </p>
-              <div className=" mb-5">
+
+              <div className="mb-5">
                 <div className="flex items-center mb-3 gap-3">
-                  <div className="flex items-center justify-center  mb-0">
+                  <div className="flex items-center justify-center mb-0">
                     <FaCheck className="rounded-full text-xl bg-primary text-white p-1" />
                   </div>
                   <h2 className="text-black text-base font-medium mb-0">
                     Term sheets, loan & security documents, project finance
                   </h2>
                 </div>
+
                 <div className="flex items-center mb-3 gap-3">
-                  <div className="flex items-center justify-center  mb-0">
+                  <div className="flex items-center justify-center mb-0">
                     <FaCheck className="rounded-full text-xl bg-primary text-white p-1" />
                   </div>
                   <h2 className="text-black text-base font-medium mb-0">
                     Debt restructuring, fund-flow controls, covenant monitoring
                   </h2>
                 </div>
+
                 <div className="flex items-center mb-3 gap-3">
-                  <div className="flex items-center justify-center  mb-0">
+                  <div className="flex items-center justify-center mb-0">
                     <FaCheck className="rounded-full text-xl bg-primary text-white p-1" />
                   </div>
                   <h2 className="text-black text-base font-medium mb-0">
@@ -226,45 +263,55 @@ const page = () => {
                 </div>
               </div>
             </div>
+
             <div className="w-full md:w-[30%]">
               <div>
                 <Image
-                  src="/images/legal1.png" // path relative to /public
-                  alt="My beautiful image"
+                  src="/images/legal1.png"
+                  alt="Corporate legal advisory and governance consulting"
                   width={500}
                   height={500}
-                  priority // optional: preloads image
+                  priority
                   className="rounded mb-10 md:mb-20"
                 />
               </div>
+
               <div>
                 <Image
-                  src="/images/legal2.png" // path relative to /public
-                  alt="My beautiful image"
+                  src="/images/legal2.png"
+                  alt="Commercial advisory and legal transaction support"
                   width={500}
                   height={500}
-                  priority // optional: preloads image
+                  priority
                   className="rounded hidden md:block"
                 />
               </div>
             </div>
           </div>
-          <div className=" flex flex-col-reverse md:flex-row justify-between gap-4">
+
+          <div className="flex flex-col-reverse md:flex-row justify-between gap-4">
             <div className="w-full md:w-[60%]">
-              <p className=" text-xl font-bold inter-text my-4">
-                IP, IT & Cyber Law
+              <p className="text-xl font-bold inter-text my-4">
+                <Link
+                  href="/legal-consulting/ip-it-cyber-law"
+                  className={internalLinkClass}
+                >
+                  IP, IT & Cyber Law
+                </Link>
               </p>
-              <div className=" mb-6">
+
+              <div className="mb-6">
                 <div className="flex items-center mb-3 gap-3">
-                  <div className="flex items-center justify-center  mb-0">
+                  <div className="flex items-center justify-center mb-0">
                     <FaCheck className="rounded-full text-xl bg-primary text-white p-1" />
                   </div>
                   <h2 className="text-black text-base font-medium mb-0">
                     IPR strategy, filings, assignments, and licensing
                   </h2>
                 </div>
+
                 <div className="flex items-center mb-3 gap-3">
-                  <div className="flex items-center justify-center  mb-0">
+                  <div className="flex items-center justify-center mb-0">
                     <FaCheck className="rounded-full text-xl bg-primary text-white p-1" />
                   </div>
                   <h2 className="text-black text-base font-medium mb-0">
@@ -274,20 +321,27 @@ const page = () => {
                 </div>
               </div>
 
-              <p className=" text-xl font-bold inter-text my-4">
-                Family Advisory & Asset Management
+              <p className="text-xl font-bold inter-text my-4">
+                <Link
+                  href="/legal-consulting/family-advisory"
+                  className={internalLinkClass}
+                >
+                  Family Advisory & Asset Management
+                </Link>
               </p>
-              <div className=" mb-5">
+
+              <div className="mb-5">
                 <div className="flex items-center mb-3 gap-3">
-                  <div className="flex items-center justify-center  mb-0">
+                  <div className="flex items-center justify-center mb-0">
                     <FaCheck className="rounded-full text-xl bg-primary text-white p-1" />
                   </div>
                   <h2 className="text-black text-base font-medium mb-0">
                     Succession planning, family charters, wills & trusts
                   </h2>
                 </div>
+
                 <div className="flex items-center mb-3 gap-3">
-                  <div className="flex items-center justify-center  mb-0">
+                  <div className="flex items-center justify-center mb-0">
                     <FaCheck className="rounded-full text-xl bg-primary text-white p-1" />
                   </div>
                   <h2 className="text-black text-base font-medium mb-0">
@@ -296,20 +350,27 @@ const page = () => {
                 </div>
               </div>
 
-              <p className=" text-xl font-bold inter-text my-4">
-                Background Investigation & Due Diligence
+              <p className="text-xl font-bold inter-text my-4">
+                <Link
+                  href="/legal-consulting/background-investigation-due-diligence"
+                  className={internalLinkClass}
+                >
+                  Background Investigation & Due Diligence
+                </Link>
               </p>
-              <div className=" mb-5">
+
+              <div className="mb-5">
                 <div className="flex items-center mb-3 gap-3">
-                  <div className="flex items-center justify-center  mb-0">
+                  <div className="flex items-center justify-center mb-0">
                     <FaCheck className="rounded-full text-xl bg-primary text-white p-1" />
                   </div>
                   <h2 className="text-black text-base font-medium mb-0">
                     Vendor/partner and leadership due diligence
                   </h2>
                 </div>
+
                 <div className="flex items-center mb-3 gap-3">
-                  <div className="flex items-center justify-center  mb-0">
+                  <div className="flex items-center justify-center mb-0">
                     <FaCheck className="rounded-full text-xl bg-primary text-white p-1" />
                   </div>
                   <h2 className="text-black text-base font-medium mb-0">
@@ -319,12 +380,18 @@ const page = () => {
                 </div>
               </div>
 
-              <p className=" text-xl font-bold inter-text my-4">
-                Compliance Audits & MIS
+              <p className="text-xl font-bold inter-text my-4">
+                <Link
+                  href="/legal-consulting/compliance-audits"
+                  className={internalLinkClass}
+                >
+                  Compliance Audits & MIS
+                </Link>
               </p>
-              <div className=" mb-5">
+
+              <div className="mb-5">
                 <div className="flex items-center mb-3 gap-3">
-                  <div className="flex items-center justify-center  mb-0">
+                  <div className="flex items-center justify-center mb-0">
                     <FaCheck className="rounded-full text-xl bg-primary text-white p-1" />
                   </div>
                   <h2 className="text-black text-base font-medium mb-0">
@@ -332,8 +399,9 @@ const page = () => {
                     action plans
                   </h2>
                 </div>
+
                 <div className="flex items-center mb-3 gap-3">
-                  <div className="flex items-center justify-center  mb-0">
+                  <div className="flex items-center justify-center mb-0">
                     <FaCheck className="rounded-full text-xl bg-primary text-white p-1" />
                   </div>
                   <h2 className="text-black text-base font-medium mb-0">
@@ -342,12 +410,13 @@ const page = () => {
                 </div>
               </div>
 
-              <p className=" text-xl font-bold inter-text my-4">
+              <p className="text-xl font-bold inter-text my-4">
                 Why Choose AS Business Consulting
               </p>
-              <div className=" mb-5">
+
+              <div className="mb-5">
                 <div className="flex items-center mb-3 gap-3">
-                  <div className="flex items-center justify-center  mb-0">
+                  <div className="flex items-center justify-center mb-0">
                     <FaCheck className="rounded-full text-xl bg-primary text-white p-1" />
                   </div>
                   <h2 className="text-black text-base font-medium mb-0">
@@ -355,16 +424,18 @@ const page = () => {
                     finance and compliance depth
                   </h2>
                 </div>
+
                 <div className="flex items-center mb-3 gap-3">
-                  <div className="flex items-center justify-center  mb-0">
+                  <div className="flex items-center justify-center mb-0">
                     <FaCheck className="rounded-full text-xl bg-primary text-white p-1" />
                   </div>
                   <h2 className="text-black text-base font-medium mb-0">
                     Tailored, affordable solutions for MSMEs to enterprises
                   </h2>
                 </div>
+
                 <div className="flex items-center mb-3 gap-3">
-                  <div className="flex items-center justify-center  mb-0">
+                  <div className="flex items-center justify-center mb-0">
                     <FaCheck className="rounded-full text-xl bg-primary text-white p-1" />
                   </div>
                   <h2 className="text-black text-base font-medium mb-0">
@@ -372,8 +443,9 @@ const page = () => {
                     fixes
                   </h2>
                 </div>
+
                 <div className="flex items-center mb-3 gap-3">
-                  <div className="flex items-center justify-center  mb-0">
+                  <div className="flex items-center justify-center mb-0">
                     <FaCheck className="rounded-full text-xl bg-primary text-white p-1" />
                   </div>
                   <h2 className="text-black text-base font-medium mb-0">
@@ -383,44 +455,49 @@ const page = () => {
                 </div>
               </div>
 
-              <p className=" text-xl font-bold inter-text my-4">
+              <p className="text-xl font-bold inter-text my-4">
                 Typical Deliverables
               </p>
-              <div className=" mb-5">
+
+              <div className="mb-5">
                 <div className="flex items-center mb-3 gap-3">
-                  <div className="flex items-center justify-center  mb-0">
+                  <div className="flex items-center justify-center mb-0">
                     <FaCheck className="rounded-full text-xl bg-primary text-white p-1" />
                   </div>
                   <h2 className="text-black text-base font-medium mb-0">
                     Compliance matrix & calendar, policy stack, and SOPs
                   </h2>
                 </div>
+
                 <div className="flex items-center mb-3 gap-3">
-                  <div className="flex items-center justify-center  mb-0">
+                  <div className="flex items-center justify-center mb-0">
                     <FaCheck className="rounded-full text-xl bg-primary text-white p-1" />
                   </div>
                   <h2 className="text-black text-base font-medium mb-0">
                     Contract repository with standardized templates
                   </h2>
                 </div>
+
                 <div className="flex items-center mb-3 gap-3">
-                  <div className="flex items-center justify-center  mb-0">
+                  <div className="flex items-center justify-center mb-0">
                     <FaCheck className="rounded-full text-xl bg-primary text-white p-1" />
                   </div>
                   <h2 className="text-black text-base font-medium mb-0">
                     Due-diligence/background reports and risk registers
                   </h2>
                 </div>
+
                 <div className="flex items-center mb-3 gap-3">
-                  <div className="flex items-center justify-center  mb-0">
+                  <div className="flex items-center justify-center mb-0">
                     <FaCheck className="rounded-full text-xl bg-primary text-white p-1" />
                   </div>
                   <h2 className="text-black text-base font-medium mb-0">
                     Board/management MIS and audit closure trackers
                   </h2>
                 </div>
+
                 <div className="flex items-center mb-3 gap-3">
-                  <div className="flex items-center justify-center  mb-0">
+                  <div className="flex items-center justify-center mb-0">
                     <FaCheck className="rounded-full text-xl bg-primary text-white p-1" />
                   </div>
                   <h2 className="text-black text-base font-medium mb-0">
@@ -429,66 +506,83 @@ const page = () => {
                   </h2>
                 </div>
               </div>
-              <p className=" text-xl font-bold inter-text my-4">
+
+              <p className="text-xl font-bold inter-text my-4">
                 Explore More Services
               </p>
-              <div className=" mb-5">
+
+              <div className="mb-5">
                 <div className="flex items-center mb-3 gap-3">
-                  <div className="flex items-center justify-center  mb-0">
+                  <div className="flex items-center justify-center mb-0">
                     <FaCheck className="rounded-full text-xl bg-primary text-white p-1" />
                   </div>
                   <h2 className="text-black text-base font-medium mb-0">
-                    Operations Consulting – Lean, quality, and supply-chain
-                    excellence
+                    <Link
+                      href="/operations-consulting"
+                      className={internalLinkClass}
+                    >
+                      Operations Consulting
+                    </Link>{" "}
+                    – Lean, quality, and supply-chain excellence
                   </h2>
                 </div>
+
                 <div className="flex items-center mb-3 gap-3">
-                  <div className="flex items-center justify-center  mb-0">
+                  <div className="flex items-center justify-center mb-0">
                     <FaCheck className="rounded-full text-xl bg-primary text-white p-1" />
                   </div>
                   <h2 className="text-black text-base font-medium mb-0">
-                    HR Consulting – Recruitment, policy audits, and engagement
+                    <Link href="/hr-consultancy" className={internalLinkClass}>
+                      HR Consulting
+                    </Link>{" "}
+                    – Recruitment, policy audits, and engagement
                   </h2>
                 </div>
+
                 <div className="flex items-center mb-3 gap-3">
-                  <div className="flex items-center justify-center  mb-0">
+                  <div className="flex items-center justify-center mb-0">
                     <FaCheck className="rounded-full text-xl bg-primary text-white p-1" />
                   </div>
                   <h2 className="text-black text-base font-medium mb-0">
-                    Contact Us – Speak to our legal experts and get a tailored
-                    plan today
+                    <Link href="/contact-us" className={internalLinkClass}>
+                      Contact Us
+                    </Link>{" "}
+                    – Speak to our legal experts and get a tailored plan today
                   </h2>
                 </div>
               </div>
             </div>
+
             <div className="w-full md:w-[30%]">
-              <div className=" mb-20">
+              <div className="mb-20">
                 <Image
-                  src="/images/legal3.png" // path relative to /public
-                  alt="My beautiful image"
+                  src="/images/legal3.png"
+                  alt="IP IT and cyber law consulting"
                   width={500}
                   height={500}
-                  priority // optional: preloads image
+                  priority
                   className="rounded mb-20"
                 />
               </div>
-              <div className=" mb-20">
+
+              <div className="mb-20">
                 <Image
-                  src="/images/legal4.png" // path relative to /public
-                  alt="My beautiful image"
+                  src="/images/legal4.png"
+                  alt="Family advisory and asset management consulting"
                   width={500}
                   height={500}
-                  priority // optional: preloads image
+                  priority
                   className="rounded hidden md:block"
                 />
               </div>
-              <div className=" mb-20">
+
+              <div className="mb-20">
                 <Image
-                  src="/images/legal5.png" // path relative to /public
-                  alt="My beautiful image"
+                  src="/images/legal5.png"
+                  alt="Compliance audits and MIS consulting"
                   width={500}
                   height={500}
-                  priority // optional: preloads image
+                  priority
                   className="rounded hidden md:block"
                 />
               </div>
@@ -496,140 +590,159 @@ const page = () => {
           </div>
         </div>
       </section>
-      <section className=" relative">
-        {/* <div className="container mx-auto flex flex-wrap"> */}
-        {/* <div className="flex flex-col text-center w-full mb-0">
-            <h1 className="sm:text-6xl text-2xl font-bold  mb-4 text-primary">
-              Introduction
-            </h1>
-            <p className="lg:w-[90%] mx-auto leading-relaxed inter-text text-sm font-normal mb-4">
-              The main object of AS Consultants is to provide comprehensive and
-              affordable services to our customers and clients.
-            </p>
-            <p className="lg:w-[60%] mx-auto leading-relaxed inter-text text-sm font-normal mb-4">
-              We help you understand legal and commercial issues to guide
-              you into success. Our dedicated teams cater towards all your
-              advisory needs covering statutory compliance, financial advisory,
-              IPR, IT and Cyber crime protection. Through our management team,
-              consisting of Law firms, CA&apos;s , Industry experts sharing
-              decades of experience, we provide to our clients analytical study
-              of issues and solutions
-            </p>
-            <p className="lg:w-[90%] mx-auto leading-relaxed inter-text text-sm font-normal mb-4">
-              AS Consultants has a dedicated team of professionals specializing
-              in various disciplines including corporate and commercial laws,
-              taxation, intellectual property laws and dispute resolution and
-              also providing its support to resolve problems in the legal
-              domain. The firm is guided by leading and reputed lawyers,
-              Chartered Accountants, Corporate Financial Advisors and Industry
-              Specialists.
-            </p>
-          </div> */}
-        {/* </div> */}
+
+      <section className="relative">
         <Image
-          src="/images/leftShape.svg" // path relative to /public
-          alt="My beautiful image"
+          src="/images/leftShape.svg"
+          alt="Left decorative shape"
           width={300}
           height={300}
-          priority // optional: preloads image
-          className=" absolute left-0 top-0 "
+          priority
+          className="absolute left-0 top-0"
         />
+
         <Image
-          src="/images/rightShape.svg" // path relative to /public
-          alt="My beautiful image"
+          src="/images/rightShape.svg"
+          alt="Right decorative shape"
           width={300}
           height={300}
-          priority // optional: preloads image
-          className=" absolute right-0 top-0 "
+          priority
+          className="absolute right-0 top-0"
         />
       </section>
+
       <section>
-        <div className=" container grid grid-cols-1 md:grid-cols-3 gap-4">
-          <div className="">
+        <div className="container grid grid-cols-1 md:grid-cols-3 gap-4">
+          <div>
             <h2 className="text-black text-xl md:text-2xl font-semibold mb-7">
               Package include
             </h2>
+
             <div>
               <div className="flex items-center mb-3 gap-3">
-                <div className=" flex items-center justify-center rounded-full bg-primary text-white mb-0 p-1">
+                <div className="flex items-center justify-center rounded-full bg-primary text-white mb-0 p-1">
                   <FaCheck />
                 </div>
                 <h2 className="text-black text-xl md:text-2xl font-medium mb-0">
-                  Corporate Legal Advisory
+                  <Link
+                    href="/legal-consulting/corporate-legal-advisory"
+                    className={internalLinkClass}
+                  >
+                    Corporate Legal Advisory
+                  </Link>
                 </h2>
               </div>
+
               <div className="flex items-center mb-3 gap-3">
-                <div className=" flex items-center justify-center rounded-full bg-primary text-white mb-0 p-1">
+                <div className="flex items-center justify-center rounded-full bg-primary text-white mb-0 p-1">
                   <FaCheck />
                 </div>
                 <h2 className="text-black text-xl md:text-2xl font-medium mb-0">
-                  Commercial advisory
+                  <Link
+                    href="/legal-consulting/commercial-advisory"
+                    className={internalLinkClass}
+                  >
+                    Commercial Advisory
+                  </Link>
                 </h2>
               </div>
+
               <div className="flex items-center mb-3 gap-3">
-                <div className=" flex items-center justify-center rounded-full bg-primary text-white mb-0 p-1">
+                <div className="flex items-center justify-center rounded-full bg-primary text-white mb-0 p-1">
                   <FaCheck />
                 </div>
                 <h2 className="text-black text-xl md:text-2xl font-medium mb-0">
-                  Contracts & Agreements
+                  <Link
+                    href="/legal-consulting/contracts-agreements"
+                    className={internalLinkClass}
+                  >
+                    Contracts & Agreements
+                  </Link>
                 </h2>
               </div>
+
               <div className="flex items-center mb-3 gap-3">
-                <div className=" flex items-center justify-center rounded-full bg-primary text-white mb-0 p-1">
+                <div className="flex items-center justify-center rounded-full bg-primary text-white mb-0 p-1">
                   <FaCheck />
                 </div>
                 <h2 className="text-black text-xl md:text-2xl font-medium mb-0">
-                  Banking & Finance law
+                  <Link
+                    href="/legal-consulting/banking-finance-law"
+                    className={internalLinkClass}
+                  >
+                    Banking & Finance Law
+                  </Link>
                 </h2>
               </div>
+
               <div className="flex items-center mb-3 gap-3">
-                <div className=" flex items-center justify-center rounded-full bg-primary text-white mb-0 p-1">
+                <div className="flex items-center justify-center rounded-full bg-primary text-white mb-0 p-1">
                   <FaCheck />
                 </div>
                 <h2 className="text-black text-xl md:text-2xl font-medium mb-0">
-                  Family advisory
+                  <Link
+                    href="/legal-consulting/family-advisory"
+                    className={internalLinkClass}
+                  >
+                    Family Advisory
+                  </Link>
                 </h2>
               </div>
+
               <div className="flex items-center mb-3 gap-3">
-                <div className=" flex items-center justify-center rounded-full bg-primary text-white mb-0 p-1">
+                <div className="flex items-center justify-center rounded-full bg-primary text-white mb-0 p-1">
                   <FaCheck />
                 </div>
                 <h2 className="text-black text-xl md:text-2xl font-medium mb-0">
-                  Asset Management
+                  <Link
+                    href="/legal-consulting/family-advisory"
+                    className={internalLinkClass}
+                  >
+                    Asset Management
+                  </Link>
                 </h2>
               </div>
+
               <div className="flex items-center mb-3 gap-3">
-                <div className=" flex items-center justify-center rounded-full bg-primary text-white mb-0 p-1">
+                <div className="flex items-center justify-center rounded-full bg-primary text-white mb-0 p-1">
                   <FaCheck />
                 </div>
                 <h2 className="text-black text-xl md:text-2xl font-medium mb-0">
-                  Background investigation
+                  <Link
+                    href="/legal-consulting/background-investigation-due-diligence"
+                    className={internalLinkClass}
+                  >
+                    Background Investigation
+                  </Link>
                 </h2>
               </div>
             </div>
           </div>
+
           <div>
             <Image
-              src="/images/drafting.png" // path relative to /public
-              alt="My beautiful image"
+              src="/images/drafting.png"
+              alt="Legal drafting and documentation"
               width={500}
               height={500}
-              priority // optional: preloads image
-              className=" rounded"
+              priority
+              className="rounded"
             />
           </div>
+
           <div>
             <Image
-              src="/images/detailing.png" // path relative to /public
-              alt="My beautiful image"
+              src="/images/detailing.png"
+              alt="Legal detailing and compliance support"
               width={500}
               height={500}
-              priority // optional: preloads image
+              priority
               className="rounded"
             />
           </div>
         </div>
       </section>
+
       <ContactFrom />
       <Footer />
     </>
