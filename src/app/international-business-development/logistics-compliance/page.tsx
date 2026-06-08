@@ -14,7 +14,6 @@ import {
   FaGlobe,
   FaRoute,
   FaBoxOpen,
-  FaIndustry,
   FaChartLine,
 } from "react-icons/fa6";
 

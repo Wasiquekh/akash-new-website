@@ -13,7 +13,6 @@ import {
   FaGears,
   FaIndustry,
   FaLightbulb,
-  FaPenRuler,
   FaRocket,
   FaShieldHalved,
   FaScrewdriverWrench,

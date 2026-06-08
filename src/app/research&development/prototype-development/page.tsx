@@ -23,7 +23,6 @@ import {
   FaShieldHalved,
   FaTruckFast,
   FaVialCircleCheck,
-  FaWandMagicSparkles,
 } from "react-icons/fa6";
 
 import Header from "../../components/Header";

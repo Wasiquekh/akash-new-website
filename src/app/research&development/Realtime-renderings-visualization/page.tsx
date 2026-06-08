@@ -4,12 +4,10 @@ import Script from "next/script";
 import type { IconType } from "react-icons";
 import {
   FaArrowRight,
-  FaBoxesStacked,
   FaCameraRetro,
   FaCircleCheck,
   FaClockRotateLeft,
   FaCube,
-  FaCubes,
   FaDiagramProject,
   FaEye,
   FaFilm,

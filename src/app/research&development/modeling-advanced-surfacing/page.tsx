@@ -6,7 +6,6 @@ import {
   FaArrowRight,
   FaBoxesStacked,
   FaCircleCheck,
-  FaClipboardCheck,
   FaCompassDrafting,
   FaCube,
   FaCubes,

@@ -204,29 +204,6 @@ const whyChoose = [
   },
 ];
 
-const seoKeywords = [
-  "Technology development services",
-  "Technology development consulting",
-  "Business setup consulting",
-  "New technology setup",
-  "Machinery setup consulting",
-  "Machines and tools selection",
-  "Industrial technology solutions",
-  "Business development consulting",
-  "International business development",
-  "Export business consulting",
-  "Global expansion consulting",
-  "Manufacturing business consulting",
-  "Import export business support",
-  "Industrial setup consulting",
-  "Business growth consulting",
-  "Technology consulting services in India",
-  "Export-ready business setup",
-  "Process improvement consulting",
-  "Vendor coordination support",
-  "International relations for business",
-];
-
 const deliverableIcons = [
   FaLightbulb,
   FaScrewdriverWrench,

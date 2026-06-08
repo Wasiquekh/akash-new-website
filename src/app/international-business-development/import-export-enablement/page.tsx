@@ -16,7 +16,6 @@ import {
   FaRocket,
   FaShieldHalved,
   FaNetworkWired,
-  FaMagnifyingGlassChart,
 } from "react-icons/fa6";
 
 import Header from "../../components/Header";
@@ -226,29 +225,6 @@ const whyChoose = [
     description:
       "From certification and licensing to product sales and franchise programs, AS Business Consulting provides complete support to help businesses grow in new markets.",
   },
-];
-
-const seoKeywords = [
-  "Import export enablement services",
-  "Import export consulting services",
-  "Export business consulting",
-  "Import export business support",
-  "Certification and licensing support",
-  "Export certification guidance",
-  "Import export license consulting",
-  "Product sales strategy",
-  "Franchise program development",
-  "International business development",
-  "Global expansion consulting",
-  "Export readiness assessment",
-  "Trade compliance support",
-  "Product certification for export",
-  "Import export documentation support",
-  "Export market entry consulting",
-  "Business expansion consulting",
-  "Distributor development support",
-  "Franchise business consulting",
-  "International trade consulting services in India",
 ];
 
 const deliverableIcons = [

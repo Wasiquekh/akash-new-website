@@ -14,7 +14,6 @@ import {
   FaGears,
   FaIndustry,
   FaLayerGroup,
-  FaLightbulb,
   FaPenRuler,
   FaRocket,
   FaShieldHalved,
