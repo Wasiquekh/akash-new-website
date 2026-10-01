@@ -11,7 +11,7 @@ export const organizationSchema = {
   "@id": ORGANIZATION_ID,
   name: "AS Business Consulting",
   url: SITE_URL,
-  logo: `${SITE_URL}images/asConsultingLogo.svg`,
+  logo: `${SITE_URL}images/as-business-consulting-logo-512.png`,
   description:
     "AS Business Consulting is a trusted consulting firm in India, providing strategic advisory and growth-focused business consulting solutions.",
   email: "akash.shahane@asbconsulting.in",
