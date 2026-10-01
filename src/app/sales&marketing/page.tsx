@@ -6,7 +6,7 @@ export const metadata = {
   description:
     "Drive growth with AS Business Consulting’s B2B marketing experts, specializing in digital strategy, customer acquisition, and tailored promotional solutions.",
   alternates: {
-    canonical: "https://www.asbconsulting.in/sales%26marketing",
+    canonical: "https://www.asbconsulting.in/sales&marketing",
   },
 };
 
@@ -51,7 +51,7 @@ const page = () => {
                 "@type": "ListItem",
                 position: 3,
                 name: "Sales & Marketing",
-                item: "https://www.asbconsulting.in/sales&26marketing",
+                item: "https://www.asbconsulting.in/sales&marketing",
               },
             ],
           }),
@@ -66,8 +66,8 @@ const page = () => {
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "WebPage",
-            "@id": "https://www.asbconsulting.in/sales&26marketing#webpage",
-            url: "https://www.asbconsulting.in/sales&26marketing",
+            "@id": "https://www.asbconsulting.in/sales&marketing#webpage",
+            url: "https://www.asbconsulting.in/sales&marketing",
             name: "B2B Marketing in India | Digital Strategy & Training – AS Business",
             description:
               "Drive growth with AS Business Consulting’s B2B marketing experts, specializing in digital strategy, customer acquisition, and tailored promotional solutions.",

@@ -4,7 +4,7 @@ export const metadata = {
   description:
     "AS Business Consulting provides BIS, NABL, and ISO certification services in India, including QMS, inspections, and complete industry compliance support.",
   alternates: {
-    canonical: "",
+    canonical: "https://www.asbconsulting.in/certification",
   },
 };
 import Header from "../components/Header";
