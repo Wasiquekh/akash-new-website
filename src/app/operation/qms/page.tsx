@@ -3,12 +3,14 @@ import Script from "next/script";
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
 import ContactFrom from "../../components/ContactFrom";
+import OperationsRelated from "../../components/OperationsRelated";
+import Link from "next/link";
 import { FaCheck } from "react-icons/fa6";
 
 export const metadata = {
-  title: "QMS Consulting in India | Quality Management System | AS Business Consulting",
+  title: "QMS Consulting in India | Quality Management System Implementation",
   description:
-    "AS Business Consulting provides QMS services including FTR improvement, 7 QC Tools implementation, Kaizen, Poka-yoke, quality awareness training, defect reduction, root cause analysis, and quality process improvement.",
+    "QMS consulting for manufacturers in India: improve first-time-right, cut defects and rework with 7 QC tools, Kaizen, Poka-yoke and root cause analysis.",
   alternates: {
     canonical: "https://www.asbconsulting.in/operation/qms",
   },
@@ -269,8 +271,8 @@ const page = () => {
               {
                 "@type": "ListItem",
                 position: 2,
-                name: "Our Services",
-                item: "https://www.asbconsulting.in/our-services",
+                name: "Operations Consulting",
+                item: "https://www.asbconsulting.in/operation",
               },
               {
                 "@type": "ListItem",
@@ -292,14 +294,37 @@ const page = () => {
             "@type": "WebPage",
             "@id": "https://www.asbconsulting.in/operation/qms#webpage",
             url: "https://www.asbconsulting.in/operation/qms",
-            name: "QMS Consulting in India | Quality Management System | AS Business Consulting",
+            name: "QMS Consulting in India | Quality Management System Implementation",
             description:
-              "AS Business Consulting provides QMS services including FTR improvement, 7 QC Tools implementation, Kaizen, Poka-yoke, quality awareness training, defect reduction, root cause analysis, and quality process improvement.",
+              "QMS consulting for manufacturers in India: improve first-time-right, cut defects and rework with 7 QC tools, Kaizen, Poka-yoke and root cause analysis.",
             isPartOf: {
               "@type": "WebSite",
               "@id": "https://www.asbconsulting.in/#website",
               url: "https://www.asbconsulting.in/",
               name: "AS Business Consulting",
+            },
+          }),
+        }}
+      />
+
+      <Script
+        id="service-schema-qms"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Service",
+            name: "QMS Consulting",
+            serviceType: "Quality management system consulting",
+            description:
+              "QMS consulting for manufacturers in India: improve first-time-right, cut defects and rework with 7 QC tools, Kaizen, Poka-yoke and root cause analysis.",
+            url: "https://www.asbconsulting.in/operation/qms",
+            areaServed: { "@type": "Country", name: "India" },
+            provider: {
+              "@type": "Organization",
+              "@id": "https://www.asbconsulting.in/#organization",
+              name: "AS Business Consulting",
+              url: "https://www.asbconsulting.in/",
             },
           }),
         }}
@@ -326,9 +351,9 @@ const page = () => {
                 </div>
 
                 <h1 className="text-4xl font-black leading-[1.08] tracking-tight text-white md:text-5xl lg:text-6xl">
-                  Improve Quality,
-                  <span className="block">Reduce Defects &</span>
-                  <span className="block">Strengthen Control</span>
+                  QMS Consulting to
+                  <span className="block">Improve Quality &</span>
+                  <span className="block">Reduce Defects</span>
                 </h1>
 
                 <p className="mt-6 max-w-2xl text-sm font-semibold leading-7 text-white/90 md:text-base md:leading-8">
@@ -341,18 +366,20 @@ const page = () => {
 
                 <div className="mt-8 flex flex-wrap gap-3">
                   <a
-                    href="/our-services"
+                    href="#enquiry"
+                    data-cta="service_enquiry"
+                    data-cta-location="qms-hero"
                     className="rounded-full bg-white px-7 py-4 text-xs font-black uppercase tracking-wide text-primary shadow-lg shadow-white/10 transition-all duration-300 hover:-translate-y-1"
                   >
-                    Explore Services
+                    Request a QMS Consultation
                   </a>
 
-                  <a
-                    href="/contact"
+                  <Link
+                    href="/operation"
                     className="rounded-full border border-white px-7 py-4 text-xs font-black uppercase tracking-wide text-white transition-all duration-300 hover:-translate-y-1 hover:bg-white hover:text-primary"
                   >
-                    Get Consultation
-                  </a>
+                    All Operations Services
+                  </Link>
                 </div>
               </div>
 
@@ -676,6 +703,8 @@ const page = () => {
           </div>
         </section>
 
+        <OperationsRelated current="qms" />
+
         {/* CTA */}
         <section id="contact" className="bg-white py-14 text-primary md:py-20">
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
@@ -693,10 +722,12 @@ const page = () => {
               </p>
 
               <a
-                href="/contact"
+                href="#enquiry"
+                data-cta="service_enquiry"
+                data-cta-location="qms-bottom"
                 className="inline-block rounded-full bg-white px-9 py-4 text-sm font-black uppercase tracking-wide text-primary transition-all duration-300 hover:-translate-y-1"
               >
-                Speak With Our Experts
+                Request a QMS Consultation
               </a>
             </div>
           </div>

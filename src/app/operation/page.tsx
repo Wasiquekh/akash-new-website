@@ -2,9 +2,9 @@ import * as React from "react";
 import Script from "next/script";
 
 export const metadata = {
-  title: "Lean Manufacturing & ZED Certification in India – AS Business",
+  title: "Operations Consulting in India | Lean Manufacturing & ZED",
   description:
-    "Boost efficiency with AS Business Consulting’s lean manufacturing consultants in India, offering ZED certification, reverse engineering, and supply chain optimization.",
+    "Operations consulting for manufacturers and MSMEs in India: lean manufacturing, ZED support, productivity improvement, QMS, audits and supply chain.",
   alternates: {
     canonical: "https://www.asbconsulting.in/operation",
   },
@@ -15,6 +15,10 @@ import Footer from "../components/Footer";
 import Image from "next/image";
 import ContactFrom from "../components/ContactFrom";
 import { FaCheck } from "react-icons/fa6";
+import Link from "next/link";
+import ServiceCta from "../components/ServiceCta";
+
+const linkClass = "text-primary underline hover:text-secondary";
 
 const page = () => {
   return (
@@ -59,9 +63,9 @@ const page = () => {
             "@type": "WebPage",
             "@id": "https://www.asbconsulting.in/operation#webpage",
             url: "https://www.asbconsulting.in/operation",
-            name: "Lean Manufacturing & ZED Certification in India – AS Business",
+            name: "Operations Consulting in India | Lean Manufacturing & ZED",
             description:
-              "Boost efficiency with AS Business Consulting’s lean manufacturing consultants in India, offering ZED certification, reverse engineering, and supply chain optimization.",
+              "Operations consulting for manufacturers and MSMEs in India: lean manufacturing, ZED support, productivity improvement, QMS, audits and supply chain.",
             isPartOf: {
               "@type": "WebSite",
               "@id": "https://www.asbconsulting.in/#website",
@@ -111,9 +115,13 @@ const page = () => {
         <div className="container">
           <div className=" flex flex-wrap">
             <div className="flex flex-col text-center w-full mb-10 md:mb-20">
-              <h1 className="sm:text-6xl text-2xl font-bold  mb-4 text-primary">
-                Our Consulting
-              </h1>
+              <h2 className="sm:text-6xl text-2xl font-bold  mb-4 text-primary">
+                Operations Consulting Services
+              </h2>
+              <p className="lg:w-[70%] mx-auto leading-relaxed inter-text text-sm font-normal">
+                Six connected areas of work. Start with the one closest to your
+                current problem, or ask us to assess the whole operation.
+              </p>
               {/* <p className="lg:w-[90%] mx-auto leading-relaxed inter-text text-sm font-normal mb-4">
                 Businesses are always looking to better optimize their
                 operational processes in a variety of ways, like increasing
@@ -140,7 +148,9 @@ const page = () => {
 
               <div>
                 <p className=" text-2xl font-medium text-black  mb-1  text-center md:text-left ">
-                  Innovation
+                  <Link href="/operation/innovation" className="hover:text-secondary underline decoration-tertiary underline-offset-4">
+                    Innovation & Cost Saving Consulting
+                  </Link>
                 </p>
                 <p className=" text-sm font-normal text-black inter-text ">
                   - Benchmarking of Product & Process
@@ -167,7 +177,9 @@ const page = () => {
 
               <div>
                 <p className=" text-2xl font-medium text-black  mb-1 text-center md:text-left">
-                  Productivity Improvement
+                  <Link href="/operation/productivity-inprovement" className="hover:text-secondary underline decoration-tertiary underline-offset-4">
+                    Productivity Improvement Consulting
+                  </Link>
                 </p>
                 <p className=" text-sm font-normal text-black inter-text">
                   - Identifying Process Bottlenecks
@@ -194,7 +206,9 @@ const page = () => {
 
               <div>
                 <p className=" text-2xl font-medium text-black  mb-1 text-center md:text-left">
-                  Systematic Operation
+                  <Link href="/operation/systematic-operation" className="hover:text-secondary underline decoration-tertiary underline-offset-4">
+                    Systematic Operation Consulting (5S & SOP)
+                  </Link>
                 </p>
                 <p className=" text-sm font-normal text-black inter-text">
                   - 5S implementation
@@ -221,7 +235,9 @@ const page = () => {
 
               <div>
                 <p className=" text-2xl font-medium text-black  mb-1 text-center md:text-left">
-                  MIS & Audit
+                  <Link href="/operation/audit" className="hover:text-secondary underline decoration-tertiary underline-offset-4">
+                    MIS & Operations Audit Services
+                  </Link>
                 </p>
                 <p className=" text-sm font-normal text-black inter-text">
                   - Analysis of business performance
@@ -248,7 +264,9 @@ const page = () => {
 
               <div>
                 <p className=" text-2xl font-medium text-black  mb-1 text-center md:text-left">
-                  QMS
+                  <Link href="/operation/qms" className="hover:text-secondary underline decoration-tertiary underline-offset-4">
+                    Quality Management System (QMS) Consulting
+                  </Link>
                 </p>
                 <p className=" text-sm font-normal text-black inter-text">
                   - FTR Improvement
@@ -275,7 +293,9 @@ const page = () => {
 
               <div>
                 <p className=" text-2xl font-medium text-black  mb-1 text-center md:text-left">
-                  Financial Growth
+                  <Link href="/operation/financial-growth" className="hover:text-secondary underline decoration-tertiary underline-offset-4">
+                    Financial Growth Advisory
+                  </Link>
                 </p>
 
                 <p className=" text-sm font-normal text-black inter-text">
@@ -292,21 +312,63 @@ const page = () => {
           </div>
         </div>
       </section>
+      <ServiceCta
+        heading="Discuss Your Operations Challenge"
+        text="Tell us where the operation is losing time, cost or quality — rework, missed deliveries, low output, weak controls. We will suggest where to start and what an engagement would involve."
+        buttonLabel="Request an Operations Consultation"
+        location="operation-hub"
+      />
       <section>
         <div className="container">
           <div className="border border-primary p-6 w-full rounded mb-6">
             <p className="text-base font-bold">What We Deliver (at a glance)</p>
-            <p className="text-base inter-text">
-              Innovation – Product & process benchmarking, cost saving,
-              technology updates. Systematic Operations – 5S implementation, SOP
-              creation, SCM management. Productivity Improvement – Bottleneck
-              identification, line balancing, higher UPH & productivity. QMS &
-              Quality Excellence – FTR improvement, 7 QC tools, Kaizen,
-              Poka-yoke, quality awareness trainings. MIS & Audit – Business
-              performance analysis, process audits, system audits. Financial
-              Growth Enablement – Institutional financing, fund-flow management,
-              tax advisory.
-            </p>
+            <ul className="text-base inter-text list-disc pl-5 space-y-1 mt-3">
+              <li>
+                <Link href="/operation/innovation" className={linkClass}>
+                  Innovation consulting
+                </Link>{" "}
+                – product & process benchmarking, cost saving, technology
+                updates.
+              </li>
+              <li>
+                <Link
+                  href="/operation/systematic-operation"
+                  className={linkClass}
+                >
+                  Systematic operations consulting
+                </Link>{" "}
+                – 5S implementation, SOP creation, SCM management.
+              </li>
+              <li>
+                <Link
+                  href="/operation/productivity-inprovement"
+                  className={linkClass}
+                >
+                  Productivity improvement consulting
+                </Link>{" "}
+                – bottleneck identification, line balancing, higher UPH &
+                productivity.
+              </li>
+              <li>
+                <Link href="/operation/qms" className={linkClass}>
+                  Quality management system consulting
+                </Link>{" "}
+                – FTR improvement, 7 QC tools, Kaizen, Poka-yoke, quality
+                awareness trainings.
+              </li>
+              <li>
+                <Link href="/operation/audit" className={linkClass}>
+                  MIS and operations audit services
+                </Link>{" "}
+                – business performance analysis, process audits, system audits.
+              </li>
+              <li>
+                <Link href="/operation/financial-growth" className={linkClass}>
+                  Financial growth advisory
+                </Link>{" "}
+                – institutional financing, fund-flow management, tax advisory.
+              </li>
+            </ul>
           </div>
 
           <div className="border border-primary p-6 w-full rounded mb-6">
@@ -317,7 +379,11 @@ const page = () => {
               We guide you through India’s Zero Defect Zero Effect (ZED)
               program—from diagnostics and documentation to implementation and
               audits—so your manufacturing meets world-class quality and
-              environmental standards. Who we help:
+              environmental standards. See our{" "}
+              <Link href="/certification" className={linkClass}>
+                ZED, Lean, BIS and ISO certification services
+              </Link>
+              . Who we help:
             </p>
             <div className="flex items-center mb-3 gap-3">
               <div className=" flex items-center justify-center  mb-0 p-0">
@@ -495,7 +561,10 @@ const page = () => {
                 <FaCheck className="rounded-full bg-primary text-xl text-white p-1" />
               </div>
               <h2 className="text-black text-base font-medium mb-0">
-                Engineering Consulting – Expertise for industrial innovation
+                <Link href="/research&development" className={linkClass}>
+                  Engineering Consulting
+                </Link>{" "}
+                – Expertise for industrial innovation
               </h2>
             </div>
             <div className="flex items-center mb-3 gap-3">
@@ -503,7 +572,13 @@ const page = () => {
                 <FaCheck className="rounded-full bg-primary text-xl text-white p-1" />
               </div>
               <h2 className="text-black text-base font-medium mb-0">
-                R&D & Product Design – From concept to prototype
+                <Link
+                  href="/research&development/product-design-engineering"
+                  className={linkClass}
+                >
+                  R&D & Product Design
+                </Link>{" "}
+                – From concept to prototype
               </h2>
             </div>
             <div className="flex items-center mb-3 gap-3">
@@ -511,7 +586,10 @@ const page = () => {
                 <FaCheck className="rounded-full bg-primary text-xl text-white p-1" />
               </div>
               <h2 className="text-black text-base font-medium mb-0">
-                Contact Us – Start your operations improvement journey today
+                <Link href="#enquiry" className={linkClass}>
+                  Contact Us
+                </Link>{" "}
+                – Start your operations improvement journey today
               </h2>
             </div>
           </div>

@@ -3,6 +3,8 @@ import Script from "next/script";
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
 import ContactFrom from "../../components/ContactFrom";
+import OperationsRelated from "../../components/OperationsRelated";
+import Link from "next/link";
 import { FaCheck } from "react-icons/fa6";
 
 export const metadata = {
@@ -264,8 +266,8 @@ const page = () => {
               {
                 "@type": "ListItem",
                 position: 2,
-                name: "Our Services",
-                item: "https://www.asbconsulting.in/our-services",
+                name: "Operations Consulting",
+                item: "https://www.asbconsulting.in/operation",
               },
               {
                 "@type": "ListItem",
@@ -335,18 +337,20 @@ const page = () => {
 
                 <div className="mt-8 flex flex-wrap gap-3">
                   <a
-                    href="/our-services"
+                    href="#enquiry"
+                    data-cta="service_enquiry"
+                    data-cta-location="audit-hero"
                     className="rounded-full bg-white px-7 py-4 text-xs font-black uppercase tracking-wide text-primary shadow-lg shadow-white/10 transition-all duration-300 hover:-translate-y-1"
                   >
-                    Explore Services
+                    Request an Operations Audit
                   </a>
 
-                  <a
-                    href="/contact"
+                  <Link
+                    href="/operation"
                     className="rounded-full border border-white px-7 py-4 text-xs font-black uppercase tracking-wide text-white transition-all duration-300 hover:-translate-y-1 hover:bg-white hover:text-primary"
                   >
-                    Get Consultation
-                  </a>
+                    All Operations Services
+                  </Link>
                 </div>
               </div>
 
@@ -672,6 +676,8 @@ const page = () => {
           </div>
         </section>
 
+        <OperationsRelated current="audit" />
+
         {/* CTA */}
         <section id="contact" className="bg-white py-14 text-primary md:py-20">
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
@@ -689,10 +695,12 @@ const page = () => {
               </p>
 
               <a
-                href="/contact"
+                href="#enquiry"
+                data-cta="service_enquiry"
+                data-cta-location="audit-bottom"
                 className="inline-block rounded-full bg-white px-9 py-4 text-sm font-black uppercase tracking-wide text-primary transition-all duration-300 hover:-translate-y-1"
               >
-                Speak With Our Experts
+                Request an Operations Audit
               </a>
             </div>
           </div>

@@ -3,12 +3,14 @@ import Script from "next/script";
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
 import ContactFrom from "../../components/ContactFrom";
+import OperationsRelated from "../../components/OperationsRelated";
+import Link from "next/link";
 import { FaCheck } from "react-icons/fa6";
 
 export const metadata = {
-  title: "Systematic Operation Consulting in India | AS Business Consulting",
+  title: "Systematic Operation Consulting | 5S, SOP & Process Standardization",
   description:
-    "AS Business Consulting provides systematic operation services including 5S implementation, SOP creation, SCM management, process standardization, documentation, and operational control.",
+    "Bring structure to daily operations with 5S implementation, SOP creation, supply chain control and process standardization for manufacturers and MSMEs.",
   alternates: {
     canonical: "https://www.asbconsulting.in/operation/systematic-operation",
   },
@@ -257,8 +259,8 @@ const page = () => {
               {
                 "@type": "ListItem",
                 position: 2,
-                name: "Our Services",
-                item: "https://www.asbconsulting.in/our-services",
+                name: "Operations Consulting",
+                item: "https://www.asbconsulting.in/operation",
               },
               {
                 "@type": "ListItem",
@@ -280,14 +282,37 @@ const page = () => {
             "@type": "WebPage",
             "@id": "https://www.asbconsulting.in/operation/systematic-operation#webpage",
             url: "https://www.asbconsulting.in/operation/systematic-operation",
-            name: "Systematic Operation Consulting in India | AS Business Consulting",
+            name: "Systematic Operation Consulting | 5S, SOP & Process Standardization",
             description:
-              "AS Business Consulting provides systematic operation services including 5S implementation, SOP creation, SCM management, process standardization, documentation, and operational control.",
+              "Bring structure to daily operations with 5S implementation, SOP creation, supply chain control and process standardization for manufacturers and MSMEs.",
             isPartOf: {
               "@type": "WebSite",
               "@id": "https://www.asbconsulting.in/#website",
               url: "https://www.asbconsulting.in/",
               name: "AS Business Consulting",
+            },
+          }),
+        }}
+      />
+
+      <Script
+        id="service-schema-systematic-operation"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Service",
+            name: "Systematic Operation Consulting",
+            serviceType: "Operations consulting: 5S implementation, SOP creation and process standardization",
+            description:
+              "Bring structure to daily operations with 5S implementation, SOP creation, supply chain control and process standardization for manufacturers and MSMEs.",
+            url: "https://www.asbconsulting.in/operation/systematic-operation",
+            areaServed: { "@type": "Country", name: "India" },
+            provider: {
+              "@type": "Organization",
+              "@id": "https://www.asbconsulting.in/#organization",
+              name: "AS Business Consulting",
+              url: "https://www.asbconsulting.in/",
             },
           }),
         }}
@@ -314,33 +339,38 @@ const page = () => {
                 </div>
 
                 <h1 className="text-4xl font-black leading-[1.08] tracking-tight text-white md:text-5xl lg:text-6xl">
-                  Build Structure,
-                  <span className="block">Improve Discipline &</span>
-                  <span className="block">Control Operations</span>
+                  Systematic Operation Consulting
+                  <span className="mt-4 block text-2xl font-bold leading-snug tracking-normal md:text-3xl">
+                    5S, SOPs & Process Standardization
+                  </span>
                 </h1>
 
                 <p className="mt-6 max-w-2xl text-sm font-semibold leading-7 text-white/90 md:text-base md:leading-8">
-                  At AS Business Consulting, our Systematic Operation services
-                  help businesses bring structure, discipline, and consistency
-                  into daily operations through 5S implementation, SOP creation,
-                  SCM management, process standardization, documentation, and
-                  performance tracking.
+                  Build structure, improve discipline and control operations.
+                  When daily work depends on individual people, it breaks as
+                  teams change or volumes grow. Our systematic operation
+                  consulting replaces that with 5S workplace discipline, written
+                  SOPs, supply chain (SCM) controls, process standardization and
+                  performance tracking, so work is consistent and easier to
+                  scale.
                 </p>
 
                 <div className="mt-8 flex flex-wrap gap-3">
                   <a
-                    href="/our-services"
+                    href="#enquiry"
+                    data-cta="service_enquiry"
+                    data-cta-location="systematic-operation-hero"
                     className="rounded-full bg-white px-7 py-4 text-xs font-black uppercase tracking-wide text-primary shadow-lg shadow-white/10 transition-all duration-300 hover:-translate-y-1"
                   >
-                    Explore Services
+                    Request a 5S & SOP Consultation
                   </a>
 
-                  <a
-                    href="/contact"
+                  <Link
+                    href="/operation"
                     className="rounded-full border border-white px-7 py-4 text-xs font-black uppercase tracking-wide text-white transition-all duration-300 hover:-translate-y-1 hover:bg-white hover:text-primary"
                   >
-                    Get Consultation
-                  </a>
+                    All Operations Services
+                  </Link>
                 </div>
               </div>
 
@@ -666,6 +696,8 @@ const page = () => {
           </div>
         </section>
 
+        <OperationsRelated current="systematic-operation" />
+
         {/* CTA */}
         <section id="contact" className="bg-white py-14 text-primary md:py-20">
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
@@ -682,10 +714,12 @@ const page = () => {
               </p>
 
               <a
-                href="/contact"
+                href="#enquiry"
+                data-cta="service_enquiry"
+                data-cta-location="systematic-operation-bottom"
                 className="inline-block rounded-full bg-white px-9 py-4 text-sm font-black uppercase tracking-wide text-primary transition-all duration-300 hover:-translate-y-1"
               >
-                Speak With Our Experts
+                Request a 5S & SOP Consultation
               </a>
             </div>
           </div>
