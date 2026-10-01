@@ -1,8 +1,8 @@
 import * as React from "react";
 import Link from "next/link";
-import Script from "next/script";
 
 import Header from "../../components/Header";
+import JsonLd from "../../components/JsonLd";
 import Footer from "../../components/Footer";
 import ContactFrom from "../../components/ContactFrom";
 
@@ -283,57 +283,43 @@ const deliverables = [
 const Page = () => {
   return (
     <>
-      <Script
-        id="breadcrumb-schema-growth-consulting"
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "BreadcrumbList",
-            itemListElement: [
-              {
-                "@type": "ListItem",
-                position: 1,
-                name: "Home",
-                item: "https://www.asbconsulting.in/",
-              },
-              {
-                "@type": "ListItem",
-                position: 2,
-                name: "Our Services",
-                item: "https://www.asbconsulting.in/our-services",
-              },
-              {
-                "@type": "ListItem",
-                position: 3,
-                name: "Growth Consulting Services",
-                item: "https://www.asbconsulting.in/sales&marketing/growth-consulting",
-              },
-            ],
-          }),
+      <JsonLd
+        data={{
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          itemListElement: [
+            {
+              "@type": "ListItem",
+              position: 1,
+              name: "Home",
+              item: "https://www.asbconsulting.in/",
+            },
+            {
+              "@type": "ListItem",
+              position: 2,
+              name: "Sales & Marketing",
+              item: "https://www.asbconsulting.in/sales&marketing",
+            },
+            {
+              "@type": "ListItem",
+              position: 3,
+              name: "Growth Consulting Services",
+              item: "https://www.asbconsulting.in/sales&marketing/growth-consulting",
+            },
+          ],
         }}
       />
 
-      <Script
-        id="webpage-schema-growth-consulting"
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "WebPage",
-            "@id":
-              "https://www.asbconsulting.in/sales&marketing/growth-consulting#webpage",
-            url: "https://www.asbconsulting.in/sales&marketing/growth-consulting",
-            name: "Growth Consulting Services for Business Expansion in India",
-            description:
-              "AS Business Consulting helps businesses identify growth opportunities, enter new markets, improve sales performance, strengthen business planning, and build structured strategies for long-term expansion.",
-            isPartOf: {
-              "@type": "WebSite",
-              "@id": "https://www.asbconsulting.in/#website",
-              url: "https://www.asbconsulting.in/",
-              name: "AS Business Consulting",
-            },
-          }),
+      <JsonLd
+        data={{
+          "@context": "https://schema.org",
+          "@type": "WebPage",
+          "@id":
+            "https://www.asbconsulting.in/sales&marketing/growth-consulting#webpage",
+          url: "https://www.asbconsulting.in/sales&marketing/growth-consulting",
+          name: metadata.title,
+          description: metadata.description,
+          isPartOf: { "@id": "https://www.asbconsulting.in/#website" },
         }}
       />
 

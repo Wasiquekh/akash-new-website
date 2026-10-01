@@ -1,8 +1,8 @@
 import * as React from "react";
 import Link from "next/link";
-import Script from "next/script";
 
 import Header from "../../components/Header";
+import JsonLd from "../../components/JsonLd";
 import Footer from "../../components/Footer";
 import ContactFrom from "../../components/ContactFrom";
 
@@ -281,57 +281,43 @@ const heroItems = [
 const Page = () => {
   return (
     <>
-      <Script
-        id="breadcrumb-schema-contracts-agreements"
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "BreadcrumbList",
-            itemListElement: [
-              {
-                "@type": "ListItem",
-                position: 1,
-                name: "Home",
-                item: "https://www.asbconsulting.in/",
-              },
-              {
-                "@type": "ListItem",
-                position: 2,
-                name: "Our Services",
-                item: "https://www.asbconsulting.in/our-services",
-              },
-              {
-                "@type": "ListItem",
-                position: 3,
-                name: "Contracts & Agreements",
-                item: "https://www.asbconsulting.in/legal-consulting/contracts-agreements",
-              },
-            ],
-          }),
+      <JsonLd
+        data={{
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          itemListElement: [
+            {
+              "@type": "ListItem",
+              position: 1,
+              name: "Home",
+              item: "https://www.asbconsulting.in/",
+            },
+            {
+              "@type": "ListItem",
+              position: 2,
+              name: "Legal Consulting",
+              item: "https://www.asbconsulting.in/legal-consulting",
+            },
+            {
+              "@type": "ListItem",
+              position: 3,
+              name: "Contracts & Agreements",
+              item: "https://www.asbconsulting.in/legal-consulting/contracts-agreements",
+            },
+          ],
         }}
       />
 
-      <Script
-        id="webpage-schema-contracts-agreements"
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "WebPage",
-            "@id":
-              "https://www.asbconsulting.in/legal-consulting/contracts-agreements#webpage",
-            url: "https://www.asbconsulting.in/legal-consulting/contracts-agreements",
-            name: "Contracts & Agreements",
-            description:
-              "AS Business Consulting helps businesses create, review, negotiate, and manage legally strong and commercially practical contracts including MSAs, SLAs, NDAs, vendor contracts, procurement agreements, distributor contracts, licensing agreements, technology agreements, template libraries, and contract playbooks.",
-            isPartOf: {
-              "@type": "WebSite",
-              "@id": "https://www.asbconsulting.in/#website",
-              url: "https://www.asbconsulting.in/",
-              name: "AS Business Consulting",
-            },
-          }),
+      <JsonLd
+        data={{
+          "@context": "https://schema.org",
+          "@type": "WebPage",
+          "@id":
+            "https://www.asbconsulting.in/legal-consulting/contracts-agreements#webpage",
+          url: "https://www.asbconsulting.in/legal-consulting/contracts-agreements",
+          name: metadata.title,
+          description: metadata.description,
+          isPartOf: { "@id": "https://www.asbconsulting.in/#website" },
         }}
       />
 

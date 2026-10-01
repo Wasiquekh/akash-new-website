@@ -1,5 +1,4 @@
 import * as React from "react";
-import Script from "next/script";
 
 export const metadata = {
   title: "About Business Consultants in India | Company Profile – AS Business",
@@ -11,6 +10,7 @@ export const metadata = {
 };
 
 import Header from "../components/Header";
+import JsonLd from "../components/JsonLd";
 import Footer from "../components/Footer";
 import Image from "next/image";
 import ContactFrom from "../components/ContactFrom";
@@ -26,46 +26,38 @@ const Page = () => {
   return (
     <>
       {/* BreadcrumbList Schema */}
-      <Script
-        id="breadcrumb-schema"
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "BreadcrumbList",
-            itemListElement: [
-              {
-                "@type": "ListItem",
-                position: 1,
-                name: "Home",
-                item: "https://www.asbconsulting.in/",
-              },
-              {
-                "@type": "ListItem",
-                position: 2,
-                name: "About Us",
-                item: "https://www.asbconsulting.in/about-us",
-              },
-            ],
-          }),
+      <JsonLd
+        data={{
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          itemListElement: [
+            {
+              "@type": "ListItem",
+              position: 1,
+              name: "Home",
+              item: "https://www.asbconsulting.in/",
+            },
+            {
+              "@type": "ListItem",
+              position: 2,
+              name: "About Us",
+              item: "https://www.asbconsulting.in/about-us",
+            },
+          ],
         }}
       />
 
       {/* Organization Schema */}
-      <Script
-        id="organization-schema"
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "Organization",
-            "@id": "https://www.asbconsulting.in/#organization",
-            name: "AS Business Consulting",
-            url: "https://www.asbconsulting.in/",
-            description:
-              "AS Business Consulting is a trusted consulting firm in India, providing strategic advisory and growth-focused business consulting solutions.",
-            logo: "https://www.asbconsulting.in/images/asConsultingLogo.svg",
-          }),
+      <JsonLd
+        data={{
+          "@context": "https://schema.org",
+          "@type": "AboutPage",
+          "@id": "https://www.asbconsulting.in/about-us#webpage",
+          url: "https://www.asbconsulting.in/about-us",
+          name: metadata.title,
+          description: metadata.description,
+          isPartOf: { "@id": "https://www.asbconsulting.in/#website" },
+          about: { "@id": "https://www.asbconsulting.in/#organization" },
         }}
       />
 

@@ -8,64 +8,50 @@ export const metadata = {
   },
 };
 import Header from "../components/Header";
+import JsonLd from "../components/JsonLd";
 import Footer from "../components/Footer";
 import Image from "next/image";
 import ContactFrom from "../components/ContactFrom";
-import Script from "next/script";
 
 const page = () => {
   return (
     <>
-    <Script
-  id="breadcrumb-schema"
-  type="application/ld+json"
-  dangerouslySetInnerHTML={{
-    __html: JSON.stringify({
-      "@context": "https://schema.org",
-      "@type": "BreadcrumbList",
-      itemListElement: [
-        {
-          "@type": "ListItem",
-          position: 1,
-          name: "Home",
-          item: "https://www.asbconsulting.in/",
-        },
-        {
-          "@type": "ListItem",
-          position: 2,
-          name: "Our Services",
-          item: "https://www.asbconsulting.in/our-services",
-        },
-        {
-          "@type": "ListItem",
-          position: 3,
-          name: "Certification",
-          item: "https://www.asbconsulting.in/certification",
-        },
-      ],
-    }),
-  }}
-/>
-
-<Script
-  id="webpage-schema"
-  type="application/ld+json"
-  dangerouslySetInnerHTML={{
-    __html: JSON.stringify({
-      "@context": "https://schema.org",
-      "@type": "WebPage",
-      "@id": "https://www.asbconsulting.in/certification#webpage",
-      url: "https://www.asbconsulting.in/certification",
-      name: "BIS, NABL & ISO Certification in India | QMS Experts – AS Business",
-      description:
-        "AS Business Consulting provides BIS, NABL, and ISO certification services in India, including QMS, inspections, and complete industry compliance support.",
-      isPartOf: {
-        "@type": "WebSite",
-        "@id": "https://www.asbconsulting.in/#website",
-        url: "https://www.asbconsulting.in/",
-        name: "AS Business Consulting",
+    <JsonLd
+      data={{
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      {
+        "@type": "ListItem",
+        position: 1,
+        name: "Home",
+        item: "https://www.asbconsulting.in/",
       },
-    }),
+      {
+        "@type": "ListItem",
+        position: 2,
+        name: "Our Services",
+        item: "https://www.asbconsulting.in/our-services",
+      },
+      {
+        "@type": "ListItem",
+        position: 3,
+        name: "Certification",
+        item: "https://www.asbconsulting.in/certification",
+      },
+    ],
+      }}
+    />
+
+<JsonLd
+  data={{
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "@id": "https://www.asbconsulting.in/certification#webpage",
+    url: "https://www.asbconsulting.in/certification",
+    name: metadata.title,
+    description: metadata.description,
+    isPartOf: { "@id": "https://www.asbconsulting.in/#website" },
   }}
 />
 

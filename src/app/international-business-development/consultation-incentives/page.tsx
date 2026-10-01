@@ -1,6 +1,5 @@
 import * as React from "react";
 import Link from "next/link";
-import Script from "next/script";
 import {
   FaArrowRight,
   FaCircleCheck,
@@ -19,6 +18,7 @@ import {
 } from "react-icons/fa6";
 
 import Header from "../../components/Header";
+import JsonLd from "../../components/JsonLd";
 import Footer from "../../components/Footer";
 import ContactFrom from "../../components/ContactFrom";
 
@@ -332,57 +332,43 @@ const SmallCheckList = ({
 const Page = () => {
   return (
     <>
-      <Script
-        id="breadcrumb-schema-consultation-incentives-services"
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "BreadcrumbList",
-            itemListElement: [
-              {
-                "@type": "ListItem",
-                position: 1,
-                name: "Home",
-                item: "https://www.asbconsulting.in/",
-              },
-              {
-                "@type": "ListItem",
-                position: 2,
-                name: "Our Services",
-                item: "https://www.asbconsulting.in/our-services",
-              },
-              {
-                "@type": "ListItem",
-                position: 3,
-                name: "Consultation & Incentives Services",
-                item: "https://www.asbconsulting.in/international-business-development/consultation-incentives",
-              },
-            ],
-          }),
+      <JsonLd
+        data={{
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          itemListElement: [
+            {
+              "@type": "ListItem",
+              position: 1,
+              name: "Home",
+              item: "https://www.asbconsulting.in/",
+            },
+            {
+              "@type": "ListItem",
+              position: 2,
+              name: "International Business Development",
+              item: "https://www.asbconsulting.in/international-business-development",
+            },
+            {
+              "@type": "ListItem",
+              position: 3,
+              name: "Consultation & Incentives Services",
+              item: "https://www.asbconsulting.in/international-business-development/consultation-incentives",
+            },
+          ],
         }}
       />
 
-      <Script
-        id="webpage-schema-consultation-incentives-services"
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "WebPage",
-            "@id":
-              "https://www.asbconsulting.in/international-business-development/consultation-incentives#webpage",
-            url: "https://www.asbconsulting.in/international-business-development/consultation-incentives",
-            name: "Consultation & Incentives Services for Business Growth, Cost Saving & Government Scheme Support",
-            description:
-              "AS Business Consulting provides consultation and incentives services to help businesses improve operations, reduce unnecessary costs, understand government benefits, and build stronger systems for long-term success.",
-            isPartOf: {
-              "@type": "WebSite",
-              "@id": "https://www.asbconsulting.in/#website",
-              url: "https://www.asbconsulting.in/",
-              name: "AS Business Consulting",
-            },
-          }),
+      <JsonLd
+        data={{
+          "@context": "https://schema.org",
+          "@type": "WebPage",
+          "@id":
+            "https://www.asbconsulting.in/international-business-development/consultation-incentives#webpage",
+          url: "https://www.asbconsulting.in/international-business-development/consultation-incentives",
+          name: metadata.title,
+          description: metadata.description,
+          isPartOf: { "@id": "https://www.asbconsulting.in/#website" },
         }}
       />
 

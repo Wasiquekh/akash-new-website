@@ -1,6 +1,5 @@
 import * as React from "react";
 import Link from "next/link";
-import Script from "next/script";
 import {
   FaArrowRight,
   FaCircleCheck,
@@ -18,6 +17,7 @@ import {
 } from "react-icons/fa6";
 
 import Header from "../../components/Header";
+import JsonLd from "../../components/JsonLd";
 import Footer from "../../components/Footer";
 import ContactFrom from "../../components/ContactFrom";
 
@@ -322,57 +322,43 @@ const SmallCheckList = ({
 const Page = () => {
   return (
     <>
-      <Script
-        id="breadcrumb-schema-logistics-compliance-services"
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "BreadcrumbList",
-            itemListElement: [
-              {
-                "@type": "ListItem",
-                position: 1,
-                name: "Home",
-                item: "https://www.asbconsulting.in/",
-              },
-              {
-                "@type": "ListItem",
-                position: 2,
-                name: "Our Services",
-                item: "https://www.asbconsulting.in/our-services",
-              },
-              {
-                "@type": "ListItem",
-                position: 3,
-                name: "Logistics & Compliance Services",
-                item: "https://www.asbconsulting.in/international-business-development/logistics-compliance",
-              },
-            ],
-          }),
+      <JsonLd
+        data={{
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          itemListElement: [
+            {
+              "@type": "ListItem",
+              position: 1,
+              name: "Home",
+              item: "https://www.asbconsulting.in/",
+            },
+            {
+              "@type": "ListItem",
+              position: 2,
+              name: "International Business Development",
+              item: "https://www.asbconsulting.in/international-business-development",
+            },
+            {
+              "@type": "ListItem",
+              position: 3,
+              name: "Logistics & Compliance Services",
+              item: "https://www.asbconsulting.in/international-business-development/logistics-compliance",
+            },
+          ],
         }}
       />
 
-      <Script
-        id="webpage-schema-logistics-compliance-services"
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "WebPage",
-            "@id":
-              "https://www.asbconsulting.in/international-business-development/logistics-compliance#webpage",
-            url: "https://www.asbconsulting.in/international-business-development/logistics-compliance",
-            name: "Logistics & Compliance Services for Smooth Import–Export Operations",
-            description:
-              "AS Business Consulting provides complete Logistics & Compliance Services including freight forwarding, customs clearance, transportation planning, packing guidance, shipment documentation, and import-export compliance support.",
-            isPartOf: {
-              "@type": "WebSite",
-              "@id": "https://www.asbconsulting.in/#website",
-              url: "https://www.asbconsulting.in/",
-              name: "AS Business Consulting",
-            },
-          }),
+      <JsonLd
+        data={{
+          "@context": "https://schema.org",
+          "@type": "WebPage",
+          "@id":
+            "https://www.asbconsulting.in/international-business-development/logistics-compliance#webpage",
+          url: "https://www.asbconsulting.in/international-business-development/logistics-compliance",
+          name: metadata.title,
+          description: metadata.description,
+          isPartOf: { "@id": "https://www.asbconsulting.in/#website" },
         }}
       />
 

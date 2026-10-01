@@ -1,6 +1,6 @@
 import * as React from "react";
-import Script from "next/script";
 import Header from "../../components/Header";
+import JsonLd from "../../components/JsonLd";
 import Footer from "../../components/Footer";
 import ContactFrom from "../../components/ContactFrom";
 import OperationsRelated from "../../components/OperationsRelated";
@@ -242,79 +242,57 @@ const page = () => {
         }}
       />
 
-      <Script
-        id="breadcrumb-schema-systematic-operation"
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "BreadcrumbList",
-            itemListElement: [
-              {
-                "@type": "ListItem",
-                position: 1,
-                name: "Home",
-                item: "https://www.asbconsulting.in/",
-              },
-              {
-                "@type": "ListItem",
-                position: 2,
-                name: "Operations Consulting",
-                item: "https://www.asbconsulting.in/operation",
-              },
-              {
-                "@type": "ListItem",
-                position: 3,
-                name: "Systematic Operation",
-                item: "https://www.asbconsulting.in/operation/systematic-operation",
-              },
-            ],
-          }),
+      <JsonLd
+        data={{
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          itemListElement: [
+            {
+              "@type": "ListItem",
+              position: 1,
+              name: "Home",
+              item: "https://www.asbconsulting.in/",
+            },
+            {
+              "@type": "ListItem",
+              position: 2,
+              name: "Operations Consulting",
+              item: "https://www.asbconsulting.in/operation",
+            },
+            {
+              "@type": "ListItem",
+              position: 3,
+              name: "Systematic Operation",
+              item: "https://www.asbconsulting.in/operation/systematic-operation",
+            },
+          ],
         }}
       />
 
-      <Script
-        id="webpage-schema-systematic-operation"
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "WebPage",
-            "@id": "https://www.asbconsulting.in/operation/systematic-operation#webpage",
-            url: "https://www.asbconsulting.in/operation/systematic-operation",
-            name: "Systematic Operation Consulting | 5S, SOP & Process Standardization",
-            description:
-              "Bring structure to daily operations with 5S implementation, SOP creation, supply chain control and process standardization for manufacturers and MSMEs.",
-            isPartOf: {
-              "@type": "WebSite",
-              "@id": "https://www.asbconsulting.in/#website",
-              url: "https://www.asbconsulting.in/",
-              name: "AS Business Consulting",
-            },
-          }),
+      <JsonLd
+        data={{
+          "@context": "https://schema.org",
+          "@type": "WebPage",
+          "@id": "https://www.asbconsulting.in/operation/systematic-operation#webpage",
+          url: "https://www.asbconsulting.in/operation/systematic-operation",
+          name: metadata.title,
+          description: metadata.description,
+          isPartOf: { "@id": "https://www.asbconsulting.in/#website" },
         }}
       />
 
-      <Script
-        id="service-schema-systematic-operation"
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "Service",
-            name: "Systematic Operation Consulting",
-            serviceType: "Operations consulting: 5S implementation, SOP creation and process standardization",
-            description:
-              "Bring structure to daily operations with 5S implementation, SOP creation, supply chain control and process standardization for manufacturers and MSMEs.",
-            url: "https://www.asbconsulting.in/operation/systematic-operation",
-            areaServed: { "@type": "Country", name: "India" },
-            provider: {
-              "@type": "Organization",
-              "@id": "https://www.asbconsulting.in/#organization",
-              name: "AS Business Consulting",
-              url: "https://www.asbconsulting.in/",
-            },
-          }),
+      <JsonLd
+        data={{
+          "@context": "https://schema.org",
+          "@type": "Service",
+          "@id": "https://www.asbconsulting.in/operation/systematic-operation#service",
+          name: "Systematic Operation Consulting",
+          serviceType: "Operations consulting: 5S implementation, SOP creation and process standardization",
+          description:
+            "Bring structure to daily operations with 5S implementation, SOP creation, supply chain control and process standardization for manufacturers and MSMEs.",
+          url: "https://www.asbconsulting.in/operation/systematic-operation",
+          areaServed: { "@type": "Country", name: "India" },
+          provider: { "@id": "https://www.asbconsulting.in/#organization" },
         }}
       />
 

@@ -1,6 +1,6 @@
 import React from "react";
-import Script from "next/script";
 import Header from "../components/Header";
+import JsonLd from "../components/JsonLd";
 import Footer from "../components/Footer";
 import Image from "next/image";
 import ContactFrom from "../components/ContactFrom";
@@ -136,86 +136,72 @@ const page = () => {
   return (
     <>
       {/* BreadcrumbList (Home → Our Services) */}
-      <Script
-       id="breadcrumb-schema-our-services"
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "BreadcrumbList",
-            itemListElement: [
-              { "@type": "ListItem", position: 1, name: "Home", item: "https://www.asbconsulting.in/" },
-              { "@type": "ListItem", position: 2, name: "Our Services", item: "https://www.asbconsulting.in/our-services" },
-            ],
-          }),
+      <JsonLd
+        data={{
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          itemListElement: [
+            { "@type": "ListItem", position: 1, name: "Home", item: "https://www.asbconsulting.in/" },
+            { "@type": "ListItem", position: 2, name: "Our Services", item: "https://www.asbconsulting.in/our-services" },
+          ],
         }}
       />
 
       {/* CollectionPage + ItemList of service categories (no Service schema) */}
-      <Script
-      id="webpage-schema-our-services"
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "CollectionPage",
-            "@id": "https://www.asbconsulting.in/our-services#page",
-            url: "https://www.asbconsulting.in/our-services",
-            name: "Business Consulting Services in India – AS Business",
-            description:
-              "Browse AS Business Consulting’s service categories across operations, R&D, international business, HR, legal, certification, and sales & marketing.",
-            isPartOf: {
-              "@type": "WebSite",
-              "@id": "https://www.asbconsulting.in/#website",
-              url: "https://www.asbconsulting.in/",
-              name: "AS Business Consulting",
-            },
-            hasPart: {
-              "@type": "ItemList",
-              name: "Service Categories",
-              itemListElement: [
-                {
-                  "@type": "ListItem",
-                  position: 1,
-                  item: { "@type": "WebPage", name: "Research & Development", url: "https://www.asbconsulting.in/research&development" },
+      <JsonLd
+        data={{
+          "@context": "https://schema.org",
+          "@type": "CollectionPage",
+          "@id": "https://www.asbconsulting.in/our-services#webpage",
+          url: "https://www.asbconsulting.in/our-services",
+          name: metadata.title,
+          description: metadata.description,
+          isPartOf: { "@id": "https://www.asbconsulting.in/#website" },
+          hasPart: {
+            "@type": "ItemList",
+            name: "Service Categories",
+            itemListElement: [
+              {
+                "@type": "ListItem",
+                position: 1,
+                item: { "@type": "WebPage", name: "Research & Development", url: "https://www.asbconsulting.in/research&development" },
+              },
+              {
+                "@type": "ListItem",
+                position: 2,
+                item: { "@type": "WebPage", name: "Operations (Lean & ZED)", url: "https://www.asbconsulting.in/operation" },
+              },
+              {
+                "@type": "ListItem",
+                position: 3,
+                item: {
+                  "@type": "WebPage",
+                  name: "International Business Development",
+                  url: "https://www.asbconsulting.in/international-business-development",
                 },
-                {
-                  "@type": "ListItem",
-                  position: 2,
-                  item: { "@type": "WebPage", name: "Operations (Lean & ZED)", url: "https://www.asbconsulting.in/operation" },
-                },
-                {
-                  "@type": "ListItem",
-                  position: 3,
-                  item: {
-                    "@type": "WebPage",
-                    name: "International Business Development",
-                    url: "https://www.asbconsulting.in/international-business-development",
-                  },
-                },
-                {
-                  "@type": "ListItem",
-                  position: 4,
-                  item: { "@type": "WebPage", name: "Sales & Marketing", url: "https://www.asbconsulting.in/sales&marketing" },
-                },
-                {
-                  "@type": "ListItem",
-                  position: 5,
-                  item: { "@type": "WebPage", name: "HR Consultancy", url: "https://www.asbconsulting.in/human-resource" },
-                },
-                {
-                  "@type": "ListItem",
-                  position: 6,
-                  item: { "@type": "WebPage", name: "Legal Advisory", url: "https://www.asbconsulting.in/legal-consulting" },
-                },
-                {
-                  "@type": "ListItem",
-                  position: 7,
-                  item: { "@type": "WebPage", name: "Certification", url: "https://www.asbconsulting.in/certification" },
-                },
-              ],
-            },
-          }),
+              },
+              {
+                "@type": "ListItem",
+                position: 4,
+                item: { "@type": "WebPage", name: "Sales & Marketing", url: "https://www.asbconsulting.in/sales&marketing" },
+              },
+              {
+                "@type": "ListItem",
+                position: 5,
+                item: { "@type": "WebPage", name: "HR Consultancy", url: "https://www.asbconsulting.in/human-resource" },
+              },
+              {
+                "@type": "ListItem",
+                position: 6,
+                item: { "@type": "WebPage", name: "Legal Advisory", url: "https://www.asbconsulting.in/legal-consulting" },
+              },
+              {
+                "@type": "ListItem",
+                position: 7,
+                item: { "@type": "WebPage", name: "Certification", url: "https://www.asbconsulting.in/certification" },
+              },
+            ],
+          },
         }}
       />
 

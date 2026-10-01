@@ -1,5 +1,4 @@
 import * as React from "react";
-import Script from "next/script";
 
 export const metadata = {
   title: "B2B Marketing in India | Digital Strategy & Training – AS Business",
@@ -11,6 +10,7 @@ export const metadata = {
 };
 
 import Header from "../components/Header";
+import JsonLd from "../components/JsonLd";
 import Footer from "../components/Footer";
 import { FaArrowUpFromGroundWater, FaCheck } from "react-icons/fa6";
 import Image from "next/image";
@@ -27,57 +27,43 @@ const page = () => {
   return (
     <>
       {/* BreadcrumbList Schema (Home → Sales & Marketing) */}
-      <Script
-        id="breadcrumb-schema-sales-marketing"
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "BreadcrumbList",
-            itemListElement: [
-              {
-                "@type": "ListItem",
-                position: 1,
-                name: "Home",
-                item: "https://www.asbconsulting.in/",
-              },
-              {
-                "@type": "ListItem",
-                position: 2,
-                name: "Our Services",
-                item: "https://www.asbconsulting.in/our-services",
-              },
-              {
-                "@type": "ListItem",
-                position: 3,
-                name: "Sales & Marketing",
-                item: "https://www.asbconsulting.in/sales&marketing",
-              },
-            ],
-          }),
+      <JsonLd
+        data={{
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          itemListElement: [
+            {
+              "@type": "ListItem",
+              position: 1,
+              name: "Home",
+              item: "https://www.asbconsulting.in/",
+            },
+            {
+              "@type": "ListItem",
+              position: 2,
+              name: "Our Services",
+              item: "https://www.asbconsulting.in/our-services",
+            },
+            {
+              "@type": "ListItem",
+              position: 3,
+              name: "Sales & Marketing",
+              item: "https://www.asbconsulting.in/sales&marketing",
+            },
+          ],
         }}
       />
 
       {/* WebPage Schema (no Service schema) */}
-      <Script
-        id="webpage-schema-sales-marketing"
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "WebPage",
-            "@id": "https://www.asbconsulting.in/sales&marketing#webpage",
-            url: "https://www.asbconsulting.in/sales&marketing",
-            name: "B2B Marketing in India | Digital Strategy & Training – AS Business",
-            description:
-              "Drive growth with AS Business Consulting’s B2B marketing experts, specializing in digital strategy, customer acquisition, and tailored promotional solutions.",
-            isPartOf: {
-              "@type": "WebSite",
-              "@id": "https://www.asbconsulting.in/#website",
-              url: "https://www.asbconsulting.in/",
-              name: "AS Business Consulting",
-            },
-          }),
+      <JsonLd
+        data={{
+          "@context": "https://schema.org",
+          "@type": "WebPage",
+          "@id": "https://www.asbconsulting.in/sales&marketing#webpage",
+          url: "https://www.asbconsulting.in/sales&marketing",
+          name: metadata.title,
+          description: metadata.description,
+          isPartOf: { "@id": "https://www.asbconsulting.in/#website" },
         }}
       />
 

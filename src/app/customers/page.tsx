@@ -1,6 +1,6 @@
 import React from "react";
-import Script from "next/script";
 import Header from "../components/Header";
+import JsonLd from "../components/JsonLd";
 import Footer from "../components/Footer";
 import Image from "next/image";
 import ContactFrom from "../components/ContactFrom";
@@ -21,51 +21,37 @@ const page = () => {
     <>
       {/* BreadcrumbList (Home → Customers) */}
       {/* BreadcrumbList (Home → Customers) */}
-      <Script
-        id="breadcrumb-schema-customers"
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "BreadcrumbList",
-            itemListElement: [
-              {
-                "@type": "ListItem",
-                position: 1,
-                name: "Home",
-                item: "https://www.asbconsulting.in/",
-              },
-              {
-                "@type": "ListItem",
-                position: 2,
-                name: "Customers",
-                item: "https://www.asbconsulting.in/customers",
-              },
-            ],
-          }),
+      <JsonLd
+        data={{
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          itemListElement: [
+            {
+              "@type": "ListItem",
+              position: 1,
+              name: "Home",
+              item: "https://www.asbconsulting.in/",
+            },
+            {
+              "@type": "ListItem",
+              position: 2,
+              name: "Customers",
+              item: "https://www.asbconsulting.in/customers",
+            },
+          ],
         }}
       />
 
       {/* CollectionPage (Customers listing page) */}
-      <Script
-        id="collectionpage-schema-customers"
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "CollectionPage",
-            "@id": "https://www.asbconsulting.in/customers#page",
-            url: "https://www.asbconsulting.in/customers",
-            name: "Our Clients & Case Studies in India | AS Business",
-            description:
-              "AS Business Consulting’s customer portfolio: clients, industries served, and case studies with outcomes.",
-            isPartOf: {
-              "@type": "WebSite",
-              "@id": "https://www.asbconsulting.in/#website",
-              url: "https://www.asbconsulting.in/",
-              name: "AS Business Consulting",
-            },
-          }),
+      <JsonLd
+        data={{
+          "@context": "https://schema.org",
+          "@type": "CollectionPage",
+          "@id": "https://www.asbconsulting.in/customers#webpage",
+          url: "https://www.asbconsulting.in/customers",
+          name: metadata.title,
+          description: metadata.description,
+          isPartOf: { "@id": "https://www.asbconsulting.in/#website" },
         }}
       />
 

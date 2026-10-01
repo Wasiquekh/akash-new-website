@@ -1,8 +1,8 @@
 import * as React from "react";
 import Link from "next/link";
-import Script from "next/script";
 
 import Header from "../../components/Header";
+import JsonLd from "../../components/JsonLd";
 import Footer from "../../components/Footer";
 import ContactFrom from "../../components/ContactFrom";
 
@@ -290,57 +290,43 @@ const heroItems = [
 const Page = () => {
   return (
     <>
-      <Script
-        id="breadcrumb-schema-banking-finance-law"
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "BreadcrumbList",
-            itemListElement: [
-              {
-                "@type": "ListItem",
-                position: 1,
-                name: "Home",
-                item: "https://www.asbconsulting.in/",
-              },
-              {
-                "@type": "ListItem",
-                position: 2,
-                name: "Our Services",
-                item: "https://www.asbconsulting.in/our-services",
-              },
-              {
-                "@type": "ListItem",
-                position: 3,
-                name: "Banking & Finance Law",
-                item: "https://www.asbconsulting.in/legal-consulting/banking-finance-law",
-              },
-            ],
-          }),
+      <JsonLd
+        data={{
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          itemListElement: [
+            {
+              "@type": "ListItem",
+              position: 1,
+              name: "Home",
+              item: "https://www.asbconsulting.in/",
+            },
+            {
+              "@type": "ListItem",
+              position: 2,
+              name: "Legal Consulting",
+              item: "https://www.asbconsulting.in/legal-consulting",
+            },
+            {
+              "@type": "ListItem",
+              position: 3,
+              name: "Banking & Finance Law",
+              item: "https://www.asbconsulting.in/legal-consulting/banking-finance-law",
+            },
+          ],
         }}
       />
 
-      <Script
-        id="webpage-schema-banking-finance-law"
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "WebPage",
-            "@id":
-              "https://www.asbconsulting.in/legal-consulting/banking-finance-law#webpage",
-            url: "https://www.asbconsulting.in/legal-consulting/banking-finance-law",
-            name: "Banking & Finance Law",
-            description:
-              "AS Business Consulting provides Banking & Finance Law advisory to help businesses manage funding transactions, loan documentation, security arrangements, project finance, debt restructuring, lender negotiations, fund-flow controls, covenant monitoring, and financial risk protection.",
-            isPartOf: {
-              "@type": "WebSite",
-              "@id": "https://www.asbconsulting.in/#website",
-              url: "https://www.asbconsulting.in/",
-              name: "AS Business Consulting",
-            },
-          }),
+      <JsonLd
+        data={{
+          "@context": "https://schema.org",
+          "@type": "WebPage",
+          "@id":
+            "https://www.asbconsulting.in/legal-consulting/banking-finance-law#webpage",
+          url: "https://www.asbconsulting.in/legal-consulting/banking-finance-law",
+          name: metadata.title,
+          description: metadata.description,
+          isPartOf: { "@id": "https://www.asbconsulting.in/#website" },
         }}
       />
 

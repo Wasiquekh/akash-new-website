@@ -1,6 +1,6 @@
 import * as React from "react";
-import Script from "next/script";
 import Header from "../../components/Header";
+import JsonLd from "../../components/JsonLd";
 import Footer from "../../components/Footer";
 import ContactFrom from "../../components/ContactFrom";
 import OperationsRelated from "../../components/OperationsRelated";
@@ -207,56 +207,42 @@ const page = () => {
         }}
       />
 
-      <Script
-        id="breadcrumb-schema-innovation"
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "BreadcrumbList",
-            itemListElement: [
-              {
-                "@type": "ListItem",
-                position: 1,
-                name: "Home",
-                item: "https://www.asbconsulting.in/",
-              },
-              {
-                "@type": "ListItem",
-                position: 2,
-                name: "Operations Consulting",
-                item: "https://www.asbconsulting.in/operation",
-              },
-              {
-                "@type": "ListItem",
-                position: 3,
-                name: "Innovation Consulting",
-                item: "https://www.asbconsulting.in/operation/innovation",
-              },
-            ],
-          }),
+      <JsonLd
+        data={{
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          itemListElement: [
+            {
+              "@type": "ListItem",
+              position: 1,
+              name: "Home",
+              item: "https://www.asbconsulting.in/",
+            },
+            {
+              "@type": "ListItem",
+              position: 2,
+              name: "Operations Consulting",
+              item: "https://www.asbconsulting.in/operation",
+            },
+            {
+              "@type": "ListItem",
+              position: 3,
+              name: "Innovation Consulting",
+              item: "https://www.asbconsulting.in/operation/innovation",
+            },
+          ],
         }}
       />
 
-      <Script
-        id="webpage-schema-innovation"
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "WebPage",
-            "@id": "https://www.asbconsulting.in/operation/innovation#webpage",
-            url: "https://www.asbconsulting.in/operation/innovation",
-            name: "Innovation Consulting in India | AS Business Consulting",
-            description:
-              "AS Business Consulting provides innovation consulting for product benchmarking, process improvement, cost saving, technology updation, and operational efficiency.",
-            isPartOf: {
-              "@type": "WebSite",
-              "@id": "https://www.asbconsulting.in/#website",
-              url: "https://www.asbconsulting.in/",
-              name: "AS Business Consulting",
-            },
-          }),
+      <JsonLd
+        data={{
+          "@context": "https://schema.org",
+          "@type": "WebPage",
+          "@id": "https://www.asbconsulting.in/operation/innovation#webpage",
+          url: "https://www.asbconsulting.in/operation/innovation",
+          name: metadata.title,
+          description: metadata.description,
+          isPartOf: { "@id": "https://www.asbconsulting.in/#website" },
         }}
       />
 

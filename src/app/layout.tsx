@@ -3,6 +3,8 @@ import { Lexend, Inter } from "next/font/google";
 import "./globals.css";
 import Script from "next/script"; // ✅ Import for Google Analytics
 import LeadTracking from "./components/LeadTracking";
+import JsonLd from "./components/JsonLd";
+import { organizationSchema, websiteSchema } from "@/lib/schema";
 
 // Fonts
 const lexend = Lexend({
@@ -60,6 +62,9 @@ export default function RootLayout({
         <link rel="sitemap" type="application/xml" href="https://www.asbconsulting.in/sitemap.xml" />
       </head>
       <body className={`${lexend.variable} ${inter.variable} antialiased`}>
+        {/* Site-wide entities – pages reference these by @id */}
+        <JsonLd data={organizationSchema} />
+        <JsonLd data={websiteSchema} />
         <LeadTracking />
         {children}
       </body>

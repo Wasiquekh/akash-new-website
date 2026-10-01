@@ -1,8 +1,8 @@
 import * as React from "react";
 import Link from "next/link";
-import Script from "next/script";
 
 import Header from "../../components/Header";
+import JsonLd from "../../components/JsonLd";
 import Footer from "../../components/Footer";
 import ContactFrom from "../../components/ContactFrom";
 
@@ -194,57 +194,43 @@ const keyPoints = [
 const Page = () => {
   return (
     <>
-      <Script
-        id="breadcrumb-schema-recruitment-executive-search"
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "BreadcrumbList",
-            itemListElement: [
-              {
-                "@type": "ListItem",
-                position: 1,
-                name: "Home",
-                item: "https://www.asbconsulting.in/",
-              },
-              {
-                "@type": "ListItem",
-                position: 2,
-                name: "Our Services",
-                item: "https://www.asbconsulting.in/our-services",
-              },
-              {
-                "@type": "ListItem",
-                position: 3,
-                name: "Recruitment & Executive Search Services",
-                item: "https://www.asbconsulting.in/human-resource/recruitment-executive-search",
-              },
-            ],
-          }),
+      <JsonLd
+        data={{
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          itemListElement: [
+            {
+              "@type": "ListItem",
+              position: 1,
+              name: "Home",
+              item: "https://www.asbconsulting.in/",
+            },
+            {
+              "@type": "ListItem",
+              position: 2,
+              name: "Human Resource (HR) Consulting",
+              item: "https://www.asbconsulting.in/human-resource",
+            },
+            {
+              "@type": "ListItem",
+              position: 3,
+              name: "Recruitment & Executive Search Services",
+              item: "https://www.asbconsulting.in/human-resource/recruitment-executive-search",
+            },
+          ],
         }}
       />
 
-      <Script
-        id="webpage-schema-recruitment-executive-search"
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "WebPage",
-            "@id":
-              "https://www.asbconsulting.in/human-resource/recruitment-executive-search#webpage",
-            url: "https://www.asbconsulting.in/human-resource/recruitment-executive-search",
-            name: "Recruitment & Executive Search Services in India",
-            description:
-              "AS Business Consulting helps organizations hire skilled professionals, senior leaders, industry specialists, and hard-to-find talent through recruitment and executive search services in India.",
-            isPartOf: {
-              "@type": "WebSite",
-              "@id": "https://www.asbconsulting.in/#website",
-              url: "https://www.asbconsulting.in/",
-              name: "AS Business Consulting",
-            },
-          }),
+      <JsonLd
+        data={{
+          "@context": "https://schema.org",
+          "@type": "WebPage",
+          "@id":
+            "https://www.asbconsulting.in/human-resource/recruitment-executive-search#webpage",
+          url: "https://www.asbconsulting.in/human-resource/recruitment-executive-search",
+          name: metadata.title,
+          description: metadata.description,
+          isPartOf: { "@id": "https://www.asbconsulting.in/#website" },
         }}
       />
 

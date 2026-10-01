@@ -1,5 +1,4 @@
 import * as React from "react";
-import Script from "next/script";
 
 export const metadata = {
   title: "R&D & Product Design Services in India | CAD CAM – AS Business",
@@ -11,6 +10,7 @@ export const metadata = {
 };
 
 import Header from "../components/Header";
+import JsonLd from "../components/JsonLd";
 import Footer from "../components/Footer";
 import { FaCheck, FaCircleCheck } from "react-icons/fa6";
 import Image from "next/image";
@@ -19,56 +19,42 @@ import ContactFrom from "../components/ContactFrom";
 const Page = () => {
   return (
     <>
-      <Script
-        id="breadcrumb-schema-research-development"
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "BreadcrumbList",
-            itemListElement: [
-              {
-                "@type": "ListItem",
-                position: 1,
-                name: "Home",
-                item: "https://www.asbconsulting.in/",
-              },
-              {
-                "@type": "ListItem",
-                position: 2,
-                name: "Our Services",
-                item: "https://www.asbconsulting.in/our-services",
-              },
-              {
-                "@type": "ListItem",
-                position: 3,
-                name: "R&D & Product Design",
-                item: "https://www.asbconsulting.in/research&development",
-              },
-            ],
-          }),
+      <JsonLd
+        data={{
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          itemListElement: [
+            {
+              "@type": "ListItem",
+              position: 1,
+              name: "Home",
+              item: "https://www.asbconsulting.in/",
+            },
+            {
+              "@type": "ListItem",
+              position: 2,
+              name: "Our Services",
+              item: "https://www.asbconsulting.in/our-services",
+            },
+            {
+              "@type": "ListItem",
+              position: 3,
+              name: "R&D & Product Design",
+              item: "https://www.asbconsulting.in/research&development",
+            },
+          ],
         }}
       />
 
-      <Script
-        id="webpage-schema-research-development"
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "WebPage",
-            "@id": "https://www.asbconsulting.in/research&development#webpage",
-            url: "https://www.asbconsulting.in/research&development",
-            name: "R&D & Product Design Services in India | CAD CAM – AS Business",
-            description:
-              "Accelerate innovation with AS Business Consulting’s product design, CAD/CAM outsourcing, engineering drafting, reverse engineering, and prototype development services.",
-            isPartOf: {
-              "@type": "WebSite",
-              "@id": "https://www.asbconsulting.in/#website",
-              url: "https://www.asbconsulting.in/",
-              name: "AS Business Consulting",
-            },
-          }),
+      <JsonLd
+        data={{
+          "@context": "https://schema.org",
+          "@type": "WebPage",
+          "@id": "https://www.asbconsulting.in/research&development#webpage",
+          url: "https://www.asbconsulting.in/research&development",
+          name: metadata.title,
+          description: metadata.description,
+          isPartOf: { "@id": "https://www.asbconsulting.in/#website" },
         }}
       />
       <Header />

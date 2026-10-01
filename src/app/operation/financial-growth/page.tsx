@@ -1,6 +1,6 @@
 import * as React from "react";
-import Script from "next/script";
 import Header from "../../components/Header";
+import JsonLd from "../../components/JsonLd";
 import Footer from "../../components/Footer";
 import ContactFrom from "../../components/ContactFrom";
 import OperationsRelated from "../../components/OperationsRelated";
@@ -245,56 +245,42 @@ const page = () => {
         }}
       />
 
-      <Script
-        id="breadcrumb-schema-financial-growth"
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "BreadcrumbList",
-            itemListElement: [
-              {
-                "@type": "ListItem",
-                position: 1,
-                name: "Home",
-                item: "https://www.asbconsulting.in/",
-              },
-              {
-                "@type": "ListItem",
-                position: 2,
-                name: "Operations Consulting",
-                item: "https://www.asbconsulting.in/operation",
-              },
-              {
-                "@type": "ListItem",
-                position: 3,
-                name: "Financial Growth",
-                item: "https://www.asbconsulting.in/operation/financial-growth",
-              },
-            ],
-          }),
+      <JsonLd
+        data={{
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          itemListElement: [
+            {
+              "@type": "ListItem",
+              position: 1,
+              name: "Home",
+              item: "https://www.asbconsulting.in/",
+            },
+            {
+              "@type": "ListItem",
+              position: 2,
+              name: "Operations Consulting",
+              item: "https://www.asbconsulting.in/operation",
+            },
+            {
+              "@type": "ListItem",
+              position: 3,
+              name: "Financial Growth",
+              item: "https://www.asbconsulting.in/operation/financial-growth",
+            },
+          ],
         }}
       />
 
-      <Script
-        id="webpage-schema-financial-growth"
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "WebPage",
-            "@id": "https://www.asbconsulting.in/operation/financial-growth#webpage",
-            url: "https://www.asbconsulting.in/operation/financial-growth",
-            name: "Financial Growth Consulting in India | AS Business Consulting",
-            description:
-              "AS Business Consulting provides financial growth advisory including institutional financing, fund-flow management, working capital planning, tax advisory, loan proposal support, and business growth finance strategy.",
-            isPartOf: {
-              "@type": "WebSite",
-              "@id": "https://www.asbconsulting.in/#website",
-              url: "https://www.asbconsulting.in/",
-              name: "AS Business Consulting",
-            },
-          }),
+      <JsonLd
+        data={{
+          "@context": "https://schema.org",
+          "@type": "WebPage",
+          "@id": "https://www.asbconsulting.in/operation/financial-growth#webpage",
+          url: "https://www.asbconsulting.in/operation/financial-growth",
+          name: metadata.title,
+          description: metadata.description,
+          isPartOf: { "@id": "https://www.asbconsulting.in/#website" },
         }}
       />
 

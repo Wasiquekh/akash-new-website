@@ -1,8 +1,8 @@
 import * as React from "react";
 import Link from "next/link";
-import Script from "next/script";
 
 import Header from "../../components/Header";
+import JsonLd from "../../components/JsonLd";
 import Footer from "../../components/Footer";
 import ContactFrom from "../../components/ContactFrom";
 
@@ -301,57 +301,56 @@ const deliverables = [
 const Page = () => {
   return (
     <>
-      <Script
-        id="breadcrumb-schema-marketing-sales-training"
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "BreadcrumbList",
-            itemListElement: [
-              {
-                "@type": "ListItem",
-                position: 1,
-                name: "Home",
-                item: "https://www.asbconsulting.in/",
-              },
-              {
-                "@type": "ListItem",
-                position: 2,
-                name: "Our Services",
-                item: "https://www.asbconsulting.in/our-services",
-              },
-              {
-                "@type": "ListItem",
-                position: 3,
-                name: "Marketing & Sales Training Programs",
-                item: "https://www.asbconsulting.in/sales&marketing/training",
-              },
-            ],
-          }),
+      <JsonLd
+        data={{
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          itemListElement: [
+            {
+              "@type": "ListItem",
+              position: 1,
+              name: "Home",
+              item: "https://www.asbconsulting.in/",
+            },
+            {
+              "@type": "ListItem",
+              position: 2,
+              name: "Sales & Marketing",
+              item: "https://www.asbconsulting.in/sales&marketing",
+            },
+            {
+              "@type": "ListItem",
+              position: 3,
+              name: "Marketing & Sales Training Programs",
+              item: "https://www.asbconsulting.in/sales&marketing/training",
+            },
+          ],
         }}
       />
 
-      <Script
-        id="webpage-schema-marketing-sales-training"
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "WebPage",
-            "@id":
-              "https://www.asbconsulting.in/sales&marketing/training#webpage",
-            url: "https://www.asbconsulting.in/sales&marketing/training",
-            name: "Marketing & Sales Training Programs for Business Teams in India",
-            description:
-              "AS Business Consulting provides practical marketing and sales training programs that help business teams improve skills, adopt latest tools, understand modern platforms, follow structured processes, and execute growth strategies more effectively.",
-            isPartOf: {
-              "@type": "WebSite",
-              "@id": "https://www.asbconsulting.in/#website",
-              url: "https://www.asbconsulting.in/",
-              name: "AS Business Consulting",
-            },
-          }),
+      <JsonLd
+        data={{
+          "@context": "https://schema.org",
+          "@type": "WebPage",
+          "@id":
+            "https://www.asbconsulting.in/sales&marketing/training#webpage",
+          url: "https://www.asbconsulting.in/sales&marketing/training",
+          name: metadata.title,
+          description: metadata.description,
+          isPartOf: { "@id": "https://www.asbconsulting.in/#website" },
+        }}
+      />
+
+      <JsonLd
+        data={{
+          "@context": "https://schema.org",
+          "@type": "Service",
+          "@id": "https://www.asbconsulting.in/sales&marketing/training#service",
+          name: "Marketing & Sales Training Programs",
+          description: metadata.description,
+          url: "https://www.asbconsulting.in/sales&marketing/training",
+          areaServed: { "@type": "Country", name: "India" },
+          provider: { "@id": "https://www.asbconsulting.in/#organization" },
         }}
       />
 

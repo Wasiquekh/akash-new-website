@@ -1,8 +1,8 @@
 import * as React from "react";
 import Link from "next/link";
-import Script from "next/script";
 
 import Header from "../../components/Header";
+import JsonLd from "../../components/JsonLd";
 import Footer from "../../components/Footer";
 import ContactFrom from "../../components/ContactFrom";
 
@@ -160,57 +160,43 @@ const coreAreas = [
 const Page = () => {
   return (
     <>
-      <Script
-        id="breadcrumb-schema-eor-payroll"
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "BreadcrumbList",
-            itemListElement: [
-              {
-                "@type": "ListItem",
-                position: 1,
-                name: "Home",
-                item: "https://www.asbconsulting.in/",
-              },
-              {
-                "@type": "ListItem",
-                position: 2,
-                name: "Our Services",
-                item: "https://www.asbconsulting.in/our-services",
-              },
-              {
-                "@type": "ListItem",
-                position: 3,
-                name: "EOR & Payroll Support",
-                item: "https://www.asbconsulting.in/human-resource/payroll-support",
-              },
-            ],
-          }),
+      <JsonLd
+        data={{
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          itemListElement: [
+            {
+              "@type": "ListItem",
+              position: 1,
+              name: "Home",
+              item: "https://www.asbconsulting.in/",
+            },
+            {
+              "@type": "ListItem",
+              position: 2,
+              name: "Human Resource (HR) Consulting",
+              item: "https://www.asbconsulting.in/human-resource",
+            },
+            {
+              "@type": "ListItem",
+              position: 3,
+              name: "EOR & Payroll Support",
+              item: "https://www.asbconsulting.in/human-resource/payroll-support",
+            },
+          ],
         }}
       />
 
-      <Script
-        id="webpage-schema-eor-payroll"
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "WebPage",
-            "@id":
-              "https://www.asbconsulting.in/human-resource/payroll-support#webpage",
-            url: "https://www.asbconsulting.in/human-resource/payroll-support",
-            name: "Third-Party Employer EOR & Payroll Support Services in India",
-            description:
-              "AS Business Consulting provides Third-Party Employer EOR and Payroll Support Services in India to help businesses manage employee onboarding, payroll administration, statutory compliance, employment documentation, and workforce operations.",
-            isPartOf: {
-              "@type": "WebSite",
-              "@id": "https://www.asbconsulting.in/#website",
-              url: "https://www.asbconsulting.in/",
-              name: "AS Business Consulting",
-            },
-          }),
+      <JsonLd
+        data={{
+          "@context": "https://schema.org",
+          "@type": "WebPage",
+          "@id":
+            "https://www.asbconsulting.in/human-resource/payroll-support#webpage",
+          url: "https://www.asbconsulting.in/human-resource/payroll-support",
+          name: metadata.title,
+          description: metadata.description,
+          isPartOf: { "@id": "https://www.asbconsulting.in/#website" },
         }}
       />
 

@@ -1,8 +1,8 @@
 import * as React from "react";
 import Link from "next/link";
-import Script from "next/script";
 
 import Header from "../../components/Header";
+import JsonLd from "../../components/JsonLd";
 import Footer from "../../components/Footer";
 import ContactFrom from "../../components/ContactFrom";
 
@@ -281,57 +281,43 @@ const heroItems = [
 const Page = () => {
   return (
     <>
-      <Script
-        id="breadcrumb-schema-background-investigation-due-diligence"
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "BreadcrumbList",
-            itemListElement: [
-              {
-                "@type": "ListItem",
-                position: 1,
-                name: "Home",
-                item: "https://www.asbconsulting.in/",
-              },
-              {
-                "@type": "ListItem",
-                position: 2,
-                name: "Our Services",
-                item: "https://www.asbconsulting.in/our-services",
-              },
-              {
-                "@type": "ListItem",
-                position: 3,
-                name: "Background Investigation & Due Diligence",
-                item: "https://www.asbconsulting.in/legal-consulting/background-investigation-due-diligence",
-              },
-            ],
-          }),
+      <JsonLd
+        data={{
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          itemListElement: [
+            {
+              "@type": "ListItem",
+              position: 1,
+              name: "Home",
+              item: "https://www.asbconsulting.in/",
+            },
+            {
+              "@type": "ListItem",
+              position: 2,
+              name: "Legal Consulting",
+              item: "https://www.asbconsulting.in/legal-consulting",
+            },
+            {
+              "@type": "ListItem",
+              position: 3,
+              name: "Background Investigation & Due Diligence",
+              item: "https://www.asbconsulting.in/legal-consulting/background-investigation-due-diligence",
+            },
+          ],
         }}
       />
 
-      <Script
-        id="webpage-schema-background-investigation-due-diligence"
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "WebPage",
-            "@id":
-              "https://www.asbconsulting.in/legal-consulting/background-investigation-due-diligence#webpage",
-            url: "https://www.asbconsulting.in/legal-consulting/background-investigation-due-diligence",
-            name: "Background Investigation & Due Diligence",
-            description:
-              "AS Business Consulting provides structured and confidential Background Investigation & Due Diligence services for vendor due diligence, partner verification, leadership checks, employee background checks where applicable, integrity reviews, document review, and risk reporting.",
-            isPartOf: {
-              "@type": "WebSite",
-              "@id": "https://www.asbconsulting.in/#website",
-              url: "https://www.asbconsulting.in/",
-              name: "AS Business Consulting",
-            },
-          }),
+      <JsonLd
+        data={{
+          "@context": "https://schema.org",
+          "@type": "WebPage",
+          "@id":
+            "https://www.asbconsulting.in/legal-consulting/background-investigation-due-diligence#webpage",
+          url: "https://www.asbconsulting.in/legal-consulting/background-investigation-due-diligence",
+          name: metadata.title,
+          description: metadata.description,
+          isPartOf: { "@id": "https://www.asbconsulting.in/#website" },
         }}
       />
 

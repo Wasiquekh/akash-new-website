@@ -1,5 +1,4 @@
 import * as React from "react";
-import Script from "next/script";
 
 export const metadata = {
   title: "International Business & Export Consulting in India – AS Business",
@@ -12,6 +11,7 @@ export const metadata = {
 };
 
 import Header from "../components/Header";
+import JsonLd from "../components/JsonLd";
 import Footer from "../components/Footer";
 import { FaCheck } from "react-icons/fa6";
 import Image from "next/image";
@@ -59,57 +59,56 @@ const audiences = [
 const page = () => {
   return (
     <>
-      <Script
-        id="breadcrumb-schema-business"
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "BreadcrumbList",
-            itemListElement: [
-              {
-                "@type": "ListItem",
-                position: 1,
-                name: "Home",
-                item: "https://www.asbconsulting.in/",
-              },
-              {
-                "@type": "ListItem",
-                position: 2,
-                name: "Our Services",
-                item: "https://www.asbconsulting.in/our-services",
-              },
-              {
-                "@type": "ListItem",
-                position: 3,
-                name: "International Business Development",
-                item: "https://www.asbconsulting.in/international-business-development",
-              },
-            ],
-          }),
+      <JsonLd
+        data={{
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          itemListElement: [
+            {
+              "@type": "ListItem",
+              position: 1,
+              name: "Home",
+              item: "https://www.asbconsulting.in/",
+            },
+            {
+              "@type": "ListItem",
+              position: 2,
+              name: "Our Services",
+              item: "https://www.asbconsulting.in/our-services",
+            },
+            {
+              "@type": "ListItem",
+              position: 3,
+              name: "International Business Development",
+              item: "https://www.asbconsulting.in/international-business-development",
+            },
+          ],
         }}
       />
 
-      <Script
-        id="webpage-schema-business-development"
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "WebPage",
-            "@id":
-              "https://www.asbconsulting.in/international-business-development#webpage",
-            url: "https://www.asbconsulting.in/international-business-development",
-            name: "International Business & Export Consulting in India – AS Business",
-            description:
-              "Expand globally with AS Business Consulting: export consulting, market entry (incl. China), partner search, global sourcing, logistics and customs advisory.",
-            isPartOf: {
-              "@type": "WebSite",
-              "@id": "https://www.asbconsulting.in/#website",
-              url: "https://www.asbconsulting.in/",
-              name: "AS Business Consulting",
-            },
-          }),
+      <JsonLd
+        data={{
+          "@context": "https://schema.org",
+          "@type": "WebPage",
+          "@id":
+            "https://www.asbconsulting.in/international-business-development#webpage",
+          url: "https://www.asbconsulting.in/international-business-development",
+          name: metadata.title,
+          description: metadata.description,
+          isPartOf: { "@id": "https://www.asbconsulting.in/#website" },
+        }}
+      />
+
+      <JsonLd
+        data={{
+          "@context": "https://schema.org",
+          "@type": "Service",
+          "@id": "https://www.asbconsulting.in/international-business-development#service",
+          name: "International Business Development",
+          description: metadata.description,
+          url: "https://www.asbconsulting.in/international-business-development",
+          areaServed: { "@type": "Country", name: "India" },
+          provider: { "@id": "https://www.asbconsulting.in/#organization" },
         }}
       />
 

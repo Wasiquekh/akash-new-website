@@ -1,6 +1,6 @@
 import React from "react";
-import Script from "next/script";
 import Header from "../components/Header";
+import JsonLd from "../components/JsonLd";
 import Footer from "../components/Footer";
 import Image from "next/image";
 import ContactFrom from "../components/ContactFrom";
@@ -32,53 +32,39 @@ const page = () => {
   return (
     <>
       {/* BreadcrumbList (Home → Gallery) */}
-      <Script
-        id="breadcrumb-schema-gallery"
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "BreadcrumbList",
-            itemListElement: [
-              {
-                "@type": "ListItem",
-                position: 1,
-                name: "Home",
-                item: "https://www.asbconsulting.in/",
-              },
-              {
-                "@type": "ListItem",
-                position: 2,
-                name: "Gallery",
-                item: "https://www.asbconsulting.in/gallery",
-              },
-            ],
-          }),
+      <JsonLd
+        data={{
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          itemListElement: [
+            {
+              "@type": "ListItem",
+              position: 1,
+              name: "Home",
+              item: "https://www.asbconsulting.in/",
+            },
+            {
+              "@type": "ListItem",
+              position: 2,
+              name: "Gallery",
+              item: "https://www.asbconsulting.in/gallery",
+            },
+          ],
         }}
       />
 
       {/* ImageGallery schema (specialized CollectionPage for images) */}
-      <Script
-        id="imagegallery-schema-gallery"
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "ImageGallery",
-            "@id": "https://www.asbconsulting.in/gallery#gallery",
-            url: "https://www.asbconsulting.in/gallery",
-            name: "Project Gallery & Client Work in India | AS Business Consulting",
-            description:
-              "A curated gallery of AS Business Consulting’s work across operations, R&D, certification, international business, HR, legal, and B2B marketing.",
-            inLanguage: "en-IN",
-            isPartOf: {
-              "@type": "WebSite",
-              "@id": "https://www.asbconsulting.in/#website",
-              url: "https://www.asbconsulting.in/",
-              name: "AS Business Consulting",
-            },
-            about: { "@id": "https://www.asbconsulting.in/#organization" },
-          }),
+      <JsonLd
+        data={{
+          "@context": "https://schema.org",
+          "@type": "ImageGallery",
+          "@id": "https://www.asbconsulting.in/gallery#webpage",
+          url: "https://www.asbconsulting.in/gallery",
+          name: metadata.title,
+          description: metadata.description,
+          inLanguage: "en-IN",
+          isPartOf: { "@id": "https://www.asbconsulting.in/#website" },
+          about: { "@id": "https://www.asbconsulting.in/#organization" },
         }}
       />
 

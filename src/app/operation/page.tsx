@@ -1,5 +1,4 @@
 import * as React from "react";
-import Script from "next/script";
 
 export const metadata = {
   title: "Operations Consulting in India | Lean Manufacturing & ZED",
@@ -11,6 +10,7 @@ export const metadata = {
 };
 
 import Header from "../components/Header";
+import JsonLd from "../components/JsonLd";
 import Footer from "../components/Footer";
 import Image from "next/image";
 import ContactFrom from "../components/ContactFrom";
@@ -23,56 +23,55 @@ const linkClass = "text-primary underline hover:text-secondary";
 const page = () => {
   return (
     <>
-      <Script
-        id="breadcrumb-schema-operation"
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "BreadcrumbList",
-            itemListElement: [
-              {
-                "@type": "ListItem",
-                position: 1,
-                name: "Home",
-                item: "https://www.asbconsulting.in/",
-              },
-              {
-                "@type": "ListItem",
-                position: 2,
-                name: "Our Services",
-                item: "https://www.asbconsulting.in/our-services",
-              },
-              {
-                "@type": "ListItem",
-                position: 3,
-                name: "Operations (Lean & ZED)",
-                item: "https://www.asbconsulting.in/operation",
-              },
-            ],
-          }),
+      <JsonLd
+        data={{
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          itemListElement: [
+            {
+              "@type": "ListItem",
+              position: 1,
+              name: "Home",
+              item: "https://www.asbconsulting.in/",
+            },
+            {
+              "@type": "ListItem",
+              position: 2,
+              name: "Our Services",
+              item: "https://www.asbconsulting.in/our-services",
+            },
+            {
+              "@type": "ListItem",
+              position: 3,
+              name: "Operations Consulting",
+              item: "https://www.asbconsulting.in/operation",
+            },
+          ],
         }}
       />
 
-      <Script
-        id="webpage-schema-operation"
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "WebPage",
-            "@id": "https://www.asbconsulting.in/operation#webpage",
-            url: "https://www.asbconsulting.in/operation",
-            name: "Operations Consulting in India | Lean Manufacturing & ZED",
-            description:
-              "Operations consulting for manufacturers and MSMEs in India: lean manufacturing, ZED support, productivity improvement, QMS, audits and supply chain.",
-            isPartOf: {
-              "@type": "WebSite",
-              "@id": "https://www.asbconsulting.in/#website",
-              url: "https://www.asbconsulting.in/",
-              name: "AS Business Consulting",
-            },
-          }),
+      <JsonLd
+        data={{
+          "@context": "https://schema.org",
+          "@type": "WebPage",
+          "@id": "https://www.asbconsulting.in/operation#webpage",
+          url: "https://www.asbconsulting.in/operation",
+          name: metadata.title,
+          description: metadata.description,
+          isPartOf: { "@id": "https://www.asbconsulting.in/#website" },
+        }}
+      />
+
+      <JsonLd
+        data={{
+          "@context": "https://schema.org",
+          "@type": "Service",
+          "@id": "https://www.asbconsulting.in/operation#service",
+          name: "Operations Consulting",
+          description: metadata.description,
+          url: "https://www.asbconsulting.in/operation",
+          areaServed: { "@type": "Country", name: "India" },
+          provider: { "@id": "https://www.asbconsulting.in/#organization" },
         }}
       />
 

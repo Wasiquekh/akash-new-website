@@ -1,6 +1,5 @@
 import * as React from "react";
 import Link from "next/link";
-import Script from "next/script";
 import type { IconType } from "react-icons";
 import {
   FaArrowRight,
@@ -26,6 +25,7 @@ import {
 } from "react-icons/fa6";
 
 import Header from "../../components/Header";
+import JsonLd from "../../components/JsonLd";
 import Footer from "../../components/Footer";
 import ContactFrom from "../../components/ContactFrom";
 
@@ -339,57 +339,43 @@ const prototypeCards = [
 const Page = () => {
   return (
     <>
-      <Script
-        id="breadcrumb-schema-prototype-development"
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "BreadcrumbList",
-            itemListElement: [
-              {
-                "@type": "ListItem",
-                position: 1,
-                name: "Home",
-                item: "https://www.asbconsulting.in/",
-              },
-              {
-                "@type": "ListItem",
-                position: 2,
-                name: "Our Services",
-                item: "https://www.asbconsulting.in/our-services",
-              },
-              {
-                "@type": "ListItem",
-                position: 3,
-                name: "Prototype Development Services",
-                item: "https://www.asbconsulting.in/research&development/prototype-development",
-              },
-            ],
-          }),
+      <JsonLd
+        data={{
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          itemListElement: [
+            {
+              "@type": "ListItem",
+              position: 1,
+              name: "Home",
+              item: "https://www.asbconsulting.in/",
+            },
+            {
+              "@type": "ListItem",
+              position: 2,
+              name: "R&D & Product Design",
+              item: "https://www.asbconsulting.in/research&development",
+            },
+            {
+              "@type": "ListItem",
+              position: 3,
+              name: "Prototype Development Services",
+              item: "https://www.asbconsulting.in/research&development/prototype-development",
+            },
+          ],
         }}
       />
 
-      <Script
-        id="webpage-schema-prototype-development"
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "WebPage",
-            "@id":
-              "https://www.asbconsulting.in/research&development/prototype-development#webpage",
-            url: "https://www.asbconsulting.in/research&development/prototype-development",
-            name: "Prototype Development Services in India",
-            description:
-              "AS Business Consulting provides professional prototype development services in India, including 3D printing, CNC machining, sheet metal prototyping, soft tooling, functional testing, and pilot build preparation.",
-            isPartOf: {
-              "@type": "WebSite",
-              "@id": "https://www.asbconsulting.in/#website",
-              url: "https://www.asbconsulting.in/",
-              name: "AS Business Consulting",
-            },
-          }),
+      <JsonLd
+        data={{
+          "@context": "https://schema.org",
+          "@type": "WebPage",
+          "@id":
+            "https://www.asbconsulting.in/research&development/prototype-development#webpage",
+          url: "https://www.asbconsulting.in/research&development/prototype-development",
+          name: metadata.title,
+          description: metadata.description,
+          isPartOf: { "@id": "https://www.asbconsulting.in/#website" },
         }}
       />
 

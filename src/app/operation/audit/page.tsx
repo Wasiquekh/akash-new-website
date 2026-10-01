@@ -1,6 +1,6 @@
 import * as React from "react";
-import Script from "next/script";
 import Header from "../../components/Header";
+import JsonLd from "../../components/JsonLd";
 import Footer from "../../components/Footer";
 import ContactFrom from "../../components/ContactFrom";
 import OperationsRelated from "../../components/OperationsRelated";
@@ -249,56 +249,42 @@ const page = () => {
         }}
       />
 
-      <Script
-        id="breadcrumb-schema-mis-audit"
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "BreadcrumbList",
-            itemListElement: [
-              {
-                "@type": "ListItem",
-                position: 1,
-                name: "Home",
-                item: "https://www.asbconsulting.in/",
-              },
-              {
-                "@type": "ListItem",
-                position: 2,
-                name: "Operations Consulting",
-                item: "https://www.asbconsulting.in/operation",
-              },
-              {
-                "@type": "ListItem",
-                position: 3,
-                name: "MIS & Audit",
-                item: "https://www.asbconsulting.in/operation/audit",
-              },
-            ],
-          }),
+      <JsonLd
+        data={{
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          itemListElement: [
+            {
+              "@type": "ListItem",
+              position: 1,
+              name: "Home",
+              item: "https://www.asbconsulting.in/",
+            },
+            {
+              "@type": "ListItem",
+              position: 2,
+              name: "Operations Consulting",
+              item: "https://www.asbconsulting.in/operation",
+            },
+            {
+              "@type": "ListItem",
+              position: 3,
+              name: "MIS & Audit",
+              item: "https://www.asbconsulting.in/operation/audit",
+            },
+          ],
         }}
       />
 
-      <Script
-        id="webpage-schema-mis-audit"
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "WebPage",
-            "@id": "https://www.asbconsulting.in/operation/audit#webpage",
-            url: "https://www.asbconsulting.in/operation/audit",
-            name: "MIS & Audit Consulting in India | AS Business Consulting",
-            description:
-              "AS Business Consulting provides MIS and audit services including business performance analysis, MIS dashboard creation, process audit, system audit, KPI tracking, gap analysis, and corrective action planning.",
-            isPartOf: {
-              "@type": "WebSite",
-              "@id": "https://www.asbconsulting.in/#website",
-              url: "https://www.asbconsulting.in/",
-              name: "AS Business Consulting",
-            },
-          }),
+      <JsonLd
+        data={{
+          "@context": "https://schema.org",
+          "@type": "WebPage",
+          "@id": "https://www.asbconsulting.in/operation/audit#webpage",
+          url: "https://www.asbconsulting.in/operation/audit",
+          name: metadata.title,
+          description: metadata.description,
+          isPartOf: { "@id": "https://www.asbconsulting.in/#website" },
         }}
       />
 

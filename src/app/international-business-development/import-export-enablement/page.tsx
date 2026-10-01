@@ -1,6 +1,5 @@
 import * as React from "react";
 import Link from "next/link";
-import Script from "next/script";
 import {
   FaArrowRight,
   FaCircleCheck,
@@ -19,6 +18,7 @@ import {
 } from "react-icons/fa6";
 
 import Header from "../../components/Header";
+import JsonLd from "../../components/JsonLd";
 import Footer from "../../components/Footer";
 import ContactFrom from "../../components/ContactFrom";
 
@@ -318,57 +318,43 @@ const SmallCheckList = ({
 const Page = () => {
   return (
     <>
-      <Script
-        id="breadcrumb-schema-import-export-enablement-services"
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "BreadcrumbList",
-            itemListElement: [
-              {
-                "@type": "ListItem",
-                position: 1,
-                name: "Home",
-                item: "https://www.asbconsulting.in/",
-              },
-              {
-                "@type": "ListItem",
-                position: 2,
-                name: "Our Services",
-                item: "https://www.asbconsulting.in/our-services",
-              },
-              {
-                "@type": "ListItem",
-                position: 3,
-                name: "Import–Export Enablement Services",
-                item: "https://www.asbconsulting.in/international-business-development/import-export-enablement",
-              },
-            ],
-          }),
+      <JsonLd
+        data={{
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          itemListElement: [
+            {
+              "@type": "ListItem",
+              position: 1,
+              name: "Home",
+              item: "https://www.asbconsulting.in/",
+            },
+            {
+              "@type": "ListItem",
+              position: 2,
+              name: "International Business Development",
+              item: "https://www.asbconsulting.in/international-business-development",
+            },
+            {
+              "@type": "ListItem",
+              position: 3,
+              name: "Import–Export Enablement Services",
+              item: "https://www.asbconsulting.in/international-business-development/import-export-enablement",
+            },
+          ],
         }}
       />
 
-      <Script
-        id="webpage-schema-import-export-enablement-services"
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "WebPage",
-            "@id":
-              "https://www.asbconsulting.in/international-business-development/import-export-enablement#webpage",
-            url: "https://www.asbconsulting.in/international-business-development/import-export-enablement",
-            name: "Import–Export Enablement Services for Global Business Growth",
-            description:
-              "AS Business Consulting provides complete Import–Export Enablement Services including certification, licensing, product sales strategy, franchise program planning, export readiness, and global expansion support.",
-            isPartOf: {
-              "@type": "WebSite",
-              "@id": "https://www.asbconsulting.in/#website",
-              url: "https://www.asbconsulting.in/",
-              name: "AS Business Consulting",
-            },
-          }),
+      <JsonLd
+        data={{
+          "@context": "https://schema.org",
+          "@type": "WebPage",
+          "@id":
+            "https://www.asbconsulting.in/international-business-development/import-export-enablement#webpage",
+          url: "https://www.asbconsulting.in/international-business-development/import-export-enablement",
+          name: metadata.title,
+          description: metadata.description,
+          isPartOf: { "@id": "https://www.asbconsulting.in/#website" },
         }}
       />
 

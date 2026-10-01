@@ -11,66 +11,27 @@ export const metadata = {
 
 import Image from "next/image";
 import Header from "./components/Header";
+import JsonLd from "./components/JsonLd";
 import Footer from "./components/Footer";
 import Link from "next/link";
 import { FaCircle, FaInstagram, FaXTwitter } from "react-icons/fa6";
 import { MdOutlineFacebook } from "react-icons/md";
 import ContactFrom from "./components/ContactFrom";
-import Script from "next/script";
 
 export default function Home() {
   return (
     <>
-      {/* BreadcrumbList Schema (Home only) */}
-      <Script
-        id="breadcrumb-schema"
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "BreadcrumbList",
-            itemListElement: [
-              {
-                "@type": "ListItem",
-                position: 1,
-                name: "Home",
-                item: "https://www.asbconsulting.in/",
-              },
-            ],
-          }),
-        }}
-      />
-
-      {/* WebSite Schema */}
-      <Script
-        id="webpage-schema"
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "WebSite",
-            "@id": "https://www.asbconsulting.in/#website",
-            url: "https://www.asbconsulting.in/",
-            name: "AS Business Consulting",
-            publisher: { "@id": "https://www.asbconsulting.in/#organization" },
-          }),
-        }}
-      />
-
-      {/* Organization Schema */}
-      <Script
-        id="organization-schema"
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "Organization",
-            "@id": "https://www.asbconsulting.in/#organization",
-            name: "AS Business Consulting",
-            url: "https://www.asbconsulting.in/",
-            // logo: "https://www.asbconsulting.in/logo.png", // ← add your actual logo URL if available
-            // sameAs: ["https://twitter.com/...", "https://www.linkedin.com/company/..."]
-          }),
+      {/* WebPage Schema – Organization and WebSite are rendered in the root layout */}
+      <JsonLd
+        data={{
+          "@context": "https://schema.org",
+          "@type": "WebPage",
+          "@id": "https://www.asbconsulting.in/#webpage",
+          url: "https://www.asbconsulting.in/",
+          name: metadata.title,
+          description: metadata.description,
+          isPartOf: { "@id": "https://www.asbconsulting.in/#website" },
+          about: { "@id": "https://www.asbconsulting.in/#organization" },
         }}
       />
       <Header />

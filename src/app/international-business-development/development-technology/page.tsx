@@ -1,6 +1,5 @@
 import * as React from "react";
 import Link from "next/link";
-import Script from "next/script";
 import {
   FaArrowRight,
   FaCircleCheck,
@@ -18,6 +17,7 @@ import {
 } from "react-icons/fa6";
 
 import Header from "../../components/Header";
+import JsonLd from "../../components/JsonLd";
 import Footer from "../../components/Footer";
 import ContactFrom from "../../components/ContactFrom";
 
@@ -293,57 +293,43 @@ const SmallCheckList = ({
 const Page = () => {
   return (
     <>
-      <Script
-        id="breadcrumb-schema-technology-development-services"
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "BreadcrumbList",
-            itemListElement: [
-              {
-                "@type": "ListItem",
-                position: 1,
-                name: "Home",
-                item: "https://www.asbconsulting.in/",
-              },
-              {
-                "@type": "ListItem",
-                position: 2,
-                name: "Our Services",
-                item: "https://www.asbconsulting.in/our-services",
-              },
-              {
-                "@type": "ListItem",
-                position: 3,
-                name: "Technology Development Services",
-                item: "https://www.asbconsulting.in/international-business-development/development-technology",
-              },
-            ],
-          }),
+      <JsonLd
+        data={{
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          itemListElement: [
+            {
+              "@type": "ListItem",
+              position: 1,
+              name: "Home",
+              item: "https://www.asbconsulting.in/",
+            },
+            {
+              "@type": "ListItem",
+              position: 2,
+              name: "International Business Development",
+              item: "https://www.asbconsulting.in/international-business-development",
+            },
+            {
+              "@type": "ListItem",
+              position: 3,
+              name: "Technology Development Services",
+              item: "https://www.asbconsulting.in/international-business-development/development-technology",
+            },
+          ],
         }}
       />
 
-      <Script
-        id="webpage-schema-technology-development-services"
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "WebPage",
-            "@id":
-              "https://www.asbconsulting.in/international-business-development/development-technology#webpage",
-            url: "https://www.asbconsulting.in/international-business-development/development-technology",
-            name: "Technology Development Services for Business Growth & Global Expansion",
-            description:
-              "AS Business Consulting provides complete Technology Development Services to help businesses improve operations, adopt modern systems, set up new technology, select machines and tools, and prepare for domestic and international business growth.",
-            isPartOf: {
-              "@type": "WebSite",
-              "@id": "https://www.asbconsulting.in/#website",
-              url: "https://www.asbconsulting.in/",
-              name: "AS Business Consulting",
-            },
-          }),
+      <JsonLd
+        data={{
+          "@context": "https://schema.org",
+          "@type": "WebPage",
+          "@id":
+            "https://www.asbconsulting.in/international-business-development/development-technology#webpage",
+          url: "https://www.asbconsulting.in/international-business-development/development-technology",
+          name: metadata.title,
+          description: metadata.description,
+          isPartOf: { "@id": "https://www.asbconsulting.in/#website" },
         }}
       />
 

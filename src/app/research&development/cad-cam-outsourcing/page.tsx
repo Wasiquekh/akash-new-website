@@ -1,6 +1,5 @@
 import * as React from "react";
 import Link from "next/link";
-import Script from "next/script";
 import type { IconType } from "react-icons";
 import {
   FaArrowRight,
@@ -27,6 +26,7 @@ import {
 } from "react-icons/fa6";
 
 import Header from "../../components/Header";
+import JsonLd from "../../components/JsonLd";
 import Footer from "../../components/Footer";
 import ContactFrom from "../../components/ContactFrom";
 
@@ -452,80 +452,58 @@ const requirementInputs = [
 const Page = () => {
   return (
     <>
-      <Script
-        id="breadcrumb-schema-cad-cam-outsourcing-services"
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "BreadcrumbList",
-            itemListElement: [
-              {
-                "@type": "ListItem",
-                position: 1,
-                name: "Home",
-                item: "https://www.asbconsulting.in/",
-              },
-              {
-                "@type": "ListItem",
-                position: 2,
-                name: "Our Services",
-                item: "https://www.asbconsulting.in/our-services",
-              },
-              {
-                "@type": "ListItem",
-                position: 3,
-                name: "CAD/CAM Outsourcing Services",
-                item: "https://www.asbconsulting.in/research&development/cad-cam-outsourcing",
-              },
-            ],
-          }),
+      <JsonLd
+        data={{
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          itemListElement: [
+            {
+              "@type": "ListItem",
+              position: 1,
+              name: "Home",
+              item: "https://www.asbconsulting.in/",
+            },
+            {
+              "@type": "ListItem",
+              position: 2,
+              name: "R&D & Product Design",
+              item: "https://www.asbconsulting.in/research&development",
+            },
+            {
+              "@type": "ListItem",
+              position: 3,
+              name: "CAD/CAM Outsourcing Services",
+              item: "https://www.asbconsulting.in/research&development/cad-cam-outsourcing",
+            },
+          ],
         }}
       />
 
-      <Script
-        id="webpage-schema-cad-cam-outsourcing-services"
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "WebPage",
-            "@id":
-              "https://www.asbconsulting.in/research&development/cad-cam-outsourcing#webpage",
-            url: "https://www.asbconsulting.in/research&development/cad-cam-outsourcing",
-            name: "CAD/CAM Outsourcing Services in India",
-            description:
-              "AS Business Consulting provides professional CAD/CAM Outsourcing Services in India for manufacturers, engineering companies, product developers, fabrication units, startups, and industrial businesses that need accurate design and manufacturing support without maintaining a full in-house engineering team.",
-            isPartOf: {
-              "@type": "WebSite",
-              "@id": "https://www.asbconsulting.in/#website",
-              url: "https://www.asbconsulting.in/",
-              name: "AS Business Consulting",
-            },
-          }),
+      <JsonLd
+        data={{
+          "@context": "https://schema.org",
+          "@type": "WebPage",
+          "@id":
+            "https://www.asbconsulting.in/research&development/cad-cam-outsourcing#webpage",
+          url: "https://www.asbconsulting.in/research&development/cad-cam-outsourcing",
+          name: metadata.title,
+          description: metadata.description,
+          isPartOf: { "@id": "https://www.asbconsulting.in/#website" },
         }}
       />
 
-      <Script
-        id="service-schema-cad-cam-outsourcing"
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "Service",
-            name: "CAD/CAM Outsourcing Services",
-            serviceType: "CAD/CAM outsourcing",
-            description:
-              "CAD/CAM outsourcing services in India: 3D CAD modeling, 2D drafting, CAM programming and CNC toolpaths, delivered as production-ready drawings and files.",
-            url: "https://www.asbconsulting.in/research&development/cad-cam-outsourcing",
-            areaServed: { "@type": "Country", name: "India" },
-            provider: {
-              "@type": "Organization",
-              "@id": "https://www.asbconsulting.in/#organization",
-              name: "AS Business Consulting",
-              url: "https://www.asbconsulting.in/",
-            },
-          }),
+      <JsonLd
+        data={{
+          "@context": "https://schema.org",
+          "@type": "Service",
+          "@id": "https://www.asbconsulting.in/research&development/cad-cam-outsourcing#service",
+          name: "CAD/CAM Outsourcing Services",
+          serviceType: "CAD/CAM outsourcing",
+          description:
+            "CAD/CAM outsourcing services in India: 3D CAD modeling, 2D drafting, CAM programming and CNC toolpaths, delivered as production-ready drawings and files.",
+          url: "https://www.asbconsulting.in/research&development/cad-cam-outsourcing",
+          areaServed: { "@type": "Country", name: "India" },
+          provider: { "@id": "https://www.asbconsulting.in/#organization" },
         }}
       />
 

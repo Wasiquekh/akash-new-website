@@ -1,5 +1,4 @@
 import * as React from "react";
-import Script from "next/script";
 import type { IconType } from "react-icons";
 import {
   FaArrowRight,
@@ -19,6 +18,7 @@ import {
 } from "react-icons/fa6";
 
 import Header from "../../components/Header";
+import JsonLd from "../../components/JsonLd";
 import Footer from "../../components/Footer";
 import ContactFrom from "../../components/ContactFrom";
 
@@ -272,57 +272,43 @@ const engineeringCards = [
 const Page = () => {
   return (
     <>
-      <Script
-        id="breadcrumb-schema-product-design-engineering"
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "BreadcrumbList",
-            itemListElement: [
-              {
-                "@type": "ListItem",
-                position: 1,
-                name: "Home",
-                item: "https://www.asbconsulting.in/",
-              },
-              {
-                "@type": "ListItem",
-                position: 2,
-                name: "Our Services",
-                item: "https://www.asbconsulting.in/our-services",
-              },
-              {
-                "@type": "ListItem",
-                position: 3,
-                name: "Product Design & Engineering",
-                item: "https://www.asbconsulting.in/research&development/product-design-engineering",
-              },
-            ],
-          }),
+      <JsonLd
+        data={{
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          itemListElement: [
+            {
+              "@type": "ListItem",
+              position: 1,
+              name: "Home",
+              item: "https://www.asbconsulting.in/",
+            },
+            {
+              "@type": "ListItem",
+              position: 2,
+              name: "R&D & Product Design",
+              item: "https://www.asbconsulting.in/research&development",
+            },
+            {
+              "@type": "ListItem",
+              position: 3,
+              name: "Product Design & Engineering",
+              item: "https://www.asbconsulting.in/research&development/product-design-engineering",
+            },
+          ],
         }}
       />
 
-      <Script
-        id="webpage-schema-product-design-engineering"
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "WebPage",
-            "@id":
-              "https://www.asbconsulting.in/research&development/product-design-engineering#webpage",
-            url: "https://www.asbconsulting.in/research&development/product-design-engineering",
-            name: "Product Design & Engineering Services in India",
-            description:
-              "At AS Business Consulting, we provide professional Product Design & Engineering Services in India to help businesses, manufacturers, startups, and innovators convert ideas into practical, functional, and market-ready products.",
-            isPartOf: {
-              "@type": "WebSite",
-              "@id": "https://www.asbconsulting.in/#website",
-              url: "https://www.asbconsulting.in/",
-              name: "AS Business Consulting",
-            },
-          }),
+      <JsonLd
+        data={{
+          "@context": "https://schema.org",
+          "@type": "WebPage",
+          "@id":
+            "https://www.asbconsulting.in/research&development/product-design-engineering#webpage",
+          url: "https://www.asbconsulting.in/research&development/product-design-engineering",
+          name: metadata.title,
+          description: metadata.description,
+          isPartOf: { "@id": "https://www.asbconsulting.in/#website" },
         }}
       />
 

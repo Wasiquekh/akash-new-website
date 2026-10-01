@@ -1,6 +1,6 @@
 import React from "react";
-import Script from "next/script";
 import Header from "../components/Header";
+import JsonLd from "../components/JsonLd";
 import Footer from "../components/Footer";
 
 export const metadata = {
@@ -30,56 +30,42 @@ const page = () => {
   return (
     <>
       {/* BreadcrumbList (Home → Terms & Conditions) */}
-      <Script
-        id="breadcrumb-schema-terms"
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "BreadcrumbList",
-            itemListElement: [
-              {
-                "@type": "ListItem",
-                position: 1,
-                name: "Home",
-                item: "https://www.asbconsulting.in/",
-              },
-              {
-                "@type": "ListItem",
-                position: 2,
-                name: "Terms & Conditions",
-                item: "https://www.asbconsulting.in/terms",
-              },
-            ],
-          }),
+      <JsonLd
+        data={{
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          itemListElement: [
+            {
+              "@type": "ListItem",
+              position: 1,
+              name: "Home",
+              item: "https://www.asbconsulting.in/",
+            },
+            {
+              "@type": "ListItem",
+              position: 2,
+              name: "Terms & Conditions",
+              item: "https://www.asbconsulting.in/terms",
+            },
+          ],
         }}
       />
 
       {/* WebPage schema for Terms */}
-      <Script
-        id="webpage-schema-terms"
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "WebPage",
-            "@id": "https://www.asbconsulting.in/terms#webpage",
-            url: "https://www.asbconsulting.in/terms",
-            name: "Terms & Conditions | AS Business Consulting",
-            description:
-              "Terms & Conditions that govern the use of AS Business Consulting’s website and services in India, including intellectual property, disclaimers, and limitations of liability.",
-            inLanguage: "en-IN",
-            isPartOf: {
-              "@type": "WebSite",
-              "@id": "https://www.asbconsulting.in/#website",
-              url: "https://www.asbconsulting.in/",
-              name: "AS Business Consulting",
-            },
-            about: { "@id": "https://www.asbconsulting.in/#organization" },
-            // Optional if you track updates:
-            // datePublished: "2025-01-01",
-            // dateModified: "2025-08-28",
-          }),
+      <JsonLd
+        data={{
+          "@context": "https://schema.org",
+          "@type": "WebPage",
+          "@id": "https://www.asbconsulting.in/terms#webpage",
+          url: "https://www.asbconsulting.in/terms",
+          name: metadata.title,
+          description: metadata.description,
+          inLanguage: "en-IN",
+          isPartOf: { "@id": "https://www.asbconsulting.in/#website" },
+          about: { "@id": "https://www.asbconsulting.in/#organization" },
+          // Optional if you track updates:
+          // datePublished: "2025-01-01",
+          // dateModified: "2025-08-28",
         }}
       />
       <Header />

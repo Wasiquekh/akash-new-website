@@ -1,6 +1,5 @@
 import * as React from "react";
 import Link from "next/link";
-import Script from "next/script";
 import type { IconType } from "react-icons";
 import {
   FaArrowRight,
@@ -27,6 +26,7 @@ import {
 } from "react-icons/fa6";
 
 import Header from "../../components/Header";
+import JsonLd from "../../components/JsonLd";
 import Footer from "../../components/Footer";
 import ContactFrom from "../../components/ContactFrom";
 
@@ -352,57 +352,43 @@ const modelingCards = [
 const Page = () => {
   return (
     <>
-      <Script
-        id="breadcrumb-schema-3d-modeling-advanced-surfacing"
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "BreadcrumbList",
-            itemListElement: [
-              {
-                "@type": "ListItem",
-                position: 1,
-                name: "Home",
-                item: "https://www.asbconsulting.in/",
-              },
-              {
-                "@type": "ListItem",
-                position: 2,
-                name: "Our Services",
-                item: "https://www.asbconsulting.in/our-services",
-              },
-              {
-                "@type": "ListItem",
-                position: 3,
-                name: "3D Modeling & Advanced Surfacing",
-                item: "https://www.asbconsulting.in/research&development/modeling-advanced-surfacing",
-              },
-            ],
-          }),
+      <JsonLd
+        data={{
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          itemListElement: [
+            {
+              "@type": "ListItem",
+              position: 1,
+              name: "Home",
+              item: "https://www.asbconsulting.in/",
+            },
+            {
+              "@type": "ListItem",
+              position: 2,
+              name: "R&D & Product Design",
+              item: "https://www.asbconsulting.in/research&development",
+            },
+            {
+              "@type": "ListItem",
+              position: 3,
+              name: "3D Modeling & Advanced Surfacing",
+              item: "https://www.asbconsulting.in/research&development/modeling-advanced-surfacing",
+            },
+          ],
         }}
       />
 
-      <Script
-        id="webpage-schema-3d-modeling-advanced-surfacing"
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "WebPage",
-            "@id":
-              "https://www.asbconsulting.in/research&development/modeling-advanced-surfacing#webpage",
-            url: "https://www.asbconsulting.in/research&development/modeling-advanced-surfacing",
-            name: "3D Modeling & Advanced Surfacing Services in India",
-            description:
-              "AS Business provides professional 3D Modeling & Advanced Surfacing Services in India for manufacturers, product developers, engineering companies, startups, and industrial businesses that need accurate, detailed, and production-ready 3D CAD models.",
-            isPartOf: {
-              "@type": "WebSite",
-              "@id": "https://www.asbconsulting.in/#website",
-              url: "https://www.asbconsulting.in/",
-              name: "AS Business Consulting",
-            },
-          }),
+      <JsonLd
+        data={{
+          "@context": "https://schema.org",
+          "@type": "WebPage",
+          "@id":
+            "https://www.asbconsulting.in/research&development/modeling-advanced-surfacing#webpage",
+          url: "https://www.asbconsulting.in/research&development/modeling-advanced-surfacing",
+          name: metadata.title,
+          description: metadata.description,
+          isPartOf: { "@id": "https://www.asbconsulting.in/#website" },
         }}
       />
 

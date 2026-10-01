@@ -1,6 +1,6 @@
 import * as React from "react";
-import Script from "next/script";
 import Header from "../../components/Header";
+import JsonLd from "../../components/JsonLd";
 import Footer from "../../components/Footer";
 import ContactFrom from "../../components/ContactFrom";
 import OperationsRelated from "../../components/OperationsRelated";
@@ -254,79 +254,57 @@ const page = () => {
         }}
       />
 
-      <Script
-        id="breadcrumb-schema-qms"
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "BreadcrumbList",
-            itemListElement: [
-              {
-                "@type": "ListItem",
-                position: 1,
-                name: "Home",
-                item: "https://www.asbconsulting.in/",
-              },
-              {
-                "@type": "ListItem",
-                position: 2,
-                name: "Operations Consulting",
-                item: "https://www.asbconsulting.in/operation",
-              },
-              {
-                "@type": "ListItem",
-                position: 3,
-                name: "QMS",
-                item: "https://www.asbconsulting.in/operation/qms",
-              },
-            ],
-          }),
+      <JsonLd
+        data={{
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          itemListElement: [
+            {
+              "@type": "ListItem",
+              position: 1,
+              name: "Home",
+              item: "https://www.asbconsulting.in/",
+            },
+            {
+              "@type": "ListItem",
+              position: 2,
+              name: "Operations Consulting",
+              item: "https://www.asbconsulting.in/operation",
+            },
+            {
+              "@type": "ListItem",
+              position: 3,
+              name: "QMS",
+              item: "https://www.asbconsulting.in/operation/qms",
+            },
+          ],
         }}
       />
 
-      <Script
-        id="webpage-schema-qms"
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "WebPage",
-            "@id": "https://www.asbconsulting.in/operation/qms#webpage",
-            url: "https://www.asbconsulting.in/operation/qms",
-            name: "QMS Consulting in India | Quality Management System Implementation",
-            description:
-              "QMS consulting for manufacturers in India: improve first-time-right, cut defects and rework with 7 QC tools, Kaizen, Poka-yoke and root cause analysis.",
-            isPartOf: {
-              "@type": "WebSite",
-              "@id": "https://www.asbconsulting.in/#website",
-              url: "https://www.asbconsulting.in/",
-              name: "AS Business Consulting",
-            },
-          }),
+      <JsonLd
+        data={{
+          "@context": "https://schema.org",
+          "@type": "WebPage",
+          "@id": "https://www.asbconsulting.in/operation/qms#webpage",
+          url: "https://www.asbconsulting.in/operation/qms",
+          name: metadata.title,
+          description: metadata.description,
+          isPartOf: { "@id": "https://www.asbconsulting.in/#website" },
         }}
       />
 
-      <Script
-        id="service-schema-qms"
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "Service",
-            name: "QMS Consulting",
-            serviceType: "Quality management system consulting",
-            description:
-              "QMS consulting for manufacturers in India: improve first-time-right, cut defects and rework with 7 QC tools, Kaizen, Poka-yoke and root cause analysis.",
-            url: "https://www.asbconsulting.in/operation/qms",
-            areaServed: { "@type": "Country", name: "India" },
-            provider: {
-              "@type": "Organization",
-              "@id": "https://www.asbconsulting.in/#organization",
-              name: "AS Business Consulting",
-              url: "https://www.asbconsulting.in/",
-            },
-          }),
+      <JsonLd
+        data={{
+          "@context": "https://schema.org",
+          "@type": "Service",
+          "@id": "https://www.asbconsulting.in/operation/qms#service",
+          name: "QMS Consulting",
+          serviceType: "Quality management system consulting",
+          description:
+            "QMS consulting for manufacturers in India: improve first-time-right, cut defects and rework with 7 QC tools, Kaizen, Poka-yoke and root cause analysis.",
+          url: "https://www.asbconsulting.in/operation/qms",
+          areaServed: { "@type": "Country", name: "India" },
+          provider: { "@id": "https://www.asbconsulting.in/#organization" },
         }}
       />
 
