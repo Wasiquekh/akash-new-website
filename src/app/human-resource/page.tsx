@@ -15,6 +15,10 @@ import Footer from "../components/Footer";
 import { FaCheck, FaUserTie } from "react-icons/fa6";
 import Image from "next/image";
 import ContactFrom from "../components/ContactFrom";
+import Link from "next/link";
+import ServiceCta from "../components/ServiceCta";
+
+const linkClass = "text-primary underline hover:text-secondary";
 import { GiStairsGoal, GiTeacher } from "react-icons/gi";
 import { HiUserGroup } from "react-icons/hi";
 import { TbSettingsCheck } from "react-icons/tb";
@@ -159,43 +163,85 @@ const page = () => {
             <div className=" grid grid-cols-1 md:grid-cols-2 gap-4">
               <div className=" bg-[#FEF2FB] p-6 rounded  w-full">
                 <p className=" text-xl  font-normal md:font-medium">
-                  Workforce Planning & Talent Acquisition – role design,
+                  <Link
+                    href="/human-resource/workforce-planning"
+                    className={linkClass}
+                  >
+                    Workforce Planning & Talent Acquisition
+                  </Link>{" "}
+                  – role design,
                   sourcing strategy, interview frameworks
                 </p>
               </div>
               <div className=" bg-[#FEF2FB] p-4 w-full">
                 <p className=" text-xl  font-normal md:font-medium">
-                  Recruitment & Executive Search – leadership hiring and niche
+                  <Link
+                    href="/human-resource/recruitment-executive-search"
+                    className={linkClass}
+                  >
+                    Recruitment & Executive Search
+                  </Link>{" "}
+                  – leadership hiring and niche
                   industry roles
                 </p>
               </div>
               <div className=" bg-[#FEF2FB] p-6 rounded w-full">
                 <p className=" text-xl  font-normal md:font-medium">
-                  Third-Party Employer (EOR) & Payroll Support – compliant
+                  <Link
+                    href="/human-resource/payroll-support"
+                    className={linkClass}
+                  >
+                    Third-Party Employer (EOR) & Payroll Support
+                  </Link>{" "}
+                  – compliant
                   onboarding and employment administration
                 </p>
               </div>
               <div className=" bg-[#FEF2FB] p-6 rounded w-full">
                 <p className=" text-xl  font-normal md:font-medium">
-                  Policy Design & Compliance Audits – assessment, documentation,
+                  <Link
+                    href="/human-resource/policy-design-compliance-audits"
+                    className={linkClass}
+                  >
+                    Policy Design & Compliance Audits
+                  </Link>{" "}
+                  – assessment, documentation,
                   implementation, and training
                 </p>
               </div>
               <div className=" bg-[#FEF2FB] p-6 rounded w-full">
                 <p className=" text-xl  font-normal md:font-medium">
-                  Employee Engagement Programs – recognition, wellness,
+                  <Link
+                    href="/human-resource/employee-engagement"
+                    className={linkClass}
+                  >
+                    Employee Engagement Programs
+                  </Link>{" "}
+                  – recognition, wellness,
                   communication rhythm, pulse surveys
                 </p>
               </div>
               <div className=" bg-[#FEF2FB] p-6 rounded w-full">
                 <p className=" text-xl  font-normal md:font-medium">
-                  Training & Capability Building – professional trainings,
+                  <Link
+                    href="/human-resource/training-capability-building"
+                    className={linkClass}
+                  >
+                    Training & Capability Building
+                  </Link>{" "}
+                  – professional trainings,
                   seminars/lectures, leadership coaching
                 </p>
               </div>
               <div className=" bg-[#FEF2FB] p-6 rounded w-full">
                 <p className=" text-xl  font-normal md:font-medium">
-                  Campus & Early-Talent Programs – college outreach, internship
+                  <Link
+                    href="/human-resource/campus-early-talent-programs"
+                    className={linkClass}
+                  >
+                    Campus & Early-Talent Programs
+                  </Link>{" "}
+                  – college outreach, internship
                   funnels, job-readiness workshops
                 </p>
               </div>
@@ -305,8 +351,18 @@ const page = () => {
                   Explore More Services
                 </h2>
                 <p className=" inter-text">
-                  Operations Consulting • R&D & Product Design Contact Us –
-                  Let’s discuss your HR goals and design a plan that works.
+                  <Link href="/operation" className={linkClass}>
+                    Operations Consulting
+                  </Link>{" "}
+                  •{" "}
+                  <Link href="/research&development" className={linkClass}>
+                    R&D & Product Design
+                  </Link>{" "}
+                  •{" "}
+                  <Link href="#enquiry" className={linkClass}>
+                    Contact Us
+                  </Link>{" "}
+                  – Let’s discuss your HR goals and design a plan that works.
                 </p>
               </div>
             </div>
@@ -523,6 +579,12 @@ const page = () => {
         </div>
       </section>
 
+      <ServiceCta
+        heading="Discuss Your Hiring or HR Requirement"
+        text="Tell us the roles you need to fill, the policy or compliance gap you want closed, or the training your team needs. We will reply with how we would approach it."
+        buttonLabel="Request an HR Consultation"
+        location="hr-bottom"
+      />
       <ContactFrom />
       <Footer />
     </>

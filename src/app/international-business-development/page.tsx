@@ -2,9 +2,9 @@ import * as React from "react";
 import Script from "next/script";
 
 export const metadata = {
-  title: "International Business Consultants in India – AS Business",
+  title: "International Business & Export Consulting in India – AS Business",
   description:
-    "Expand globally with AS Business Consulting, offering export consulting, China market entry, global supply chain advisory, and logistics support in India.",
+    "Export consulting and international business development for Indian companies: export readiness, licensing, China partner sourcing and logistics compliance.",
   alternates: {
     canonical:
       "https://www.asbconsulting.in/international-business-development",
@@ -16,6 +16,45 @@ import Footer from "../components/Footer";
 import { FaCheck } from "react-icons/fa6";
 import Image from "next/image";
 import ContactFrom from "../components/ContactFrom";
+import Link from "next/link";
+import ServiceCta from "../components/ServiceCta";
+
+const linkClass = "text-primary underline hover:text-secondary";
+
+const audiences = [
+  {
+    title: "Indian manufacturers and traders preparing to export",
+    text: "Export readiness assessment, market prioritization, trade documentation and pricing for overseas buyers.",
+  },
+  {
+    title: "Companies that need import or export licensing and certification",
+    text: "Licensing, product and regulatory certification, and the paperwork that has to be in place before the first shipment.",
+    href: "/international-business-development/import-export-enablement",
+    linkText: "Import–export enablement",
+  },
+  {
+    title: "Businesses looking for partners, distributors or suppliers in China",
+    text: "Market research, partner and distributor sourcing, due diligence and negotiation support.",
+  },
+  {
+    title: "Exporters and importers with freight or customs problems",
+    text: "Freight forwarding, customs clearance, HS codes, INCOTERMS, transportation and export packing.",
+    href: "/international-business-development/logistics-compliance",
+    linkText: "Logistics and compliance support",
+  },
+  {
+    title: "Firms bringing in new technology, machines or tooling",
+    text: "New technology and plant setup, machines and tools, and the international relationships needed to source them.",
+    href: "/international-business-development/development-technology",
+    linkText: "Technology development",
+  },
+  {
+    title: "Businesses that want to use government export schemes",
+    text: "Guidance on government benefits and schemes, cost saving, audits and training.",
+    href: "/international-business-development/consultation-incentives",
+    linkText: "Consultation and incentives",
+  },
+];
 
 const page = () => {
   return (
@@ -61,7 +100,7 @@ const page = () => {
             "@id":
               "https://www.asbconsulting.in/international-business-development#webpage",
             url: "https://www.asbconsulting.in/international-business-development",
-            name: "International Business Consultants in India – AS Business",
+            name: "International Business & Export Consulting in India – AS Business",
             description:
               "Expand globally with AS Business Consulting: export consulting, market entry (incl. China), partner search, global sourcing, logistics and customs advisory.",
             isPartOf: {
@@ -90,6 +129,16 @@ const page = () => {
             logistics, our team delivers end-to-end support so you can expand
             with confidence.
           </p>
+          <div className="text-center mt-8">
+            <Link
+              href="#enquiry"
+              data-cta="service_enquiry"
+              data-cta-location="ibd-hero"
+              className="inline-block bg-white text-primary hover:bg-tertiary font-semibold text-base py-3 px-6 rounded"
+            >
+              Discuss Your Market Expansion Plan
+            </Link>
+          </div>
         </div>
       </div>
       <section className=" relative">
@@ -130,7 +179,12 @@ const page = () => {
               </p>
               <div className=" bg-[#FEF2FB] px-8 py-5 rounded mb-4">
                 <p className=" text-start text-xl font-medium">
-                  Technology Development
+                  <Link
+                    href="/international-business-development/development-technology"
+                    className={linkClass}
+                  >
+                    Technology Development
+                  </Link>
                 </p>
                 <p className=" inter-text text-start">
                   new technology/setup, machines & tools, international
@@ -139,7 +193,12 @@ const page = () => {
               </div>
               <div className=" bg-[#FEF2FB] px-8 py-5 rounded mb-4">
                 <p className=" text-start text-xl font-medium">
-                  Import–Export Enablement
+                  <Link
+                    href="/international-business-development/import-export-enablement"
+                    className={linkClass}
+                  >
+                    Import–Export Enablement
+                  </Link>
                 </p>
                 <p className=" inter-text text-start">
                   certification, licensing, product sales, franchise programs.
@@ -147,7 +206,12 @@ const page = () => {
               </div>
               <div className=" bg-[#FEF2FB] px-8 py-5 rounded mb-4">
                 <p className=" text-start text-xl font-medium">
-                  Logistics & Compliance
+                  <Link
+                    href="/international-business-development/logistics-compliance"
+                    className={linkClass}
+                  >
+                    Logistics & Compliance
+                  </Link>
                 </p>
                 <p className=" inter-text text-start">
                   freight forwarding, customs clearance, transportation,
@@ -156,7 +220,12 @@ const page = () => {
               </div>
               <div className=" bg-[#FEF2FB] px-8 py-5 rounded mb-0">
                 <p className=" text-start text-xl font-medium">
-                  Consultation & Incentives
+                  <Link
+                    href="/international-business-development/consultation-incentives"
+                    className={linkClass}
+                  >
+                    Consultation & Incentives
+                  </Link>
                 </p>
                 <p className=" inter-text text-start">
                   cost saving, audits, training, guidance on Govt. benefits &
@@ -342,8 +411,10 @@ const page = () => {
                     <FaCheck className="rounded-full text-xl bg-primary text-white p-1" />
                   </div>
                   <h2 className="text-black text-base font-medium mb-0">
-                    B2B Marketing – Targeted strategies to grow demand in new
-                    markets
+                    <Link href="/sales&marketing/b2b-marketing" className={linkClass}>
+                      B2B Marketing
+                    </Link>{" "}
+                    – Targeted strategies to grow demand in new markets
                   </h2>
                 </div>
                 <div className="flex items-center mb-3 gap-3">
@@ -351,8 +422,10 @@ const page = () => {
                     <FaCheck className="rounded-full text-xl bg-primary text-white p-1" />
                   </div>
                   <h2 className="text-black text-base font-medium mb-0">
-                    Operations Consulting – Lean processes for export-ready
-                    performance
+                    <Link href="/operation" className={linkClass}>
+                      Operations Consulting
+                    </Link>{" "}
+                    – Lean processes for export-ready performance
                   </h2>
                 </div>
                 <div className="flex items-center mb-3 gap-3">
@@ -360,7 +433,10 @@ const page = () => {
                     <FaCheck className="rounded-full text-xl bg-primary text-white p-1" />
                   </div>
                   <h2 className="text-black text-base font-medium mb-0">
-                    Contact Us – Start your global expansion journey today
+                    <Link href="#enquiry" className={linkClass}>
+                      Contact Us
+                    </Link>{" "}
+                    – Start your global expansion journey today
                   </h2>
                 </div>
               </div>
@@ -381,105 +457,49 @@ const page = () => {
       </section>
       <section>
         <div className="container">
-          {/* <div className=" mx-auto flex flex-wrap">
-            <div className="flex flex-col text-center w-full mb-10 md:mb-20">
-              <h1 className="sm:text-6xl text-2xl font-bold  mb-4 text-primary">
-                International Business
-              </h1>
-              <p className="lg:w-[90%] mx-auto leading-relaxed inter-text text-sm font-normal mb-4">
-                We support businesses in exploring global markets, building
-                international partnerships, and creating strategies that ensure
-                sustainable cross-border growth.
-              </p>
-            </div>
-          </div> */}
-          <div className=" grid grid-cols-1 md:grid-cols-3 gap-4">
-            <div className="">
-              <h2 className="text-black text-xl md:text-2xl font-semibold mb-7">
-                Package include
-              </h2>
-              <div>
-                <div className="flex items-center mb-3 gap-3">
-                  <div className=" flex items-center justify-center rounded-full bg-primary text-white mb-0 p-1">
-                    <FaCheck />
-                  </div>
-                  <h2 className="text-black text-xl md:text-2xl font-medium mb-0">
-                    Corporate Legal Advisory
-                  </h2>
-                </div>
-                <div className="flex items-center mb-3 gap-3">
-                  <div className=" flex items-center justify-center rounded-full bg-primary text-white mb-0 p-1">
-                    <FaCheck />
-                  </div>
-                  <h2 className="text-black text-xl md:text-2xl font-medium mb-0">
-                    Commercial advisory
-                  </h2>
-                </div>
-                <div className="flex items-center mb-3 gap-3">
-                  <div className=" flex items-center justify-center rounded-full bg-primary text-white mb-0 p-1">
-                    <FaCheck />
-                  </div>
-                  <h2 className="text-black text-xl md:text-2xl font-medium mb-0">
-                    Contracts & Agreements
-                  </h2>
-                </div>
-                <div className="flex items-center mb-3 gap-3">
-                  <div className=" flex items-center justify-center rounded-full bg-primary text-white mb-0 p-1">
-                    <FaCheck />
-                  </div>
-                  <h2 className="text-black text-xl md:text-2xl font-medium mb-0">
-                    Banking & Finance law
-                  </h2>
-                </div>
-                <div className="flex items-center mb-3 gap-3">
-                  <div className=" flex items-center justify-center rounded-full bg-primary text-white mb-0 p-1">
-                    <FaCheck />
-                  </div>
-                  <h2 className="text-black text-xl md:text-2xl font-medium mb-0">
-                    Family advisory
-                  </h2>
-                </div>
-                <div className="flex items-center mb-3 gap-3">
-                  <div className=" flex items-center justify-center rounded-full bg-primary text-white mb-0 p-1">
-                    <FaCheck />
-                  </div>
-                  <h2 className="text-black text-xl md:text-2xl font-medium mb-0">
-                    Asset Management
-                  </h2>
-                </div>
-                <div className="flex items-center mb-3 gap-3">
-                  <div className=" flex items-center justify-center rounded-full bg-primary text-white mb-0 p-1">
-                    <FaCheck />
-                  </div>
-                  <h2 className="text-black text-xl md:text-2xl font-medium mb-0">
-                    Background investigation
-                  </h2>
-                </div>
+          <h2 className="text-primary text-2xl md:text-3xl font-bold mb-3">
+            Who This Service Is For
+          </h2>
+          <p className="inter-text text-sm md:text-base mb-8 max-w-3xl">
+            Our international work is built around Indian companies trading
+            across borders. These are the situations we are most often asked to
+            help with.
+          </p>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+            {audiences.map((audience) => (
+              <div
+                key={audience.title}
+                className="bg-[#FEF2FB] px-6 py-5 rounded"
+              >
+                <h3 className="text-lg font-medium text-black mb-2">
+                  {audience.title}
+                </h3>
+                <p className="inter-text text-sm">{audience.text}</p>
+                {audience.href && (
+                  <Link
+                    href={audience.href}
+                    className={`${linkClass} inline-block mt-3 text-sm font-medium`}
+                  >
+                    {audience.linkText}
+                  </Link>
+                )}
               </div>
-            </div>
-            <div>
-              <Image
-                src="/images/drafting.png" // path relative to /public
-                alt="My beautiful image"
-                width={500}
-                height={500}
-                priority // optional: preloads image
-                className=" rounded"
-              />
-            </div>
-            <div>
-              <Image
-                src="/images/detailing.png" // path relative to /public
-                alt="My beautiful image"
-                width={500}
-                height={500}
-                priority // optional: preloads image
-                className="rounded"
-              />
-            </div>
+            ))}
           </div>
         </div>
       </section>
+      <ServiceCta
+        heading="Discuss Your Market Expansion Plan"
+        text="Tell us the product, the target country and where you are stuck. We will outline the certification, partner and logistics steps involved."
+        buttonLabel="Discuss Your Market Expansion Plan"
+        location="ibd-mid"
+        points={[
+          "Product or service you want to export or import",
+          "Target country or region",
+          "Current stage: exploring, quoting, or already shipping",
+          "The specific obstacle: compliance, partners, logistics or cost",
+        ]}
+      />
       <section>
         <div className="container grid grid-cols-1 md:grid-cols-4 gap-4">
           <div className="rounded border border-gray-200">

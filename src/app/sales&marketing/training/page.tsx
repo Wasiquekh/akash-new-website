@@ -397,17 +397,19 @@ const Page = () => {
 
                 <div className="flex flex-wrap gap-4">
                   <Link
-                    href="/contact"
+                    href="#enquiry"
+                    data-cta="service_enquiry"
+                    data-cta-location="training-hero"
                     className="inline-flex items-center rounded-full bg-white px-6 py-3 text-sm font-bold text-[#502D52] hover:bg-[#f4d88a] transition"
                   >
-                    Get Training Support <span className="ml-2">→</span>
+                    Discuss Your Team’s Training Needs <span className="ml-2">→</span>
                   </Link>
 
                   <Link
-                    href="/our-services"
+                    href="/sales&marketing"
                     className="inline-flex items-center rounded-full border border-white/30 px-6 py-3 text-sm font-bold text-white hover:bg-white/10 transition"
                   >
-                    View Services
+                    All Sales & Marketing Services
                   </Link>
                 </div>
               </div>
@@ -920,10 +922,12 @@ const Page = () => {
 
                 <div className="lg:text-right">
                   <Link
-                    href="/contact"
+                    href="#enquiry"
+                    data-cta="service_enquiry"
+                    data-cta-location="training-bottom"
                     className="inline-flex items-center rounded-full bg-white px-6 py-3 text-sm font-bold text-[#502D52] hover:bg-[#f4d88a] transition"
                   >
-                    Get Started <span className="ml-2">→</span>
+                    Request a Training Proposal <span className="ml-2">→</span>
                   </Link>
                 </div>
               </div>
