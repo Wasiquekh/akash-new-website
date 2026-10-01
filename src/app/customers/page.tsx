@@ -4,6 +4,7 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 import Image from "next/image";
 import ContactFrom from "../components/ContactFrom";
+import CaseStudyList from "../components/CaseStudyList";
 import Link from "next/link";
 
 export const metadata = {
@@ -630,6 +631,7 @@ const page = () => {
         </div>
       </section>
 
+      <CaseStudyList />
       <ContactFrom />
       <Footer />
     </>

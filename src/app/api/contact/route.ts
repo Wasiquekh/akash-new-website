@@ -4,6 +4,13 @@ export const dynamic = "force-dynamic"; // optional, avoids any caching
 import { NextResponse } from "next/server";
 import nodemailer from "nodemailer";
 
+const escapeHtml = (value: unknown) =>
+  String(value ?? "")
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;");
+
 export async function POST(request: Request) {
   try {
     // ✅ Ensure required env vars are present
@@ -28,13 +35,15 @@ export async function POST(request: Request) {
     }
 
     // ✅ Get request body (matches frontend form)
-    const { name, email, phone, message } = await request.json();
+    const { name, company, email, phone, message, page } =
+      await request.json();
 
-    if (!name || !email || !phone || !message) {
+    // Name, requirement, and at least one way to reply (email or phone).
+    if (!name || !message || (!email && !phone)) {
       return NextResponse.json(
         {
           status: 400,
-          message: "All fields are required",
+          message: "Name, requirement, and an email or phone are required",
           error: "Validation failed",
         },
         { status: 400 }
@@ -55,10 +64,9 @@ export async function POST(request: Request) {
     await transporter.verify();
 
     // ✅ Format message
-    const formattedMessage = message
-      .replace(/\n/g, " ")
-      .replace(/\s+/g, " ")
-      .trim();
+    const formattedMessage = escapeHtml(
+      String(message).replace(/\n/g, " ").replace(/\s+/g, " ").trim()
+    );
 
     // ✅ Mail options
     const mailOptions = {
@@ -66,23 +74,31 @@ export async function POST(request: Request) {
         process.env.CPANEL_EMAIL_USER
       }>`,
       to: process.env.EMAIL_RECEIVER,
-      replyTo: email,
-      subject: `New Contact Submission: ${name}`,
+      ...(email ? { replyTo: String(email) } : {}),
+      subject: `New Contact Submission: ${String(name).replace(/[\r\n]+/g, " ")}`,
       html: `
         <div style="font-family: Arial, sans-serif; line-height: 1.6;">
           <h2 style="color: #333;">Subject: Contact Form Submission</h2>
           <table style="width: 100%; border-collapse: collapse;">
             <tr>
               <td style="padding: 8px; border: 1px solid #ddd; width: 120px;"><strong>Name:</strong></td>
-              <td style="padding: 8px; border: 1px solid #ddd;">${name}</td>
+              <td style="padding: 8px; border: 1px solid #ddd;">${escapeHtml(name)}</td>
+            </tr>
+            <tr>
+              <td style="padding: 8px; border: 1px solid #ddd;"><strong>Company:</strong></td>
+              <td style="padding: 8px; border: 1px solid #ddd;">${escapeHtml(company) || "-"}</td>
             </tr>
             <tr>
               <td style="padding: 8px; border: 1px solid #ddd;"><strong>Email:</strong></td>
-              <td style="padding: 8px; border: 1px solid #ddd;">${email}</td>
+              <td style="padding: 8px; border: 1px solid #ddd;">${escapeHtml(email) || "-"}</td>
             </tr>
             <tr>
               <td style="padding: 8px; border: 1px solid #ddd;"><strong>Phone:</strong></td>
-              <td style="padding: 8px; border: 1px solid #ddd;">${phone}</td>
+              <td style="padding: 8px; border: 1px solid #ddd;">${escapeHtml(phone) || "-"}</td>
+            </tr>
+            <tr>
+              <td style="padding: 8px; border: 1px solid #ddd;"><strong>Page:</strong></td>
+              <td style="padding: 8px; border: 1px solid #ddd;">${escapeHtml(page) || "-"}</td>
             </tr>
             <tr>
               <td style="padding: 8px; border: 1px solid #ddd;"><strong>Message:</strong></td>

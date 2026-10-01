@@ -13,9 +13,8 @@ import Image from "next/image";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Link from "next/link";
-import { FaCircle, FaInstagram, FaStar, FaXTwitter } from "react-icons/fa6";
+import { FaCircle, FaInstagram, FaXTwitter } from "react-icons/fa6";
 import { MdOutlineFacebook } from "react-icons/md";
-import { RiDoubleQuotesL } from "react-icons/ri";
 import ContactFrom from "./components/ContactFrom";
 import Script from "next/script";
 
@@ -92,6 +91,21 @@ export default function Home() {
               performance, enhance profitability, and stay competitive in
               dynamic markets.
             </p>
+            <div className="flex flex-col sm:flex-row gap-3 justify-center mt-8">
+              <Link
+                href="#enquiry"
+                data-cta-location="home-hero"
+                className="bg-secondary hover:bg-primary text-white text-base font-medium py-3 px-6 rounded border border-secondary text-center"
+              >
+                Book a Business Consultation
+              </Link>
+              <Link
+                href="/our-services"
+                className="bg-white hover:bg-tertiary text-primary text-base font-medium py-3 px-6 rounded text-center"
+              >
+                See Our Consulting Services
+              </Link>
+            </div>
           </div>
         </div>
       </div>
@@ -292,6 +306,18 @@ export default function Home() {
           </div>
         </div>
       </section>
+      <div className="text-center px-5 pb-10">
+        <p className="inter-text text-sm mb-4">
+          Have a specific problem in mind? Start with a short conversation.
+        </p>
+        <Link
+          href="#enquiry"
+          data-cta-location="home-how-we-work"
+          className="inline-block bg-secondary hover:bg-primary text-white text-base font-medium py-3 px-6 rounded"
+        >
+          Discuss Your Business Challenge
+        </Link>
+      </div>
       {/* JOURNER OF SUCCESS */}
       <section className="">
         <div className="container">
@@ -568,7 +594,7 @@ export default function Home() {
                   href="/research&development"
                   className="bg-secondary hover:bg-primary text-white text-base font-medium py-2 px-6 rounded border border-secondary block text-center mt-4"
                 >
-                  Read more
+                  Explore R&D Services
                 </Link>
               </div>
             </div>
@@ -596,7 +622,7 @@ export default function Home() {
                   href="/operation"
                   className="bg-secondary hover:bg-primary text-white text-base font-medium py-2 px-6 rounded border border-secondary block text-center mt-4"
                 >
-                  Read more
+                  Explore Operations Consulting
                 </Link>
               </div>
             </div>
@@ -612,17 +638,20 @@ export default function Home() {
                 <h2 className="text-2xl  text-black mb-2 pb-2 border-b-2 inline-block border-secondary">
                   International Business
                 </h2>
-                <p className="text-black text-sm mb-0">- BIS & OTR</p>
-                <p className="text-black text-sm mb-0">- NABL -ISO</p>
-                <p className="text-black text-sm mb-0">- Lean Manufacturing</p>
-                {/* <p className="text-black text-sm mb-0">
-                  - Zed Certification -3rd Party Inspection
-                </p> */}
+                <p className="text-black text-sm mb-0">
+                  - Import–Export Enablement
+                </p>
+                <p className="text-black text-sm mb-0">
+                  - Logistics & Compliance
+                </p>
+                <p className="text-black text-sm mb-0">
+                  - Technology Development
+                </p>
                 <Link
                   href="/international-business-development"
                   className="bg-secondary hover:bg-primary text-white text-base font-medium py-2 px-6 rounded border border-secondary block text-center mt-4"
                 >
-                  Read more
+                  Explore International Business
                 </Link>
               </div>
             </div>
@@ -645,7 +674,7 @@ export default function Home() {
                   href="/sales&marketing"
                   className="bg-secondary hover:bg-primary text-white text-base font-medium py-2 px-6 rounded border border-secondary block text-center mt-4"
                 >
-                  Read more
+                  Explore Sales & Marketing
                 </Link>
               </div>
             </div>
@@ -668,7 +697,7 @@ export default function Home() {
                   href="/human-resource"
                   className="bg-secondary hover:bg-primary text-white text-base font-medium py-2 px-6 rounded border border-secondary block text-center mt-4"
                 >
-                  Read more
+                  Explore HR Consulting
                 </Link>
               </div>
             </div>
@@ -695,7 +724,7 @@ export default function Home() {
                   href="/legal-consulting"
                   className="bg-secondary hover:bg-primary text-white text-base font-medium py-2 px-6 rounded border border-secondary block text-center mt-4"
                 >
-                  Read more
+                  Explore Legal Advisory
                 </Link>
               </div>
             </div>
@@ -720,7 +749,7 @@ export default function Home() {
                   href="/certification"
                   className="bg-secondary hover:bg-primary text-white text-base font-medium py-2 px-6 rounded border border-secondary block text-center mt-4"
                 >
-                  Read more
+                  Explore Certification Services
                 </Link>
               </div>
             </div>
@@ -1066,6 +1095,12 @@ export default function Home() {
                 Vision, mission, leadership, and recognitions that define our
                 journey.
               </p>
+              <Link
+                href="/about-us"
+                className="inline-block mt-4 text-sm font-medium text-primary underline hover:text-secondary"
+              >
+                About AS Business Consulting
+              </Link>
             </div>
 
             {/* Services */}
@@ -1077,6 +1112,12 @@ export default function Home() {
                 Full catalog across strategy, operations, R&D, certification,
                 HR, GTM, legal, and international business.
               </p>
+              <Link
+                href="/our-services"
+                className="inline-block mt-4 text-sm font-medium text-primary underline hover:text-secondary"
+              >
+                View all consulting services
+              </Link>
             </div>
 
             {/* Contact Us */}
@@ -1088,142 +1129,87 @@ export default function Home() {
                 Schedule a consultation with our team for a tailored growth
                 plan.
               </p>
+              <Link
+                href="/contact"
+                className="inline-block mt-4 text-sm font-medium text-primary underline hover:text-secondary"
+              >
+                Request a consultation
+              </Link>
             </div>
           </div>
         </div>
       </section>
 
-      {/* TESTIMONIAL */}
-      <section>
-        <div></div>
-      </section>
+      {/* TRACK RECORD
+          The previous testimonial cards repeated one unrelated review three
+          times and were removed. Every figure below already appears elsewhere
+          on this site (achievements and journey sections).
+          TODO(business): add genuine, attributable client testimonials here
+          once they are available. Do not add placeholder quotes. */}
       <section className="" id="customer">
         <div className="container">
-          <div className="flex flex-col text-center w-full mb-10 md:mb-20">
-            <h1 className="sm:text-6xl text-2xl font-bold  mb-4 text-primary uppercase">
-              Customer&apos;s Testimonials
-            </h1>
+          <div className="flex flex-col text-center w-full mb-10 md:mb-16">
+            <h2 className="sm:text-6xl text-2xl font-bold  mb-4 text-primary uppercase">
+              Our Track Record
+            </h2>
             <p className="lg:w-[60%] mx-auto leading-relaxed inter-text text-sm font-normal">
-              The trust and satisfaction of our clients are the true measure of
-              our success. Hear what our customers have to say about their
-              journey with AS Business Consulting.
+              What we have done since AS Business Consulting was established in
+              2019.
             </p>
           </div>
-          <div className=" grid grid-cols-1 md:grid-cols-3 gap-4 mb-0">
-            {/* Card 1 */}
-            <div className="w-full md:w-full h-64 relative max-w-full overflow-hidden transition-transform duration-300 ease-in-out hover:scale-[1.02]">
-              <div className="w-full h-full absolute bg-white rounded-md border border-[#D4D4D4]" />
-              <div className="absolute left-[19px] right-[19px] top-[121px] text-neutral-500 text-xs font-medium">
-                Excellent services for AC maintenance, repair, and installation.
-                Efficient, reliable, and customer-focused solutions that ensure
-                long-lasting performance.
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+            {[
+              {
+                figure: "53+",
+                label: "Clients",
+                text: "National and international companies served.",
+              },
+              {
+                figure: "120",
+                label: "Projects",
+                text: "Completed across small and large engagements.",
+              },
+              {
+                figure: "100 Cr",
+                label: "Cost Innovation",
+                text: "Rupees saved for customers through our innovation program.",
+              },
+              {
+                figure: "MSME",
+                label: "Lean & ZED Scheme",
+                text: "Firm approved for the MSME Lean Manufacturing and ZED scheme (2025).",
+              },
+            ].map((item) => (
+              <div
+                key={item.label}
+                className="bg-white rounded-md border border-[#D4D4D4] p-6 text-center"
+              >
+                <p className="text-4xl font-bold text-primary mb-1">
+                  {item.figure}
+                </p>
+                <p className="text-base font-semibold text-black mb-2">
+                  {item.label}
+                </p>
+                <p className="text-sm text-neutral-600 inter-text">
+                  {item.text}
+                </p>
               </div>
-              <div className="absolute left-[125px] top-[65px] text-neutral-500 text-xs font-medium">
-                03/05/2025
-              </div>
-              <div className="absolute left-[125px] top-[35px] text-black text-xl font-semibold">
-                Jay Ladwa
-              </div>
-              <div className="absolute left-[19px] top-[13px] w-24 h-24 bg-primary rounded-full flex justify-center items-center text-white font-poppins text-3xl font-medium">
-                {" "}
-                J
-              </div>
-              <RiDoubleQuotesL className="w-8 md:w-16 w-8 md:h-16 absolute left-[301px] top-[48px] md:top-[28px] text-tertiary" />
-              <div className="absolute left-[84px] top-[190px] text-black text-base font-medium">
-                Google Review
-                <div className="flex">
-                  <FaStar className="text-yellow-400 text-xl" />
-                  <FaStar className="text-yellow-400 text-xl" />
-                  <FaStar className="text-yellow-400 text-xl" />
-                  <FaStar className="text-yellow-400 text-xl" />
-                  <FaStar className="text-yellow-400 text-xl" />
-                </div>
-              </div>
-              <div className="absolute left-[19px] top-[185px] w-14 h-14 overflow-hidden">
-                <Image
-                  src="/images/google.svg"
-                  alt="Icon"
-                  width={200}
-                  height={200}
-                />
-              </div>
-            </div>
-            {/* Card 2 */}
-            <div className="w-full md:w-full h-64 relative max-w-full overflow-hidden transition-transform duration-300 ease-in-out hover:scale-[1.02]">
-              <div className="w-full h-full absolute bg-white rounded-md border border-[#D4D4D4]" />
-              <div className="absolute left-[19px] right-[19px] top-[121px] text-neutral-500 text-xs font-medium">
-                Excellent services for AC maintenance, repair, and installation.
-                Efficient, reliable, and customer-focused solutions that ensure
-                long-lasting performance.
-              </div>
-              <div className="absolute left-[125px] top-[65px] text-neutral-500 text-xs font-medium">
-                03/05/2025
-              </div>
-              <div className="absolute left-[125px] top-[35px] text-black text-xl font-semibold">
-                Jay Ladwa
-              </div>
-              <div className="absolute left-[19px] top-[13px] w-24 h-24 bg-primary rounded-full flex justify-center items-center text-white font-poppins text-3xl font-medium">
-                {" "}
-                J
-              </div>
-              <RiDoubleQuotesL className="w-8 md:w-16 w-8 md:h-16 absolute left-[301px] top-[48px] md:top-[28px] text-tertiary" />
-              <div className="absolute left-[84px] top-[190px] text-black text-base font-medium">
-                Google Review
-                <div className="flex">
-                  <FaStar className="text-yellow-400 text-xl" />
-                  <FaStar className="text-yellow-400 text-xl" />
-                  <FaStar className="text-yellow-400 text-xl" />
-                  <FaStar className="text-yellow-400 text-xl" />
-                  <FaStar className="text-yellow-400 text-xl" />
-                </div>
-              </div>
-              <div className="absolute left-[19px] top-[185px] w-14 h-14 overflow-hidden">
-                <Image
-                  src="/images/google.svg"
-                  alt="Icon"
-                  width={200}
-                  height={200}
-                />
-              </div>
-            </div>
-            {/* Card 3 */}
-            <div className="w-full md:w-full h-64 relative max-w-full overflow-hidden transition-transform duration-300 ease-in-out hover:scale-[1.02]">
-              <div className="w-full h-full absolute bg-white rounded-md border border-[#D4D4D4]" />
-              <div className="absolute left-[19px] right-[19px] top-[121px] text-neutral-500 text-xs font-medium">
-                Excellent services for AC maintenance, repair, and installation.
-                Efficient, reliable, and customer-focused solutions that ensure
-                long-lasting performance.
-              </div>
-              <div className="absolute left-[125px] top-[65px] text-neutral-500 text-xs font-medium">
-                03/05/2025
-              </div>
-              <div className="absolute left-[125px] top-[35px] text-black text-xl font-semibold">
-                Jay Ladwa
-              </div>
-              <div className="absolute left-[19px] top-[13px] w-24 h-24 bg-primary rounded-full flex justify-center items-center text-white font-poppins text-3xl font-medium">
-                {" "}
-                J
-              </div>
-              <RiDoubleQuotesL className="w-8 md:w-16 w-8 md:h-16 absolute left-[301px] top-[48px] md:top-[28px] text-tertiary" />
-              <div className="absolute left-[84px] top-[190px] text-black text-base font-medium">
-                Google Review
-                <div className="flex">
-                  <FaStar className="text-yellow-400 text-xl" />
-                  <FaStar className="text-yellow-400 text-xl" />
-                  <FaStar className="text-yellow-400 text-xl" />
-                  <FaStar className="text-yellow-400 text-xl" />
-                  <FaStar className="text-yellow-400 text-xl" />
-                </div>
-              </div>
-              <div className="absolute left-[19px] top-[185px] w-14 h-14 overflow-hidden">
-                <Image
-                  src="/images/google.svg"
-                  alt="Icon"
-                  width={200}
-                  height={200}
-                />
-              </div>
-            </div>
+            ))}
+          </div>
+          <div className="flex flex-col sm:flex-row gap-3 justify-center mt-10">
+            <Link
+              href="/customers"
+              className="bg-white hover:bg-tertiary text-primary text-base font-medium py-3 px-6 rounded border border-primary text-center"
+            >
+              See the Companies We Work With
+            </Link>
+            <Link
+              href="#enquiry"
+              data-cta-location="home-track-record"
+              className="bg-secondary hover:bg-primary text-white text-base font-medium py-3 px-6 rounded border border-secondary text-center"
+            >
+              Talk to a Consulting Expert
+            </Link>
           </div>
         </div>
       </section>

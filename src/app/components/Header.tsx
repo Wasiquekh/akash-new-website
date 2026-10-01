@@ -49,6 +49,15 @@ const Header = () => {
             <Link href="/contact" className="hover:text-blue-600" onClick={() => setIsOpen(false)}>
               Contact Us
             </Link>
+
+            <Link
+              href="/contact"
+              data-cta-location="mobile-menu"
+              className="bg-white text-primary font-medium rounded px-6 py-3"
+              onClick={() => setIsOpen(false)}
+            >
+              Request a Consultation
+            </Link>
           </nav>
         </div>
       )}
@@ -389,10 +398,12 @@ const Header = () => {
               </Link>
             </nav>
 
-            <Link href="/contact">
-              <button className="flex items-center justify-center bg-secondary w-44 h-12 focus:outline-none hover:bg-primary rounded-[7px] text-white font-medium text-lg mt-4 md:mt-0 cursor-pointer">
-                Book Now
-              </button>
+            <Link
+              href="/contact"
+              data-cta-location="header"
+              className="flex items-center justify-center bg-secondary px-5 h-12 focus:outline-none hover:bg-primary rounded-[7px] text-white font-medium text-base mt-4 md:mt-0 cursor-pointer whitespace-nowrap"
+            >
+              Request a Consultation
             </Link>
           </div>
         </div>

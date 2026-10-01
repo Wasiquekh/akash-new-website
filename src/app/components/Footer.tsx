@@ -8,7 +8,7 @@ import Link from "next/link";
 const Footer = () => {
   return (
     <div>
-      <footer className="text-white bg-primary pt-14 pb-5">
+      <footer className="text-white bg-primary pt-14 pb-20 md:pb-5">
         <div className="mx-auto max-w-screen-xl px-[20px] flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
           <div className="w-64 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left">
             <Link
@@ -41,7 +41,7 @@ const Footer = () => {
                 </li>
                 <li>
                   <Link
-                    href="/contact"
+                    href="/about-us"
                     className="text-white hover:text-tertiary "
                   >
                     About us
@@ -222,7 +222,24 @@ const Footer = () => {
           </div>
         </div>
       </footer>
-      {/* call and whatsapp */}
+      {/* Mobile-only action bar: call or enquire from any page */}
+      <div className="md:hidden fixed bottom-0 inset-x-0 z-40 grid grid-cols-2 text-sm font-medium shadow-[0_-2px_8px_rgba(0,0,0,0.15)]">
+        <a
+          href="tel:+91-9529322665"
+          className="bg-white text-primary py-3 text-center border-t border-tertiary"
+        >
+          Call Us
+        </a>
+        <Link
+          href="/contact"
+          data-cta-location="mobile-bar"
+          className="bg-secondary text-white py-3 text-center"
+        >
+          Send Enquiry
+        </Link>
+      </div>
+      {/* call and whatsapp: disabled. TODO(business): confirm the WhatsApp
+          number below is an official company number before enabling. */}
       {/* <div className="fixed bottom-16 md:bottom-[70px]  left-[1px] z-[99999]">
         <Link target="_blank" href="https://wa.me/919920529961">
           <div className="relative flex items-center bg-secondary p-3 mb-2 w-[55px] hover:w-40 hover:scale-110 transition-all duration-700 ease-out group overflow-hidden">
