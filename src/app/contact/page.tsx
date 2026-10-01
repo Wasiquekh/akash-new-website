@@ -12,6 +12,7 @@ import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import Script from "next/script";
 import Head from "next/head";
+import { trackEvent } from "@/lib/analytics";
 
 const CANONICAL = "https://www.asbconsulting.in/contact";
 const TITLE =
@@ -71,6 +72,8 @@ const Page = () => {
         const errorData = await response.json();
         throw new Error(errorData.message || "Failed to send message");
       }
+
+      trackEvent("generate_lead", { form_id: "contact_page_form" });
 
       toast.success("Message sent successfully!", {
         position: "top-right",

@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Lexend, Inter } from "next/font/google";
 import "./globals.css";
 import Script from "next/script"; // ✅ Import for Google Analytics
+import LeadTracking from "./components/LeadTracking";
 
 // Fonts
 const lexend = Lexend({
@@ -59,6 +60,7 @@ export default function RootLayout({
         <link rel="sitemap" type="application/xml" href="https://www.asbconsulting.in/sitemap.xml" />
       </head>
       <body className={`${lexend.variable} ${inter.variable} antialiased`}>
+        <LeadTracking />
         {children}
       </body>
     </html>
