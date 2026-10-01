@@ -33,7 +33,7 @@ import ContactFrom from "../../components/ContactFrom";
 export const metadata = {
   title: "CAD/CAM Outsourcing Services in India | AS Business Consulting",
   description:
-    "AS Business Consulting provides CAD/CAM outsourcing services in India, including 3D CAD modeling, CAM programming, toolpath creation, drafting, and manufacturing support.",
+    "CAD/CAM outsourcing services in India: 3D CAD modeling, 2D drafting, CAM programming and CNC toolpaths, delivered as production-ready drawings and files.",
   alternates: {
     canonical:
       "https://www.asbconsulting.in/research&development/cad-cam-outsourcing",
@@ -367,6 +367,88 @@ const softwareTools = [
   "File conversion and data migration tools",
 ];
 
+// Typical work, drawn from the services listed on this page. Linked where a
+// dedicated page covers the topic in more depth.
+const projectTypes: { title: string; description: string; href?: string; linkText?: string }[] = [
+  {
+    title: "Machine components and industrial assemblies",
+    description:
+      "3D models and detailed drawings for machine parts, equipment components and multi-part assemblies.",
+    href: "/research&development/modeling-advanced-surfacing",
+    linkText: "3D modeling and advanced surfacing",
+  },
+  {
+    title: "Tools and fixtures",
+    description:
+      "CAD design and manufacturing drawings for production tools, fixtures and work-holding parts.",
+  },
+  {
+    title: "Sheet metal components",
+    description:
+      "Flat patterns, bend details, cutouts and fabrication notes for sheet metal parts and enclosures.",
+  },
+  {
+    title: "Product redesign and modification",
+    description:
+      "Changes to existing designs for better fitment, strength, manufacturability or cost.",
+    href: "/research&development/product-design-engineering",
+    linkText: "Product design and engineering",
+  },
+  {
+    title: "Drawing and CAD file conversion",
+    description:
+      "2D to 3D conversion, legacy drawing updates and format conversion for vendors and machines.",
+    href: "/research&development/file-conversion-data-migration",
+    linkText: "CAD file conversion and data migration",
+  },
+  {
+    title: "Existing parts without drawings",
+    description:
+      "CAD models and drawings recreated from physical samples, scan data or worn components.",
+    href: "/research&development/reverse-engineering",
+    linkText: "Reverse engineering services",
+  },
+  {
+    title: "Prototype development",
+    description:
+      "Prototype-ready files and documentation for 3D printing, CNC machining and pilot builds.",
+    href: "/research&development/prototype-development",
+    linkText: "Prototype development services",
+  },
+  {
+    title: "Production drawings",
+    description:
+      "Manufacturing, assembly and GD&T-based drawings with BOMs for vendors and shop-floor teams.",
+    href: "/research&development/engineering-drafting-documentation",
+    linkText: "Engineering drafting and documentation",
+  },
+  {
+    title: "CNC manufacturing preparation",
+    description:
+      "CAM programming, toolpath creation and toolpath optimization ahead of machining.",
+  },
+];
+
+const deliverableItems = [
+  "3D CAD models (parts and assemblies)",
+  "2D manufacturing and assembly drawings",
+  "GD&T-based drawings",
+  "Exploded views",
+  "Bill of Materials (BOM)",
+  "CAM programs and CNC toolpaths",
+];
+
+// Formats already offered through our CAD file conversion service.
+const fileFormats = ["STEP", "IGES", "STL", "DWG", "DXF", "PDF", "Native CAD files"];
+
+const requirementInputs = [
+  "Existing drawings or sketches",
+  "3D models or CAD files",
+  "Details of the component or sample",
+  "Production quantity and process",
+  "The engineering problem you need solved",
+];
+
 const Page = () => {
   return (
     <>
@@ -424,6 +506,29 @@ const Page = () => {
         }}
       />
 
+      <Script
+        id="service-schema-cad-cam-outsourcing"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Service",
+            name: "CAD/CAM Outsourcing Services",
+            serviceType: "CAD/CAM outsourcing",
+            description:
+              "CAD/CAM outsourcing services in India: 3D CAD modeling, 2D drafting, CAM programming and CNC toolpaths, delivered as production-ready drawings and files.",
+            url: "https://www.asbconsulting.in/research&development/cad-cam-outsourcing",
+            areaServed: { "@type": "Country", name: "India" },
+            provider: {
+              "@type": "Organization",
+              "@id": "https://www.asbconsulting.in/#organization",
+              name: "AS Business Consulting",
+              url: "https://www.asbconsulting.in/",
+            },
+          }),
+        }}
+      />
+
       <Header />
 
       <main className="overflow-hidden bg-[#fbf8fc] text-[#211827]">
@@ -453,17 +558,19 @@ const Page = () => {
 
               <div className="flex flex-wrap gap-4">
                 <Link
-                  href="/contact"
+                  href="#enquiry"
+                  data-cta="service_enquiry"
+                  data-cta-location="cad-cam-hero"
                   className="inline-flex items-center gap-3 rounded-full bg-white text-[#502D52] px-6 py-3 font-semibold shadow-lg hover:shadow-xl transition"
                 >
-                  Get CAD/CAM Support <FaArrowRight />
+                  Send Your CAD/CAM Requirement <FaArrowRight />
                 </Link>
 
                 <Link
-                  href="/our-services"
+                  href="#services"
                   className="inline-flex items-center gap-3 rounded-full border border-white/30 px-6 py-3 font-semibold text-white hover:bg-white/10 transition"
                 >
-                  Explore Services
+                  See What We Deliver
                 </Link>
               </div>
             </div>
@@ -727,6 +834,104 @@ const Page = () => {
           </div>
         </section>
 
+        {/* Projects We Support */}
+        <section className="py-20 bg-[#fbf8fc]">
+          <div className="max-w-7xl mx-auto px-5">
+            <div className="max-w-3xl mb-12">
+              <p className="text-[#502D52] text-sm font-bold tracking-[0.22em] uppercase mb-3">
+                Typical Work
+              </p>
+              <h2 className="text-3xl md:text-5xl font-bold text-[#211827] mb-5">
+                CAD/CAM Projects We Support
+              </h2>
+              <p className="leading-relaxed text-gray-600">
+                Most requests fall into one of these types. Our engineering
+                team&apos;s background is in appliance, HVAC and industrial
+                product design, including a complete air-conditioner design
+                project delivered in 2021.
+              </p>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+              {projectTypes.map((project) => (
+                <div
+                  key={project.title}
+                  className="rounded-2xl bg-white border border-[#eaddec] p-6"
+                >
+                  <h3 className="font-bold text-lg text-[#211827] mb-2">
+                    {project.title}
+                  </h3>
+                  <p className="text-sm leading-relaxed text-gray-600">
+                    {project.description}
+                  </p>
+                  {project.href && (
+                    <Link
+                      href={project.href}
+                      className="inline-block mt-3 text-sm font-semibold text-[#502D52] underline"
+                    >
+                      {project.linkText}
+                    </Link>
+                  )}
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* Deliverables and File Formats */}
+        <section className="py-20 bg-white">
+          <div className="max-w-7xl mx-auto px-5 grid grid-cols-1 lg:grid-cols-2 gap-10">
+            <div>
+              <p className="text-[#502D52] text-sm font-bold tracking-[0.22em] uppercase mb-3">
+                What You Receive
+              </p>
+              <h2 className="text-3xl md:text-4xl font-bold text-[#211827] mb-5">
+                Deliverables and File Formats
+              </h2>
+              <p className="leading-relaxed text-gray-600 mb-6">
+                Outputs are prepared for the next person who has to use them:
+                your vendor, machine operator or quality team. Tell us which
+                software and machines you work with and we will match the
+                format.
+              </p>
+              <ul className="space-y-3">
+                {deliverableItems.map((item) => (
+                  <li key={item} className="flex items-start gap-3">
+                    <FaCircleCheck className="text-[#502D52] mt-1 shrink-0" />
+                    <span className="text-[#211827]">{item}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            <div className="rounded-[2rem] bg-[#fbf8fc] border border-[#eaddec] p-8">
+              <h3 className="font-bold text-xl text-[#211827] mb-5">
+                File formats we work with
+              </h3>
+              <div className="flex flex-wrap gap-3 mb-6">
+                {fileFormats.map((format) => (
+                  <span
+                    key={format}
+                    className="rounded-full bg-white border border-[#eaddec] px-4 py-2 text-sm font-semibold text-[#502D52]"
+                  >
+                    {format}
+                  </span>
+                ))}
+              </div>
+              <p className="text-sm leading-relaxed text-gray-600">
+                Need a format that is not listed? See our{" "}
+                <Link
+                  href="/research&development/file-conversion-data-migration"
+                  className="font-semibold text-[#502D52] underline"
+                >
+                  CAD file conversion and data migration
+                </Link>{" "}
+                service, or ask us.
+              </p>
+            </div>
+          </div>
+        </section>
+
         {/* Benefits */}
         <section className="py-20 bg-[#fbf8fc]">
           <div className="max-w-7xl mx-auto px-5">
@@ -879,19 +1084,41 @@ const Page = () => {
                     manufacturing-ready outputs.
                   </p>
 
-                  <p className="text-white/80 leading-relaxed">
+                  <p className="text-white/80 leading-relaxed mb-4">
                     Contact us today for CAD/CAM Outsourcing Services in India
                     and get accurate, cost-effective, and production-ready
                     engineering support for your next project.
+                  </p>
+
+                  <p className="font-semibold mb-2">
+                    To scope your requirement, it helps to share:
+                  </p>
+                  <ul className="grid grid-cols-1 md:grid-cols-2 gap-x-6 gap-y-1 text-white/85 text-sm list-disc pl-5">
+                    {requirementInputs.map((input) => (
+                      <li key={input}>{input}</li>
+                    ))}
+                  </ul>
+                  <p className="text-white/70 text-sm mt-4">
+                    Describe the work in the form below, then send drawings and
+                    models by email to{" "}
+                    <a
+                      href="mailto:akash.shahane@asbconsulting.in"
+                      className="underline text-white"
+                    >
+                      akash.shahane@asbconsulting.in
+                    </a>
+                    .
                   </p>
                 </div>
 
                 <div className="lg:text-right">
                   <Link
-                    href="/contact"
+                    href="#enquiry"
+                    data-cta="service_enquiry"
+                    data-cta-location="cad-cam-bottom"
                     className="inline-flex items-center gap-3 rounded-full bg-white text-[#502D52] px-7 py-4 font-bold shadow-lg hover:shadow-xl transition"
                   >
-                    Contact Us <FaArrowRight />
+                    Send Your CAD/CAM Requirement <FaArrowRight />
                   </Link>
                 </div>
               </div>
