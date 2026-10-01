@@ -518,7 +518,7 @@ const page = () => {
                   </div>
                   <h2 className="text-black text-base font-medium mb-0">
                     <Link
-                      href="/operations-consulting"
+                      href="/operation"
                       className={internalLinkClass}
                     >
                       Operations Consulting
@@ -532,7 +532,7 @@ const page = () => {
                     <FaCheck className="rounded-full text-xl bg-primary text-white p-1" />
                   </div>
                   <h2 className="text-black text-base font-medium mb-0">
-                    <Link href="/hr-consultancy" className={internalLinkClass}>
+                    <Link href="/human-resource" className={internalLinkClass}>
                       HR Consulting
                     </Link>{" "}
                     – Recruitment, policy audits, and engagement
@@ -544,7 +544,7 @@ const page = () => {
                     <FaCheck className="rounded-full text-xl bg-primary text-white p-1" />
                   </div>
                   <h2 className="text-black text-base font-medium mb-0">
-                    <Link href="/contact-us" className={internalLinkClass}>
+                    <Link href="/contact" className={internalLinkClass}>
                       Contact Us
                     </Link>{" "}
                     – Speak to our legal experts and get a tailored plan today

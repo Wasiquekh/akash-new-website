@@ -271,7 +271,7 @@ const page = () => {
                 "@type": "ListItem",
                 position: 3,
                 name: "MIS & Audit",
-                item: "https://www.asbconsulting.in/mis-audit",
+                item: "https://www.asbconsulting.in/operation/audit",
               },
             ],
           }),
@@ -285,8 +285,8 @@ const page = () => {
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "WebPage",
-            "@id": "https://www.asbconsulting.in/mis-audit#webpage",
-            url: "https://www.asbconsulting.in/mis-audit",
+            "@id": "https://www.asbconsulting.in/operation/audit#webpage",
+            url: "https://www.asbconsulting.in/operation/audit",
             name: "MIS & Audit Consulting in India | AS Business Consulting",
             description:
               "AS Business Consulting provides MIS and audit services including business performance analysis, MIS dashboard creation, process audit, system audit, KPI tracking, gap analysis, and corrective action planning.",

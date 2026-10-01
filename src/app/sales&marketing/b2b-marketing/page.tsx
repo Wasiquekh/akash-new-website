@@ -261,7 +261,7 @@ const Page = () => {
                 "@type": "ListItem",
                 position: 3,
                 name: "B2B Marketing Services",
-                item: "https://www.asbconsulting.in/sales-marketing/b2b-marketing",
+                item: "https://www.asbconsulting.in/sales&marketing/b2b-marketing",
               },
             ],
           }),
@@ -276,8 +276,8 @@ const Page = () => {
             "@context": "https://schema.org",
             "@type": "WebPage",
             "@id":
-              "https://www.asbconsulting.in/sales-marketing/b2b-marketing#webpage",
-            url: "https://www.asbconsulting.in/sales-marketing/b2b-marketing",
+              "https://www.asbconsulting.in/sales&marketing/b2b-marketing#webpage",
+            url: "https://www.asbconsulting.in/sales&marketing/b2b-marketing",
             name: "B2B Marketing Services for Business Growth in India",
             description:
               "AS Business Consulting helps companies build B2B marketing systems that generate qualified leads, improve brand visibility, strengthen client relationships, and support long-term business growth.",

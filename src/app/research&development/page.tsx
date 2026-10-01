@@ -43,7 +43,7 @@ const Page = () => {
                 "@type": "ListItem",
                 position: 3,
                 name: "R&D & Product Design",
-                item: "https://www.asbconsulting.in/research&26development",
+                item: "https://www.asbconsulting.in/research&development",
               },
             ],
           }),

@@ -342,7 +342,7 @@ const Page = () => {
                 "@type": "ListItem",
                 position: 3,
                 name: "Real-Time Rendering & Visualization",
-                item: "https://www.asbconsulting.in/research&development/real-time-rendering-visualization",
+                item: "https://www.asbconsulting.in/research&development/Realtime-renderings-visualization",
               },
             ],
           }),
@@ -357,8 +357,8 @@ const Page = () => {
             "@context": "https://schema.org",
             "@type": "WebPage",
             "@id":
-              "https://www.asbconsulting.in/research&development/real-time-rendering-visualization#webpage",
-            url: "https://www.asbconsulting.in/research&development/real-time-rendering-visualization",
+              "https://www.asbconsulting.in/research&development/Realtime-renderings-visualization#webpage",
+            url: "https://www.asbconsulting.in/research&development/Realtime-renderings-visualization",
             name: "Real-Time Rendering & Visualization Services in India",
             description:
               "AS Business provides professional Real-Time Rendering & Visualization Services in India to help businesses, manufacturers, product developers, and engineering teams present their designs with clarity, realism, and visual impact.",

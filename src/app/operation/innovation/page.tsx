@@ -229,7 +229,7 @@ const page = () => {
                 "@type": "ListItem",
                 position: 3,
                 name: "Innovation Consulting",
-                item: "https://www.asbconsulting.in/innovation",
+                item: "https://www.asbconsulting.in/operation/innovation",
               },
             ],
           }),
@@ -243,8 +243,8 @@ const page = () => {
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "WebPage",
-            "@id": "https://www.asbconsulting.in/innovation#webpage",
-            url: "https://www.asbconsulting.in/innovation",
+            "@id": "https://www.asbconsulting.in/operation/innovation#webpage",
+            url: "https://www.asbconsulting.in/operation/innovation",
             name: "Innovation Consulting in India | AS Business Consulting",
             description:
               "AS Business Consulting provides innovation consulting for product benchmarking, process improvement, cost saving, technology updation, and operational efficiency.",

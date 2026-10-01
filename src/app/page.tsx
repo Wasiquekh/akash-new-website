@@ -54,12 +54,6 @@ export default function Home() {
             url: "https://www.asbconsulting.in/",
             name: "AS Business Consulting",
             publisher: { "@id": "https://www.asbconsulting.in/#organization" },
-            potentialAction: {
-              "@type": "SearchAction",
-              target:
-                "https://www.asbconsulting.in/search?q={search_term_string}",
-              "query-input": "required name=search_term_string",
-            },
           }),
         }}
       />

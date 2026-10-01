@@ -342,7 +342,7 @@ const Page = () => {
                 "@type": "ListItem",
                 position: 3,
                 name: "Import–Export Enablement Services",
-                item: "https://www.asbconsulting.in/research&development/import-export-enablement",
+                item: "https://www.asbconsulting.in/international-business-development/import-export-enablement",
               },
             ],
           }),
@@ -357,8 +357,8 @@ const Page = () => {
             "@context": "https://schema.org",
             "@type": "WebPage",
             "@id":
-              "https://www.asbconsulting.in/research&development/import-export-enablement#webpage",
-            url: "https://www.asbconsulting.in/research&development/import-export-enablement",
+              "https://www.asbconsulting.in/international-business-development/import-export-enablement#webpage",
+            url: "https://www.asbconsulting.in/international-business-development/import-export-enablement",
             name: "Import–Export Enablement Services for Global Business Growth",
             description:
               "AS Business Consulting provides complete Import–Export Enablement Services including certification, licensing, product sales strategy, franchise program planning, export readiness, and global expansion support.",

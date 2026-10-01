@@ -184,7 +184,7 @@ const Page = () => {
                 "@type": "ListItem",
                 position: 3,
                 name: "EOR & Payroll Support",
-                item: "https://www.asbconsulting.in/human-resource/eor-payroll-support",
+                item: "https://www.asbconsulting.in/human-resource/payroll-support",
               },
             ],
           }),
@@ -199,8 +199,8 @@ const Page = () => {
             "@context": "https://schema.org",
             "@type": "WebPage",
             "@id":
-              "https://www.asbconsulting.in/human-resource/eor-payroll-support#webpage",
-            url: "https://www.asbconsulting.in/human-resource/eor-payroll-support",
+              "https://www.asbconsulting.in/human-resource/payroll-support#webpage",
+            url: "https://www.asbconsulting.in/human-resource/payroll-support",
             name: "Third-Party Employer EOR & Payroll Support Services in India",
             description:
               "AS Business Consulting provides Third-Party Employer EOR and Payroll Support Services in India to help businesses manage employee onboarding, payroll administration, statutory compliance, employment documentation, and workforce operations.",

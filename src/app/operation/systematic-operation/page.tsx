@@ -264,7 +264,7 @@ const page = () => {
                 "@type": "ListItem",
                 position: 3,
                 name: "Systematic Operation",
-                item: "https://www.asbconsulting.in/systematic-operation",
+                item: "https://www.asbconsulting.in/operation/systematic-operation",
               },
             ],
           }),
@@ -278,8 +278,8 @@ const page = () => {
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "WebPage",
-            "@id": "https://www.asbconsulting.in/systematic-operation#webpage",
-            url: "https://www.asbconsulting.in/systematic-operation",
+            "@id": "https://www.asbconsulting.in/operation/systematic-operation#webpage",
+            url: "https://www.asbconsulting.in/operation/systematic-operation",
             name: "Systematic Operation Consulting in India | AS Business Consulting",
             description:
               "AS Business Consulting provides systematic operation services including 5S implementation, SOP creation, SCM management, process standardization, documentation, and operational control.",

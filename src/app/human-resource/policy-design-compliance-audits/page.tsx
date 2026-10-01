@@ -220,7 +220,7 @@ const Page = () => {
                 "@type": "ListItem",
                 position: 3,
                 name: "HR Policy Design & Compliance Audit Services",
-                item: "https://www.asbconsulting.in/human-resource/hr-policy-compliance-audit",
+                item: "https://www.asbconsulting.in/human-resource/policy-design-compliance-audits",
               },
             ],
           }),
@@ -235,8 +235,8 @@ const Page = () => {
             "@context": "https://schema.org",
             "@type": "WebPage",
             "@id":
-              "https://www.asbconsulting.in/human-resource/hr-policy-compliance-audit#webpage",
-            url: "https://www.asbconsulting.in/human-resource/hr-policy-compliance-audit",
+              "https://www.asbconsulting.in/human-resource/policy-design-compliance-audits#webpage",
+            url: "https://www.asbconsulting.in/human-resource/policy-design-compliance-audits",
             name: "HR Policy Design & Compliance Audit Services in India",
             description:
               "AS Business Consulting helps organizations create clear, compliant, practical, and employee-friendly HR systems through HR policy design, compliance audit, SOP development, documentation, implementation, and training.",

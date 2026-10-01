@@ -317,7 +317,7 @@ const Page = () => {
                 "@type": "ListItem",
                 position: 3,
                 name: "Technology Development Services",
-                item: "https://www.asbconsulting.in/research&development/technology-development",
+                item: "https://www.asbconsulting.in/international-business-development/development-technology",
               },
             ],
           }),
@@ -332,8 +332,8 @@ const Page = () => {
             "@context": "https://schema.org",
             "@type": "WebPage",
             "@id":
-              "https://www.asbconsulting.in/research&development/technology-development#webpage",
-            url: "https://www.asbconsulting.in/research&development/technology-development",
+              "https://www.asbconsulting.in/international-business-development/development-technology#webpage",
+            url: "https://www.asbconsulting.in/international-business-development/development-technology",
             name: "Technology Development Services for Business Growth & Global Expansion",
             description:
               "AS Business Consulting provides complete Technology Development Services to help businesses improve operations, adopt modern systems, set up new technology, select machines and tools, and prepare for domestic and international business growth.",

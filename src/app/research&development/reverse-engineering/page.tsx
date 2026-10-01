@@ -350,7 +350,7 @@ const Page = () => {
                 "@type": "ListItem",
                 position: 3,
                 name: "Reverse Engineering Services",
-                item: "https://www.asbconsulting.in/research&development/reverse-engineering-services",
+                item: "https://www.asbconsulting.in/research&development/reverse-engineering",
               },
             ],
           }),
@@ -365,8 +365,8 @@ const Page = () => {
             "@context": "https://schema.org",
             "@type": "WebPage",
             "@id":
-              "https://www.asbconsulting.in/research&development/reverse-engineering-services#webpage",
-            url: "https://www.asbconsulting.in/research&development/reverse-engineering-services",
+              "https://www.asbconsulting.in/research&development/reverse-engineering#webpage",
+            url: "https://www.asbconsulting.in/research&development/reverse-engineering",
             name: "Reverse Engineering Services in India",
             description:
               "AS Business provides professional Reverse Engineering Services in India to help manufacturers, engineering companies, product developers, and industrial businesses recreate, improve, or document existing parts and products.",

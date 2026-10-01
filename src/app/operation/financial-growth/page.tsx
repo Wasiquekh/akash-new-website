@@ -267,7 +267,7 @@ const page = () => {
                 "@type": "ListItem",
                 position: 3,
                 name: "Financial Growth",
-                item: "https://www.asbconsulting.in/financial-growth",
+                item: "https://www.asbconsulting.in/operation/financial-growth",
               },
             ],
           }),
@@ -281,8 +281,8 @@ const page = () => {
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "WebPage",
-            "@id": "https://www.asbconsulting.in/financial-growth#webpage",
-            url: "https://www.asbconsulting.in/financial-growth",
+            "@id": "https://www.asbconsulting.in/operation/financial-growth#webpage",
+            url: "https://www.asbconsulting.in/operation/financial-growth",
             name: "Financial Growth Consulting in India | AS Business Consulting",
             description:
               "AS Business Consulting provides financial growth advisory including institutional financing, fund-flow management, working capital planning, tax advisory, loan proposal support, and business growth finance strategy.",

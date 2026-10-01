@@ -325,7 +325,7 @@ const Page = () => {
                 "@type": "ListItem",
                 position: 3,
                 name: "Marketing & Sales Training Programs",
-                item: "https://www.asbconsulting.in/sales&marketing/marketing-sales-training",
+                item: "https://www.asbconsulting.in/sales&marketing/training",
               },
             ],
           }),
@@ -340,8 +340,8 @@ const Page = () => {
             "@context": "https://schema.org",
             "@type": "WebPage",
             "@id":
-              "https://www.asbconsulting.in/sales&marketing/marketing-sales-training#webpage",
-            url: "https://www.asbconsulting.in/sales&marketing/marketing-sales-training",
+              "https://www.asbconsulting.in/sales&marketing/training#webpage",
+            url: "https://www.asbconsulting.in/sales&marketing/training",
             name: "Marketing & Sales Training Programs for Business Teams in India",
             description:
               "AS Business Consulting provides practical marketing and sales training programs that help business teams improve skills, adopt latest tools, understand modern platforms, follow structured processes, and execute growth strategies more effectively.",

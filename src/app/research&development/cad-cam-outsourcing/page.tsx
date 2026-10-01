@@ -394,7 +394,7 @@ const Page = () => {
                 "@type": "ListItem",
                 position: 3,
                 name: "CAD/CAM Outsourcing Services",
-                item: "https://www.asbconsulting.in/research&development/cad-cam-outsourcing-services",
+                item: "https://www.asbconsulting.in/research&development/cad-cam-outsourcing",
               },
             ],
           }),
@@ -409,8 +409,8 @@ const Page = () => {
             "@context": "https://schema.org",
             "@type": "WebPage",
             "@id":
-              "https://www.asbconsulting.in/research&development/cad-cam-outsourcing-services#webpage",
-            url: "https://www.asbconsulting.in/research&development/cad-cam-outsourcing-services",
+              "https://www.asbconsulting.in/research&development/cad-cam-outsourcing#webpage",
+            url: "https://www.asbconsulting.in/research&development/cad-cam-outsourcing",
             name: "CAD/CAM Outsourcing Services in India",
             description:
               "AS Business Consulting provides professional CAD/CAM Outsourcing Services in India for manufacturers, engineering companies, product developers, fabrication units, startups, and industrial businesses that need accurate design and manufacturing support without maintaining a full in-house engineering team.",

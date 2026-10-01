@@ -64,12 +64,7 @@ const Page = () => {
             url: "https://www.asbconsulting.in/",
             description:
               "AS Business Consulting is a trusted consulting firm in India, providing strategic advisory and growth-focused business consulting solutions.",
-            logo: "https://www.asbconsulting.in/logo.png",
-            sameAs: [
-              "https://www.facebook.com/yourpage",
-              "https://twitter.com/yourprofile",
-              "https://www.instagram.com/yourprofile",
-            ],
+            logo: "https://www.asbconsulting.in/images/asConsultingLogo.svg",
           }),
         }}
       />

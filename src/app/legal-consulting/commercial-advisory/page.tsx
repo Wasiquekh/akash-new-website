@@ -290,7 +290,7 @@ const Page = () => {
                 "@type": "ListItem",
                 position: 3,
                 name: "Commercial Advisory & Transactions",
-                item: "https://www.asbconsulting.in/legal-consulting/commercial-advisory-transactions",
+                item: "https://www.asbconsulting.in/legal-consulting/commercial-advisory",
               },
             ],
           }),
@@ -305,8 +305,8 @@ const Page = () => {
             "@context": "https://schema.org",
             "@type": "WebPage",
             "@id":
-              "https://www.asbconsulting.in/legal-consulting/commercial-advisory-transactions#webpage",
-            url: "https://www.asbconsulting.in/legal-consulting/commercial-advisory-transactions",
+              "https://www.asbconsulting.in/legal-consulting/commercial-advisory#webpage",
+            url: "https://www.asbconsulting.in/legal-consulting/commercial-advisory",
             name: "Commercial Advisory & Transactions",
             description:
               "AS Business Consulting provides practical commercial advisory and transaction support for mergers and acquisitions, joint ventures, partnerships, slump sales, business transfers, commercial risk reviews, taxation interface, competition considerations, and dispute resolution strategy.",

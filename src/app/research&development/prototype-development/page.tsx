@@ -363,7 +363,7 @@ const Page = () => {
                 "@type": "ListItem",
                 position: 3,
                 name: "Prototype Development Services",
-                item: "https://www.asbconsulting.in/research&development/prototype-development-services",
+                item: "https://www.asbconsulting.in/research&development/prototype-development",
               },
             ],
           }),
@@ -378,8 +378,8 @@ const Page = () => {
             "@context": "https://schema.org",
             "@type": "WebPage",
             "@id":
-              "https://www.asbconsulting.in/research&development/prototype-development-services#webpage",
-            url: "https://www.asbconsulting.in/research&development/prototype-development-services",
+              "https://www.asbconsulting.in/research&development/prototype-development#webpage",
+            url: "https://www.asbconsulting.in/research&development/prototype-development",
             name: "Prototype Development Services in India",
             description:
               "AS Business Consulting provides professional prototype development services in India, including 3D printing, CNC machining, sheet metal prototyping, soft tooling, functional testing, and pilot build preparation.",

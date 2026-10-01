@@ -346,7 +346,7 @@ const Page = () => {
                 "@type": "ListItem",
                 position: 3,
                 name: "Logistics & Compliance Services",
-                item: "https://www.asbconsulting.in/research&development/logistics-compliance",
+                item: "https://www.asbconsulting.in/international-business-development/logistics-compliance",
               },
             ],
           }),
@@ -361,8 +361,8 @@ const Page = () => {
             "@context": "https://schema.org",
             "@type": "WebPage",
             "@id":
-              "https://www.asbconsulting.in/research&development/logistics-compliance#webpage",
-            url: "https://www.asbconsulting.in/research&development/logistics-compliance",
+              "https://www.asbconsulting.in/international-business-development/logistics-compliance#webpage",
+            url: "https://www.asbconsulting.in/international-business-development/logistics-compliance",
             name: "Logistics & Compliance Services for Smooth Import–Export Operations",
             description:
               "AS Business Consulting provides complete Logistics & Compliance Services including freight forwarding, customs clearance, transportation planning, packing guidance, shipment documentation, and import-export compliance support.",

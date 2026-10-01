@@ -362,7 +362,7 @@ const Page = () => {
                 "@type": "ListItem",
                 position: 3,
                 name: "CAD File Conversion & Data Migration",
-                item: "https://www.asbconsulting.in/research&development/cad-file-conversion-data-migration-services",
+                item: "https://www.asbconsulting.in/research&development/file-conversion-data-migration",
               },
             ],
           }),
@@ -377,8 +377,8 @@ const Page = () => {
             "@context": "https://schema.org",
             "@type": "WebPage",
             "@id":
-              "https://www.asbconsulting.in/research&development/cad-file-conversion-data-migration-services#webpage",
-            url: "https://www.asbconsulting.in/research&development/cad-file-conversion-data-migration-services",
+              "https://www.asbconsulting.in/research&development/file-conversion-data-migration#webpage",
+            url: "https://www.asbconsulting.in/research&development/file-conversion-data-migration",
             name: "CAD File Conversion & Data Migration Services in India",
             description:
               "AS Business provides professional CAD File Conversion & Data Migration Services in India for manufacturers, engineering companies, product developers, CAD/CAM teams, architects, designers, and industrial businesses that need accurate conversion of 2D and 3D design data into usable engineering and manufacturing formats.",

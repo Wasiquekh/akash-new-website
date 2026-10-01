@@ -183,7 +183,7 @@ const Page = () => {
                 "@type": "ListItem",
                 position: 3,
                 name: "Employee Engagement Programs",
-                item: "https://www.asbconsulting.in/human-resource/employee-engagement-programs",
+                item: "https://www.asbconsulting.in/human-resource/employee-engagement",
               },
             ],
           }),
@@ -198,8 +198,8 @@ const Page = () => {
             "@context": "https://schema.org",
             "@type": "WebPage",
             "@id":
-              "https://www.asbconsulting.in/human-resource/employee-engagement-programs#webpage",
-            url: "https://www.asbconsulting.in/human-resource/employee-engagement-programs",
+              "https://www.asbconsulting.in/human-resource/employee-engagement#webpage",
+            url: "https://www.asbconsulting.in/human-resource/employee-engagement",
             name: "Employee Engagement Programs in India",
             description:
               "AS Business Consulting helps organizations build engaged, motivated, and high-performing teams through employee recognition, wellness, internal communication, pulse surveys, team motivation, and retention improvement.",

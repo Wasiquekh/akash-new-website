@@ -376,7 +376,7 @@ const Page = () => {
                 "@type": "ListItem",
                 position: 3,
                 name: "3D Modeling & Advanced Surfacing",
-                item: "https://www.asbconsulting.in/research&development/3d-modeling-advanced-surfacing-services",
+                item: "https://www.asbconsulting.in/research&development/modeling-advanced-surfacing",
               },
             ],
           }),
@@ -391,8 +391,8 @@ const Page = () => {
             "@context": "https://schema.org",
             "@type": "WebPage",
             "@id":
-              "https://www.asbconsulting.in/research&development/3d-modeling-advanced-surfacing-services#webpage",
-            url: "https://www.asbconsulting.in/research&development/3d-modeling-advanced-surfacing-services",
+              "https://www.asbconsulting.in/research&development/modeling-advanced-surfacing#webpage",
+            url: "https://www.asbconsulting.in/research&development/modeling-advanced-surfacing",
             name: "3D Modeling & Advanced Surfacing Services in India",
             description:
               "AS Business provides professional 3D Modeling & Advanced Surfacing Services in India for manufacturers, product developers, engineering companies, startups, and industrial businesses that need accurate, detailed, and production-ready 3D CAD models.",

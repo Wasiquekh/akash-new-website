@@ -230,7 +230,7 @@ const page = () => {
                 "@type": "ListItem",
                 position: 3,
                 name: "Productivity Improvement",
-                item: "https://www.asbconsulting.in/productivity-improvement",
+                item: "https://www.asbconsulting.in/operation/productivity-inprovement",
               },
             ],
           }),
@@ -245,8 +245,8 @@ const page = () => {
             "@context": "https://schema.org",
             "@type": "WebPage",
             "@id":
-              "https://www.asbconsulting.in/productivity-improvement#webpage",
-            url: "https://www.asbconsulting.in/productivity-improvement",
+              "https://www.asbconsulting.in/operation/productivity-inprovement#webpage",
+            url: "https://www.asbconsulting.in/operation/productivity-inprovement",
             name: "Productivity Improvement Consulting in India | AS Business Consulting",
             description:
               "AS Business Consulting provides productivity improvement services for process bottleneck identification, line balancing, UPH improvement, manpower utilization, cycle-time study, and operational efficiency.",

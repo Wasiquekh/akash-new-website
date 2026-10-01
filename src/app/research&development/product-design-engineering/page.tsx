@@ -296,7 +296,7 @@ const Page = () => {
                 "@type": "ListItem",
                 position: 3,
                 name: "Product Design & Engineering",
-                item: "https://www.asbconsulting.in/product-design-engineering",
+                item: "https://www.asbconsulting.in/research&development/product-design-engineering",
               },
             ],
           }),
@@ -311,8 +311,8 @@ const Page = () => {
             "@context": "https://schema.org",
             "@type": "WebPage",
             "@id":
-              "https://www.asbconsulting.in/product-design-engineering#webpage",
-            url: "https://www.asbconsulting.in/product-design-engineering",
+              "https://www.asbconsulting.in/research&development/product-design-engineering#webpage",
+            url: "https://www.asbconsulting.in/research&development/product-design-engineering",
             name: "Product Design & Engineering Services in India",
             description:
               "At AS Business Consulting, we provide professional Product Design & Engineering Services in India to help businesses, manufacturers, startups, and innovators convert ideas into practical, functional, and market-ready products.",

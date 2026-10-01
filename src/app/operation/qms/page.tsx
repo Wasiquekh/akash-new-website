@@ -276,7 +276,7 @@ const page = () => {
                 "@type": "ListItem",
                 position: 3,
                 name: "QMS",
-                item: "https://www.asbconsulting.in/qms",
+                item: "https://www.asbconsulting.in/operation/qms",
               },
             ],
           }),
@@ -290,8 +290,8 @@ const page = () => {
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "WebPage",
-            "@id": "https://www.asbconsulting.in/qms#webpage",
-            url: "https://www.asbconsulting.in/qms",
+            "@id": "https://www.asbconsulting.in/operation/qms#webpage",
+            url: "https://www.asbconsulting.in/operation/qms",
             name: "QMS Consulting in India | Quality Management System | AS Business Consulting",
             description:
               "AS Business Consulting provides QMS services including FTR improvement, 7 QC Tools implementation, Kaizen, Poka-yoke, quality awareness training, defect reduction, root cause analysis, and quality process improvement.",

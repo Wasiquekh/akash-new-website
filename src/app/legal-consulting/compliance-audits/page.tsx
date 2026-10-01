@@ -311,7 +311,7 @@ const Page = () => {
                 "@type": "ListItem",
                 position: 3,
                 name: "Compliance Audits & MIS",
-                item: "https://www.asbconsulting.in/legal-consulting/compliance-audits-mis",
+                item: "https://www.asbconsulting.in/legal-consulting/compliance-audits",
               },
             ],
           }),
@@ -326,8 +326,8 @@ const Page = () => {
             "@context": "https://schema.org",
             "@type": "WebPage",
             "@id":
-              "https://www.asbconsulting.in/legal-consulting/compliance-audits-mis#webpage",
-            url: "https://www.asbconsulting.in/legal-consulting/compliance-audits-mis",
+              "https://www.asbconsulting.in/legal-consulting/compliance-audits#webpage",
+            url: "https://www.asbconsulting.in/legal-consulting/compliance-audits",
             name: "Compliance Audits & MIS",
             description:
               "AS Business Consulting provides structured Compliance Audits & MIS support to help businesses identify compliance gaps, improve internal processes, reduce legal risk, and create clear reporting systems for management and board-level decision-making.",

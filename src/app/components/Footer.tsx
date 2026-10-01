@@ -153,7 +153,7 @@ const Footer = () => {
               <nav className="list-none">
                 <li>
                   <Link
-                    href="terms"
+                    href="/terms"
                     className="text-white hover:text-tertiary uppercase"
                   >
                     Terms & Conditions

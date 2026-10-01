@@ -305,7 +305,7 @@ const Page = () => {
                 "@type": "ListItem",
                 position: 3,
                 name: "Family Advisory & Asset Management",
-                item: "https://www.asbconsulting.in/legal-consulting/family-advisory-asset-management",
+                item: "https://www.asbconsulting.in/legal-consulting/family-advisory",
               },
             ],
           }),
@@ -320,8 +320,8 @@ const Page = () => {
             "@context": "https://schema.org",
             "@type": "WebPage",
             "@id":
-              "https://www.asbconsulting.in/legal-consulting/family-advisory-asset-management#webpage",
-            url: "https://www.asbconsulting.in/legal-consulting/family-advisory-asset-management",
+              "https://www.asbconsulting.in/legal-consulting/family-advisory#webpage",
+            url: "https://www.asbconsulting.in/legal-consulting/family-advisory",
             name: "Family Advisory & Asset Management",
             description:
               "AS Business Consulting provides confidential Family Advisory & Asset Management support for succession planning, family charters, wills, trusts, asset protection, family governance, business continuity, and inter-generational wealth transfer.",

@@ -223,7 +223,7 @@ const Header = () => {
                         Innovation
                       </Link>
 
-                      <Link href="/operation/productivity-improvement" className="block px-3 py-3 hover:bg-tertiary">
+                      <Link href="/operation/productivity-inprovement" className="block px-3 py-3 hover:bg-tertiary">
                         Productivity Improvement
                       </Link>
 

@@ -298,7 +298,7 @@ const page = () => {
               <p>
                 You may request review, update, or deletion of your data here:{" "}
                 <a
-                  href="akash.shahane@asbconsulting.in"
+                  href="mailto:akash.shahane@asbconsulting.in"
                   target="_blank"
                   className="text-blue-600 underline"
                 >
