@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import { Lexend, Inter } from "next/font/google";
-// @ts-ignore: CSS imports are handled by Next.js
 import "./globals.css";
 import Script from "next/script"; // ✅ Import for Google Analytics
 
